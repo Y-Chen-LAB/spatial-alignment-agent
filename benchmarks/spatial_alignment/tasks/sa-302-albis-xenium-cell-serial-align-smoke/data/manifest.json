@@ -1,0 +1,54 @@
+{
+  "schema_version": "paper2bench.data_manifest.v0.1",
+  "task_id": "sa-302-albis-xenium-cell-serial-align-smoke",
+  "source": "Albis simulator (scripts/alignment_benchmark.py)",
+  "albis_dataset": "xenium_cell",
+  "albis_scale": "smoke",
+  "albis_catalog": "/users/ychen5/p2b-data/paper2bench-data/albis_sim_smoke/xenium_cell/catalog.json",
+  "assets": [
+    {
+      "asset_id": "s00",
+      "role": "slice",
+      "path": "/users/ychen5/p2b-data/paper2bench-data/albis_sim_smoke/xenium_cell/slices/s00.h5ad",
+      "format": "h5ad",
+      "visibility": "public",
+      "metadata": {
+        "n_obs": 722,
+        "is_reference": true
+      }
+    },
+    {
+      "asset_id": "s01",
+      "role": "slice",
+      "path": "/users/ychen5/p2b-data/paper2bench-data/albis_sim_smoke/xenium_cell/slices/s01.h5ad",
+      "format": "h5ad",
+      "visibility": "public",
+      "metadata": {
+        "n_obs": 1703,
+        "is_reference": false
+      }
+    },
+    {
+      "asset_id": "s02",
+      "role": "slice",
+      "path": "/users/ychen5/p2b-data/paper2bench-data/albis_sim_smoke/xenium_cell/slices/s02.h5ad",
+      "format": "h5ad",
+      "visibility": "public",
+      "metadata": {
+        "n_obs": 1802,
+        "is_reference": false
+      }
+    },
+    {
+      "asset_id": "s03",
+      "role": "slice",
+      "path": "/users/ychen5/p2b-data/paper2bench-data/albis_sim_smoke/xenium_cell/slices/s03.h5ad",
+      "format": "h5ad",
+      "visibility": "public",
+      "metadata": {
+        "n_obs": 773,
+        "is_reference": false
+      }
+    }
+  ]
+}

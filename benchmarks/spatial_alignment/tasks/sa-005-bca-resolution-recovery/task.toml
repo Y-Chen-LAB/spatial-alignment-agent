@@ -1,0 +1,25 @@
+id = "sa-005-bca-resolution-recovery"
+name = "Breast cancer full-resolution coordinate recovery"
+domain = "spatial_genomics"
+modality = "spatial_transcriptomics"
+task_type = "resolution_recovery_alignment"
+difficulty = "hard"
+status = "executable_local"
+input_contract = "raw_and_downsampled_h5ad_spatial_v1"
+output_contract = "full_resolution_aligned_coordinate_csv_v1"
+metric_profile = "resolution_recovery_alignment_v1"
+label_key = "Cluster"
+marker_gene_file = "benchmarks/spatial_alignment/tasks/sa-005-bca-resolution-recovery/data/marker_genes.csv"
+max_marker_genes = 100
+raw_slices = [
+  "slice_Rep1=/users/ychen5/p2b-data/paper2bench-data/BCA_raw/slice_Rep1.h5ad",
+  "slice_Rep2=/users/ychen5/p2b-data/paper2bench-data/BCA_raw/slice_Rep2.h5ad",
+]
+downsampled_slices = [
+  "slice_Rep1_DR=/users/ychen5/p2b-data/paper2bench-data/BCA_downsampled/slice_Rep1_DR.h5ad",
+  "slice_Rep2_DR=/users/ychen5/p2b-data/paper2bench-data/BCA_downsampled/slice_Rep2_DR.h5ad",
+]
+provided_downsampled_reference = [
+  "STAligner_BCA_new_slices_Rep1=/users/ychen5/p2b-data/paper2bench-data/BCA_STAligner_DR/STAligner_BCA_new_slices_Rep1.h5ad",
+  "STAligner_BCA_new_slices_Rep2=/users/ychen5/p2b-data/paper2bench-data/BCA_STAligner_DR/STAligner_BCA_new_slices_Rep2.h5ad",
+]

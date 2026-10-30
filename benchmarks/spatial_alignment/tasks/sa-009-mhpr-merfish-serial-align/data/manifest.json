@@ -1,0 +1,75 @@
+{
+  "schema_version": "paper2bench.data_manifest.v0.1",
+  "task_id": "sa-009-mhpr-merfish-serial-align",
+  "source": "Moffitt et al. 2018 MERFISH Mouse Hypothalamic Preoptic Region atlas (Dryad), Data5-9 in SABench paper Yan et al. 2026",
+  "compiler": "scripts/compile_mhpr_csv.py",
+  "raw_inputs": [
+    "/Users/yiqun/Downloads/paper2bench-data/sabench_full/Data5-9_MHPR/Moffitt_and_Bambah-Mukku_et_al_merfish_all_cells.csv"
+  ],
+  "assets": [
+    {
+      "asset_id": "MHPR_animal1_n004",
+      "format": "h5ad",
+      "path": "/Users/yiqun/Downloads/paper2bench-data/MHPR_paper/MHPR_animal1_n004.h5ad",
+      "role": "slice",
+      "visibility": "public",
+      "metadata": {
+        "animal_id": 1,
+        "bregma": -0.04,
+        "n_obs": 5488,
+        "n_var": 156,
+        "paper_data_id": "Data5"
+      }
+    },
+    {
+      "asset_id": "MHPR_animal1_n009",
+      "format": "h5ad",
+      "path": "/Users/yiqun/Downloads/paper2bench-data/MHPR_paper/MHPR_animal1_n009.h5ad",
+      "role": "slice",
+      "visibility": "public",
+      "metadata": {
+        "animal_id": 1,
+        "bregma": -0.09,
+        "n_obs": 5557,
+        "n_var": 156,
+        "paper_data_id": "Data6"
+      }
+    },
+    {
+      "asset_id": "MHPR_animal1_n014",
+      "format": "h5ad",
+      "path": "/Users/yiqun/Downloads/paper2bench-data/MHPR_paper/MHPR_animal1_n014.h5ad",
+      "role": "slice",
+      "visibility": "public",
+      "metadata": {
+        "animal_id": 1,
+        "bregma": -0.14,
+        "n_obs": 5926,
+        "n_var": 156,
+        "paper_data_id": "Data7"
+      }
+    },
+    {
+      "asset_id": "MHPR_animal1_n019",
+      "format": "h5ad",
+      "role": "slice",
+      "visibility": "public",
+      "path": "/Users/yiqun/Downloads/paper2bench-data/MHPR_paper/MHPR_animal1_n019.h5ad",
+      "metadata": {
+        "n_obs": 5803,
+        "paper_data_id": "Data8"
+      }
+    },
+    {
+      "asset_id": "MHPR_animal1_n024",
+      "format": "h5ad",
+      "role": "slice",
+      "visibility": "public",
+      "path": "/Users/yiqun/Downloads/paper2bench-data/MHPR_paper/MHPR_animal1_n024.h5ad",
+      "metadata": {
+        "n_obs": 5543,
+        "paper_data_id": "Data9"
+      }
+    }
+  ]
+}

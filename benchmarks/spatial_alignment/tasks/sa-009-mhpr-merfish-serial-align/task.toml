@@ -1,0 +1,26 @@
+id = "sa-009-mhpr-merfish-serial-align"
+name = "MHPR MERFISH 5-slice serial alignment (Data5-9)"
+domain = "spatial_genomics"
+modality = "spatial_transcriptomics"
+task_type = "serial_alignment"
+difficulty = "starter"
+status = "executable_local"
+input_contract = "h5ad_spatial_v1"
+output_contract = "aligned_coordinate_csv_v1"
+metric_profile = "sabench_light_alignment_v1"
+label_key = "Region"
+# SABench scores MHPR overlap_ratio_region on these eight anatomical structures;
+# MHPR_LandmarkBased_Heatmap.csv has one column per structure. obs/Region now carries
+# them, from the BASS annotation the paper cites (scripts/attach_mhpr_bass_regions.py).
+scored_regions = ["BST", "MPA", "MPN", "PV", "PVH", "PVT", "V3", "fx"]
+marker_gene_file = "benchmarks/spatial_alignment/tasks/sa-009-mhpr-merfish-serial-align/data/marker_genes.csv"
+max_marker_genes = 155
+slices = [
+  "MHPR_animal1_n004=/users/ychen5/p2b-data/paper2bench-data/MHPR_paper/MHPR_animal1_n004.h5ad",
+  "MHPR_animal1_n009=/users/ychen5/p2b-data/paper2bench-data/MHPR_paper/MHPR_animal1_n009.h5ad",
+  "MHPR_animal1_n014=/users/ychen5/p2b-data/paper2bench-data/MHPR_paper/MHPR_animal1_n014.h5ad",
+  "MHPR_animal1_n019=/users/ychen5/p2b-data/paper2bench-data/MHPR_paper/MHPR_animal1_n019.h5ad",
+  "MHPR_animal1_n024=/users/ychen5/p2b-data/paper2bench-data/MHPR_paper/MHPR_animal1_n024.h5ad",
+]
+paper_data_ids = ["Data5", "Data6", "Data7", "Data8", "Data9"]
+paper_source = "https://doi.org/10.5061/dryad.8t8s248 (Moffitt et al. 2018, MHPR MERFISH atlas)"

@@ -1,0 +1,414 @@
+{
+  "schema_version": "paper2bench.data_manifest.v0.1",
+  "task_id": "sa-415-wmb-merfish-33-section-raw-coords-3d",
+  "source": "GEASO data release, Zenodo 18811760 (Wang, Liu & Ma, Nat Commun 2026)",
+  "build_script": "scripts/build_geaso_tasks.py",
+  "dataset": "Zhuang ABCA-1 MERFISH (Zhang et al. 2023), SABench WMB sections (Data99-227)",
+  "task_type": "serial_3d_reconstruction",
+  "section_step": 4,
+  "n_sections": 33,
+  "section_files": [
+    "wmb_paper_sec010.h5ad",
+    "wmb_paper_sec014.h5ad",
+    "wmb_paper_sec018.h5ad",
+    "wmb_paper_sec022.h5ad",
+    "wmb_paper_sec026.h5ad",
+    "wmb_paper_sec030.h5ad",
+    "wmb_paper_sec034.h5ad",
+    "wmb_paper_sec038.h5ad",
+    "wmb_paper_sec042.h5ad",
+    "wmb_paper_sec046.h5ad",
+    "wmb_paper_sec050.h5ad",
+    "wmb_paper_sec054.h5ad",
+    "wmb_paper_sec058.h5ad",
+    "wmb_paper_sec062.h5ad",
+    "wmb_paper_sec066.h5ad",
+    "wmb_paper_sec070.h5ad",
+    "wmb_paper_sec074.h5ad",
+    "wmb_paper_sec079.h5ad",
+    "wmb_paper_sec083.h5ad",
+    "wmb_paper_sec087.h5ad",
+    "wmb_paper_sec091.h5ad",
+    "wmb_paper_sec096.h5ad",
+    "wmb_paper_sec100.h5ad",
+    "wmb_paper_sec104.h5ad",
+    "wmb_paper_sec108.h5ad",
+    "wmb_paper_sec113.h5ad",
+    "wmb_paper_sec117.h5ad",
+    "wmb_paper_sec121.h5ad",
+    "wmb_paper_sec125.h5ad",
+    "wmb_paper_sec129.h5ad",
+    "wmb_paper_sec133.h5ad",
+    "wmb_paper_sec137.h5ad",
+    "wmb_paper_sec141.h5ad"
+  ],
+  "input": "raw imaging coordinates (obsm/spatial_section)",
+  "truth": "Allen CCF in-plane (z, -y), um, from the data authors' registration, in s000's raw frame via s000's similarity map",
+  "real_difficulty": "per-section scale 1.17 +/- 0.05 relative to the atlas; ~250 um non-rigid residual after best similarity fit",
+  "paper_source": "Zhang et al. 2023 whole mouse brain MERFISH (Zhuang ABCA-1); cellxgene release used by SABench Data99-227.",
+  "assets": [
+    {
+      "asset_id": "s000",
+      "role": "slice",
+      "path": "/users/ychen5/p2b-data/paper2bench-data/wmb_realistic/sa-415/s000.h5ad",
+      "format": "h5ad",
+      "visibility": "public",
+      "metadata": {
+        "n_obs": 12448,
+        "is_reference": true
+      }
+    },
+    {
+      "asset_id": "s001",
+      "role": "slice",
+      "path": "/users/ychen5/p2b-data/paper2bench-data/wmb_realistic/sa-415/s001.h5ad",
+      "format": "h5ad",
+      "visibility": "public",
+      "metadata": {
+        "n_obs": 16717,
+        "is_reference": false
+      }
+    },
+    {
+      "asset_id": "s002",
+      "role": "slice",
+      "path": "/users/ychen5/p2b-data/paper2bench-data/wmb_realistic/sa-415/s002.h5ad",
+      "format": "h5ad",
+      "visibility": "public",
+      "metadata": {
+        "n_obs": 16563,
+        "is_reference": false
+      }
+    },
+    {
+      "asset_id": "s003",
+      "role": "slice",
+      "path": "/users/ychen5/p2b-data/paper2bench-data/wmb_realistic/sa-415/s003.h5ad",
+      "format": "h5ad",
+      "visibility": "public",
+      "metadata": {
+        "n_obs": 18689,
+        "is_reference": false
+      }
+    },
+    {
+      "asset_id": "s004",
+      "role": "slice",
+      "path": "/users/ychen5/p2b-data/paper2bench-data/wmb_realistic/sa-415/s004.h5ad",
+      "format": "h5ad",
+      "visibility": "public",
+      "metadata": {
+        "n_obs": 12755,
+        "is_reference": false
+      }
+    },
+    {
+      "asset_id": "s005",
+      "role": "slice",
+      "path": "/users/ychen5/p2b-data/paper2bench-data/wmb_realistic/sa-415/s005.h5ad",
+      "format": "h5ad",
+      "visibility": "public",
+      "metadata": {
+        "n_obs": 14305,
+        "is_reference": false
+      }
+    },
+    {
+      "asset_id": "s006",
+      "role": "slice",
+      "path": "/users/ychen5/p2b-data/paper2bench-data/wmb_realistic/sa-415/s006.h5ad",
+      "format": "h5ad",
+      "visibility": "public",
+      "metadata": {
+        "n_obs": 14588,
+        "is_reference": false
+      }
+    },
+    {
+      "asset_id": "s007",
+      "role": "slice",
+      "path": "/users/ychen5/p2b-data/paper2bench-data/wmb_realistic/sa-415/s007.h5ad",
+      "format": "h5ad",
+      "visibility": "public",
+      "metadata": {
+        "n_obs": 15502,
+        "is_reference": false
+      }
+    },
+    {
+      "asset_id": "s008",
+      "role": "slice",
+      "path": "/users/ychen5/p2b-data/paper2bench-data/wmb_realistic/sa-415/s008.h5ad",
+      "format": "h5ad",
+      "visibility": "public",
+      "metadata": {
+        "n_obs": 20852,
+        "is_reference": false
+      }
+    },
+    {
+      "asset_id": "s009",
+      "role": "slice",
+      "path": "/users/ychen5/p2b-data/paper2bench-data/wmb_realistic/sa-415/s009.h5ad",
+      "format": "h5ad",
+      "visibility": "public",
+      "metadata": {
+        "n_obs": 27591,
+        "is_reference": false
+      }
+    },
+    {
+      "asset_id": "s010",
+      "role": "slice",
+      "path": "/users/ychen5/p2b-data/paper2bench-data/wmb_realistic/sa-415/s010.h5ad",
+      "format": "h5ad",
+      "visibility": "public",
+      "metadata": {
+        "n_obs": 30457,
+        "is_reference": false
+      }
+    },
+    {
+      "asset_id": "s011",
+      "role": "slice",
+      "path": "/users/ychen5/p2b-data/paper2bench-data/wmb_realistic/sa-415/s011.h5ad",
+      "format": "h5ad",
+      "visibility": "public",
+      "metadata": {
+        "n_obs": 34141,
+        "is_reference": false
+      }
+    },
+    {
+      "asset_id": "s012",
+      "role": "slice",
+      "path": "/users/ychen5/p2b-data/paper2bench-data/wmb_realistic/sa-415/s012.h5ad",
+      "format": "h5ad",
+      "visibility": "public",
+      "metadata": {
+        "n_obs": 34983,
+        "is_reference": false
+      }
+    },
+    {
+      "asset_id": "s013",
+      "role": "slice",
+      "path": "/users/ychen5/p2b-data/paper2bench-data/wmb_realistic/sa-415/s013.h5ad",
+      "format": "h5ad",
+      "visibility": "public",
+      "metadata": {
+        "n_obs": 40127,
+        "is_reference": false
+      }
+    },
+    {
+      "asset_id": "s014",
+      "role": "slice",
+      "path": "/users/ychen5/p2b-data/paper2bench-data/wmb_realistic/sa-415/s014.h5ad",
+      "format": "h5ad",
+      "visibility": "public",
+      "metadata": {
+        "n_obs": 36788,
+        "is_reference": false
+      }
+    },
+    {
+      "asset_id": "s015",
+      "role": "slice",
+      "path": "/users/ychen5/p2b-data/paper2bench-data/wmb_realistic/sa-415/s015.h5ad",
+      "format": "h5ad",
+      "visibility": "public",
+      "metadata": {
+        "n_obs": 36527,
+        "is_reference": false
+      }
+    },
+    {
+      "asset_id": "s016",
+      "role": "slice",
+      "path": "/users/ychen5/p2b-data/paper2bench-data/wmb_realistic/sa-415/s016.h5ad",
+      "format": "h5ad",
+      "visibility": "public",
+      "metadata": {
+        "n_obs": 38566,
+        "is_reference": false
+      }
+    },
+    {
+      "asset_id": "s017",
+      "role": "slice",
+      "path": "/users/ychen5/p2b-data/paper2bench-data/wmb_realistic/sa-415/s017.h5ad",
+      "format": "h5ad",
+      "visibility": "public",
+      "metadata": {
+        "n_obs": 44930,
+        "is_reference": false
+      }
+    },
+    {
+      "asset_id": "s018",
+      "role": "slice",
+      "path": "/users/ychen5/p2b-data/paper2bench-data/wmb_realistic/sa-415/s018.h5ad",
+      "format": "h5ad",
+      "visibility": "public",
+      "metadata": {
+        "n_obs": 47597,
+        "is_reference": false
+      }
+    },
+    {
+      "asset_id": "s019",
+      "role": "slice",
+      "path": "/users/ychen5/p2b-data/paper2bench-data/wmb_realistic/sa-415/s019.h5ad",
+      "format": "h5ad",
+      "visibility": "public",
+      "metadata": {
+        "n_obs": 41186,
+        "is_reference": false
+      }
+    },
+    {
+      "asset_id": "s020",
+      "role": "slice",
+      "path": "/users/ychen5/p2b-data/paper2bench-data/wmb_realistic/sa-415/s020.h5ad",
+      "format": "h5ad",
+      "visibility": "public",
+      "metadata": {
+        "n_obs": 41050,
+        "is_reference": false
+      }
+    },
+    {
+      "asset_id": "s021",
+      "role": "slice",
+      "path": "/users/ychen5/p2b-data/paper2bench-data/wmb_realistic/sa-415/s021.h5ad",
+      "format": "h5ad",
+      "visibility": "public",
+      "metadata": {
+        "n_obs": 35361,
+        "is_reference": false
+      }
+    },
+    {
+      "asset_id": "s022",
+      "role": "slice",
+      "path": "/users/ychen5/p2b-data/paper2bench-data/wmb_realistic/sa-415/s022.h5ad",
+      "format": "h5ad",
+      "visibility": "public",
+      "metadata": {
+        "n_obs": 38452,
+        "is_reference": false
+      }
+    },
+    {
+      "asset_id": "s023",
+      "role": "slice",
+      "path": "/users/ychen5/p2b-data/paper2bench-data/wmb_realistic/sa-415/s023.h5ad",
+      "format": "h5ad",
+      "visibility": "public",
+      "metadata": {
+        "n_obs": 38441,
+        "is_reference": false
+      }
+    },
+    {
+      "asset_id": "s024",
+      "role": "slice",
+      "path": "/users/ychen5/p2b-data/paper2bench-data/wmb_realistic/sa-415/s024.h5ad",
+      "format": "h5ad",
+      "visibility": "public",
+      "metadata": {
+        "n_obs": 35568,
+        "is_reference": false
+      }
+    },
+    {
+      "asset_id": "s025",
+      "role": "slice",
+      "path": "/users/ychen5/p2b-data/paper2bench-data/wmb_realistic/sa-415/s025.h5ad",
+      "format": "h5ad",
+      "visibility": "public",
+      "metadata": {
+        "n_obs": 29197,
+        "is_reference": false
+      }
+    },
+    {
+      "asset_id": "s026",
+      "role": "slice",
+      "path": "/users/ychen5/p2b-data/paper2bench-data/wmb_realistic/sa-415/s026.h5ad",
+      "format": "h5ad",
+      "visibility": "public",
+      "metadata": {
+        "n_obs": 20905,
+        "is_reference": false
+      }
+    },
+    {
+      "asset_id": "s027",
+      "role": "slice",
+      "path": "/users/ychen5/p2b-data/paper2bench-data/wmb_realistic/sa-415/s027.h5ad",
+      "format": "h5ad",
+      "visibility": "public",
+      "metadata": {
+        "n_obs": 23931,
+        "is_reference": false
+      }
+    },
+    {
+      "asset_id": "s028",
+      "role": "slice",
+      "path": "/users/ychen5/p2b-data/paper2bench-data/wmb_realistic/sa-415/s028.h5ad",
+      "format": "h5ad",
+      "visibility": "public",
+      "metadata": {
+        "n_obs": 23811,
+        "is_reference": false
+      }
+    },
+    {
+      "asset_id": "s029",
+      "role": "slice",
+      "path": "/users/ychen5/p2b-data/paper2bench-data/wmb_realistic/sa-415/s029.h5ad",
+      "format": "h5ad",
+      "visibility": "public",
+      "metadata": {
+        "n_obs": 25781,
+        "is_reference": false
+      }
+    },
+    {
+      "asset_id": "s030",
+      "role": "slice",
+      "path": "/users/ychen5/p2b-data/paper2bench-data/wmb_realistic/sa-415/s030.h5ad",
+      "format": "h5ad",
+      "visibility": "public",
+      "metadata": {
+        "n_obs": 23111,
+        "is_reference": false
+      }
+    },
+    {
+      "asset_id": "s031",
+      "role": "slice",
+      "path": "/users/ychen5/p2b-data/paper2bench-data/wmb_realistic/sa-415/s031.h5ad",
+      "format": "h5ad",
+      "visibility": "public",
+      "metadata": {
+        "n_obs": 20643,
+        "is_reference": false
+      }
+    },
+    {
+      "asset_id": "s032",
+      "role": "slice",
+      "path": "/users/ychen5/p2b-data/paper2bench-data/wmb_realistic/sa-415/s032.h5ad",
+      "format": "h5ad",
+      "visibility": "public",
+      "metadata": {
+        "n_obs": 13041,
+        "is_reference": false
+      }
+    }
+  ]
+}

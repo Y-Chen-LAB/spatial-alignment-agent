@@ -1,0 +1,22 @@
+id = "sa-410-starmapplus-sagittal3-stitch-overlap80"
+name = "STARmap PLUS stitching at 80% overlap (30, 60 and 90 degrees)"
+domain = "spatial_genomics"
+modality = "spatial_transcriptomics"
+task_type = "partial_overlap_alignment"
+difficulty = "medium"
+status = "executable_local"
+input_contract = "h5ad_spatial_v1"
+output_contract = "aligned_coordinate_csv_v1"
+metric_profile = "sabench_mae_region_gene_v1"
+label_key = "Region"
+marker_gene_file = "benchmarks/spatial_alignment/tasks/sa-410-starmapplus-sagittal3-stitch-overlap80/data/marker_genes.csv"
+max_marker_genes = 100
+slices = [
+  "target=/users/ychen5/p2b-data/paper2bench-data/geaso_tasks/sa-410/target.h5ad",
+  "source_rot030=/users/ychen5/p2b-data/paper2bench-data/geaso_tasks/sa-410/source_rot030.h5ad",
+  "source_rot060=/users/ychen5/p2b-data/paper2bench-data/geaso_tasks/sa-410/source_rot060.h5ad",
+  "source_rot090=/users/ychen5/p2b-data/paper2bench-data/geaso_tasks/sa-410/source_rot090.h5ad",
+]
+paper_source = "Shi et al. 2023 STARmap PLUS atlas (SCP1830), via the GEASO data release (Zenodo 18811760); GEASO Fig. 2C-D."
+pair_mode = "star"
+paper_metrics = "geaso_v1"

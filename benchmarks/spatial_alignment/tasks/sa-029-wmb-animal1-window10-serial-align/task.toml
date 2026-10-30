@@ -1,0 +1,16 @@
+id = "sa-029-wmb-animal1-window10-serial-align"
+name = "WMB MERFISH animal1 10-section serial alignment"
+domain = "spatial_genomics"
+modality = "spatial_transcriptomics"
+task_type = "serial_alignment"
+difficulty = "hard"
+status = "executable_local"
+input_contract = "h5ad_spatial_with_region_v1"
+output_contract = "aligned_coordinate_csv_v1"
+metric_profile = "sabench_light_alignment_v1"
+label_key = "Region"
+marker_gene_file = "benchmarks/spatial_alignment/tasks/sa-029-wmb-animal1-window10-serial-align/data/marker_genes.csv"
+max_marker_genes = 100
+slices = ["C57BL6J-1.071=benchmarks/spatial_alignment/compiled_data/wmb_partial/C57BL6J-1.071.h5ad", "C57BL6J-1.081=benchmarks/spatial_alignment/compiled_data/wmb_partial/C57BL6J-1.081.h5ad", "C57BL6J-1.073=benchmarks/spatial_alignment/compiled_data/wmb_partial/C57BL6J-1.073.h5ad", "C57BL6J-1.083=benchmarks/spatial_alignment/compiled_data/wmb_partial/C57BL6J-1.083.h5ad", "C57BL6J-1.046=benchmarks/spatial_alignment/compiled_data/wmb_partial/C57BL6J-1.046.h5ad", "C57BL6J-1.056=benchmarks/spatial_alignment/compiled_data/wmb_partial/C57BL6J-1.056.h5ad", "C57BL6J-1.066=benchmarks/spatial_alignment/compiled_data/wmb_partial/C57BL6J-1.066.h5ad", "C57BL6J-1.102=benchmarks/spatial_alignment/compiled_data/wmb_partial/C57BL6J-1.102.h5ad", "C57BL6J-1.096=benchmarks/spatial_alignment/compiled_data/wmb_partial/C57BL6J-1.096.h5ad", "C57BL6J-1.106=benchmarks/spatial_alignment/compiled_data/wmb_partial/C57BL6J-1.106.h5ad"]
+paper_data_ids = ["Data99-227_partial"]
+paper_source = "https://cellxgene.cziscience.com/collections/0cca8620-8dee-45d0-aef5-23f032a5cf09"

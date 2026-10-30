@@ -1,0 +1,20 @@
+{
+  "source": "SABench DLPFC with benchmark-generated hidden perturbations",
+  "public_slices": [
+    {
+      "id": "reference",
+      "path": "/Users/yiqun/Downloads/paper2bench-data/DLPFC/151673.h5ad"
+    },
+    {
+      "id": "moving",
+      "path": "benchmarks/spatial_alignment/compiled_data/perturbed/151674_rot090_crop050.h5ad"
+    }
+  ],
+  "public_instance": {
+    "rotation_degrees": 90,
+    "crop_overlap_percent": 50,
+    "report_json": "benchmarks/spatial_alignment/compiled_data/perturbed/reports/sa002_public_pair.json"
+  },
+  "hidden_perturbation_grid_file": "benchmarks/spatial_alignment/tasks/sa-002-dlpfc-robust-perturb/data/hidden_perturbation_grid.json",
+  "hidden_perturbations": ["rotation", "crop_overlap"]
+}

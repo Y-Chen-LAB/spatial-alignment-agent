@@ -1,0 +1,15 @@
+,PCC,Cos_Sim,SSIM,MI,Average_Accuracy,ROI_Overlap_Overall,Gene_based_overall,Landmark_based_overall
+PASTE,11,12,11,11,10,8,12,10
+PASTE_p0,12,12,12,9,10,7,12,8
+PASTE2,6,7,6,5,4,5,7,4
+GPSA,10,8,8,12,11,11,9,11
+STAligner_best,7,3,7,7,8,10,7,10
+STAligner_worst,14,13,14,13,12,12,14,12
+SLAT,10,9,10,8,7,9,8,7
+STalign,13,14,13,14,13,13,14,13
+CAST,5,5,5,5,6,6,5,6
+STAIR,4,4,4,6,5,5,4,5
+SPACEL,4,6,3,2,1,1,3,1
+Spateo_rigid,2,2,2,5,3,3,2,3
+Spateo_nonrigid,1,1,2,2,3,2,1,2
+SANTO,8,12,10,11,14,14,10,14

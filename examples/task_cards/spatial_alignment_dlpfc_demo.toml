@@ -1,0 +1,44 @@
+schema_version = "paper2bench.task_card.v0.1"
+task_id = "sa-card-demo-dlpfc-serial-align"
+suite_id = "sabench_spatial_alignment_v0"
+module = "spatial_alignment"
+domain = "spatial_genomics"
+modality = "spatial_transcriptomics"
+task_type = "serial_alignment"
+title = "DLPFC serial Visium alignment from a task card"
+difficulty = "starter"
+status = "draft_compilable"
+input_contract = "h5ad_spatial_with_region_v1"
+output_contract = "aligned_coordinate_csv_v1"
+metric_profile = "sabench_light_alignment_v1"
+label_key = "Region"
+marker_gene_file = "/Users/yiqun/Downloads/paper2bench-data/DLPFC/DLPFC_gene_list.csv"
+max_marker_genes = 25
+
+instruction = """
+Align the provided DLPFC Visium tissue slices into a shared coordinate frame.
+
+Create one coordinate CSV per runnable slice under submission/aligned_coordinates/.
+Each CSV must contain obs_id,x,y with obs_id values matching the corresponding
+input .h5ad observations.
+"""
+
+[[assets]]
+asset_id = "151673"
+path = "/Users/yiqun/Downloads/paper2bench-data/DLPFC/151673.h5ad"
+role = "slice"
+
+[[assets]]
+asset_id = "151674"
+path = "/Users/yiqun/Downloads/paper2bench-data/DLPFC/151674.h5ad"
+role = "slice"
+
+[[assets]]
+asset_id = "151675"
+path = "/Users/yiqun/Downloads/paper2bench-data/DLPFC/151675.h5ad"
+role = "slice"
+
+[[assets]]
+asset_id = "151676"
+path = "/Users/yiqun/Downloads/paper2bench-data/DLPFC/151676.h5ad"
+role = "slice"

@@ -1,0 +1,29 @@
+{
+  "schema_version": "paper2bench.data_manifest.v0.1",
+  "task_id": "sa-019-flysta3d-e14-16-3d-serial-align",
+  "source": "Wang et al. 2022 Flysta3D Drosophila E14-16h embryo Stereo-seq atlas (Data16-31 in SABench paper Yan et al. 2026)",
+  "compiler": "scripts/compile_flysta3d_slices.py",
+  "raw_inputs": [
+    "/Users/yiqun/Downloads/paper2bench-data/sabench_full/Data16-31_Flysta3D/E14-16h_a_count_normal_stereoseq.h5ad"
+  ],
+  "ground_truth_coords_obs_keys": ["x_GT", "y_GT", "z_GT"],
+  "perturbation": {"kind": "deterministic_rigid_per_slice", "seed_base": 160, "translation_fraction": 0.10},
+  "assets": [
+    {"asset_id": "flysta3d_e14_16_slice00", "format": "h5ad", "path": "/Users/yiqun/Downloads/paper2bench-data/Flysta3D/flysta3d_e14_16_slice00.h5ad", "role": "slice", "visibility": "public", "metadata": {"z": 0.0,  "n_obs": 482}},
+    {"asset_id": "flysta3d_e14_16_slice01", "format": "h5ad", "path": "/Users/yiqun/Downloads/paper2bench-data/Flysta3D/flysta3d_e14_16_slice01.h5ad", "role": "slice", "visibility": "public", "metadata": {"z": 0.7,  "n_obs": 549}},
+    {"asset_id": "flysta3d_e14_16_slice02", "format": "h5ad", "path": "/Users/yiqun/Downloads/paper2bench-data/Flysta3D/flysta3d_e14_16_slice02.h5ad", "role": "slice", "visibility": "public", "metadata": {"z": 1.4,  "n_obs": 598}},
+    {"asset_id": "flysta3d_e14_16_slice03", "format": "h5ad", "path": "/Users/yiqun/Downloads/paper2bench-data/Flysta3D/flysta3d_e14_16_slice03.h5ad", "role": "slice", "visibility": "public", "metadata": {"z": 2.1,  "n_obs": 713}},
+    {"asset_id": "flysta3d_e14_16_slice04", "format": "h5ad", "path": "/Users/yiqun/Downloads/paper2bench-data/Flysta3D/flysta3d_e14_16_slice04.h5ad", "role": "slice", "visibility": "public", "metadata": {"z": 2.8,  "n_obs": 744}},
+    {"asset_id": "flysta3d_e14_16_slice05", "format": "h5ad", "path": "/Users/yiqun/Downloads/paper2bench-data/Flysta3D/flysta3d_e14_16_slice05.h5ad", "role": "slice", "visibility": "public", "metadata": {"z": 3.5,  "n_obs": 815}},
+    {"asset_id": "flysta3d_e14_16_slice06", "format": "h5ad", "path": "/Users/yiqun/Downloads/paper2bench-data/Flysta3D/flysta3d_e14_16_slice06.h5ad", "role": "slice", "visibility": "public", "metadata": {"z": 4.2,  "n_obs": 925}},
+    {"asset_id": "flysta3d_e14_16_slice07", "format": "h5ad", "path": "/Users/yiqun/Downloads/paper2bench-data/Flysta3D/flysta3d_e14_16_slice07.h5ad", "role": "slice", "visibility": "public", "metadata": {"z": 4.9,  "n_obs": 1272}},
+    {"asset_id": "flysta3d_e14_16_slice08", "format": "h5ad", "path": "/Users/yiqun/Downloads/paper2bench-data/Flysta3D/flysta3d_e14_16_slice08.h5ad", "role": "slice", "visibility": "public", "metadata": {"z": 5.6,  "n_obs": 1263}},
+    {"asset_id": "flysta3d_e14_16_slice09", "format": "h5ad", "path": "/Users/yiqun/Downloads/paper2bench-data/Flysta3D/flysta3d_e14_16_slice09.h5ad", "role": "slice", "visibility": "public", "metadata": {"z": 6.3,  "n_obs": 1248}},
+    {"asset_id": "flysta3d_e14_16_slice10", "format": "h5ad", "path": "/Users/yiqun/Downloads/paper2bench-data/Flysta3D/flysta3d_e14_16_slice10.h5ad", "role": "slice", "visibility": "public", "metadata": {"z": 7.0,  "n_obs": 1039}},
+    {"asset_id": "flysta3d_e14_16_slice11", "format": "h5ad", "path": "/Users/yiqun/Downloads/paper2bench-data/Flysta3D/flysta3d_e14_16_slice11.h5ad", "role": "slice", "visibility": "public", "metadata": {"z": 7.7,  "n_obs": 1260}},
+    {"asset_id": "flysta3d_e14_16_slice12", "format": "h5ad", "path": "/Users/yiqun/Downloads/paper2bench-data/Flysta3D/flysta3d_e14_16_slice12.h5ad", "role": "slice", "visibility": "public", "metadata": {"z": 8.4,  "n_obs": 959}},
+    {"asset_id": "flysta3d_e14_16_slice13", "format": "h5ad", "path": "/Users/yiqun/Downloads/paper2bench-data/Flysta3D/flysta3d_e14_16_slice13.h5ad", "role": "slice", "visibility": "public", "metadata": {"z": 9.1,  "n_obs": 1078}},
+    {"asset_id": "flysta3d_e14_16_slice14", "format": "h5ad", "path": "/Users/yiqun/Downloads/paper2bench-data/Flysta3D/flysta3d_e14_16_slice14.h5ad", "role": "slice", "visibility": "public", "metadata": {"z": 9.8,  "n_obs": 1240}},
+    {"asset_id": "flysta3d_e14_16_slice15", "format": "h5ad", "path": "/Users/yiqun/Downloads/paper2bench-data/Flysta3D/flysta3d_e14_16_slice15.h5ad", "role": "slice", "visibility": "public", "metadata": {"z": 10.5, "n_obs": 1110}}
+  ]
+}

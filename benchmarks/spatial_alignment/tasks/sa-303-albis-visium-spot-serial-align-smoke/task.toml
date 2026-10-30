@@ -1,0 +1,20 @@
+id = "sa-303-albis-visium-spot-serial-align-smoke"
+name = "Albis visium spot serial alignment (smoke)"
+domain = "spatial_genomics"
+modality = "spatial_transcriptomics"
+task_type = "serial_alignment_simulated_ground_truth"
+difficulty = "standard"
+status = "executable_local"
+input_contract = "h5ad_spatial_v1"
+output_contract = "aligned_coordinate_csv_v1"
+metric_profile = "albis_alignment_v1"
+label_key = "Region"
+marker_gene_file = "benchmarks/spatial_alignment/tasks/sa-303-albis-visium-spot-serial-align-smoke/data/marker_genes.csv"
+max_marker_genes = 100
+slices = [
+  "s00=/users/ychen5/p2b-data/paper2bench-data/albis_sim_smoke/visium_spot/slices/s00.h5ad",
+  "s01=/users/ychen5/p2b-data/paper2bench-data/albis_sim_smoke/visium_spot/slices/s01.h5ad",
+  "s02=/users/ychen5/p2b-data/paper2bench-data/albis_sim_smoke/visium_spot/slices/s02.h5ad",
+  "s03=/users/ychen5/p2b-data/paper2bench-data/albis_sim_smoke/visium_spot/slices/s03.h5ad",
+]
+paper_source = "Albis simulation, dataset visium_spot (Visium-like 55um spots on a 100um lattice); scale=smoke; n_cells=5000, sphere_R_um=415.6, n_slices=4, batch_sigma=0.3, max_deg=270.0, max_shift=207.8. Ground truth in slice s00's frame."

@@ -1,0 +1,5 @@
+run_index,cell,agent,model,task,condition,rep,prompt_variant,prebootstrap,in_design_subset,shard,runnable_today
+0,bare_rep2_20261017,claude,claude-opus-5-5,sa-311-albis-visiumhd-bin32-serial-align,bare,2,full-basic,never,True,1,True
+1,bare_rep2_20261017,claude,claude-opus-5-5,sa-312-albis-strongmix-cell-7domain-serial-align,bare,2,full-basic,never,True,1,True
+2,bare_rep2_20261017,gemini,gemini-3.5-flash,sa-311-albis-visiumhd-bin32-serial-align,bare,2,full-basic,never,True,1,True
+3,bare_rep2_20261017,gemini,gemini-3.5-flash,sa-312-albis-strongmix-cell-7domain-serial-align,bare,2,full-basic,never,True,1,True

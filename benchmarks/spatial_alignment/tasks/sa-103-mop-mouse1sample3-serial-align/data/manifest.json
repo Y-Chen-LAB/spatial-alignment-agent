@@ -1,0 +1,50 @@
+{
+  "assets": [
+    {
+      "asset_id": "mouse1_slice112",
+      "format": "h5ad",
+      "metadata": {
+        "n_obs": 4996,
+        "sample_ids": "mouse1sample3"
+      },
+      "path": "benchmarks/spatial_alignment/compiled_data/mop_paper/mouse1_slice112.h5ad",
+      "role": "slice",
+      "visibility": "public"
+    },
+    {
+      "asset_id": "mouse1_slice122",
+      "format": "h5ad",
+      "metadata": {
+        "n_obs": 6185,
+        "sample_ids": "mouse1sample3"
+      },
+      "path": "benchmarks/spatial_alignment/compiled_data/mop_paper/mouse1_slice122.h5ad",
+      "role": "slice",
+      "visibility": "public"
+    },
+    {
+      "asset_id": "mouse1_slice131",
+      "format": "h5ad",
+      "metadata": {
+        "n_obs": 5061,
+        "sample_ids": "mouse1sample3"
+      },
+      "path": "benchmarks/spatial_alignment/compiled_data/mop_paper/mouse1_slice131.h5ad",
+      "role": "slice",
+      "visibility": "public"
+    },
+    {
+      "asset_id": "mouse1_slice153",
+      "format": "h5ad",
+      "metadata": {
+        "n_obs": 7626,
+        "sample_ids": "mouse1sample3"
+      },
+      "path": "benchmarks/spatial_alignment/compiled_data/mop_paper/mouse1_slice153.h5ad",
+      "role": "slice",
+      "visibility": "public"
+    }
+  ],
+  "schema_version": "paper2bench.data_manifest.v0.1",
+  "task_id": "sa-103-mop-mouse1sample3-serial-align"
+}

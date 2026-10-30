@@ -1,0 +1,36 @@
+{
+  "schema_version": "paper2bench.data_manifest.v0.1",
+  "task_id": "sa-014-bca-xenium-serial-align",
+  "source": "SABench breast cancer Xenium raw pair (Data229-230) with annotation-bearing raw h5ad slices",
+  "raw_inputs": [
+    "/Users/yiqun/Downloads/paper2bench-data/BCA_raw/slice_Rep1.h5ad",
+    "/Users/yiqun/Downloads/paper2bench-data/BCA_raw/slice_Rep2.h5ad",
+    "/Users/yiqun/Downloads/paper2bench-data/sabench_full/Data228-230_BCA_raw/Xenium_FFPE_Human_Breast_Cancer_Rep1_outs.zip"
+  ],
+  "assets": [
+    {
+      "asset_id": "slice_Rep1",
+      "format": "h5ad",
+      "path": "/Users/yiqun/Downloads/paper2bench-data/BCA_raw/slice_Rep1.h5ad",
+      "role": "slice",
+      "visibility": "public",
+      "metadata": {"platform": "10x_Xenium", "n_obs": 167780, "n_var": 313, "label_key": "Cluster"}
+    },
+    {
+      "asset_id": "slice_Rep2",
+      "format": "h5ad",
+      "path": "/Users/yiqun/Downloads/paper2bench-data/BCA_raw/slice_Rep2.h5ad",
+      "role": "slice",
+      "visibility": "public",
+      "metadata": {"platform": "10x_Xenium", "n_obs": 118752, "n_var": 313, "label_key": "Cluster"}
+    },
+    {
+      "asset_id": "compiled_rep1_raw_bundle",
+      "format": "h5ad",
+      "path": "benchmarks/spatial_alignment/compiled_data/xenium/xenium_ffpe_human_breast_cancer_rep1.h5ad",
+      "role": "provenance_reference",
+      "visibility": "public",
+      "metadata": {"compiler": "scripts/compile_xenium_10x_bundle.py"}
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "source": "SABench BCA raw, downsampled, and STAligner downsampled-result tutorial data",
+  "raw_slices": [
+    {
+      "id": "slice_Rep1",
+      "path": "/Users/yiqun/Downloads/paper2bench-data/BCA_raw/slice_Rep1.h5ad"
+    },
+    {
+      "id": "slice_Rep2",
+      "path": "/Users/yiqun/Downloads/paper2bench-data/BCA_raw/slice_Rep2.h5ad"
+    }
+  ],
+  "downsampled_slices": [
+    {
+      "id": "slice_Rep1_DR",
+      "path": "/Users/yiqun/Downloads/paper2bench-data/BCA_downsampled/slice_Rep1_DR.h5ad"
+    },
+    {
+      "id": "slice_Rep2_DR",
+      "path": "/Users/yiqun/Downloads/paper2bench-data/BCA_downsampled/slice_Rep2_DR.h5ad"
+    }
+  ],
+  "provided_downsampled_reference": [
+    {
+      "id": "STAligner_BCA_new_slices_Rep1",
+      "path": "/Users/yiqun/Downloads/paper2bench-data/BCA_STAligner_DR/STAligner_BCA_new_slices_Rep1.h5ad"
+    },
+    {
+      "id": "STAligner_BCA_new_slices_Rep2",
+      "path": "/Users/yiqun/Downloads/paper2bench-data/BCA_STAligner_DR/STAligner_BCA_new_slices_Rep2.h5ad"
+    }
+  ]
+}

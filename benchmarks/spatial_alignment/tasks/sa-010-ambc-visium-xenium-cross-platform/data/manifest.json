@@ -1,0 +1,18 @@
+{
+  "schema_version": "paper2bench.data_manifest.v0.1",
+  "task_id": "sa-010-ambc-visium-xenium-cross-platform",
+  "source": "10x Visium AMBC (Data231) and 10x Xenium V1 multisection mouse brain (Data234) — SABench paper Yan et al. 2026 Data231-240 family",
+  "compilers": [
+    "scripts/preprocess_10x_visium_to_h5ad.py (Data231)",
+    "scripts/compile_xenium_10x_bundle.py (Data234)"
+  ],
+  "raw_inputs": [
+    "/Users/yiqun/Downloads/paper2bench-data/sabench_full/Data231_AMBC_Visium/V1_Adult_Mouse_Brain.h5",
+    "/Users/yiqun/Downloads/paper2bench-data/sabench_full/Data231_AMBC_Visium/V1_Adult_Mouse_Brain_spatial.tar.gz",
+    "/Users/yiqun/Downloads/paper2bench-data/sabench_full/Data234_AMBC_Xenium/Xenium_V1_FF_Mouse_Brain_MultiSection_1_outs.zip"
+  ],
+  "assets": [
+    {"asset_id": "Data231_visium", "format": "h5ad", "path": "/Users/yiqun/Downloads/paper2bench-data/AMBC_Visium/Data231_adult_mouse_brain.h5ad", "role": "slice", "visibility": "public", "metadata": {"platform": "10x_Visium", "n_obs": 2702, "n_var": 32285}},
+    {"asset_id": "Data234_xenium_v1_section1", "format": "h5ad", "path": "benchmarks/spatial_alignment/compiled_data/xenium/xenium_v1_ff_mouse_brain_multisection_1.h5ad", "role": "slice", "visibility": "public", "metadata": {"platform": "10x_Xenium_V1", "n_obs": 162033, "n_var": 541}}
+  ]
+}

@@ -1,0 +1,93 @@
+task,profile,difficulty,n_slices,pair_mode,task_type,historical_runs,has_paper_numbers,family
+sa-001-dlpfc-serial-align,sabench_light_alignment_v1,starter,4,consecutive,serial_alignment,38,"MOESM7 DLPFC gene+landmark, 15 methods",dlpfc
+sa-002-dlpfc-robust-perturb,sabench_light_robustness_v1,medium,2,consecutive,robust_alignment,13,,dlpfc
+sa-003-dlpfc-coarse-shuffled-pair,sabench_light_alignment_v1,medium,2,consecutive,coarse_pair_alignment,14,,dlpfc
+sa-004-bca-downsampled-pair-align,sabench_gene_only_alignment_v1,medium,2,consecutive,large_scale_downsampled_alignment,13,,bca
+sa-005-bca-resolution-recovery,resolution_recovery_alignment_v1,hard,0,consecutive,resolution_recovery_alignment,12,,bca
+sa-006-mbsa-serial-align,sabench_gene_only_alignment_v1,starter,2,consecutive,serial_alignment,11,,mbsa
+sa-007-mbsp-serial-align,sabench_gene_only_alignment_v1,starter,2,consecutive,serial_alignment,11,,mbsp
+sa-008-ambc-xenium-multisection-serial-align,sabench_gene_only_alignment_v1,starter,3,consecutive,serial_alignment,11,,ambc
+sa-009-mhpr-merfish-serial-align,sabench_light_alignment_v1,starter,5,consecutive,serial_alignment,32,"MOESM7 MHPR gene+landmark, 16 methods",mhpr
+sa-010-ambc-visium-xenium-cross-platform,sabench_gene_only_alignment_v1,medium,2,consecutive,cross_platform_pair_alignment,19,,ambc
+sa-011-scc-p2-serial-align,sabench_gene_only_alignment_v1,medium,3,consecutive,serial_alignment,11,,scc
+sa-012-scc-p5-serial-align,sabench_gene_only_alignment_v1,medium,3,consecutive,serial_alignment,12,,scc
+sa-013-ambc-visium-xenium5k-cross-platform,sabench_gene_only_alignment_v1,medium,2,consecutive,cross_platform_pair_alignment,17,,ambc
+sa-014-bca-xenium-serial-align,sabench_geometry_gene_alignment_v1,hard,2,consecutive,serial_alignment,11,,bca
+sa-015-ambc-visium-visiumhd-cross-resolution,sabench_gene_only_alignment_v1,medium,2,consecutive,cross_resolution_pair_alignment,13,,ambc
+sa-016-ambc-visium-starmapplus-cross-platform,sabench_gene_only_alignment_v1,medium,2,consecutive,cross_platform_pair_alignment,21,,ambc
+sa-017-baristaseq-mpc-serial-align,sabench_light_alignment_v1,medium,3,consecutive,serial_alignment,13,,baristaseq
+sa-018-starmap-mmpc-serial-align,sabench_light_alignment_v1,medium,3,consecutive,serial_alignment,10,,starmap
+sa-019-flysta3d-e14-16-3d-serial-align,sabench_mae_gene_efficiency_v1,hard,16,consecutive,serial_alignment_3d_ground_truth,30,"MOESM10 Flysta3D MAE, 16 slices x 10 methods",flysta3d
+sa-020-mop-mouse1-atlas-serial-align,sabench_light_alignment_v1,hard,33,consecutive,large_scale_serial_alignment,11,,mop
+sa-021-mop-mouse2-atlas-serial-align,sabench_light_alignment_v1,hard,31,consecutive,large_scale_serial_alignment,9,,mop
+sa-022-openst-mln-serial-align,sabench_light_alignment_v1,hard,19,consecutive,large_scale_serial_alignment,21,,openst
+sa-023-wmb-zhuang-abca1-129-section-3d-mae,sabench_mae_gene_efficiency_v1,hard,129,consecutive,large_scale_serial_alignment_3d_ground_truth,19,,wmb
+sa-025-openst-mln-adjacent-02-03-3d-align,sabench_mae_gene_efficiency_v1,medium,2,consecutive,pair_alignment_3d_ground_truth,14,,openst
+sa-026-openst-mln-early-window-02-06-3d-align,sabench_mae_gene_efficiency_v1,hard,5,consecutive,serial_alignment_3d_ground_truth,14,,openst
+sa-027-openst-mln-full-19-slice-3d-align,sabench_mae_gene_efficiency_v1,hard,19,consecutive,serial_alignment_3d_ground_truth,13,"MOESM10 MLN MAE, 19 slices x 5 methods",openst
+sa-028-wmb-animal1-window5-serial-align,sabench_light_alignment_v1,hard,5,consecutive,serial_alignment,11,,wmb
+sa-029-wmb-animal1-window10-serial-align,sabench_light_alignment_v1,hard,10,consecutive,serial_alignment,10,,wmb
+sa-030-mob-stereoseq-slideseqv2-cross-platform,sabench_gene_only_alignment_v1,medium,2,consecutive,cross_platform_pair_alignment,0,"MOESM10 MOB gene, 15 methods",mob
+sa-031-mbrm-vizgen-serial-align,sabench_gene_only_alignment_v1,medium,3,consecutive,serial_alignment,0,,mbrm
+sa-032-bca-visium-xenium-cross-platform,sabench_gene_only_alignment_v1,hard,3,star,cross_platform_pair_alignment,0,,bca
+sa-040-dlpfc-rotation-sweep,sabench_light_robustness_v1,medium,26,star,robustness_sweep,0,"MOESM8 DLPFC rotation, 25 levels x 24 methods",dlpfc
+sa-041-dlpfc-crop-sweep,sabench_light_robustness_v1,medium,11,star,robustness_sweep,0,"MOESM8 DLPFC crop, 10 levels x 12 methods",dlpfc
+sa-042-mhpr-rotation-sweep,sabench_light_robustness_v1,medium,26,star,robustness_sweep,0,"MOESM8 MHPR rotation, 25 levels x 13 methods",mhpr
+sa-043-mhpr-crop-sweep,sabench_light_robustness_v1,medium,11,star,robustness_sweep,0,"MOESM8 MHPR crop, 10 levels x 13 methods",mhpr
+sa-101-mop-mouse1sample1-serial-align,sabench_light_alignment_v1,extended,6,consecutive,serial_alignment,13,,mop
+sa-102-mop-mouse1sample2-serial-align,sabench_light_alignment_v1,extended,5,consecutive,serial_alignment,10,,mop
+sa-103-mop-mouse1sample3-serial-align,sabench_light_alignment_v1,extended,4,consecutive,serial_alignment,9,,mop
+sa-104-mop-mouse1sample4-serial-align,sabench_light_alignment_v1,extended,6,consecutive,serial_alignment,11,,mop
+sa-105-mop-mouse1sample5-serial-align,sabench_light_alignment_v1,extended,6,consecutive,serial_alignment,10,,mop
+sa-106-mop-mouse1sample6-serial-align,sabench_light_alignment_v1,extended,6,consecutive,serial_alignment,9,,mop
+sa-107-mop-mouse2sample1-serial-align,sabench_light_alignment_v1,extended,4,consecutive,serial_alignment,10,,mop
+sa-108-mop-mouse2sample2-serial-align,sabench_light_alignment_v1,extended,6,consecutive,serial_alignment,9,,mop
+sa-109-mop-mouse2sample3-serial-align,sabench_light_alignment_v1,extended,6,consecutive,serial_alignment,9,,mop
+sa-110-mop-mouse2sample4-serial-align,sabench_light_alignment_v1,extended,5,consecutive,serial_alignment,9,,mop
+sa-111-mop-mouse2sample5-serial-align,sabench_light_alignment_v1,extended,5,consecutive,serial_alignment,9,,mop
+sa-112-mop-mouse2sample6-serial-align,sabench_light_alignment_v1,extended,5,consecutive,serial_alignment,9,,mop
+sa-201-ambc-st-visium-pair,sabench_gene_only_alignment_v1,medium,2,consecutive,cross_platform_pair_alignment,0,,ambc
+sa-202-ambc-st-visiumhd-pair,sabench_gene_only_alignment_v1,medium,2,consecutive,cross_platform_pair_alignment,0,,ambc
+sa-203-ambc-st-xenium-pair,sabench_gene_only_alignment_v1,medium,2,consecutive,cross_platform_pair_alignment,0,,ambc
+sa-204-ambc-st-xenium5k-pair,sabench_gene_only_alignment_v1,medium,2,consecutive,cross_platform_pair_alignment,0,,ambc
+sa-205-ambc-st-merfish-pair,sabench_gene_only_alignment_v1,medium,2,consecutive,cross_platform_pair_alignment,0,,ambc
+sa-206-ambc-st-starmapplus-pair,sabench_light_alignment_v1,medium,2,consecutive,cross_platform_pair_alignment,0,,ambc
+sa-207-ambc-st-slideseq-pair,sabench_light_alignment_v1,medium,2,consecutive,cross_platform_pair_alignment,0,,ambc
+sa-208-ambc-st-stereoseq-pair,sabench_light_alignment_v1,medium,2,consecutive,cross_platform_pair_alignment,0,,ambc
+sa-209-ambc-st-cosmx-pair,sabench_gene_only_alignment_v1,medium,2,consecutive,cross_platform_pair_alignment,0,,ambc
+sa-210-ambc-visium-visiumhd-pair,sabench_gene_only_alignment_v1,medium,2,consecutive,cross_platform_pair_alignment,0,,ambc
+sa-211-ambc-visium-xenium-pair,sabench_gene_only_alignment_v1,medium,2,consecutive,cross_platform_pair_alignment,0,,ambc
+sa-212-ambc-visium-xenium5k-pair,sabench_gene_only_alignment_v1,medium,2,consecutive,cross_platform_pair_alignment,0,,ambc
+sa-213-ambc-visium-merfish-pair,sabench_gene_only_alignment_v1,medium,2,consecutive,cross_platform_pair_alignment,0,,ambc
+sa-214-ambc-visium-starmapplus-pair,sabench_gene_only_alignment_v1,medium,2,consecutive,cross_platform_pair_alignment,0,,ambc
+sa-215-ambc-visium-slideseq-pair,sabench_gene_only_alignment_v1,medium,2,consecutive,cross_platform_pair_alignment,0,,ambc
+sa-216-ambc-visium-stereoseq-pair,sabench_gene_only_alignment_v1,medium,2,consecutive,cross_platform_pair_alignment,0,,ambc
+sa-217-ambc-visium-cosmx-pair,sabench_gene_only_alignment_v1,medium,2,consecutive,cross_platform_pair_alignment,0,,ambc
+sa-218-ambc-visiumhd-xenium-pair,sabench_gene_only_alignment_v1,medium,2,consecutive,cross_platform_pair_alignment,0,,ambc
+sa-219-ambc-visiumhd-xenium5k-pair,sabench_gene_only_alignment_v1,medium,2,consecutive,cross_platform_pair_alignment,0,,ambc
+sa-220-ambc-visiumhd-merfish-pair,sabench_gene_only_alignment_v1,medium,2,consecutive,cross_platform_pair_alignment,0,,ambc
+sa-221-ambc-visiumhd-starmapplus-pair,sabench_gene_only_alignment_v1,medium,2,consecutive,cross_platform_pair_alignment,0,,ambc
+sa-222-ambc-visiumhd-slideseq-pair,sabench_gene_only_alignment_v1,medium,2,consecutive,cross_platform_pair_alignment,0,,ambc
+sa-223-ambc-visiumhd-stereoseq-pair,sabench_gene_only_alignment_v1,medium,2,consecutive,cross_platform_pair_alignment,0,,ambc
+sa-224-ambc-visiumhd-cosmx-pair,sabench_gene_only_alignment_v1,medium,2,consecutive,cross_platform_pair_alignment,0,,ambc
+sa-225-ambc-xenium-xenium5k-pair,sabench_gene_only_alignment_v1,medium,2,consecutive,cross_platform_pair_alignment,0,,ambc
+sa-226-ambc-xenium-merfish-pair,sabench_gene_only_alignment_v1,medium,2,consecutive,cross_platform_pair_alignment,0,,ambc
+sa-227-ambc-xenium-starmapplus-pair,sabench_gene_only_alignment_v1,medium,2,consecutive,cross_platform_pair_alignment,0,,ambc
+sa-228-ambc-xenium-slideseq-pair,sabench_gene_only_alignment_v1,medium,2,consecutive,cross_platform_pair_alignment,0,,ambc
+sa-229-ambc-xenium-stereoseq-pair,sabench_gene_only_alignment_v1,medium,2,consecutive,cross_platform_pair_alignment,0,,ambc
+sa-230-ambc-xenium-cosmx-pair,sabench_gene_only_alignment_v1,medium,2,consecutive,cross_platform_pair_alignment,0,,ambc
+sa-231-ambc-xenium5k-merfish-pair,sabench_gene_only_alignment_v1,medium,2,consecutive,cross_platform_pair_alignment,0,,ambc
+sa-232-ambc-xenium5k-starmapplus-pair,sabench_gene_only_alignment_v1,medium,2,consecutive,cross_platform_pair_alignment,0,,ambc
+sa-233-ambc-xenium5k-slideseq-pair,sabench_gene_only_alignment_v1,medium,2,consecutive,cross_platform_pair_alignment,0,,ambc
+sa-234-ambc-xenium5k-stereoseq-pair,sabench_gene_only_alignment_v1,medium,2,consecutive,cross_platform_pair_alignment,0,,ambc
+sa-235-ambc-xenium5k-cosmx-pair,sabench_gene_only_alignment_v1,medium,2,consecutive,cross_platform_pair_alignment,0,,ambc
+sa-236-ambc-merfish-starmapplus-pair,sabench_gene_only_alignment_v1,medium,2,consecutive,cross_platform_pair_alignment,0,,ambc
+sa-237-ambc-merfish-slideseq-pair,sabench_gene_only_alignment_v1,medium,2,consecutive,cross_platform_pair_alignment,0,,ambc
+sa-238-ambc-merfish-stereoseq-pair,sabench_gene_only_alignment_v1,medium,2,consecutive,cross_platform_pair_alignment,0,,ambc
+sa-239-ambc-merfish-cosmx-pair,sabench_gene_only_alignment_v1,medium,2,consecutive,cross_platform_pair_alignment,0,,ambc
+sa-240-ambc-starmapplus-slideseq-pair,sabench_light_alignment_v1,medium,2,consecutive,cross_platform_pair_alignment,0,,ambc
+sa-241-ambc-starmapplus-stereoseq-pair,sabench_light_alignment_v1,medium,2,consecutive,cross_platform_pair_alignment,0,,ambc
+sa-242-ambc-starmapplus-cosmx-pair,sabench_gene_only_alignment_v1,medium,2,consecutive,cross_platform_pair_alignment,0,,ambc
+sa-243-ambc-slideseq-stereoseq-pair,sabench_light_alignment_v1,medium,2,consecutive,cross_platform_pair_alignment,0,,ambc
+sa-244-ambc-slideseq-cosmx-pair,sabench_gene_only_alignment_v1,medium,2,consecutive,cross_platform_pair_alignment,0,,ambc
+sa-245-ambc-stereoseq-cosmx-pair,sabench_gene_only_alignment_v1,medium,2,consecutive,cross_platform_pair_alignment,0,,ambc

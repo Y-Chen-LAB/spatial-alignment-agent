@@ -1,0 +1,166 @@
+schema_version = 1
+description = "Workspace-local environments for package-backed spatial alignment methods."
+
+[base]
+env = ".method-venv"
+python = "3.11"
+stack = "old"
+role = "General data handling and compatibility H5AD materialization only."
+
+[groups]
+paper_common = ["spateo", "gpsa", "stair", "stalign", "ot"]
+paper_all = ["staligner", "spateo", "gpsa", "cast", "stair", "santo", "spacel", "scslat", "stalign", "ot"]
+probe_order = ["staligner", "spateo", "gpsa", "cast", "stair", "santo", "spacel", "scslat", "stalign", "ot", "paste2", "paste"]
+
+[aliases]
+paste = "ot"
+paste2 = "ot"
+slat = "scslat"
+
+[stacks.old]
+packages = [
+  "numpy<2",
+  "pandas<2",
+  "scipy<1.12",
+  "h5py<3.15",
+  "anndata==0.7.8",
+  "scikit-learn",
+  "scikit-image",
+  "matplotlib",
+  "seaborn",
+]
+
+[stacks.modern]
+packages = [
+  "numpy<2",
+  "pandas>=2.1,<2.3",
+  "scipy<1.12",
+  "h5py<3.15",
+  "anndata>=0.10,<0.11",
+  "scikit-learn",
+  "scikit-image",
+  "matplotlib",
+  "seaborn",
+]
+
+[stacks.loose]
+packages = [
+  "numpy<2",
+  "h5py<3.15",
+  "scipy",
+  "pandas",
+  "anndata",
+  "scikit-learn",
+  "scikit-image",
+  "matplotlib",
+  "seaborn",
+]
+
+[methods.ot]
+display = "PASTE / PASTE2 OT family"
+env = ".method-venv-ot"
+python = "3.11"
+stack = "old"
+records = ["ot", "paste", "paste2"]
+env_aliases = [".method-venv-paste", ".method-venv-paste2"]
+packages = ["pot>=0.9.1", "paste-bio", "paste2"]
+post_install = "paste_pot_compat"
+notes = "PASTE and PASTE2 share this env because paste-bio imports successfully with POT>=0.9.1 and PASTE2 requires newer POT. The post-install hook patches paste-bio's POT line-search callback signature for POT 0.9.6+."
+
+[methods.gpsa]
+display = "GPSA"
+env = ".method-venv-gpsa"
+python = "3.11"
+stack = "loose"
+records = ["gpsa"]
+packages = ["gpsa-engelhardt"]
+
+[methods.stair]
+display = "STAIR"
+env = ".method-venv-stair"
+python = "3.11"
+stack = "loose"
+records = ["stair"]
+# STAIR imports scanpy, tqdm and torch but does not declare them (every equipped run failed to import it); versions follow
+# the baseline env (torch 2.6, torch-geometric 2.8)
+packages = ["STAIR-tools", "scanpy", "tqdm", "torch==2.6.0", "torch-geometric==2.8.0"]
+
+[methods.spacel]
+display = "SPACEL"
+env = ".method-venv-spacel"
+python = "3.11"
+stack = "loose"
+records = ["spacel"]
+packages = ["SPACEL"]
+post_install = "spacel_single_worker"
+
+[methods.spateo]
+display = "spateo"
+env = ".method-venv-spateo"
+python = "3.11"
+stack = "loose"
+records = ["spateo"]
+# statsmodels 0.15 dropped sandbox.stats.multicomp.multipletests, which spateo imports; 0.14.6 is the baseline env's
+packages = ["spateo-release", "statsmodels==0.14.6"]
+# opencv-python needs libGL, which the image lacks; the headless build of the same version does not
+post_install = "opencv_headless"
+
+[methods.stalign]
+display = "STalign"
+env = ".method-venv-stalign"
+python = "3.11"
+stack = "loose"
+records = ["stalign"]
+packages = ["STalign @ git+https://github.com/JEFworks-Lab/STalign.git@b2068edc98974efa54537eca194736e177bbe11d"]
+# was a file:// path from a September local run that the container cannot see (KNOWN_ISSUES.md, 2026-10-23); same commit
+
+[methods.scslat]
+display = "scSLAT / SLAT"
+env = ".method-venv-scslat"
+python = "3.11"
+stack = "loose"
+records = ["scslat", "slat"]
+# torch-scatter / torch-sparse come from the wheelhouse (no compiler in the image), versions as in the baseline env
+packages = ["scSLAT", "torch==2.3.1", "torch-scatter==2.1.2+pt23cu121", "torch-sparse==0.6.18+pt23cu121"]
+post_packages = ["zarr<3"]
+# scSLAT imports cv2; opencv-python needs libGL, which the image lacks
+post_install = "opencv_headless"
+notes = "The slat target aliases to scSLAT because scSLAT implements the SLAT method family. scSLAT 0.3.0 rejects zarr-python major version >2 at import, so the post-install pin keeps zarr<3 after the loose anndata stack is installed."
+
+[methods.cast]
+display = "CAST"
+env = ".method-venv-cast"
+python = "3.11"
+stack = "loose"
+records = ["cast"]
+packages = [
+  "CAST @ git+https://github.com/wanglab-broad/CAST.git",
+  "torch==2.2.2",
+  "torchdata==0.7.1",
+  # the PyPI dgl has no graphbolt library for torch 2.2 ("Cannot find DGL C++ graphbolt library"); 2.4.0 built for
+  # torch 2.2 (data.dgl.ai, in the wheelhouse) is the baseline env's
+  "dgl==2.4.0+cu121",
+  "pydantic",
+]
+notes = "CAST imports DGL; current DGL wheels require compatible Torch and torchdata versions."
+
+[methods.staligner]
+display = "STAligner"
+env = ".method-venv-staligner"
+python = "3.11"
+stack = "loose"
+records = ["staligner"]
+packages = ["torch==2.3.1", "torch-geometric==2.5.3", "annoy", "hnswlib"]
+no_build_isolation_packages = ["torch-scatter", "torch-sparse"]
+post_packages = ["STAligner @ git+https://github.com/zhoux85/STAligner.git"]
+notes = "STAligner needs PyTorch/PyG extension packages installed in a controlled order."
+
+[methods.santo]
+display = "SANTO"
+env = ".method-venv-santo"
+python = "3.10"
+stack = "loose"
+records = ["santo"]
+packages = ["santo"]
+post_install = "santo_path"
+notes = "SANTO uses an older Python/Torch-oriented stack, so it stays isolated."

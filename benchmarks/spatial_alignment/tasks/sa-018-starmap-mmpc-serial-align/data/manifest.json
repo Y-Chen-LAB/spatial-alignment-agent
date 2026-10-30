@@ -1,0 +1,44 @@
+{
+  "schema_version": "paper2bench.data_manifest.v0.1",
+  "task_id": "sa-018-starmap-mmpc-serial-align",
+  "source": "https://doi.org/10.1038/s41592-024-02215-8 (SDMBench processed STARmap slices used by SABench Data39-41)",
+  "compiler": "scripts/materialize_sdmbench_imaging_tasks.py",
+  "raw_inputs": [
+    "/Users/yiqun/Downloads/22565200.zip"
+  ],
+  "assets": [
+    {
+      "asset_id": "Data39_slice1",
+      "format": "h5ad",
+      "path": "benchmarks/spatial_alignment/compiled_data/sdmbench/data39_slice1_seed39_rigid.h5ad",
+      "role": "slice",
+      "visibility": "public",
+      "metadata": {
+        "n_obs": 1049,
+        "n_var": 166
+      }
+    },
+    {
+      "asset_id": "Data40_slice2",
+      "format": "h5ad",
+      "path": "benchmarks/spatial_alignment/compiled_data/sdmbench/data40_slice2_seed40_rigid.h5ad",
+      "role": "slice",
+      "visibility": "public",
+      "metadata": {
+        "n_obs": 1053,
+        "n_var": 166
+      }
+    },
+    {
+      "asset_id": "Data41_slice3",
+      "format": "h5ad",
+      "path": "benchmarks/spatial_alignment/compiled_data/sdmbench/data41_slice3_seed41_rigid.h5ad",
+      "role": "slice",
+      "visibility": "public",
+      "metadata": {
+        "n_obs": 1088,
+        "n_var": 166
+      }
+    }
+  ]
+}

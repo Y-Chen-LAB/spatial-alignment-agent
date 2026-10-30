@@ -1,0 +1,16 @@
+id = "sa-405-starmapplus-ad-cross-animal-pair"
+name = "STARmap PLUS cross-animal alignment (two 8-month control mice)"
+domain = "spatial_genomics"
+modality = "spatial_transcriptomics"
+task_type = "cross_animal_alignment"
+difficulty = "medium"
+status = "executable_local"
+input_contract = "h5ad_spatial_v1"
+output_contract = "aligned_coordinate_csv_v1"
+metric_profile = "sabench_mae_region_gene_v1"
+label_key = "Region"
+marker_gene_file = "benchmarks/spatial_alignment/tasks/sa-405-starmapplus-ad-cross-animal-pair/data/marker_genes.csv"
+max_marker_genes = 100
+slices = ["mouse_cr1=/users/ychen5/p2b-data/paper2bench-data/geaso_tasks/sa-405/mouse_cr1.h5ad", "mouse_cr2=/users/ychen5/p2b-data/paper2bench-data/geaso_tasks/sa-405/mouse_cr2.h5ad"]
+paper_source = "STARmap PLUS Alzheimer's-model mouse brain, 8-month controls, via the GEASO data release (Zenodo 18811760, Fig. 2)."
+paper_metrics = "geaso_v1"

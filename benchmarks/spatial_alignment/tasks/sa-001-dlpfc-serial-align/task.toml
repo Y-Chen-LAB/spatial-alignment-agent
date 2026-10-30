@@ -1,0 +1,22 @@
+id = "sa-001-dlpfc-serial-align"
+name = "DLPFC serial Visium alignment"
+domain = "spatial_genomics"
+modality = "spatial_transcriptomics"
+task_type = "serial_alignment"
+difficulty = "starter"
+status = "executable_local"
+input_contract = "h5ad_spatial_with_region_v1"
+output_contract = "aligned_coordinate_csv_v1"
+metric_profile = "sabench_light_alignment_v1"
+label_key = "Region"
+# SABench scores overlap_ratio_region on these six regions only; the published
+# DLPFC_LandmarkBased_Heatmap.csv has one column per region and no Layer1 column.
+scored_regions = ["Layer2", "Layer3", "Layer4", "Layer5", "Layer6", "WM"]
+marker_gene_file = "benchmarks/spatial_alignment/tasks/sa-001-dlpfc-serial-align/data/marker_genes.csv"
+max_marker_genes = 117
+slices = [
+  "151673=/users/ychen5/p2b-data/paper2bench-data/DLPFC/151673.h5ad",
+  "151674=/users/ychen5/p2b-data/paper2bench-data/DLPFC/151674.h5ad",
+  "151675=/users/ychen5/p2b-data/paper2bench-data/DLPFC/151675.h5ad",
+  "151676=/users/ychen5/p2b-data/paper2bench-data/DLPFC/151676.h5ad",
+]

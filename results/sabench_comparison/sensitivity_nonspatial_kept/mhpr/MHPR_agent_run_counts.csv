@@ -1,0 +1,13 @@
+model,arm,failed_zero,scored
+claude-opus-5-5,bare,0,2
+claude-opus-5-5,equipped,0,1
+claude-sonnet-4-6,bare,0,4
+claude-sonnet-4-6,equipped,0,6
+claude-sonnet-5-5,bare,0,1
+claude-sonnet-5-5,equipped,0,1
+gemini-3.5-flash,bare,1,3
+gemini-3.5-flash,equipped,0,4
+gpt-5.5,bare,0,3
+gpt-5.5,equipped,0,5
+gpt-6-astra,bare,0,3
+gpt-6-astra,equipped,0,4

@@ -1,0 +1,48 @@
+{
+  "schema_version": "paper2bench.data_manifest.v0.1",
+  "task_id": "sa-222-ambc-visiumhd-slideseq-pair",
+  "family": "ambc_cross_platform",
+  "compiler": "scripts/build_tasks.py",
+  "registry": "benchmarks/spatial_alignment/task_registry.toml",
+  "paper_reference": "Fig5D_AMBC_cross_platform_success_long.csv",
+  "marker_genes": {
+    "marker_source": "log1p_variance_ranking",
+    "marker_source_path": null,
+    "n_requested": 100,
+    "n_present_on_all_slices": 100,
+    "n_common_genes": 25019
+  },
+  "pair_mode": "consecutive",
+  "supersedes": null,
+  "assets": [
+    {
+      "asset_id": "ambc_visiumhd",
+      "format": "h5ad",
+      "path": "benchmarks/spatial_alignment/compiled_data/visiumhd/data232_visiumhd_08um.h5ad",
+      "role": "slice",
+      "visibility": "public",
+      "metadata": {
+        "paper_data_id": "Data231-240/VisiumHD",
+        "n_obs": 453820,
+        "n_var": 32285
+      }
+    },
+    {
+      "asset_id": "ambc_slideseq",
+      "format": "h5ad",
+      "path": "/Users/yiqun/Downloads/paper2bench-data/AMBC_Slideseq/data236_ambc_slideseq_puck46_L.h5ad",
+      "role": "slice",
+      "visibility": "public",
+      "metadata": {
+        "paper_data_id": "Data231-240/Slideseq",
+        "n_obs": 139649,
+        "n_var": 27951
+      }
+    }
+  ],
+  "platform_pair": [
+    "visiumhd",
+    "slideseq"
+  ],
+  "platform_pair_class": "ngs"
+}

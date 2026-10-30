@@ -1,0 +1,17 @@
+id = "sa-032-bca-visium-xenium-cross-platform"
+name = "Human breast cancer cross-platform alignment: Visium to both Xenium replicates"
+domain = "spatial_genomics"
+modality = "spatial_transcriptomics"
+task_type = "cross_platform_pair_alignment"
+difficulty = "hard"
+status = "executable_local"
+input_contract = "h5ad_spatial_v1"
+output_contract = "aligned_coordinate_csv_v1"
+metric_profile = "sabench_gene_only_alignment_v1"
+label_key = "Region"
+marker_gene_file = "benchmarks/spatial_alignment/tasks/sa-032-bca-visium-xenium-cross-platform/data/marker_genes.csv"
+max_marker_genes = 100
+pair_mode = "star"
+slices = ["bca_visium=/users/ychen5/p2b-data/paper2bench-data/BCA_visium/data228_bca_visium.h5ad", "bca_xenium_rep1=/users/ychen5/p2b-data/paper2bench-data/BCA_raw/slice_Rep1.h5ad", "bca_xenium_rep2=/users/ychen5/p2b-data/paper2bench-data/BCA_raw/slice_Rep2.h5ad"]
+paper_data_ids = ["Data228", "Data229", "Data230"]
+paper_source = "SABench Data228-230: the paired Visium and Xenium human breast cancer sections from Janesick et al."

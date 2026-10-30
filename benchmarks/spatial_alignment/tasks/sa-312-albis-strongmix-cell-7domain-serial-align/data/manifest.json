@@ -1,0 +1,135 @@
+{
+  "schema_version": "paper2bench.data_manifest.v0.1",
+  "task_id": "sa-312-albis-strongmix-cell-7domain-serial-align",
+  "source": "Albis simulator (scripts/alignment_benchmark.py)",
+  "albis_dataset": "strong_mix_cell_decoy_flip",
+  "albis_scale": "full",
+  "albis_base_dataset": "strong_mix_cell",
+  "slide_frame_grid": false,
+  "albis_slice_ids": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9
+  ],
+  "qc": null,
+  "albis_catalog": "/users/ychen5/p2b-data/paper2bench-data/albis_sim/strong_mix_cell_decoy_flip/catalog.json",
+  "assets": [
+    {
+      "asset_id": "s00",
+      "role": "slice",
+      "path": "/users/ychen5/p2b-data/paper2bench-data/albis_sim/strong_mix_cell_decoy_flip/slices/s00.h5ad",
+      "format": "h5ad",
+      "visibility": "public",
+      "metadata": {
+        "n_obs": 683,
+        "is_reference": true
+      }
+    },
+    {
+      "asset_id": "s01",
+      "role": "slice",
+      "path": "/users/ychen5/p2b-data/paper2bench-data/albis_sim/strong_mix_cell_decoy_flip/slices/s01.h5ad",
+      "format": "h5ad",
+      "visibility": "public",
+      "metadata": {
+        "n_obs": 1816,
+        "is_reference": false
+      }
+    },
+    {
+      "asset_id": "s02",
+      "role": "slice",
+      "path": "/users/ychen5/p2b-data/paper2bench-data/albis_sim/strong_mix_cell_decoy_flip/slices/s02.h5ad",
+      "format": "h5ad",
+      "visibility": "public",
+      "metadata": {
+        "n_obs": 2767,
+        "is_reference": false
+      }
+    },
+    {
+      "asset_id": "s03",
+      "role": "slice",
+      "path": "/users/ychen5/p2b-data/paper2bench-data/albis_sim/strong_mix_cell_decoy_flip/slices/s03.h5ad",
+      "format": "h5ad",
+      "visibility": "public",
+      "metadata": {
+        "n_obs": 3282,
+        "is_reference": false
+      }
+    },
+    {
+      "asset_id": "s04",
+      "role": "slice",
+      "path": "/users/ychen5/p2b-data/paper2bench-data/albis_sim/strong_mix_cell_decoy_flip/slices/s04.h5ad",
+      "format": "h5ad",
+      "visibility": "public",
+      "metadata": {
+        "n_obs": 3674,
+        "is_reference": false
+      }
+    },
+    {
+      "asset_id": "s05",
+      "role": "slice",
+      "path": "/users/ychen5/p2b-data/paper2bench-data/albis_sim/strong_mix_cell_decoy_flip/slices/s05.h5ad",
+      "format": "h5ad",
+      "visibility": "public",
+      "metadata": {
+        "n_obs": 3544,
+        "is_reference": false
+      }
+    },
+    {
+      "asset_id": "s06",
+      "role": "slice",
+      "path": "/users/ychen5/p2b-data/paper2bench-data/albis_sim/strong_mix_cell_decoy_flip/slices/s06.h5ad",
+      "format": "h5ad",
+      "visibility": "public",
+      "metadata": {
+        "n_obs": 3227,
+        "is_reference": false
+      }
+    },
+    {
+      "asset_id": "s07",
+      "role": "slice",
+      "path": "/users/ychen5/p2b-data/paper2bench-data/albis_sim/strong_mix_cell_decoy_flip/slices/s07.h5ad",
+      "format": "h5ad",
+      "visibility": "public",
+      "metadata": {
+        "n_obs": 2730,
+        "is_reference": false
+      }
+    },
+    {
+      "asset_id": "s08",
+      "role": "slice",
+      "path": "/users/ychen5/p2b-data/paper2bench-data/albis_sim/strong_mix_cell_decoy_flip/slices/s08.h5ad",
+      "format": "h5ad",
+      "visibility": "public",
+      "metadata": {
+        "n_obs": 1860,
+        "is_reference": false
+      }
+    },
+    {
+      "asset_id": "s09",
+      "role": "slice",
+      "path": "/users/ychen5/p2b-data/paper2bench-data/albis_sim/strong_mix_cell_decoy_flip/slices/s09.h5ad",
+      "format": "h5ad",
+      "visibility": "public",
+      "metadata": {
+        "n_obs": 624,
+        "is_reference": false
+      }
+    }
+  ]
+}

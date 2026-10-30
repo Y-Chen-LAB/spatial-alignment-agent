@@ -1,0 +1,54 @@
+{
+  "schema_version": "paper2bench.data_manifest.v0.1",
+  "task_id": "sa-031-mbrm-vizgen-serial-align",
+  "family": "mbrm_serial",
+  "compiler": "scripts/build_tasks.py",
+  "registry": "benchmarks/spatial_alignment/task_registry.toml",
+  "paper_reference": "Supp. Fig. 3a overlays; no per-method numbers published",
+  "marker_genes": {
+    "marker_source": "log1p_variance_ranking",
+    "marker_source_path": null,
+    "n_requested": 100,
+    "n_present_on_all_slices": 100,
+    "n_common_genes": 483
+  },
+  "pair_mode": "consecutive",
+  "assets": [
+    {
+      "asset_id": "mbrm_s1r1",
+      "format": "h5ad",
+      "path": "/Users/yiqun/Downloads/paper2bench-data/MBRM/data42_mbrm_S1R1_right.h5ad",
+      "role": "slice",
+      "visibility": "public",
+      "metadata": {
+        "paper_data_id": "Data42",
+        "n_obs": 40856,
+        "n_var": 483
+      }
+    },
+    {
+      "asset_id": "mbrm_s1r2",
+      "format": "h5ad",
+      "path": "/Users/yiqun/Downloads/paper2bench-data/MBRM/data43_mbrm_S1R2_right.h5ad",
+      "role": "slice",
+      "visibility": "public",
+      "metadata": {
+        "paper_data_id": "Data43",
+        "n_obs": 45181,
+        "n_var": 483
+      }
+    },
+    {
+      "asset_id": "mbrm_s1r3",
+      "format": "h5ad",
+      "path": "/Users/yiqun/Downloads/paper2bench-data/MBRM/data44_mbrm_S1R3_right.h5ad",
+      "role": "slice",
+      "visibility": "public",
+      "metadata": {
+        "paper_data_id": "Data44",
+        "n_obs": 42722,
+        "n_var": 483
+      }
+    }
+  ]
+}

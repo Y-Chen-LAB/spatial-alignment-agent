@@ -1,0 +1,263 @@
+{
+  "name": "spatial_alignment_bench",
+  "version": "0.1.0",
+  "description": "Agent-runnable spatial genomics alignment benchmark tasks derived from SABench tutorial and paper-aligned public data.",
+  "model_free_task_specs": true,
+  "model_policy": "Tasks define data, instructions, output schema, and scoring only. Agent/model choices are supplied by runner metadata or CLI flags.",
+  "runner_plugin": "benchmarks/spatial_alignment/runner_plugin.json",
+  "task_glob": "benchmarks/spatial_alignment/tasks/*/task.toml",
+  "workspace_root": "agent_workspaces",
+  "prompt_file": "TASK.md",
+  "submission_dir": "submission",
+  "required_output_dir": "submission/aligned_coordinates",
+  "required_csv_columns": [
+    "obs_id",
+    "x",
+    "y"
+  ],
+  "prepare_command": "uv run python scripts/prepare_agent_task.py {task} --workspace-root agent_workspaces --force",
+  "score_command": "uv run python scripts/score_agent_submission.py {task} {workspace}/submission --output {workspace}/scores.json",
+  "score_file": "{workspace}/scores.json",
+  "tasks": [
+    {
+      "id": "sa-001-dlpfc-serial-align",
+      "task_file": "benchmarks/spatial_alignment/tasks/sa-001-dlpfc-serial-align/task.toml",
+      "workspace": "agent_workspaces/sa-001-dlpfc-serial-align",
+      "status": "agent_runnable"
+    },
+    {
+      "id": "sa-002-dlpfc-robust-perturb",
+      "task_file": "benchmarks/spatial_alignment/tasks/sa-002-dlpfc-robust-perturb/task.toml",
+      "workspace": "agent_workspaces/sa-002-dlpfc-robust-perturb",
+      "status": "agent_runnable_public_pair; hidden perturbation harness available separately"
+    },
+    {
+      "id": "sa-003-dlpfc-coarse-shuffled-pair",
+      "task_file": "benchmarks/spatial_alignment/tasks/sa-003-dlpfc-coarse-shuffled-pair/task.toml",
+      "workspace": "agent_workspaces/sa-003-dlpfc-coarse-shuffled-pair",
+      "status": "agent_runnable"
+    },
+    {
+      "id": "sa-004-bca-downsampled-pair-align",
+      "task_file": "benchmarks/spatial_alignment/tasks/sa-004-bca-downsampled-pair-align/task.toml",
+      "workspace": "agent_workspaces/sa-004-bca-downsampled-pair-align",
+      "status": "agent_runnable"
+    },
+    {
+      "id": "sa-005-bca-resolution-recovery",
+      "task_file": "benchmarks/spatial_alignment/tasks/sa-005-bca-resolution-recovery/task.toml",
+      "workspace": "agent_workspaces/sa-005-bca-resolution-recovery",
+      "status": "agent_runnable"
+    },
+    {
+      "id": "sa-006-mbsa-serial-align",
+      "task_file": "benchmarks/spatial_alignment/tasks/sa-006-mbsa-serial-align/task.toml",
+      "workspace": "agent_workspaces/sa-006-mbsa-serial-align",
+      "status": "agent_runnable"
+    },
+    {
+      "id": "sa-007-mbsp-serial-align",
+      "task_file": "benchmarks/spatial_alignment/tasks/sa-007-mbsp-serial-align/task.toml",
+      "workspace": "agent_workspaces/sa-007-mbsp-serial-align",
+      "status": "agent_runnable"
+    },
+    {
+      "id": "sa-101-mop-mouse1sample1-serial-align",
+      "task_file": "benchmarks/spatial_alignment/tasks/sa-101-mop-mouse1sample1-serial-align/task.toml",
+      "workspace": "agent_workspaces/sa-101-mop-mouse1sample1-serial-align",
+      "status": "agent_runnable"
+    },
+    {
+      "id": "sa-102-mop-mouse1sample2-serial-align",
+      "task_file": "benchmarks/spatial_alignment/tasks/sa-102-mop-mouse1sample2-serial-align/task.toml",
+      "workspace": "agent_workspaces/sa-102-mop-mouse1sample2-serial-align",
+      "status": "agent_runnable"
+    },
+    {
+      "id": "sa-103-mop-mouse1sample3-serial-align",
+      "task_file": "benchmarks/spatial_alignment/tasks/sa-103-mop-mouse1sample3-serial-align/task.toml",
+      "workspace": "agent_workspaces/sa-103-mop-mouse1sample3-serial-align",
+      "status": "agent_runnable"
+    },
+    {
+      "id": "sa-104-mop-mouse1sample4-serial-align",
+      "task_file": "benchmarks/spatial_alignment/tasks/sa-104-mop-mouse1sample4-serial-align/task.toml",
+      "workspace": "agent_workspaces/sa-104-mop-mouse1sample4-serial-align",
+      "status": "agent_runnable"
+    },
+    {
+      "id": "sa-105-mop-mouse1sample5-serial-align",
+      "task_file": "benchmarks/spatial_alignment/tasks/sa-105-mop-mouse1sample5-serial-align/task.toml",
+      "workspace": "agent_workspaces/sa-105-mop-mouse1sample5-serial-align",
+      "status": "agent_runnable"
+    },
+    {
+      "id": "sa-106-mop-mouse1sample6-serial-align",
+      "task_file": "benchmarks/spatial_alignment/tasks/sa-106-mop-mouse1sample6-serial-align/task.toml",
+      "workspace": "agent_workspaces/sa-106-mop-mouse1sample6-serial-align",
+      "status": "agent_runnable"
+    },
+    {
+      "id": "sa-107-mop-mouse2sample1-serial-align",
+      "task_file": "benchmarks/spatial_alignment/tasks/sa-107-mop-mouse2sample1-serial-align/task.toml",
+      "workspace": "agent_workspaces/sa-107-mop-mouse2sample1-serial-align",
+      "status": "agent_runnable"
+    },
+    {
+      "id": "sa-108-mop-mouse2sample2-serial-align",
+      "task_file": "benchmarks/spatial_alignment/tasks/sa-108-mop-mouse2sample2-serial-align/task.toml",
+      "workspace": "agent_workspaces/sa-108-mop-mouse2sample2-serial-align",
+      "status": "agent_runnable"
+    },
+    {
+      "id": "sa-109-mop-mouse2sample3-serial-align",
+      "task_file": "benchmarks/spatial_alignment/tasks/sa-109-mop-mouse2sample3-serial-align/task.toml",
+      "workspace": "agent_workspaces/sa-109-mop-mouse2sample3-serial-align",
+      "status": "agent_runnable"
+    },
+    {
+      "id": "sa-110-mop-mouse2sample4-serial-align",
+      "task_file": "benchmarks/spatial_alignment/tasks/sa-110-mop-mouse2sample4-serial-align/task.toml",
+      "workspace": "agent_workspaces/sa-110-mop-mouse2sample4-serial-align",
+      "status": "agent_runnable"
+    },
+    {
+      "id": "sa-111-mop-mouse2sample5-serial-align",
+      "task_file": "benchmarks/spatial_alignment/tasks/sa-111-mop-mouse2sample5-serial-align/task.toml",
+      "workspace": "agent_workspaces/sa-111-mop-mouse2sample5-serial-align",
+      "status": "agent_runnable"
+    },
+    {
+      "id": "sa-112-mop-mouse2sample6-serial-align",
+      "task_file": "benchmarks/spatial_alignment/tasks/sa-112-mop-mouse2sample6-serial-align/task.toml",
+      "workspace": "agent_workspaces/sa-112-mop-mouse2sample6-serial-align",
+      "status": "agent_runnable"
+    },
+    {
+      "id": "sa-008-ambc-xenium-multisection-serial-align",
+      "task_file": "benchmarks/spatial_alignment/tasks/sa-008-ambc-xenium-multisection-serial-align/task.toml",
+      "workspace": "agent_workspaces/sa-008-ambc-xenium-multisection-serial-align",
+      "status": "agent_runnable"
+    },
+    {
+      "id": "sa-009-mhpr-merfish-serial-align",
+      "task_file": "benchmarks/spatial_alignment/tasks/sa-009-mhpr-merfish-serial-align/task.toml",
+      "workspace": "agent_workspaces/sa-009-mhpr-merfish-serial-align",
+      "status": "agent_runnable"
+    },
+    {
+      "id": "sa-010-ambc-visium-xenium-cross-platform",
+      "task_file": "benchmarks/spatial_alignment/tasks/sa-010-ambc-visium-xenium-cross-platform/task.toml",
+      "workspace": "agent_workspaces/sa-010-ambc-visium-xenium-cross-platform",
+      "status": "agent_runnable"
+    },
+    {
+      "id": "sa-011-scc-p2-serial-align",
+      "task_file": "benchmarks/spatial_alignment/tasks/sa-011-scc-p2-serial-align/task.toml",
+      "workspace": "agent_workspaces/sa-011-scc-p2-serial-align",
+      "status": "agent_runnable"
+    },
+    {
+      "id": "sa-012-scc-p5-serial-align",
+      "task_file": "benchmarks/spatial_alignment/tasks/sa-012-scc-p5-serial-align/task.toml",
+      "workspace": "agent_workspaces/sa-012-scc-p5-serial-align",
+      "status": "agent_runnable"
+    },
+    {
+      "id": "sa-013-ambc-visium-xenium5k-cross-platform",
+      "task_file": "benchmarks/spatial_alignment/tasks/sa-013-ambc-visium-xenium5k-cross-platform/task.toml",
+      "workspace": "agent_workspaces/sa-013-ambc-visium-xenium5k-cross-platform",
+      "status": "agent_runnable"
+    },
+    {
+      "id": "sa-014-bca-xenium-serial-align",
+      "task_file": "benchmarks/spatial_alignment/tasks/sa-014-bca-xenium-serial-align/task.toml",
+      "workspace": "agent_workspaces/sa-014-bca-xenium-serial-align",
+      "status": "agent_runnable"
+    },
+    {
+      "id": "sa-015-ambc-visium-visiumhd-cross-resolution",
+      "task_file": "benchmarks/spatial_alignment/tasks/sa-015-ambc-visium-visiumhd-cross-resolution/task.toml",
+      "workspace": "agent_workspaces/sa-015-ambc-visium-visiumhd-cross-resolution",
+      "status": "agent_runnable"
+    },
+    {
+      "id": "sa-016-ambc-visium-starmapplus-cross-platform",
+      "task_file": "benchmarks/spatial_alignment/tasks/sa-016-ambc-visium-starmapplus-cross-platform/task.toml",
+      "workspace": "agent_workspaces/sa-016-ambc-visium-starmapplus-cross-platform",
+      "status": "agent_runnable"
+    },
+    {
+      "id": "sa-017-baristaseq-mpc-serial-align",
+      "task_file": "benchmarks/spatial_alignment/tasks/sa-017-baristaseq-mpc-serial-align/task.toml",
+      "workspace": "agent_workspaces/sa-017-baristaseq-mpc-serial-align",
+      "status": "agent_runnable"
+    },
+    {
+      "id": "sa-018-starmap-mmpc-serial-align",
+      "task_file": "benchmarks/spatial_alignment/tasks/sa-018-starmap-mmpc-serial-align/task.toml",
+      "workspace": "agent_workspaces/sa-018-starmap-mmpc-serial-align",
+      "status": "agent_runnable"
+    },
+    {
+      "id": "sa-019-flysta3d-e14-16-3d-serial-align",
+      "task_file": "benchmarks/spatial_alignment/tasks/sa-019-flysta3d-e14-16-3d-serial-align/task.toml",
+      "workspace": "agent_workspaces/sa-019-flysta3d-e14-16-3d-serial-align",
+      "status": "agent_runnable"
+    },
+    {
+      "id": "sa-025-openst-mln-adjacent-02-03-3d-align",
+      "task_file": "benchmarks/spatial_alignment/tasks/sa-025-openst-mln-adjacent-02-03-3d-align/task.toml",
+      "workspace": "agent_workspaces/sa-025-openst-mln-adjacent-02-03-3d-align",
+      "status": "agent_runnable"
+    },
+    {
+      "id": "sa-026-openst-mln-early-window-02-06-3d-align",
+      "task_file": "benchmarks/spatial_alignment/tasks/sa-026-openst-mln-early-window-02-06-3d-align/task.toml",
+      "workspace": "agent_workspaces/sa-026-openst-mln-early-window-02-06-3d-align",
+      "status": "agent_runnable"
+    },
+    {
+      "id": "sa-027-openst-mln-full-19-slice-3d-align",
+      "task_file": "benchmarks/spatial_alignment/tasks/sa-027-openst-mln-full-19-slice-3d-align/task.toml",
+      "workspace": "agent_workspaces/sa-027-openst-mln-full-19-slice-3d-align",
+      "status": "agent_runnable"
+    },
+    {
+      "id": "sa-028-wmb-animal1-window5-serial-align",
+      "task_file": "benchmarks/spatial_alignment/tasks/sa-028-wmb-animal1-window5-serial-align/task.toml",
+      "workspace": "agent_workspaces/sa-028-wmb-animal1-window5-serial-align",
+      "status": "agent_runnable"
+    },
+    {
+      "id": "sa-029-wmb-animal1-window10-serial-align",
+      "task_file": "benchmarks/spatial_alignment/tasks/sa-029-wmb-animal1-window10-serial-align/task.toml",
+      "workspace": "agent_workspaces/sa-029-wmb-animal1-window10-serial-align",
+      "status": "agent_runnable"
+    },
+    {
+      "id": "sa-020-mop-mouse1-atlas-serial-align",
+      "task_file": "benchmarks/spatial_alignment/tasks/sa-020-mop-mouse1-atlas-serial-align/task.toml",
+      "workspace": "agent_workspaces/sa-020-mop-mouse1-atlas-serial-align",
+      "status": "agent_runnable"
+    },
+    {
+      "id": "sa-021-mop-mouse2-atlas-serial-align",
+      "task_file": "benchmarks/spatial_alignment/tasks/sa-021-mop-mouse2-atlas-serial-align/task.toml",
+      "workspace": "agent_workspaces/sa-021-mop-mouse2-atlas-serial-align",
+      "status": "agent_runnable"
+    },
+    {
+      "id": "sa-022-openst-mln-serial-align",
+      "task_file": "benchmarks/spatial_alignment/tasks/sa-022-openst-mln-serial-align/task.toml",
+      "workspace": "agent_workspaces/sa-022-openst-mln-serial-align",
+      "status": "agent_runnable"
+    },
+    {
+      "id": "sa-023-wmb-zhuang-abca1-129-section-3d-mae",
+      "task_file": "benchmarks/spatial_alignment/tasks/sa-023-wmb-zhuang-abca1-129-section-3d-mae/task.toml",
+      "workspace": "agent_workspaces/sa-023-wmb-zhuang-abca1-129-section-3d-mae",
+      "status": "agent_runnable"
+    }
+  ]
+}

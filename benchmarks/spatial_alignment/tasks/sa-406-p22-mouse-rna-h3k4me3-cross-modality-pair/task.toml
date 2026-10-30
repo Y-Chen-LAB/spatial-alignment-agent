@@ -1,0 +1,16 @@
+id = "sa-406-p22-mouse-rna-h3k4me3-cross-modality-pair"
+name = "P22 mouse brain RNA to H3K4me3 cross-modality alignment"
+domain = "spatial_genomics"
+modality = "spatial_transcriptomics"
+task_type = "cross_modality_alignment"
+difficulty = "hard"
+status = "executable_local"
+input_contract = "h5ad_spatial_v1"
+output_contract = "aligned_coordinate_csv_v1"
+metric_profile = "sabench_label_only_v1"
+label_key = "Region"
+marker_gene_file = "benchmarks/spatial_alignment/tasks/sa-406-p22-mouse-rna-h3k4me3-cross-modality-pair/data/marker_genes.csv"
+max_marker_genes = 0
+slices = ["rna=/users/ychen5/p2b-data/paper2bench-data/geaso_tasks/sa-406/rna.h5ad", "h3k4me3=/users/ychen5/p2b-data/paper2bench-data/geaso_tasks/sa-406/h3k4me3.h5ad"]
+paper_source = "Zhang et al. 2023 P22 mouse brain spatial CUT&Tag-RNA-seq (GSE165217), via the GEASO data release (Zenodo 18811760); GEASO Fig. 6C-F and Supplementary Fig. 18."
+paper_metrics = "geaso_v1"

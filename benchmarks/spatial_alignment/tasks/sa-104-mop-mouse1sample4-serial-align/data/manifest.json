@@ -1,0 +1,72 @@
+{
+  "assets": [
+    {
+      "asset_id": "mouse1_slice162",
+      "format": "h5ad",
+      "metadata": {
+        "n_obs": 6963,
+        "sample_ids": "mouse1sample4"
+      },
+      "path": "benchmarks/spatial_alignment/compiled_data/mop_paper/mouse1_slice162.h5ad",
+      "role": "slice",
+      "visibility": "public"
+    },
+    {
+      "asset_id": "mouse1_slice170",
+      "format": "h5ad",
+      "metadata": {
+        "n_obs": 6459,
+        "sample_ids": "mouse1sample4"
+      },
+      "path": "benchmarks/spatial_alignment/compiled_data/mop_paper/mouse1_slice170.h5ad",
+      "role": "slice",
+      "visibility": "public"
+    },
+    {
+      "asset_id": "mouse1_slice180",
+      "format": "h5ad",
+      "metadata": {
+        "n_obs": 6264,
+        "sample_ids": "mouse1sample4"
+      },
+      "path": "benchmarks/spatial_alignment/compiled_data/mop_paper/mouse1_slice180.h5ad",
+      "role": "slice",
+      "visibility": "public"
+    },
+    {
+      "asset_id": "mouse1_slice190",
+      "format": "h5ad",
+      "metadata": {
+        "n_obs": 5730,
+        "sample_ids": "mouse1sample4"
+      },
+      "path": "benchmarks/spatial_alignment/compiled_data/mop_paper/mouse1_slice190.h5ad",
+      "role": "slice",
+      "visibility": "public"
+    },
+    {
+      "asset_id": "mouse1_slice200",
+      "format": "h5ad",
+      "metadata": {
+        "n_obs": 2197,
+        "sample_ids": "mouse1sample4"
+      },
+      "path": "benchmarks/spatial_alignment/compiled_data/mop_paper/mouse1_slice200.h5ad",
+      "role": "slice",
+      "visibility": "public"
+    },
+    {
+      "asset_id": "mouse1_slice201",
+      "format": "h5ad",
+      "metadata": {
+        "n_obs": 6218,
+        "sample_ids": "mouse1sample4"
+      },
+      "path": "benchmarks/spatial_alignment/compiled_data/mop_paper/mouse1_slice201.h5ad",
+      "role": "slice",
+      "visibility": "public"
+    }
+  ],
+  "schema_version": "paper2bench.data_manifest.v0.1",
+  "task_id": "sa-104-mop-mouse1sample4-serial-align"
+}

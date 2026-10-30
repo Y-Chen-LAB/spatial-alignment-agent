@@ -1,0 +1,157 @@
+{
+  "schema_version": "paper2bench.data_manifest.v0.1",
+  "task_id": "sa-403-starmapplus-sagittal3-overlap-sweep",
+  "source": "GEASO data release, Zenodo 18811760 (Wang, Liu & Ma, Nat Commun 2026)",
+  "build_script": "scripts/build_geaso_tasks.py",
+  "dataset": "STARmap PLUS mouse CNS atlas, section sagittal3 (Shi et al. 2023)",
+  "um_per_pixel": 0.0946,
+  "paper_source": "Shi et al. 2023 STARmap PLUS mouse CNS atlas, section sagittal3, via the GEASO data release (Zenodo 18811760); split by depth as in GEASO's stitching tutorial.",
+  "task_type": "robustness_sweep",
+  "overlap_percent": [
+    10,
+    20,
+    30,
+    40,
+    50,
+    60,
+    70,
+    80,
+    90,
+    100
+  ],
+  "rotation_degrees": [
+    68.99,
+    -154.89,
+    47.75,
+    -172.51,
+    31.09,
+    -149.48,
+    -98.18,
+    56.41,
+    -109.28,
+    20.76
+  ],
+  "assets": [
+    {
+      "asset_id": "reference",
+      "role": "slice",
+      "path": "/users/ychen5/p2b-data/paper2bench-data/geaso_tasks/sa-403/reference.h5ad",
+      "format": "h5ad",
+      "visibility": "public",
+      "metadata": {
+        "n_obs": 51897,
+        "is_reference": true
+      }
+    },
+    {
+      "asset_id": "moving_overlap010",
+      "role": "slice",
+      "path": "/users/ychen5/p2b-data/paper2bench-data/geaso_tasks/sa-403/moving_overlap010.h5ad",
+      "format": "h5ad",
+      "visibility": "public",
+      "metadata": {
+        "n_obs": 2430,
+        "is_reference": false
+      }
+    },
+    {
+      "asset_id": "moving_overlap020",
+      "role": "slice",
+      "path": "/users/ychen5/p2b-data/paper2bench-data/geaso_tasks/sa-403/moving_overlap020.h5ad",
+      "format": "h5ad",
+      "visibility": "public",
+      "metadata": {
+        "n_obs": 6887,
+        "is_reference": false
+      }
+    },
+    {
+      "asset_id": "moving_overlap030",
+      "role": "slice",
+      "path": "/users/ychen5/p2b-data/paper2bench-data/geaso_tasks/sa-403/moving_overlap030.h5ad",
+      "format": "h5ad",
+      "visibility": "public",
+      "metadata": {
+        "n_obs": 12123,
+        "is_reference": false
+      }
+    },
+    {
+      "asset_id": "moving_overlap040",
+      "role": "slice",
+      "path": "/users/ychen5/p2b-data/paper2bench-data/geaso_tasks/sa-403/moving_overlap040.h5ad",
+      "format": "h5ad",
+      "visibility": "public",
+      "metadata": {
+        "n_obs": 18372,
+        "is_reference": false
+      }
+    },
+    {
+      "asset_id": "moving_overlap050",
+      "role": "slice",
+      "path": "/users/ychen5/p2b-data/paper2bench-data/geaso_tasks/sa-403/moving_overlap050.h5ad",
+      "format": "h5ad",
+      "visibility": "public",
+      "metadata": {
+        "n_obs": 25298,
+        "is_reference": false
+      }
+    },
+    {
+      "asset_id": "moving_overlap060",
+      "role": "slice",
+      "path": "/users/ychen5/p2b-data/paper2bench-data/geaso_tasks/sa-403/moving_overlap060.h5ad",
+      "format": "h5ad",
+      "visibility": "public",
+      "metadata": {
+        "n_obs": 31594,
+        "is_reference": false
+      }
+    },
+    {
+      "asset_id": "moving_overlap070",
+      "role": "slice",
+      "path": "/users/ychen5/p2b-data/paper2bench-data/geaso_tasks/sa-403/moving_overlap070.h5ad",
+      "format": "h5ad",
+      "visibility": "public",
+      "metadata": {
+        "n_obs": 36769,
+        "is_reference": false
+      }
+    },
+    {
+      "asset_id": "moving_overlap080",
+      "role": "slice",
+      "path": "/users/ychen5/p2b-data/paper2bench-data/geaso_tasks/sa-403/moving_overlap080.h5ad",
+      "format": "h5ad",
+      "visibility": "public",
+      "metadata": {
+        "n_obs": 42336,
+        "is_reference": false
+      }
+    },
+    {
+      "asset_id": "moving_overlap090",
+      "role": "slice",
+      "path": "/users/ychen5/p2b-data/paper2bench-data/geaso_tasks/sa-403/moving_overlap090.h5ad",
+      "format": "h5ad",
+      "visibility": "public",
+      "metadata": {
+        "n_obs": 47061,
+        "is_reference": false
+      }
+    },
+    {
+      "asset_id": "moving_overlap100",
+      "role": "slice",
+      "path": "/users/ychen5/p2b-data/paper2bench-data/geaso_tasks/sa-403/moving_overlap100.h5ad",
+      "format": "h5ad",
+      "visibility": "public",
+      "metadata": {
+        "n_obs": 51897,
+        "is_reference": false
+      }
+    }
+  ]
+}

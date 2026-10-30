@@ -1,0 +1,330 @@
+{
+  "schema_version": "paper2bench.data_manifest.v0.1",
+  "task_id": "sa-040-dlpfc-rotation-sweep",
+  "family": "robustness_sweep",
+  "compiler": "scripts/build_tasks.py",
+  "registry": "benchmarks/spatial_alignment/task_registry.toml",
+  "paper_reference": "MOESM8 DLPFC_rotation.csv, 25 levels x 24 method columns",
+  "marker_genes": {
+    "marker_source": "sabench_panel",
+    "marker_source_path": "/Users/yiqun/Downloads/paper2bench-data/DLPFC/DLPFC_gene_list.csv",
+    "n_requested": 124,
+    "n_present_on_all_slices": 124,
+    "n_common_genes": 33538
+  },
+  "pair_mode": "star",
+  "assets": [
+    {
+      "asset_id": "data1",
+      "format": "h5ad",
+      "path": "/Users/yiqun/Downloads/paper2bench-data/DLPFC/151673.h5ad",
+      "role": "slice",
+      "visibility": "public",
+      "metadata": {
+        "paper_data_id": "Data1",
+        "n_obs": 3611,
+        "n_var": 33538
+      }
+    },
+    {
+      "asset_id": "data2_rotation000",
+      "format": "h5ad",
+      "path": "benchmarks/spatial_alignment/compiled_data/sweeps/sa-040-dlpfc-rotation-sweep/data2_rotation000.h5ad",
+      "role": "slice",
+      "visibility": "public",
+      "metadata": {
+        "paper_data_id": "Data2",
+        "n_obs": 3635,
+        "n_var": 33538
+      }
+    },
+    {
+      "asset_id": "data2_rotation015",
+      "format": "h5ad",
+      "path": "benchmarks/spatial_alignment/compiled_data/sweeps/sa-040-dlpfc-rotation-sweep/data2_rotation015.h5ad",
+      "role": "slice",
+      "visibility": "public",
+      "metadata": {
+        "paper_data_id": "Data2",
+        "n_obs": 3635,
+        "n_var": 33538
+      }
+    },
+    {
+      "asset_id": "data2_rotation030",
+      "format": "h5ad",
+      "path": "benchmarks/spatial_alignment/compiled_data/sweeps/sa-040-dlpfc-rotation-sweep/data2_rotation030.h5ad",
+      "role": "slice",
+      "visibility": "public",
+      "metadata": {
+        "paper_data_id": "Data2",
+        "n_obs": 3635,
+        "n_var": 33538
+      }
+    },
+    {
+      "asset_id": "data2_rotation045",
+      "format": "h5ad",
+      "path": "benchmarks/spatial_alignment/compiled_data/sweeps/sa-040-dlpfc-rotation-sweep/data2_rotation045.h5ad",
+      "role": "slice",
+      "visibility": "public",
+      "metadata": {
+        "paper_data_id": "Data2",
+        "n_obs": 3635,
+        "n_var": 33538
+      }
+    },
+    {
+      "asset_id": "data2_rotation060",
+      "format": "h5ad",
+      "path": "benchmarks/spatial_alignment/compiled_data/sweeps/sa-040-dlpfc-rotation-sweep/data2_rotation060.h5ad",
+      "role": "slice",
+      "visibility": "public",
+      "metadata": {
+        "paper_data_id": "Data2",
+        "n_obs": 3635,
+        "n_var": 33538
+      }
+    },
+    {
+      "asset_id": "data2_rotation075",
+      "format": "h5ad",
+      "path": "benchmarks/spatial_alignment/compiled_data/sweeps/sa-040-dlpfc-rotation-sweep/data2_rotation075.h5ad",
+      "role": "slice",
+      "visibility": "public",
+      "metadata": {
+        "paper_data_id": "Data2",
+        "n_obs": 3635,
+        "n_var": 33538
+      }
+    },
+    {
+      "asset_id": "data2_rotation090",
+      "format": "h5ad",
+      "path": "benchmarks/spatial_alignment/compiled_data/sweeps/sa-040-dlpfc-rotation-sweep/data2_rotation090.h5ad",
+      "role": "slice",
+      "visibility": "public",
+      "metadata": {
+        "paper_data_id": "Data2",
+        "n_obs": 3635,
+        "n_var": 33538
+      }
+    },
+    {
+      "asset_id": "data2_rotation105",
+      "format": "h5ad",
+      "path": "benchmarks/spatial_alignment/compiled_data/sweeps/sa-040-dlpfc-rotation-sweep/data2_rotation105.h5ad",
+      "role": "slice",
+      "visibility": "public",
+      "metadata": {
+        "paper_data_id": "Data2",
+        "n_obs": 3635,
+        "n_var": 33538
+      }
+    },
+    {
+      "asset_id": "data2_rotation120",
+      "format": "h5ad",
+      "path": "benchmarks/spatial_alignment/compiled_data/sweeps/sa-040-dlpfc-rotation-sweep/data2_rotation120.h5ad",
+      "role": "slice",
+      "visibility": "public",
+      "metadata": {
+        "paper_data_id": "Data2",
+        "n_obs": 3635,
+        "n_var": 33538
+      }
+    },
+    {
+      "asset_id": "data2_rotation135",
+      "format": "h5ad",
+      "path": "benchmarks/spatial_alignment/compiled_data/sweeps/sa-040-dlpfc-rotation-sweep/data2_rotation135.h5ad",
+      "role": "slice",
+      "visibility": "public",
+      "metadata": {
+        "paper_data_id": "Data2",
+        "n_obs": 3635,
+        "n_var": 33538
+      }
+    },
+    {
+      "asset_id": "data2_rotation150",
+      "format": "h5ad",
+      "path": "benchmarks/spatial_alignment/compiled_data/sweeps/sa-040-dlpfc-rotation-sweep/data2_rotation150.h5ad",
+      "role": "slice",
+      "visibility": "public",
+      "metadata": {
+        "paper_data_id": "Data2",
+        "n_obs": 3635,
+        "n_var": 33538
+      }
+    },
+    {
+      "asset_id": "data2_rotation165",
+      "format": "h5ad",
+      "path": "benchmarks/spatial_alignment/compiled_data/sweeps/sa-040-dlpfc-rotation-sweep/data2_rotation165.h5ad",
+      "role": "slice",
+      "visibility": "public",
+      "metadata": {
+        "paper_data_id": "Data2",
+        "n_obs": 3635,
+        "n_var": 33538
+      }
+    },
+    {
+      "asset_id": "data2_rotation180",
+      "format": "h5ad",
+      "path": "benchmarks/spatial_alignment/compiled_data/sweeps/sa-040-dlpfc-rotation-sweep/data2_rotation180.h5ad",
+      "role": "slice",
+      "visibility": "public",
+      "metadata": {
+        "paper_data_id": "Data2",
+        "n_obs": 3635,
+        "n_var": 33538
+      }
+    },
+    {
+      "asset_id": "data2_rotation195",
+      "format": "h5ad",
+      "path": "benchmarks/spatial_alignment/compiled_data/sweeps/sa-040-dlpfc-rotation-sweep/data2_rotation195.h5ad",
+      "role": "slice",
+      "visibility": "public",
+      "metadata": {
+        "paper_data_id": "Data2",
+        "n_obs": 3635,
+        "n_var": 33538
+      }
+    },
+    {
+      "asset_id": "data2_rotation210",
+      "format": "h5ad",
+      "path": "benchmarks/spatial_alignment/compiled_data/sweeps/sa-040-dlpfc-rotation-sweep/data2_rotation210.h5ad",
+      "role": "slice",
+      "visibility": "public",
+      "metadata": {
+        "paper_data_id": "Data2",
+        "n_obs": 3635,
+        "n_var": 33538
+      }
+    },
+    {
+      "asset_id": "data2_rotation225",
+      "format": "h5ad",
+      "path": "benchmarks/spatial_alignment/compiled_data/sweeps/sa-040-dlpfc-rotation-sweep/data2_rotation225.h5ad",
+      "role": "slice",
+      "visibility": "public",
+      "metadata": {
+        "paper_data_id": "Data2",
+        "n_obs": 3635,
+        "n_var": 33538
+      }
+    },
+    {
+      "asset_id": "data2_rotation240",
+      "format": "h5ad",
+      "path": "benchmarks/spatial_alignment/compiled_data/sweeps/sa-040-dlpfc-rotation-sweep/data2_rotation240.h5ad",
+      "role": "slice",
+      "visibility": "public",
+      "metadata": {
+        "paper_data_id": "Data2",
+        "n_obs": 3635,
+        "n_var": 33538
+      }
+    },
+    {
+      "asset_id": "data2_rotation255",
+      "format": "h5ad",
+      "path": "benchmarks/spatial_alignment/compiled_data/sweeps/sa-040-dlpfc-rotation-sweep/data2_rotation255.h5ad",
+      "role": "slice",
+      "visibility": "public",
+      "metadata": {
+        "paper_data_id": "Data2",
+        "n_obs": 3635,
+        "n_var": 33538
+      }
+    },
+    {
+      "asset_id": "data2_rotation270",
+      "format": "h5ad",
+      "path": "benchmarks/spatial_alignment/compiled_data/sweeps/sa-040-dlpfc-rotation-sweep/data2_rotation270.h5ad",
+      "role": "slice",
+      "visibility": "public",
+      "metadata": {
+        "paper_data_id": "Data2",
+        "n_obs": 3635,
+        "n_var": 33538
+      }
+    },
+    {
+      "asset_id": "data2_rotation285",
+      "format": "h5ad",
+      "path": "benchmarks/spatial_alignment/compiled_data/sweeps/sa-040-dlpfc-rotation-sweep/data2_rotation285.h5ad",
+      "role": "slice",
+      "visibility": "public",
+      "metadata": {
+        "paper_data_id": "Data2",
+        "n_obs": 3635,
+        "n_var": 33538
+      }
+    },
+    {
+      "asset_id": "data2_rotation300",
+      "format": "h5ad",
+      "path": "benchmarks/spatial_alignment/compiled_data/sweeps/sa-040-dlpfc-rotation-sweep/data2_rotation300.h5ad",
+      "role": "slice",
+      "visibility": "public",
+      "metadata": {
+        "paper_data_id": "Data2",
+        "n_obs": 3635,
+        "n_var": 33538
+      }
+    },
+    {
+      "asset_id": "data2_rotation315",
+      "format": "h5ad",
+      "path": "benchmarks/spatial_alignment/compiled_data/sweeps/sa-040-dlpfc-rotation-sweep/data2_rotation315.h5ad",
+      "role": "slice",
+      "visibility": "public",
+      "metadata": {
+        "paper_data_id": "Data2",
+        "n_obs": 3635,
+        "n_var": 33538
+      }
+    },
+    {
+      "asset_id": "data2_rotation330",
+      "format": "h5ad",
+      "path": "benchmarks/spatial_alignment/compiled_data/sweeps/sa-040-dlpfc-rotation-sweep/data2_rotation330.h5ad",
+      "role": "slice",
+      "visibility": "public",
+      "metadata": {
+        "paper_data_id": "Data2",
+        "n_obs": 3635,
+        "n_var": 33538
+      }
+    },
+    {
+      "asset_id": "data2_rotation345",
+      "format": "h5ad",
+      "path": "benchmarks/spatial_alignment/compiled_data/sweeps/sa-040-dlpfc-rotation-sweep/data2_rotation345.h5ad",
+      "role": "slice",
+      "visibility": "public",
+      "metadata": {
+        "paper_data_id": "Data2",
+        "n_obs": 3635,
+        "n_var": 33538
+      }
+    },
+    {
+      "asset_id": "data2_rotation360",
+      "format": "h5ad",
+      "path": "benchmarks/spatial_alignment/compiled_data/sweeps/sa-040-dlpfc-rotation-sweep/data2_rotation360.h5ad",
+      "role": "slice",
+      "visibility": "public",
+      "metadata": {
+        "paper_data_id": "Data2",
+        "n_obs": 3635,
+        "n_var": 33538
+      }
+    }
+  ]
+}

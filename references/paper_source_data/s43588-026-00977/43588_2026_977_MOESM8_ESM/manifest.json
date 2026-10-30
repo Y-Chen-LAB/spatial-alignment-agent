@@ -1,0 +1,29 @@
+{
+  "workbook": "43588_2026_977_MOESM8_ESM.xlsx",
+  "sheets": [
+    {
+      "sheet_name": "DLPFC_rotation",
+      "csv_path": "references/paper_source_data/s43588-026-00977/43588_2026_977_MOESM8_ESM/DLPFC_rotation.csv",
+      "rows": 26,
+      "cols": 24
+    },
+    {
+      "sheet_name": "DLPFC_crop",
+      "csv_path": "references/paper_source_data/s43588-026-00977/43588_2026_977_MOESM8_ESM/DLPFC_crop.csv",
+      "rows": 11,
+      "cols": 12
+    },
+    {
+      "sheet_name": "MHPR_rotation",
+      "csv_path": "references/paper_source_data/s43588-026-00977/43588_2026_977_MOESM8_ESM/MHPR_rotation.csv",
+      "rows": 26,
+      "cols": 13
+    },
+    {
+      "sheet_name": "MHPR_crop",
+      "csv_path": "references/paper_source_data/s43588-026-00977/43588_2026_977_MOESM8_ESM/MHPR_crop.csv",
+      "rows": 11,
+      "cols": 13
+    }
+  ]
+}

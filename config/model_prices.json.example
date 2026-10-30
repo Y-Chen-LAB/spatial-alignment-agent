@@ -1,0 +1,6 @@
+{
+  "_comment": "Per-million-token prices. Copy to model_prices.json and fill in from the vendor's current page. Deliberately not shipped filled: prices change, and a stale table produces confident wrong costs. Without this file tokens are still recorded and estimated_cost_usd stays null.",
+  "gpt-5.5":        {"input": 0.0, "cached_input": 0.0, "output": 0.0},
+  "gpt-6-astra":    {"input": 0.0, "cached_input": 0.0, "output": 0.0},
+  "claude-opus-5":  {"input": 0.0, "cached_input": 0.0, "output": 0.0}
+}

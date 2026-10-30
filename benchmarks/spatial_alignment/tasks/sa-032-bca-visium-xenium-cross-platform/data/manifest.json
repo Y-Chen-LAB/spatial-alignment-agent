@@ -1,0 +1,55 @@
+{
+  "schema_version": "paper2bench.data_manifest.v0.1",
+  "task_id": "sa-032-bca-visium-xenium-cross-platform",
+  "family": "bca_cross_platform",
+  "compiler": "scripts/build_tasks.py",
+  "registry": "benchmarks/spatial_alignment/task_registry.toml",
+  "paper_reference": "Fig. 5e visualisation; no per-method numbers published",
+  "marker_genes": {
+    "marker_source": "log1p_variance_ranking",
+    "marker_source_path": null,
+    "n_requested": 100,
+    "n_present_on_all_slices": 100,
+    "n_common_genes": 307
+  },
+  "pair_mode": "star",
+  "supersedes": null,
+  "assets": [
+    {
+      "asset_id": "bca_visium",
+      "format": "h5ad",
+      "path": "/Users/yiqun/Downloads/paper2bench-data/BCA_visium/data228_bca_visium.h5ad",
+      "role": "slice",
+      "visibility": "public",
+      "metadata": {
+        "paper_data_id": "Data228",
+        "n_obs": 4992,
+        "n_var": 18085
+      }
+    },
+    {
+      "asset_id": "bca_xenium_rep1",
+      "format": "h5ad",
+      "path": "/Users/yiqun/Downloads/paper2bench-data/BCA_raw/slice_Rep1.h5ad",
+      "role": "slice",
+      "visibility": "public",
+      "metadata": {
+        "paper_data_id": "Data229",
+        "n_obs": 167780,
+        "n_var": 313
+      }
+    },
+    {
+      "asset_id": "bca_xenium_rep2",
+      "format": "h5ad",
+      "path": "/Users/yiqun/Downloads/paper2bench-data/BCA_raw/slice_Rep2.h5ad",
+      "role": "slice",
+      "visibility": "public",
+      "metadata": {
+        "paper_data_id": "Data230",
+        "n_obs": 118752,
+        "n_var": 313
+      }
+    }
+  ]
+}

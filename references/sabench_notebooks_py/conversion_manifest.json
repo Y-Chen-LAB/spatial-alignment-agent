@@ -1,0 +1,138 @@
+{
+  "src_root": "/Users/yiqun/Downloads/SABench",
+  "dst_root": "/Users/yiqun/Desktop/chen-lab/genomics-agent/references/sabench_notebooks_py",
+  "n_converted": 26,
+  "include_checkpoints": false,
+  "files": [
+    {
+      "source": "/Users/yiqun/Downloads/SABench/DownstreamTasks/DLPFC_3D_Spatial_Clustering.ipynb",
+      "output": "/Users/yiqun/Desktop/chen-lab/genomics-agent/references/sabench_notebooks_py/DownstreamTasks/DLPFC_3D_Spatial_Clustering.py",
+      "n_cells": 18
+    },
+    {
+      "source": "/Users/yiqun/Downloads/SABench/FeatureSimilarity/GeneBased.ipynb",
+      "output": "/Users/yiqun/Desktop/chen-lab/genomics-agent/references/sabench_notebooks_py/FeatureSimilarity/GeneBased.py",
+      "n_cells": 34
+    },
+    {
+      "source": "/Users/yiqun/Downloads/SABench/FeatureSimilarity/LandmarkBased.ipynb",
+      "output": "/Users/yiqun/Desktop/chen-lab/genomics-agent/references/sabench_notebooks_py/FeatureSimilarity/LandmarkBased.py",
+      "n_cells": 14
+    },
+    {
+      "source": "/Users/yiqun/Downloads/SABench/Improvement/BCA_Get_DifferentResolutions.ipynb",
+      "output": "/Users/yiqun/Desktop/chen-lab/genomics-agent/references/sabench_notebooks_py/Improvement/BCA_Get_DifferentResolutions.py",
+      "n_cells": 17
+    },
+    {
+      "source": "/Users/yiqun/Downloads/SABench/Improvement/BCA_Pre_Alignment.ipynb",
+      "output": "/Users/yiqun/Desktop/chen-lab/genomics-agent/references/sabench_notebooks_py/Improvement/BCA_Pre_Alignment.py",
+      "n_cells": 12
+    },
+    {
+      "source": "/Users/yiqun/Downloads/SABench/Plot/AMBC_plot.ipynb",
+      "output": "/Users/yiqun/Desktop/chen-lab/genomics-agent/references/sabench_notebooks_py/Plot/AMBC_plot.py",
+      "n_cells": 3
+    },
+    {
+      "source": "/Users/yiqun/Downloads/SABench/Plot/AMBC_results.ipynb",
+      "output": "/Users/yiqun/Desktop/chen-lab/genomics-agent/references/sabench_notebooks_py/Plot/AMBC_results.py",
+      "n_cells": 6
+    },
+    {
+      "source": "/Users/yiqun/Downloads/SABench/Plot/BCA_plot.ipynb",
+      "output": "/Users/yiqun/Desktop/chen-lab/genomics-agent/references/sabench_notebooks_py/Plot/BCA_plot.py",
+      "n_cells": 20
+    },
+    {
+      "source": "/Users/yiqun/Downloads/SABench/Plot/MOB_boxplot.ipynb",
+      "output": "/Users/yiqun/Desktop/chen-lab/genomics-agent/references/sabench_notebooks_py/Plot/MOB_boxplot.py",
+      "n_cells": 5
+    },
+    {
+      "source": "/Users/yiqun/Downloads/SABench/Plot/downstream_task.ipynb",
+      "output": "/Users/yiqun/Desktop/chen-lab/genomics-agent/references/sabench_notebooks_py/Plot/downstream_task.py",
+      "n_cells": 3
+    },
+    {
+      "source": "/Users/yiqun/Downloads/SABench/Plot/robustness.ipynb",
+      "output": "/Users/yiqun/Desktop/chen-lab/genomics-agent/references/sabench_notebooks_py/Plot/robustness.py",
+      "n_cells": 8
+    },
+    {
+      "source": "/Users/yiqun/Downloads/SABench/Robustness/DLPFC_crop.ipynb",
+      "output": "/Users/yiqun/Desktop/chen-lab/genomics-agent/references/sabench_notebooks_py/Robustness/DLPFC_crop.py",
+      "n_cells": 4
+    },
+    {
+      "source": "/Users/yiqun/Downloads/SABench/Robustness/DLPFC_rotation.ipynb",
+      "output": "/Users/yiqun/Desktop/chen-lab/genomics-agent/references/sabench_notebooks_py/Robustness/DLPFC_rotation.py",
+      "n_cells": 4
+    },
+    {
+      "source": "/Users/yiqun/Downloads/SABench/Robustness/Flysta_crop.ipynb",
+      "output": "/Users/yiqun/Desktop/chen-lab/genomics-agent/references/sabench_notebooks_py/Robustness/Flysta_crop.py",
+      "n_cells": 6
+    },
+    {
+      "source": "/Users/yiqun/Downloads/SABench/Robustness/Flysta_rotation.ipynb",
+      "output": "/Users/yiqun/Desktop/chen-lab/genomics-agent/references/sabench_notebooks_py/Robustness/Flysta_rotation.py",
+      "n_cells": 4
+    },
+    {
+      "source": "/Users/yiqun/Downloads/SABench/Robustness/MHPR_crop.ipynb",
+      "output": "/Users/yiqun/Desktop/chen-lab/genomics-agent/references/sabench_notebooks_py/Robustness/MHPR_crop.py",
+      "n_cells": 4
+    },
+    {
+      "source": "/Users/yiqun/Downloads/SABench/Robustness/MHPR_rotation.ipynb",
+      "output": "/Users/yiqun/Desktop/chen-lab/genomics-agent/references/sabench_notebooks_py/Robustness/MHPR_rotation.py",
+      "n_cells": 4
+    },
+    {
+      "source": "/Users/yiqun/Downloads/SABench/Robustness/MMPC_crop.ipynb",
+      "output": "/Users/yiqun/Desktop/chen-lab/genomics-agent/references/sabench_notebooks_py/Robustness/MMPC_crop.py",
+      "n_cells": 4
+    },
+    {
+      "source": "/Users/yiqun/Downloads/SABench/Robustness/MMPC_rotation.ipynb",
+      "output": "/Users/yiqun/Desktop/chen-lab/genomics-agent/references/sabench_notebooks_py/Robustness/MMPC_rotation.py",
+      "n_cells": 4
+    },
+    {
+      "source": "/Users/yiqun/Downloads/SABench/Robustness/MPC_crop.ipynb",
+      "output": "/Users/yiqun/Desktop/chen-lab/genomics-agent/references/sabench_notebooks_py/Robustness/MPC_crop.py",
+      "n_cells": 4
+    },
+    {
+      "source": "/Users/yiqun/Downloads/SABench/Robustness/MPC_rotation.ipynb",
+      "output": "/Users/yiqun/Desktop/chen-lab/genomics-agent/references/sabench_notebooks_py/Robustness/MPC_rotation.py",
+      "n_cells": 4
+    },
+    {
+      "source": "/Users/yiqun/Downloads/SABench/Robustness/SCC_crop.ipynb",
+      "output": "/Users/yiqun/Desktop/chen-lab/genomics-agent/references/sabench_notebooks_py/Robustness/SCC_crop.py",
+      "n_cells": 4
+    },
+    {
+      "source": "/Users/yiqun/Downloads/SABench/Robustness/SCC_rotation.ipynb",
+      "output": "/Users/yiqun/Desktop/chen-lab/genomics-agent/references/sabench_notebooks_py/Robustness/SCC_rotation.py",
+      "n_cells": 4
+    },
+    {
+      "source": "/Users/yiqun/Downloads/SABench/Tutorial/Coarse_align_interactive.ipynb",
+      "output": "/Users/yiqun/Desktop/chen-lab/genomics-agent/references/sabench_notebooks_py/Tutorial/Coarse_align_interactive.py",
+      "n_cells": 12
+    },
+    {
+      "source": "/Users/yiqun/Downloads/SABench/Tutorial/Rasterized_downsampling.ipynb",
+      "output": "/Users/yiqun/Desktop/chen-lab/genomics-agent/references/sabench_notebooks_py/Tutorial/Rasterized_downsampling.py",
+      "n_cells": 20
+    },
+    {
+      "source": "/Users/yiqun/Downloads/SABench/Tutorial/SABench_tutorial.ipynb",
+      "output": "/Users/yiqun/Desktop/chen-lab/genomics-agent/references/sabench_notebooks_py/Tutorial/SABench_tutorial.py",
+      "n_cells": 20
+    }
+  ]
+}

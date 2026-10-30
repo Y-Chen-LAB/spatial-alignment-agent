@@ -1,0 +1,63 @@
+{
+  "schema_version": "paper2bench.data_manifest.v0.1",
+  "task_id": "sa-306-albis-visium-spot-slide-serial-align-smoke",
+  "source": "Albis simulator (scripts/alignment_benchmark.py)",
+  "albis_dataset": "visium_spot_slide",
+  "albis_scale": "smoke",
+  "albis_base_dataset": "visium_spot",
+  "slide_frame_grid": true,
+  "albis_slice_ids": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "qc": null,
+  "albis_catalog": "/users/ychen5/p2b-data/paper2bench-data/albis_sim_smoke/visium_spot_slide/catalog.json",
+  "assets": [
+    {
+      "asset_id": "s00",
+      "role": "slice",
+      "path": "/users/ychen5/p2b-data/paper2bench-data/albis_sim_smoke/visium_spot_slide/slices/s00.h5ad",
+      "format": "h5ad",
+      "visibility": "public",
+      "metadata": {
+        "n_obs": 39,
+        "is_reference": true
+      }
+    },
+    {
+      "asset_id": "s01",
+      "role": "slice",
+      "path": "/users/ychen5/p2b-data/paper2bench-data/albis_sim_smoke/visium_spot_slide/slices/s01.h5ad",
+      "format": "h5ad",
+      "visibility": "public",
+      "metadata": {
+        "n_obs": 55,
+        "is_reference": false
+      }
+    },
+    {
+      "asset_id": "s02",
+      "role": "slice",
+      "path": "/users/ychen5/p2b-data/paper2bench-data/albis_sim_smoke/visium_spot_slide/slices/s02.h5ad",
+      "format": "h5ad",
+      "visibility": "public",
+      "metadata": {
+        "n_obs": 60,
+        "is_reference": false
+      }
+    },
+    {
+      "asset_id": "s03",
+      "role": "slice",
+      "path": "/users/ychen5/p2b-data/paper2bench-data/albis_sim_smoke/visium_spot_slide/slices/s03.h5ad",
+      "format": "h5ad",
+      "visibility": "public",
+      "metadata": {
+        "n_obs": 39,
+        "is_reference": false
+      }
+    }
+  ]
+}

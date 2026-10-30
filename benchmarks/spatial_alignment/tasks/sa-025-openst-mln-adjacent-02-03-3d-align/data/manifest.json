@@ -1,0 +1,30 @@
+{
+  "schema_version": "paper2bench.data_manifest.v0.1",
+  "task_id": "sa-025-openst-mln-adjacent-02-03-3d-align",
+  "source": "https://doi.org/10.1016/j.cell.2024.05.055 (Open-ST human metastatic lymph node; SABench Data80-98)",
+  "compiler": "scripts/materialize_openst_mln_tasks.py",
+  "assets": [
+    {
+      "asset_id": "section_02",
+      "format": "h5ad",
+      "path": "benchmarks/spatial_alignment/compiled_data/openst_mln/section_02.h5ad",
+      "role": "slice",
+      "visibility": "public",
+      "metadata": {
+        "n_obs": 55400,
+        "n_var": 28943
+      }
+    },
+    {
+      "asset_id": "section_03",
+      "format": "h5ad",
+      "path": "benchmarks/spatial_alignment/compiled_data/openst_mln/section_03.h5ad",
+      "role": "slice",
+      "visibility": "public",
+      "metadata": {
+        "n_obs": 52405,
+        "n_var": 28943
+      }
+    }
+  ]
+}

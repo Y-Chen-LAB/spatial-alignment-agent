@@ -1,0 +1,38 @@
+# Environments and build artefacts
+.venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+.DS_Store
+
+# Large data, moved out of iCloud and symlinked back in. These are inputs, not source.
+/agent_runs
+/benchmarks/spatial_alignment/compiled_data
+*.h5ad
+*.h5ad.gz
+
+# Writing and funding material, not part of the benchmark
+/manuscripts/
+/assets/fonts/
+/proposals/
+
+# Run outputs. The task definitions are versioned; per-run scores are not.
+/results/archive_pre_paper_faithful_20260915/
+/results/rescore_all.log
+*.log
+
+# Scratch
+/tmp/
+
+# Local API connectivity testing helper (contains environment-specific setup)
+scripts/test_azure_openai.py
+
+# Cluster-local: the built image, SLURM logs
+*.sif
+/logs
+
+# Per-method baseline environments and their caches (rebuilt from the run_*_baseline.py docstrings)
+/.method-venv-*/
+/.method-cache/
+# Baseline outputs: aligned coordinates and scores per task and method (GBs; regenerate with the run_*_baseline scripts)
+/results/baselines

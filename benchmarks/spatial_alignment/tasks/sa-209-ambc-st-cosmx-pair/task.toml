@@ -1,0 +1,16 @@
+id = "sa-209-ambc-st-cosmx-pair"
+name = "Adult mouse brain coronal cross-platform alignment: st to cosmx"
+domain = "spatial_genomics"
+modality = "spatial_transcriptomics"
+task_type = "cross_platform_pair_alignment"
+difficulty = "medium"
+status = "executable_local"
+input_contract = "h5ad_spatial_v1"
+output_contract = "aligned_coordinate_csv_v1"
+metric_profile = "sabench_gene_only_alignment_v1"
+label_key = "Region"
+marker_gene_file = "benchmarks/spatial_alignment/tasks/sa-209-ambc-st-cosmx-pair/data/marker_genes.csv"
+max_marker_genes = 100
+slices = ["ambc_st=/users/ychen5/p2b-data/paper2bench-data/AMBC_ST/data233_ambc_st_21A.h5ad", "ambc_cosmx=/users/ychen5/p2b-data/paper2bench-data/AMBC_CosMx/data240_ambc_cosmx_quarter_S3.h5ad"]
+paper_data_ids = ["Data231-240/CosMx", "Data231-240/ST"]
+paper_source = "SABench Data231-240 ten-platform adult mouse brain coronal family; Fig. 5d reports whether each method ran on each platform pair."

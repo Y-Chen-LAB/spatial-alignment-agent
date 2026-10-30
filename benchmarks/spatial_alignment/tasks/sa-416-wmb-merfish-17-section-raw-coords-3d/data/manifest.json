@@ -1,0 +1,222 @@
+{
+  "schema_version": "paper2bench.data_manifest.v0.1",
+  "task_id": "sa-416-wmb-merfish-17-section-raw-coords-3d",
+  "source": "GEASO data release, Zenodo 18811760 (Wang, Liu & Ma, Nat Commun 2026)",
+  "build_script": "scripts/build_geaso_tasks.py",
+  "dataset": "Zhuang ABCA-1 MERFISH (Zhang et al. 2023), SABench WMB sections (Data99-227)",
+  "task_type": "serial_3d_reconstruction",
+  "section_step": 8,
+  "n_sections": 17,
+  "section_files": [
+    "wmb_paper_sec010.h5ad",
+    "wmb_paper_sec018.h5ad",
+    "wmb_paper_sec026.h5ad",
+    "wmb_paper_sec034.h5ad",
+    "wmb_paper_sec042.h5ad",
+    "wmb_paper_sec050.h5ad",
+    "wmb_paper_sec058.h5ad",
+    "wmb_paper_sec066.h5ad",
+    "wmb_paper_sec074.h5ad",
+    "wmb_paper_sec083.h5ad",
+    "wmb_paper_sec091.h5ad",
+    "wmb_paper_sec100.h5ad",
+    "wmb_paper_sec108.h5ad",
+    "wmb_paper_sec117.h5ad",
+    "wmb_paper_sec125.h5ad",
+    "wmb_paper_sec133.h5ad",
+    "wmb_paper_sec141.h5ad"
+  ],
+  "input": "raw imaging coordinates (obsm/spatial_section)",
+  "truth": "Allen CCF in-plane (z, -y), um, from the data authors' registration, in s000's raw frame via s000's similarity map",
+  "real_difficulty": "per-section scale 1.17 +/- 0.05 relative to the atlas; ~250 um non-rigid residual after best similarity fit",
+  "paper_source": "Zhang et al. 2023 whole mouse brain MERFISH (Zhuang ABCA-1); cellxgene release used by SABench Data99-227.",
+  "assets": [
+    {
+      "asset_id": "s000",
+      "role": "slice",
+      "path": "/users/ychen5/p2b-data/paper2bench-data/wmb_realistic/sa-416/s000.h5ad",
+      "format": "h5ad",
+      "visibility": "public",
+      "metadata": {
+        "n_obs": 12448,
+        "is_reference": true
+      }
+    },
+    {
+      "asset_id": "s001",
+      "role": "slice",
+      "path": "/users/ychen5/p2b-data/paper2bench-data/wmb_realistic/sa-416/s001.h5ad",
+      "format": "h5ad",
+      "visibility": "public",
+      "metadata": {
+        "n_obs": 16563,
+        "is_reference": false
+      }
+    },
+    {
+      "asset_id": "s002",
+      "role": "slice",
+      "path": "/users/ychen5/p2b-data/paper2bench-data/wmb_realistic/sa-416/s002.h5ad",
+      "format": "h5ad",
+      "visibility": "public",
+      "metadata": {
+        "n_obs": 12755,
+        "is_reference": false
+      }
+    },
+    {
+      "asset_id": "s003",
+      "role": "slice",
+      "path": "/users/ychen5/p2b-data/paper2bench-data/wmb_realistic/sa-416/s003.h5ad",
+      "format": "h5ad",
+      "visibility": "public",
+      "metadata": {
+        "n_obs": 14588,
+        "is_reference": false
+      }
+    },
+    {
+      "asset_id": "s004",
+      "role": "slice",
+      "path": "/users/ychen5/p2b-data/paper2bench-data/wmb_realistic/sa-416/s004.h5ad",
+      "format": "h5ad",
+      "visibility": "public",
+      "metadata": {
+        "n_obs": 20852,
+        "is_reference": false
+      }
+    },
+    {
+      "asset_id": "s005",
+      "role": "slice",
+      "path": "/users/ychen5/p2b-data/paper2bench-data/wmb_realistic/sa-416/s005.h5ad",
+      "format": "h5ad",
+      "visibility": "public",
+      "metadata": {
+        "n_obs": 30457,
+        "is_reference": false
+      }
+    },
+    {
+      "asset_id": "s006",
+      "role": "slice",
+      "path": "/users/ychen5/p2b-data/paper2bench-data/wmb_realistic/sa-416/s006.h5ad",
+      "format": "h5ad",
+      "visibility": "public",
+      "metadata": {
+        "n_obs": 34983,
+        "is_reference": false
+      }
+    },
+    {
+      "asset_id": "s007",
+      "role": "slice",
+      "path": "/users/ychen5/p2b-data/paper2bench-data/wmb_realistic/sa-416/s007.h5ad",
+      "format": "h5ad",
+      "visibility": "public",
+      "metadata": {
+        "n_obs": 36788,
+        "is_reference": false
+      }
+    },
+    {
+      "asset_id": "s008",
+      "role": "slice",
+      "path": "/users/ychen5/p2b-data/paper2bench-data/wmb_realistic/sa-416/s008.h5ad",
+      "format": "h5ad",
+      "visibility": "public",
+      "metadata": {
+        "n_obs": 38566,
+        "is_reference": false
+      }
+    },
+    {
+      "asset_id": "s009",
+      "role": "slice",
+      "path": "/users/ychen5/p2b-data/paper2bench-data/wmb_realistic/sa-416/s009.h5ad",
+      "format": "h5ad",
+      "visibility": "public",
+      "metadata": {
+        "n_obs": 47597,
+        "is_reference": false
+      }
+    },
+    {
+      "asset_id": "s010",
+      "role": "slice",
+      "path": "/users/ychen5/p2b-data/paper2bench-data/wmb_realistic/sa-416/s010.h5ad",
+      "format": "h5ad",
+      "visibility": "public",
+      "metadata": {
+        "n_obs": 41050,
+        "is_reference": false
+      }
+    },
+    {
+      "asset_id": "s011",
+      "role": "slice",
+      "path": "/users/ychen5/p2b-data/paper2bench-data/wmb_realistic/sa-416/s011.h5ad",
+      "format": "h5ad",
+      "visibility": "public",
+      "metadata": {
+        "n_obs": 38452,
+        "is_reference": false
+      }
+    },
+    {
+      "asset_id": "s012",
+      "role": "slice",
+      "path": "/users/ychen5/p2b-data/paper2bench-data/wmb_realistic/sa-416/s012.h5ad",
+      "format": "h5ad",
+      "visibility": "public",
+      "metadata": {
+        "n_obs": 35568,
+        "is_reference": false
+      }
+    },
+    {
+      "asset_id": "s013",
+      "role": "slice",
+      "path": "/users/ychen5/p2b-data/paper2bench-data/wmb_realistic/sa-416/s013.h5ad",
+      "format": "h5ad",
+      "visibility": "public",
+      "metadata": {
+        "n_obs": 20905,
+        "is_reference": false
+      }
+    },
+    {
+      "asset_id": "s014",
+      "role": "slice",
+      "path": "/users/ychen5/p2b-data/paper2bench-data/wmb_realistic/sa-416/s014.h5ad",
+      "format": "h5ad",
+      "visibility": "public",
+      "metadata": {
+        "n_obs": 23811,
+        "is_reference": false
+      }
+    },
+    {
+      "asset_id": "s015",
+      "role": "slice",
+      "path": "/users/ychen5/p2b-data/paper2bench-data/wmb_realistic/sa-416/s015.h5ad",
+      "format": "h5ad",
+      "visibility": "public",
+      "metadata": {
+        "n_obs": 23111,
+        "is_reference": false
+      }
+    },
+    {
+      "asset_id": "s016",
+      "role": "slice",
+      "path": "/users/ychen5/p2b-data/paper2bench-data/wmb_realistic/sa-416/s016.h5ad",
+      "format": "h5ad",
+      "visibility": "public",
+      "metadata": {
+        "n_obs": 13041,
+        "is_reference": false
+      }
+    }
+  ]
+}

@@ -1,0 +1,341 @@
+{
+  "schema_version": "paper2bench.data_manifest.v0.1",
+  "task_id": "sa-020-mop-mouse1-atlas-serial-align",
+  "source": "Zhang et al. 2021 MERFISH MOp atlas (Data45-77 in SABench paper Yan et al. 2026), full mouse-1 33-slice atlas",
+  "compiler": "scripts/compile_mop_bil_processed.py (parallel agent)",
+  "raw_inputs": [
+    "/Users/yiqun/Downloads/paper2bench-data/sabench_full/Data45-77_MOp/processed_data/counts.h5ad"
+  ],
+  "assets": [
+    {
+      "asset_id": "mouse1_slice1",
+      "format": "h5ad",
+      "path": "benchmarks/spatial_alignment/compiled_data/mop_paper/mouse1_slice1.h5ad",
+      "role": "slice",
+      "visibility": "public",
+      "metadata": {
+        "n_obs": 2378
+      }
+    },
+    {
+      "asset_id": "mouse1_slice10",
+      "format": "h5ad",
+      "path": "benchmarks/spatial_alignment/compiled_data/mop_paper/mouse1_slice10.h5ad",
+      "role": "slice",
+      "visibility": "public",
+      "metadata": {
+        "n_obs": 2423
+      }
+    },
+    {
+      "asset_id": "mouse1_slice21",
+      "format": "h5ad",
+      "path": "benchmarks/spatial_alignment/compiled_data/mop_paper/mouse1_slice21.h5ad",
+      "role": "slice",
+      "visibility": "public",
+      "metadata": {
+        "n_obs": 2033
+      }
+    },
+    {
+      "asset_id": "mouse1_slice31",
+      "format": "h5ad",
+      "path": "benchmarks/spatial_alignment/compiled_data/mop_paper/mouse1_slice31.h5ad",
+      "role": "slice",
+      "visibility": "public",
+      "metadata": {
+        "n_obs": 3106
+      }
+    },
+    {
+      "asset_id": "mouse1_slice40",
+      "format": "h5ad",
+      "path": "benchmarks/spatial_alignment/compiled_data/mop_paper/mouse1_slice40.h5ad",
+      "role": "slice",
+      "visibility": "public",
+      "metadata": {
+        "n_obs": 4159
+      }
+    },
+    {
+      "asset_id": "mouse1_slice50",
+      "format": "h5ad",
+      "path": "benchmarks/spatial_alignment/compiled_data/mop_paper/mouse1_slice50.h5ad",
+      "role": "slice",
+      "visibility": "public",
+      "metadata": {
+        "n_obs": 4359
+      }
+    },
+    {
+      "asset_id": "mouse1_slice62",
+      "format": "h5ad",
+      "path": "benchmarks/spatial_alignment/compiled_data/mop_paper/mouse1_slice62.h5ad",
+      "role": "slice",
+      "visibility": "public",
+      "metadata": {
+        "n_obs": 4792
+      }
+    },
+    {
+      "asset_id": "mouse1_slice71",
+      "format": "h5ad",
+      "path": "benchmarks/spatial_alignment/compiled_data/mop_paper/mouse1_slice71.h5ad",
+      "role": "slice",
+      "visibility": "public",
+      "metadata": {
+        "n_obs": 5749
+      }
+    },
+    {
+      "asset_id": "mouse1_slice81",
+      "format": "h5ad",
+      "path": "benchmarks/spatial_alignment/compiled_data/mop_paper/mouse1_slice81.h5ad",
+      "role": "slice",
+      "visibility": "public",
+      "metadata": {
+        "n_obs": 5262
+      }
+    },
+    {
+      "asset_id": "mouse1_slice91",
+      "format": "h5ad",
+      "path": "benchmarks/spatial_alignment/compiled_data/mop_paper/mouse1_slice91.h5ad",
+      "role": "slice",
+      "visibility": "public",
+      "metadata": {
+        "n_obs": 5661
+      }
+    },
+    {
+      "asset_id": "mouse1_slice102",
+      "format": "h5ad",
+      "path": "benchmarks/spatial_alignment/compiled_data/mop_paper/mouse1_slice102.h5ad",
+      "role": "slice",
+      "visibility": "public",
+      "metadata": {
+        "n_obs": 6731
+      }
+    },
+    {
+      "asset_id": "mouse1_slice112",
+      "format": "h5ad",
+      "path": "benchmarks/spatial_alignment/compiled_data/mop_paper/mouse1_slice112.h5ad",
+      "role": "slice",
+      "visibility": "public",
+      "metadata": {
+        "n_obs": 4996
+      }
+    },
+    {
+      "asset_id": "mouse1_slice122",
+      "format": "h5ad",
+      "path": "benchmarks/spatial_alignment/compiled_data/mop_paper/mouse1_slice122.h5ad",
+      "role": "slice",
+      "visibility": "public",
+      "metadata": {
+        "n_obs": 6185
+      }
+    },
+    {
+      "asset_id": "mouse1_slice131",
+      "format": "h5ad",
+      "path": "benchmarks/spatial_alignment/compiled_data/mop_paper/mouse1_slice131.h5ad",
+      "role": "slice",
+      "visibility": "public",
+      "metadata": {
+        "n_obs": 5061
+      }
+    },
+    {
+      "asset_id": "mouse1_slice153",
+      "format": "h5ad",
+      "path": "benchmarks/spatial_alignment/compiled_data/mop_paper/mouse1_slice153.h5ad",
+      "role": "slice",
+      "visibility": "public",
+      "metadata": {
+        "n_obs": 7626
+      }
+    },
+    {
+      "asset_id": "mouse1_slice162",
+      "format": "h5ad",
+      "path": "benchmarks/spatial_alignment/compiled_data/mop_paper/mouse1_slice162.h5ad",
+      "role": "slice",
+      "visibility": "public",
+      "metadata": {
+        "n_obs": 6963
+      }
+    },
+    {
+      "asset_id": "mouse1_slice170",
+      "format": "h5ad",
+      "path": "benchmarks/spatial_alignment/compiled_data/mop_paper/mouse1_slice170.h5ad",
+      "role": "slice",
+      "visibility": "public",
+      "metadata": {
+        "n_obs": 6459
+      }
+    },
+    {
+      "asset_id": "mouse1_slice180",
+      "format": "h5ad",
+      "path": "benchmarks/spatial_alignment/compiled_data/mop_paper/mouse1_slice180.h5ad",
+      "role": "slice",
+      "visibility": "public",
+      "metadata": {
+        "n_obs": 6264
+      }
+    },
+    {
+      "asset_id": "mouse1_slice190",
+      "format": "h5ad",
+      "path": "benchmarks/spatial_alignment/compiled_data/mop_paper/mouse1_slice190.h5ad",
+      "role": "slice",
+      "visibility": "public",
+      "metadata": {
+        "n_obs": 5730
+      }
+    },
+    {
+      "asset_id": "mouse1_slice200",
+      "format": "h5ad",
+      "path": "benchmarks/spatial_alignment/compiled_data/mop_paper/mouse1_slice200.h5ad",
+      "role": "slice",
+      "visibility": "public",
+      "metadata": {
+        "n_obs": 2197
+      }
+    },
+    {
+      "asset_id": "mouse1_slice201",
+      "format": "h5ad",
+      "path": "benchmarks/spatial_alignment/compiled_data/mop_paper/mouse1_slice201.h5ad",
+      "role": "slice",
+      "visibility": "public",
+      "metadata": {
+        "n_obs": 6218
+      }
+    },
+    {
+      "asset_id": "mouse1_slice212",
+      "format": "h5ad",
+      "path": "benchmarks/spatial_alignment/compiled_data/mop_paper/mouse1_slice212.h5ad",
+      "role": "slice",
+      "visibility": "public",
+      "metadata": {
+        "n_obs": 6535
+      }
+    },
+    {
+      "asset_id": "mouse1_slice221",
+      "format": "h5ad",
+      "path": "benchmarks/spatial_alignment/compiled_data/mop_paper/mouse1_slice221.h5ad",
+      "role": "slice",
+      "visibility": "public",
+      "metadata": {
+        "n_obs": 5763
+      }
+    },
+    {
+      "asset_id": "mouse1_slice232",
+      "format": "h5ad",
+      "path": "benchmarks/spatial_alignment/compiled_data/mop_paper/mouse1_slice232.h5ad",
+      "role": "slice",
+      "visibility": "public",
+      "metadata": {
+        "n_obs": 5375
+      }
+    },
+    {
+      "asset_id": "mouse1_slice241",
+      "format": "h5ad",
+      "path": "benchmarks/spatial_alignment/compiled_data/mop_paper/mouse1_slice241.h5ad",
+      "role": "slice",
+      "visibility": "public",
+      "metadata": {
+        "n_obs": 4052
+      }
+    },
+    {
+      "asset_id": "mouse1_slice251",
+      "format": "h5ad",
+      "path": "benchmarks/spatial_alignment/compiled_data/mop_paper/mouse1_slice251.h5ad",
+      "role": "slice",
+      "visibility": "public",
+      "metadata": {
+        "n_obs": 4429
+      }
+    },
+    {
+      "asset_id": "mouse1_slice260",
+      "format": "h5ad",
+      "path": "benchmarks/spatial_alignment/compiled_data/mop_paper/mouse1_slice260.h5ad",
+      "role": "slice",
+      "visibility": "public",
+      "metadata": {
+        "n_obs": 5745
+      }
+    },
+    {
+      "asset_id": "mouse1_slice271",
+      "format": "h5ad",
+      "path": "benchmarks/spatial_alignment/compiled_data/mop_paper/mouse1_slice271.h5ad",
+      "role": "slice",
+      "visibility": "public",
+      "metadata": {
+        "n_obs": 3899
+      }
+    },
+    {
+      "asset_id": "mouse1_slice283",
+      "format": "h5ad",
+      "path": "benchmarks/spatial_alignment/compiled_data/mop_paper/mouse1_slice283.h5ad",
+      "role": "slice",
+      "visibility": "public",
+      "metadata": {
+        "n_obs": 4308
+      }
+    },
+    {
+      "asset_id": "mouse1_slice291",
+      "format": "h5ad",
+      "path": "benchmarks/spatial_alignment/compiled_data/mop_paper/mouse1_slice291.h5ad",
+      "role": "slice",
+      "visibility": "public",
+      "metadata": {
+        "n_obs": 4453
+      }
+    },
+    {
+      "asset_id": "mouse1_slice301",
+      "format": "h5ad",
+      "path": "benchmarks/spatial_alignment/compiled_data/mop_paper/mouse1_slice301.h5ad",
+      "role": "slice",
+      "visibility": "public",
+      "metadata": {
+        "n_obs": 4408
+      }
+    },
+    {
+      "asset_id": "mouse1_slice313",
+      "format": "h5ad",
+      "path": "benchmarks/spatial_alignment/compiled_data/mop_paper/mouse1_slice313.h5ad",
+      "role": "slice",
+      "visibility": "public",
+      "metadata": {
+        "n_obs": 3920
+      }
+    },
+    {
+      "asset_id": "mouse1_slice326",
+      "format": "h5ad",
+      "path": "benchmarks/spatial_alignment/compiled_data/mop_paper/mouse1_slice326.h5ad",
+      "role": "slice",
+      "visibility": "public",
+      "metadata": {
+        "n_obs": 4145
+      }
+    }
+  ]
+}

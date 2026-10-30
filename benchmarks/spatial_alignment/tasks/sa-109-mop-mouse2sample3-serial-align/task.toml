@@ -1,0 +1,14 @@
+id = "sa-109-mop-mouse2sample3-serial-align"
+name = "MOp MERFISH serial alignment (mouse2sample3)"
+domain = "spatial_genomics"
+modality = "spatial_transcriptomics"
+task_type = "serial_alignment"
+difficulty = "extended"
+status = "executable_local"
+input_contract = "h5ad_spatial_v1"
+output_contract = "aligned_coordinate_csv_v1"
+metric_profile = "sabench_light_alignment_v1"
+marker_gene_file = "benchmarks/spatial_alignment/tasks/sa-109-mop-mouse2sample3-serial-align/data/marker_genes.csv"
+max_marker_genes = 254
+slices = ["mouse2_slice20=benchmarks/spatial_alignment/compiled_data/mop_paper/mouse2_slice20.h5ad", "mouse2_slice79=benchmarks/spatial_alignment/compiled_data/mop_paper/mouse2_slice79.h5ad", "mouse2_slice139=benchmarks/spatial_alignment/compiled_data/mop_paper/mouse2_slice139.h5ad", "mouse2_slice201=benchmarks/spatial_alignment/compiled_data/mop_paper/mouse2_slice201.h5ad", "mouse2_slice261=benchmarks/spatial_alignment/compiled_data/mop_paper/mouse2_slice261.h5ad", "mouse2_slice319=benchmarks/spatial_alignment/compiled_data/mop_paper/mouse2_slice319.h5ad"]
+label_key = "Cluster"

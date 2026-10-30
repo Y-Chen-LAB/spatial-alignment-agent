@@ -1,0 +1,13 @@
+{
+  "source": "SABench coarse alignment tutorial data",
+  "slices": [
+    {
+      "id": "151673_shuffled",
+      "path": "/Users/yiqun/Downloads/paper2bench-data/coarse_align/151673_shuffled.h5ad"
+    },
+    {
+      "id": "151674_shuffled",
+      "path": "/Users/yiqun/Downloads/paper2bench-data/coarse_align/151674_shuffled.h5ad"
+    }
+  ]
+}

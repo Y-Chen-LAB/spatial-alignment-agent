@@ -1,0 +1,48 @@
+{
+  "schema_version": "paper2bench.data_manifest.v0.1",
+  "task_id": "sa-225-ambc-xenium-xenium5k-pair",
+  "family": "ambc_cross_platform",
+  "compiler": "scripts/build_tasks.py",
+  "registry": "benchmarks/spatial_alignment/task_registry.toml",
+  "paper_reference": "Fig5D_AMBC_cross_platform_success_long.csv",
+  "marker_genes": {
+    "marker_source": "log1p_variance_ranking",
+    "marker_source_path": null,
+    "n_requested": 100,
+    "n_present_on_all_slices": 100,
+    "n_common_genes": 177
+  },
+  "pair_mode": "consecutive",
+  "supersedes": null,
+  "assets": [
+    {
+      "asset_id": "ambc_xenium",
+      "format": "h5ad",
+      "path": "benchmarks/spatial_alignment/compiled_data/xenium/xenium_v1_ff_mouse_brain_multisection_1.h5ad",
+      "role": "slice",
+      "visibility": "public",
+      "metadata": {
+        "paper_data_id": "Data231-240/Xenium",
+        "n_obs": 162033,
+        "n_var": 541
+      }
+    },
+    {
+      "asset_id": "ambc_xenium5k",
+      "format": "h5ad",
+      "path": "benchmarks/spatial_alignment/compiled_data/xenium/xenium_prime_mouse_brain_coronal_ff.h5ad",
+      "role": "slice",
+      "visibility": "public",
+      "metadata": {
+        "paper_data_id": "Data231-240/Xenium5k",
+        "n_obs": 63173,
+        "n_var": 13780
+      }
+    }
+  ],
+  "platform_pair": [
+    "xenium",
+    "xenium5k"
+  ],
+  "platform_pair_class": "imaging"
+}

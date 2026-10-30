@@ -1,0 +1,40 @@
+{
+  "schema_version": "paper2bench.data_manifest.v0.1",
+  "task_id": "sa-404-starmap-ribomap-cross-modality-pair",
+  "source": "GEASO data release, Zenodo 18811760 (Wang, Liu & Ma, Nat Commun 2026)",
+  "build_script": "scripts/build_geaso_tasks.py",
+  "dataset": "STARmap and RIBOmap on adjacent mouse brain sections (GEASO Fig. 5)",
+  "task_type": "cross_modality_alignment",
+  "truth": "released coordinates of the RIBOmap section (the authors' registration), recovered after a known rigid move",
+  "rotation_degrees": -161.83,
+  "shift_um": [
+    1122.3,
+    -434.4
+  ],
+  "units": "released x, y taken as \u00b5m",
+  "paper_source": "STARmap/RIBOmap adjacent mouse brain sections, via the GEASO data release (Zenodo 18811760, Fig. 5).",
+  "assets": [
+    {
+      "asset_id": "starmap",
+      "role": "slice",
+      "path": "/users/ychen5/p2b-data/paper2bench-data/geaso_tasks/sa-404/starmap.h5ad",
+      "format": "h5ad",
+      "visibility": "public",
+      "metadata": {
+        "n_obs": 59165,
+        "is_reference": true
+      }
+    },
+    {
+      "asset_id": "ribomap",
+      "role": "slice",
+      "path": "/users/ychen5/p2b-data/paper2bench-data/geaso_tasks/sa-404/ribomap.h5ad",
+      "format": "h5ad",
+      "visibility": "public",
+      "metadata": {
+        "n_obs": 58692,
+        "is_reference": false
+      }
+    }
+  ]
+}

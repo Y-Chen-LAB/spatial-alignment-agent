@@ -1,0 +1,43 @@
+Bootstrap: docker
+From: python:3.11-slim
+
+# An image with the agent CLIs already inside, so nothing from the host has to be bound in
+# except the workspace and one credential. Build it on the cluster:
+#
+#   singularity build gen2bench.sif containers/gen2bench.def
+#   sha256sum gen2bench.sif          # record it; the docker:// tag it starts from is mutable
+#
+# The alternative is --agent-runtime <prefix>, which binds a host install read-only. That
+# works, but it makes every job depend on a host path staying put, and the Node CLIs need
+# their lib/ and node_modules/ to come along, not just bin/.
+
+%post
+    set -eux
+    # Rootless builds run in a root-mapped user namespace with only one uid mapped, so apt
+    # cannot drop to its _apt user. Without this, apt-get fails on clusters with no
+    # /etc/subuid entry, which is how JHPCE ships apptainer 1.5.3.
+    echo 'APT::Sandbox::User "root";' > /etc/apt/apt.conf.d/99no-sandbox
+    apt-get update
+    apt-get install -y --no-install-recommends curl ca-certificates git
+    curl -fsSL https://deb.nodesource.com/setup_22.x | bash -
+    apt-get install -y --no-install-recommends nodejs
+    # Pinned to the image built on JHPCE 2026-09-16 (hash in containers/README.md), so a
+    # rebuild elsewhere runs the same CLI and library versions as the other shard. Bump
+    # them together, and rebuild both clusters' images, or not at all.
+    npm install -g @anthropic-ai/claude-code@2.1.273 @google/gemini-cli@0.60.0 @openai/codex@0.154.0
+    pip install --no-cache-dir \
+        mini-swe-agent==2.4.6 uv==0.12.15 \
+        numpy==2.4.6 pandas==2.3.3 scipy==1.17.1 scikit-learn==1.9.1 h5py==3.16.0 \
+        anndata==0.12.19 scanpy==1.11.5 alpha_shapes==1.1.1
+    apt-get clean && rm -rf /var/lib/apt/lists/*
+
+%environment
+    export PYTHONNOUSERSITE=1
+    export PIP_DISABLE_PIP_VERSION_CHECK=1
+
+%test
+    claude --version
+    gemini --version
+    codex --version
+    mini --help > /dev/null
+    python -c 'import h5py, numpy, pandas, scipy, sklearn'

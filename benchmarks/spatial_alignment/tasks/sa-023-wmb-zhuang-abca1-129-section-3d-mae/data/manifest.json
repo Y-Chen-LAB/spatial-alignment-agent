@@ -1,0 +1,1699 @@
+{
+  "schema_version": "paper2bench.data_manifest.v0.1",
+  "task_id": "sa-023-wmb-zhuang-abca1-129-section-3d-mae",
+  "source": "Allen Institute ABC atlas Zhuang-ABCA-1 MERFISH whole-mouse-brain dataset (Data99-227 in SABench paper Yan et al. 2026)",
+  "compiler": "scripts/compile_wmb_cellxgene_paper.py (paper-faithful cell set, 2026-09-14; previously scripts/compile_wmb_zhuang_abca1.py)",
+  "raw_inputs": [
+    "/Users/yiqun/Downloads/paper2bench-data/sabench_full/Data99-227_WMB/wmb_animal1_local.h5ad"
+  ],
+  "ground_truth_coords_obs_keys": [
+    "x_GT",
+    "y_GT",
+    "z_GT"
+  ],
+  "perturbation": {
+    "kind": "deterministic_rigid_per_section",
+    "seed_base": 990,
+    "translation_fraction": 0.1
+  },
+  "filter": "raw matrix obs/brain_section_label intersected with ccf_coordinates.csv membership: drops 18 edge sections (147 \u2192 129)",
+  "assets": [
+    {
+      "asset_id": "wmb_sec010",
+      "format": "h5ad",
+      "path": "/Users/yiqun/Downloads/paper2bench-data/wmb_cellxgene_paper/wmb_paper_sec010.h5ad",
+      "role": "slice",
+      "visibility": "public",
+      "metadata": {
+        "section": "Zhuang-ABCA-1.010",
+        "z_mean": 4.928708489373364,
+        "n_obs": 12448,
+        "n_var": 1120
+      }
+    },
+    {
+      "asset_id": "wmb_sec011",
+      "format": "h5ad",
+      "path": "/Users/yiqun/Downloads/paper2bench-data/wmb_cellxgene_paper/wmb_paper_sec011.h5ad",
+      "role": "slice",
+      "visibility": "public",
+      "metadata": {
+        "section": "Zhuang-ABCA-1.011",
+        "z_mean": 4.923069761562005,
+        "n_obs": 13937,
+        "n_var": 1120
+      }
+    },
+    {
+      "asset_id": "wmb_sec012",
+      "format": "h5ad",
+      "path": "/Users/yiqun/Downloads/paper2bench-data/wmb_cellxgene_paper/wmb_paper_sec012.h5ad",
+      "role": "slice",
+      "visibility": "public",
+      "metadata": {
+        "section": "Zhuang-ABCA-1.012",
+        "z_mean": 4.845953433976989,
+        "n_obs": 13632,
+        "n_var": 1120
+      }
+    },
+    {
+      "asset_id": "wmb_sec013",
+      "format": "h5ad",
+      "path": "/Users/yiqun/Downloads/paper2bench-data/wmb_cellxgene_paper/wmb_paper_sec013.h5ad",
+      "role": "slice",
+      "visibility": "public",
+      "metadata": {
+        "section": "Zhuang-ABCA-1.013",
+        "z_mean": 4.807316837300312,
+        "n_obs": 16916,
+        "n_var": 1120
+      }
+    },
+    {
+      "asset_id": "wmb_sec014",
+      "format": "h5ad",
+      "path": "/Users/yiqun/Downloads/paper2bench-data/wmb_cellxgene_paper/wmb_paper_sec014.h5ad",
+      "role": "slice",
+      "visibility": "public",
+      "metadata": {
+        "section": "Zhuang-ABCA-1.014",
+        "z_mean": 4.780947549718164,
+        "n_obs": 16717,
+        "n_var": 1120
+      }
+    },
+    {
+      "asset_id": "wmb_sec015",
+      "format": "h5ad",
+      "path": "/Users/yiqun/Downloads/paper2bench-data/wmb_cellxgene_paper/wmb_paper_sec015.h5ad",
+      "role": "slice",
+      "visibility": "public",
+      "metadata": {
+        "section": "Zhuang-ABCA-1.015",
+        "z_mean": 4.763288150577253,
+        "n_obs": 16534,
+        "n_var": 1120
+      }
+    },
+    {
+      "asset_id": "wmb_sec016",
+      "format": "h5ad",
+      "path": "/Users/yiqun/Downloads/paper2bench-data/wmb_cellxgene_paper/wmb_paper_sec016.h5ad",
+      "role": "slice",
+      "visibility": "public",
+      "metadata": {
+        "section": "Zhuang-ABCA-1.016",
+        "z_mean": 4.754430147810161,
+        "n_obs": 16539,
+        "n_var": 1120
+      }
+    },
+    {
+      "asset_id": "wmb_sec017",
+      "format": "h5ad",
+      "path": "/Users/yiqun/Downloads/paper2bench-data/wmb_cellxgene_paper/wmb_paper_sec017.h5ad",
+      "role": "slice",
+      "visibility": "public",
+      "metadata": {
+        "section": "Zhuang-ABCA-1.017",
+        "z_mean": 4.694956454125461,
+        "n_obs": 15798,
+        "n_var": 1120
+      }
+    },
+    {
+      "asset_id": "wmb_sec018",
+      "format": "h5ad",
+      "path": "/Users/yiqun/Downloads/paper2bench-data/wmb_cellxgene_paper/wmb_paper_sec018.h5ad",
+      "role": "slice",
+      "visibility": "public",
+      "metadata": {
+        "section": "Zhuang-ABCA-1.018",
+        "z_mean": 4.744913316790497,
+        "n_obs": 16563,
+        "n_var": 1120
+      }
+    },
+    {
+      "asset_id": "wmb_sec019",
+      "format": "h5ad",
+      "path": "/Users/yiqun/Downloads/paper2bench-data/wmb_cellxgene_paper/wmb_paper_sec019.h5ad",
+      "role": "slice",
+      "visibility": "public",
+      "metadata": {
+        "section": "Zhuang-ABCA-1.019",
+        "z_mean": 4.811784596186656,
+        "n_obs": 15982,
+        "n_var": 1120
+      }
+    },
+    {
+      "asset_id": "wmb_sec020",
+      "format": "h5ad",
+      "path": "/Users/yiqun/Downloads/paper2bench-data/wmb_cellxgene_paper/wmb_paper_sec020.h5ad",
+      "role": "slice",
+      "visibility": "public",
+      "metadata": {
+        "section": "Zhuang-ABCA-1.020",
+        "z_mean": 4.8089097147090145,
+        "n_obs": 17890,
+        "n_var": 1120
+      }
+    },
+    {
+      "asset_id": "wmb_sec021",
+      "format": "h5ad",
+      "path": "/Users/yiqun/Downloads/paper2bench-data/wmb_cellxgene_paper/wmb_paper_sec021.h5ad",
+      "role": "slice",
+      "visibility": "public",
+      "metadata": {
+        "section": "Zhuang-ABCA-1.021",
+        "z_mean": 4.776502204711948,
+        "n_obs": 18551,
+        "n_var": 1120
+      }
+    },
+    {
+      "asset_id": "wmb_sec022",
+      "format": "h5ad",
+      "path": "/Users/yiqun/Downloads/paper2bench-data/wmb_cellxgene_paper/wmb_paper_sec022.h5ad",
+      "role": "slice",
+      "visibility": "public",
+      "metadata": {
+        "section": "Zhuang-ABCA-1.022",
+        "z_mean": 4.810683219509097,
+        "n_obs": 18689,
+        "n_var": 1120
+      }
+    },
+    {
+      "asset_id": "wmb_sec023",
+      "format": "h5ad",
+      "path": "/Users/yiqun/Downloads/paper2bench-data/wmb_cellxgene_paper/wmb_paper_sec023.h5ad",
+      "role": "slice",
+      "visibility": "public",
+      "metadata": {
+        "section": "Zhuang-ABCA-1.023",
+        "z_mean": 4.838273380327491,
+        "n_obs": 15216,
+        "n_var": 1120
+      }
+    },
+    {
+      "asset_id": "wmb_sec024",
+      "format": "h5ad",
+      "path": "/Users/yiqun/Downloads/paper2bench-data/wmb_cellxgene_paper/wmb_paper_sec024.h5ad",
+      "role": "slice",
+      "visibility": "public",
+      "metadata": {
+        "section": "Zhuang-ABCA-1.024",
+        "z_mean": 4.815422169509568,
+        "n_obs": 15416,
+        "n_var": 1120
+      }
+    },
+    {
+      "asset_id": "wmb_sec025",
+      "format": "h5ad",
+      "path": "/Users/yiqun/Downloads/paper2bench-data/wmb_cellxgene_paper/wmb_paper_sec025.h5ad",
+      "role": "slice",
+      "visibility": "public",
+      "metadata": {
+        "section": "Zhuang-ABCA-1.025",
+        "z_mean": 4.874456579827037,
+        "n_obs": 13439,
+        "n_var": 1120
+      }
+    },
+    {
+      "asset_id": "wmb_sec026",
+      "format": "h5ad",
+      "path": "/Users/yiqun/Downloads/paper2bench-data/wmb_cellxgene_paper/wmb_paper_sec026.h5ad",
+      "role": "slice",
+      "visibility": "public",
+      "metadata": {
+        "section": "Zhuang-ABCA-1.026",
+        "z_mean": 4.804889982214167,
+        "n_obs": 12755,
+        "n_var": 1120
+      }
+    },
+    {
+      "asset_id": "wmb_sec027",
+      "format": "h5ad",
+      "path": "/Users/yiqun/Downloads/paper2bench-data/wmb_cellxgene_paper/wmb_paper_sec027.h5ad",
+      "role": "slice",
+      "visibility": "public",
+      "metadata": {
+        "section": "Zhuang-ABCA-1.027",
+        "z_mean": 4.8786876788582,
+        "n_obs": 11177,
+        "n_var": 1120
+      }
+    },
+    {
+      "asset_id": "wmb_sec028",
+      "format": "h5ad",
+      "path": "/Users/yiqun/Downloads/paper2bench-data/wmb_cellxgene_paper/wmb_paper_sec028.h5ad",
+      "role": "slice",
+      "visibility": "public",
+      "metadata": {
+        "section": "Zhuang-ABCA-1.028",
+        "z_mean": 4.8849525699032705,
+        "n_obs": 13880,
+        "n_var": 1120
+      }
+    },
+    {
+      "asset_id": "wmb_sec029",
+      "format": "h5ad",
+      "path": "/Users/yiqun/Downloads/paper2bench-data/wmb_cellxgene_paper/wmb_paper_sec029.h5ad",
+      "role": "slice",
+      "visibility": "public",
+      "metadata": {
+        "section": "Zhuang-ABCA-1.029",
+        "z_mean": 4.761749632436057,
+        "n_obs": 12299,
+        "n_var": 1120
+      }
+    },
+    {
+      "asset_id": "wmb_sec030",
+      "format": "h5ad",
+      "path": "/Users/yiqun/Downloads/paper2bench-data/wmb_cellxgene_paper/wmb_paper_sec030.h5ad",
+      "role": "slice",
+      "visibility": "public",
+      "metadata": {
+        "section": "Zhuang-ABCA-1.030",
+        "z_mean": 4.788625013981372,
+        "n_obs": 14305,
+        "n_var": 1120
+      }
+    },
+    {
+      "asset_id": "wmb_sec031",
+      "format": "h5ad",
+      "path": "/Users/yiqun/Downloads/paper2bench-data/wmb_cellxgene_paper/wmb_paper_sec031.h5ad",
+      "role": "slice",
+      "visibility": "public",
+      "metadata": {
+        "section": "Zhuang-ABCA-1.031",
+        "z_mean": 4.76748806589415,
+        "n_obs": 15441,
+        "n_var": 1120
+      }
+    },
+    {
+      "asset_id": "wmb_sec032",
+      "format": "h5ad",
+      "path": "/Users/yiqun/Downloads/paper2bench-data/wmb_cellxgene_paper/wmb_paper_sec032.h5ad",
+      "role": "slice",
+      "visibility": "public",
+      "metadata": {
+        "section": "Zhuang-ABCA-1.032",
+        "z_mean": 4.710718627593698,
+        "n_obs": 14987,
+        "n_var": 1120
+      }
+    },
+    {
+      "asset_id": "wmb_sec033",
+      "format": "h5ad",
+      "path": "/Users/yiqun/Downloads/paper2bench-data/wmb_cellxgene_paper/wmb_paper_sec033.h5ad",
+      "role": "slice",
+      "visibility": "public",
+      "metadata": {
+        "section": "Zhuang-ABCA-1.033",
+        "z_mean": 4.654262799313707,
+        "n_obs": 15788,
+        "n_var": 1120
+      }
+    },
+    {
+      "asset_id": "wmb_sec034",
+      "format": "h5ad",
+      "path": "/Users/yiqun/Downloads/paper2bench-data/wmb_cellxgene_paper/wmb_paper_sec034.h5ad",
+      "role": "slice",
+      "visibility": "public",
+      "metadata": {
+        "section": "Zhuang-ABCA-1.034",
+        "z_mean": 4.632452474489599,
+        "n_obs": 14588,
+        "n_var": 1120
+      }
+    },
+    {
+      "asset_id": "wmb_sec035",
+      "format": "h5ad",
+      "path": "/Users/yiqun/Downloads/paper2bench-data/wmb_cellxgene_paper/wmb_paper_sec035.h5ad",
+      "role": "slice",
+      "visibility": "public",
+      "metadata": {
+        "section": "Zhuang-ABCA-1.035",
+        "z_mean": 4.5812613768176025,
+        "n_obs": 14057,
+        "n_var": 1120
+      }
+    },
+    {
+      "asset_id": "wmb_sec036",
+      "format": "h5ad",
+      "path": "/Users/yiqun/Downloads/paper2bench-data/wmb_cellxgene_paper/wmb_paper_sec036.h5ad",
+      "role": "slice",
+      "visibility": "public",
+      "metadata": {
+        "section": "Zhuang-ABCA-1.036",
+        "z_mean": 4.512837224505687,
+        "n_obs": 12983,
+        "n_var": 1120
+      }
+    },
+    {
+      "asset_id": "wmb_sec037",
+      "format": "h5ad",
+      "path": "/Users/yiqun/Downloads/paper2bench-data/wmb_cellxgene_paper/wmb_paper_sec037.h5ad",
+      "role": "slice",
+      "visibility": "public",
+      "metadata": {
+        "section": "Zhuang-ABCA-1.037",
+        "z_mean": 4.490065856584669,
+        "n_obs": 12836,
+        "n_var": 1120
+      }
+    },
+    {
+      "asset_id": "wmb_sec038",
+      "format": "h5ad",
+      "path": "/Users/yiqun/Downloads/paper2bench-data/wmb_cellxgene_paper/wmb_paper_sec038.h5ad",
+      "role": "slice",
+      "visibility": "public",
+      "metadata": {
+        "section": "Zhuang-ABCA-1.038",
+        "z_mean": 4.452190983953276,
+        "n_obs": 15502,
+        "n_var": 1120
+      }
+    },
+    {
+      "asset_id": "wmb_sec039",
+      "format": "h5ad",
+      "path": "/Users/yiqun/Downloads/paper2bench-data/wmb_cellxgene_paper/wmb_paper_sec039.h5ad",
+      "role": "slice",
+      "visibility": "public",
+      "metadata": {
+        "section": "Zhuang-ABCA-1.039",
+        "z_mean": 4.367555278027749,
+        "n_obs": 15961,
+        "n_var": 1120
+      }
+    },
+    {
+      "asset_id": "wmb_sec040",
+      "format": "h5ad",
+      "path": "/Users/yiqun/Downloads/paper2bench-data/wmb_cellxgene_paper/wmb_paper_sec040.h5ad",
+      "role": "slice",
+      "visibility": "public",
+      "metadata": {
+        "section": "Zhuang-ABCA-1.040",
+        "z_mean": 4.362640677832531,
+        "n_obs": 17871,
+        "n_var": 1120
+      }
+    },
+    {
+      "asset_id": "wmb_sec041",
+      "format": "h5ad",
+      "path": "/Users/yiqun/Downloads/paper2bench-data/wmb_cellxgene_paper/wmb_paper_sec041.h5ad",
+      "role": "slice",
+      "visibility": "public",
+      "metadata": {
+        "section": "Zhuang-ABCA-1.041",
+        "z_mean": 4.326815575375894,
+        "n_obs": 17860,
+        "n_var": 1120
+      }
+    },
+    {
+      "asset_id": "wmb_sec042",
+      "format": "h5ad",
+      "path": "/Users/yiqun/Downloads/paper2bench-data/wmb_cellxgene_paper/wmb_paper_sec042.h5ad",
+      "role": "slice",
+      "visibility": "public",
+      "metadata": {
+        "section": "Zhuang-ABCA-1.042",
+        "z_mean": 4.242921501329566,
+        "n_obs": 20852,
+        "n_var": 1120
+      }
+    },
+    {
+      "asset_id": "wmb_sec043",
+      "format": "h5ad",
+      "path": "/Users/yiqun/Downloads/paper2bench-data/wmb_cellxgene_paper/wmb_paper_sec043.h5ad",
+      "role": "slice",
+      "visibility": "public",
+      "metadata": {
+        "section": "Zhuang-ABCA-1.043",
+        "z_mean": 4.183337194532189,
+        "n_obs": 20984,
+        "n_var": 1120
+      }
+    },
+    {
+      "asset_id": "wmb_sec044",
+      "format": "h5ad",
+      "path": "/Users/yiqun/Downloads/paper2bench-data/wmb_cellxgene_paper/wmb_paper_sec044.h5ad",
+      "role": "slice",
+      "visibility": "public",
+      "metadata": {
+        "section": "Zhuang-ABCA-1.044",
+        "z_mean": 4.243117554682197,
+        "n_obs": 23557,
+        "n_var": 1120
+      }
+    },
+    {
+      "asset_id": "wmb_sec045",
+      "format": "h5ad",
+      "path": "/Users/yiqun/Downloads/paper2bench-data/wmb_cellxgene_paper/wmb_paper_sec045.h5ad",
+      "role": "slice",
+      "visibility": "public",
+      "metadata": {
+        "section": "Zhuang-ABCA-1.045",
+        "z_mean": 4.14723541101992,
+        "n_obs": 24596,
+        "n_var": 1120
+      }
+    },
+    {
+      "asset_id": "wmb_sec046",
+      "format": "h5ad",
+      "path": "/Users/yiqun/Downloads/paper2bench-data/wmb_cellxgene_paper/wmb_paper_sec046.h5ad",
+      "role": "slice",
+      "visibility": "public",
+      "metadata": {
+        "section": "Zhuang-ABCA-1.046",
+        "z_mean": 4.2749800364784685,
+        "n_obs": 27591,
+        "n_var": 1120
+      }
+    },
+    {
+      "asset_id": "wmb_sec047",
+      "format": "h5ad",
+      "path": "/Users/yiqun/Downloads/paper2bench-data/wmb_cellxgene_paper/wmb_paper_sec047.h5ad",
+      "role": "slice",
+      "visibility": "public",
+      "metadata": {
+        "section": "Zhuang-ABCA-1.047",
+        "z_mean": 4.181959992331674,
+        "n_obs": 27821,
+        "n_var": 1120
+      }
+    },
+    {
+      "asset_id": "wmb_sec048",
+      "format": "h5ad",
+      "path": "/Users/yiqun/Downloads/paper2bench-data/wmb_cellxgene_paper/wmb_paper_sec048.h5ad",
+      "role": "slice",
+      "visibility": "public",
+      "metadata": {
+        "section": "Zhuang-ABCA-1.048",
+        "z_mean": 4.16054809266938,
+        "n_obs": 27984,
+        "n_var": 1120
+      }
+    },
+    {
+      "asset_id": "wmb_sec049",
+      "format": "h5ad",
+      "path": "/Users/yiqun/Downloads/paper2bench-data/wmb_cellxgene_paper/wmb_paper_sec049.h5ad",
+      "role": "slice",
+      "visibility": "public",
+      "metadata": {
+        "section": "Zhuang-ABCA-1.049",
+        "z_mean": 4.1250419910053235,
+        "n_obs": 28408,
+        "n_var": 1120
+      }
+    },
+    {
+      "asset_id": "wmb_sec050",
+      "format": "h5ad",
+      "path": "/Users/yiqun/Downloads/paper2bench-data/wmb_cellxgene_paper/wmb_paper_sec050.h5ad",
+      "role": "slice",
+      "visibility": "public",
+      "metadata": {
+        "section": "Zhuang-ABCA-1.050",
+        "z_mean": 4.060402829609788,
+        "n_obs": 30457,
+        "n_var": 1120
+      }
+    },
+    {
+      "asset_id": "wmb_sec051",
+      "format": "h5ad",
+      "path": "/Users/yiqun/Downloads/paper2bench-data/wmb_cellxgene_paper/wmb_paper_sec051.h5ad",
+      "role": "slice",
+      "visibility": "public",
+      "metadata": {
+        "section": "Zhuang-ABCA-1.051",
+        "z_mean": 4.054034056062989,
+        "n_obs": 29075,
+        "n_var": 1120
+      }
+    },
+    {
+      "asset_id": "wmb_sec052",
+      "format": "h5ad",
+      "path": "/Users/yiqun/Downloads/paper2bench-data/wmb_cellxgene_paper/wmb_paper_sec052.h5ad",
+      "role": "slice",
+      "visibility": "public",
+      "metadata": {
+        "section": "Zhuang-ABCA-1.052",
+        "z_mean": 4.035708189488814,
+        "n_obs": 32578,
+        "n_var": 1120
+      }
+    },
+    {
+      "asset_id": "wmb_sec053",
+      "format": "h5ad",
+      "path": "/Users/yiqun/Downloads/paper2bench-data/wmb_cellxgene_paper/wmb_paper_sec053.h5ad",
+      "role": "slice",
+      "visibility": "public",
+      "metadata": {
+        "section": "Zhuang-ABCA-1.053",
+        "z_mean": 3.97047972239577,
+        "n_obs": 33028,
+        "n_var": 1120
+      }
+    },
+    {
+      "asset_id": "wmb_sec054",
+      "format": "h5ad",
+      "path": "/Users/yiqun/Downloads/paper2bench-data/wmb_cellxgene_paper/wmb_paper_sec054.h5ad",
+      "role": "slice",
+      "visibility": "public",
+      "metadata": {
+        "section": "Zhuang-ABCA-1.054",
+        "z_mean": 3.968789284809915,
+        "n_obs": 34141,
+        "n_var": 1120
+      }
+    },
+    {
+      "asset_id": "wmb_sec055",
+      "format": "h5ad",
+      "path": "/Users/yiqun/Downloads/paper2bench-data/wmb_cellxgene_paper/wmb_paper_sec055.h5ad",
+      "role": "slice",
+      "visibility": "public",
+      "metadata": {
+        "section": "Zhuang-ABCA-1.055",
+        "z_mean": 3.814954330787646,
+        "n_obs": 33452,
+        "n_var": 1120
+      }
+    },
+    {
+      "asset_id": "wmb_sec056",
+      "format": "h5ad",
+      "path": "/Users/yiqun/Downloads/paper2bench-data/wmb_cellxgene_paper/wmb_paper_sec056.h5ad",
+      "role": "slice",
+      "visibility": "public",
+      "metadata": {
+        "section": "Zhuang-ABCA-1.056",
+        "z_mean": 3.859415589179972,
+        "n_obs": 30614,
+        "n_var": 1120
+      }
+    },
+    {
+      "asset_id": "wmb_sec057",
+      "format": "h5ad",
+      "path": "/Users/yiqun/Downloads/paper2bench-data/wmb_cellxgene_paper/wmb_paper_sec057.h5ad",
+      "role": "slice",
+      "visibility": "public",
+      "metadata": {
+        "section": "Zhuang-ABCA-1.057",
+        "z_mean": 3.776647589069316,
+        "n_obs": 33894,
+        "n_var": 1120
+      }
+    },
+    {
+      "asset_id": "wmb_sec058",
+      "format": "h5ad",
+      "path": "/Users/yiqun/Downloads/paper2bench-data/wmb_cellxgene_paper/wmb_paper_sec058.h5ad",
+      "role": "slice",
+      "visibility": "public",
+      "metadata": {
+        "section": "Zhuang-ABCA-1.058",
+        "z_mean": 3.825915527839912,
+        "n_obs": 34983,
+        "n_var": 1120
+      }
+    },
+    {
+      "asset_id": "wmb_sec059",
+      "format": "h5ad",
+      "path": "/Users/yiqun/Downloads/paper2bench-data/wmb_cellxgene_paper/wmb_paper_sec059.h5ad",
+      "role": "slice",
+      "visibility": "public",
+      "metadata": {
+        "section": "Zhuang-ABCA-1.059",
+        "z_mean": 3.7598502968676244,
+        "n_obs": 34299,
+        "n_var": 1120
+      }
+    },
+    {
+      "asset_id": "wmb_sec060",
+      "format": "h5ad",
+      "path": "/Users/yiqun/Downloads/paper2bench-data/wmb_cellxgene_paper/wmb_paper_sec060.h5ad",
+      "role": "slice",
+      "visibility": "public",
+      "metadata": {
+        "section": "Zhuang-ABCA-1.060",
+        "z_mean": 3.7748953596818615,
+        "n_obs": 37130,
+        "n_var": 1120
+      }
+    },
+    {
+      "asset_id": "wmb_sec061",
+      "format": "h5ad",
+      "path": "/Users/yiqun/Downloads/paper2bench-data/wmb_cellxgene_paper/wmb_paper_sec061.h5ad",
+      "role": "slice",
+      "visibility": "public",
+      "metadata": {
+        "section": "Zhuang-ABCA-1.061",
+        "z_mean": 3.7677022575692924,
+        "n_obs": 37812,
+        "n_var": 1120
+      }
+    },
+    {
+      "asset_id": "wmb_sec062",
+      "format": "h5ad",
+      "path": "/Users/yiqun/Downloads/paper2bench-data/wmb_cellxgene_paper/wmb_paper_sec062.h5ad",
+      "role": "slice",
+      "visibility": "public",
+      "metadata": {
+        "section": "Zhuang-ABCA-1.062",
+        "z_mean": 3.7264491650398894,
+        "n_obs": 40127,
+        "n_var": 1120
+      }
+    },
+    {
+      "asset_id": "wmb_sec063",
+      "format": "h5ad",
+      "path": "/Users/yiqun/Downloads/paper2bench-data/wmb_cellxgene_paper/wmb_paper_sec063.h5ad",
+      "role": "slice",
+      "visibility": "public",
+      "metadata": {
+        "section": "Zhuang-ABCA-1.063",
+        "z_mean": 3.664368092802234,
+        "n_obs": 36775,
+        "n_var": 1120
+      }
+    },
+    {
+      "asset_id": "wmb_sec064",
+      "format": "h5ad",
+      "path": "/Users/yiqun/Downloads/paper2bench-data/wmb_cellxgene_paper/wmb_paper_sec064.h5ad",
+      "role": "slice",
+      "visibility": "public",
+      "metadata": {
+        "section": "Zhuang-ABCA-1.064",
+        "z_mean": 3.7522098063498848,
+        "n_obs": 42120,
+        "n_var": 1120
+      }
+    },
+    {
+      "asset_id": "wmb_sec065",
+      "format": "h5ad",
+      "path": "/Users/yiqun/Downloads/paper2bench-data/wmb_cellxgene_paper/wmb_paper_sec065.h5ad",
+      "role": "slice",
+      "visibility": "public",
+      "metadata": {
+        "section": "Zhuang-ABCA-1.065",
+        "z_mean": 3.6752106776226796,
+        "n_obs": 40721,
+        "n_var": 1120
+      }
+    },
+    {
+      "asset_id": "wmb_sec066",
+      "format": "h5ad",
+      "path": "/Users/yiqun/Downloads/paper2bench-data/wmb_cellxgene_paper/wmb_paper_sec066.h5ad",
+      "role": "slice",
+      "visibility": "public",
+      "metadata": {
+        "section": "Zhuang-ABCA-1.066",
+        "z_mean": 3.7217403295750775,
+        "n_obs": 36788,
+        "n_var": 1120
+      }
+    },
+    {
+      "asset_id": "wmb_sec067",
+      "format": "h5ad",
+      "path": "/Users/yiqun/Downloads/paper2bench-data/wmb_cellxgene_paper/wmb_paper_sec067.h5ad",
+      "role": "slice",
+      "visibility": "public",
+      "metadata": {
+        "section": "Zhuang-ABCA-1.067",
+        "z_mean": 3.7382990128004545,
+        "n_obs": 37812,
+        "n_var": 1120
+      }
+    },
+    {
+      "asset_id": "wmb_sec068",
+      "format": "h5ad",
+      "path": "/Users/yiqun/Downloads/paper2bench-data/wmb_cellxgene_paper/wmb_paper_sec068.h5ad",
+      "role": "slice",
+      "visibility": "public",
+      "metadata": {
+        "section": "Zhuang-ABCA-1.068",
+        "z_mean": 3.7316108837737922,
+        "n_obs": 38337,
+        "n_var": 1120
+      }
+    },
+    {
+      "asset_id": "wmb_sec069",
+      "format": "h5ad",
+      "path": "/Users/yiqun/Downloads/paper2bench-data/wmb_cellxgene_paper/wmb_paper_sec069.h5ad",
+      "role": "slice",
+      "visibility": "public",
+      "metadata": {
+        "section": "Zhuang-ABCA-1.069",
+        "z_mean": 3.5714620349876793,
+        "n_obs": 33788,
+        "n_var": 1120
+      }
+    },
+    {
+      "asset_id": "wmb_sec070",
+      "format": "h5ad",
+      "path": "/Users/yiqun/Downloads/paper2bench-data/wmb_cellxgene_paper/wmb_paper_sec070.h5ad",
+      "role": "slice",
+      "visibility": "public",
+      "metadata": {
+        "section": "Zhuang-ABCA-1.070",
+        "z_mean": 3.6229704691750917,
+        "n_obs": 36527,
+        "n_var": 1120
+      }
+    },
+    {
+      "asset_id": "wmb_sec071",
+      "format": "h5ad",
+      "path": "/Users/yiqun/Downloads/paper2bench-data/wmb_cellxgene_paper/wmb_paper_sec071.h5ad",
+      "role": "slice",
+      "visibility": "public",
+      "metadata": {
+        "section": "Zhuang-ABCA-1.071",
+        "z_mean": 3.689650067040135,
+        "n_obs": 45264,
+        "n_var": 1120
+      }
+    },
+    {
+      "asset_id": "wmb_sec072",
+      "format": "h5ad",
+      "path": "/Users/yiqun/Downloads/paper2bench-data/wmb_cellxgene_paper/wmb_paper_sec072.h5ad",
+      "role": "slice",
+      "visibility": "public",
+      "metadata": {
+        "section": "Zhuang-ABCA-1.072",
+        "z_mean": 3.6533136470052727,
+        "n_obs": 35126,
+        "n_var": 1120
+      }
+    },
+    {
+      "asset_id": "wmb_sec073",
+      "format": "h5ad",
+      "path": "/Users/yiqun/Downloads/paper2bench-data/wmb_cellxgene_paper/wmb_paper_sec073.h5ad",
+      "role": "slice",
+      "visibility": "public",
+      "metadata": {
+        "section": "Zhuang-ABCA-1.073",
+        "z_mean": 3.5903206003569403,
+        "n_obs": 45038,
+        "n_var": 1120
+      }
+    },
+    {
+      "asset_id": "wmb_sec074",
+      "format": "h5ad",
+      "path": "/Users/yiqun/Downloads/paper2bench-data/wmb_cellxgene_paper/wmb_paper_sec074.h5ad",
+      "role": "slice",
+      "visibility": "public",
+      "metadata": {
+        "section": "Zhuang-ABCA-1.074",
+        "z_mean": 3.671046145796769,
+        "n_obs": 38566,
+        "n_var": 1120
+      }
+    },
+    {
+      "asset_id": "wmb_sec076",
+      "format": "h5ad",
+      "path": "/Users/yiqun/Downloads/paper2bench-data/wmb_cellxgene_paper/wmb_paper_sec076.h5ad",
+      "role": "slice",
+      "visibility": "public",
+      "metadata": {
+        "section": "Zhuang-ABCA-1.076",
+        "z_mean": 3.723684381638224,
+        "n_obs": 42854,
+        "n_var": 1120
+      }
+    },
+    {
+      "asset_id": "wmb_sec077",
+      "format": "h5ad",
+      "path": "/Users/yiqun/Downloads/paper2bench-data/wmb_cellxgene_paper/wmb_paper_sec077.h5ad",
+      "role": "slice",
+      "visibility": "public",
+      "metadata": {
+        "section": "Zhuang-ABCA-1.077",
+        "z_mean": 3.6915493800291497,
+        "n_obs": 43968,
+        "n_var": 1120
+      }
+    },
+    {
+      "asset_id": "wmb_sec078",
+      "format": "h5ad",
+      "path": "/Users/yiqun/Downloads/paper2bench-data/wmb_cellxgene_paper/wmb_paper_sec078.h5ad",
+      "role": "slice",
+      "visibility": "public",
+      "metadata": {
+        "section": "Zhuang-ABCA-1.078",
+        "z_mean": 3.7299941346559766,
+        "n_obs": 45393,
+        "n_var": 1120
+      }
+    },
+    {
+      "asset_id": "wmb_sec079",
+      "format": "h5ad",
+      "path": "/Users/yiqun/Downloads/paper2bench-data/wmb_cellxgene_paper/wmb_paper_sec079.h5ad",
+      "role": "slice",
+      "visibility": "public",
+      "metadata": {
+        "section": "Zhuang-ABCA-1.079",
+        "z_mean": 3.6619039327157474,
+        "n_obs": 44930,
+        "n_var": 1120
+      }
+    },
+    {
+      "asset_id": "wmb_sec080",
+      "format": "h5ad",
+      "path": "/Users/yiqun/Downloads/paper2bench-data/wmb_cellxgene_paper/wmb_paper_sec080.h5ad",
+      "role": "slice",
+      "visibility": "public",
+      "metadata": {
+        "section": "Zhuang-ABCA-1.080",
+        "z_mean": 3.710439054071133,
+        "n_obs": 49418,
+        "n_var": 1120
+      }
+    },
+    {
+      "asset_id": "wmb_sec081",
+      "format": "h5ad",
+      "path": "/Users/yiqun/Downloads/paper2bench-data/wmb_cellxgene_paper/wmb_paper_sec081.h5ad",
+      "role": "slice",
+      "visibility": "public",
+      "metadata": {
+        "section": "Zhuang-ABCA-1.081",
+        "z_mean": 3.6624526305826772,
+        "n_obs": 48234,
+        "n_var": 1120
+      }
+    },
+    {
+      "asset_id": "wmb_sec082",
+      "format": "h5ad",
+      "path": "/Users/yiqun/Downloads/paper2bench-data/wmb_cellxgene_paper/wmb_paper_sec082.h5ad",
+      "role": "slice",
+      "visibility": "public",
+      "metadata": {
+        "section": "Zhuang-ABCA-1.082",
+        "z_mean": 3.5640402140759995,
+        "n_obs": 40837,
+        "n_var": 1120
+      }
+    },
+    {
+      "asset_id": "wmb_sec083",
+      "format": "h5ad",
+      "path": "/Users/yiqun/Downloads/paper2bench-data/wmb_cellxgene_paper/wmb_paper_sec083.h5ad",
+      "role": "slice",
+      "visibility": "public",
+      "metadata": {
+        "section": "Zhuang-ABCA-1.083",
+        "z_mean": 3.583850631940076,
+        "n_obs": 47597,
+        "n_var": 1120
+      }
+    },
+    {
+      "asset_id": "wmb_sec084",
+      "format": "h5ad",
+      "path": "/Users/yiqun/Downloads/paper2bench-data/wmb_cellxgene_paper/wmb_paper_sec084.h5ad",
+      "role": "slice",
+      "visibility": "public",
+      "metadata": {
+        "section": "Zhuang-ABCA-1.084",
+        "z_mean": 3.5644295006788105,
+        "n_obs": 42111,
+        "n_var": 1120
+      }
+    },
+    {
+      "asset_id": "wmb_sec085",
+      "format": "h5ad",
+      "path": "/Users/yiqun/Downloads/paper2bench-data/wmb_cellxgene_paper/wmb_paper_sec085.h5ad",
+      "role": "slice",
+      "visibility": "public",
+      "metadata": {
+        "section": "Zhuang-ABCA-1.085",
+        "z_mean": 3.631061433726913,
+        "n_obs": 44776,
+        "n_var": 1120
+      }
+    },
+    {
+      "asset_id": "wmb_sec086",
+      "format": "h5ad",
+      "path": "/Users/yiqun/Downloads/paper2bench-data/wmb_cellxgene_paper/wmb_paper_sec086.h5ad",
+      "role": "slice",
+      "visibility": "public",
+      "metadata": {
+        "section": "Zhuang-ABCA-1.086",
+        "z_mean": 3.524188987816042,
+        "n_obs": 45751,
+        "n_var": 1120
+      }
+    },
+    {
+      "asset_id": "wmb_sec087",
+      "format": "h5ad",
+      "path": "/Users/yiqun/Downloads/paper2bench-data/wmb_cellxgene_paper/wmb_paper_sec087.h5ad",
+      "role": "slice",
+      "visibility": "public",
+      "metadata": {
+        "section": "Zhuang-ABCA-1.087",
+        "z_mean": 3.4794434056173227,
+        "n_obs": 41186,
+        "n_var": 1120
+      }
+    },
+    {
+      "asset_id": "wmb_sec088",
+      "format": "h5ad",
+      "path": "/Users/yiqun/Downloads/paper2bench-data/wmb_cellxgene_paper/wmb_paper_sec088.h5ad",
+      "role": "slice",
+      "visibility": "public",
+      "metadata": {
+        "section": "Zhuang-ABCA-1.088",
+        "z_mean": 3.5621218152916643,
+        "n_obs": 42297,
+        "n_var": 1120
+      }
+    },
+    {
+      "asset_id": "wmb_sec089",
+      "format": "h5ad",
+      "path": "/Users/yiqun/Downloads/paper2bench-data/wmb_cellxgene_paper/wmb_paper_sec089.h5ad",
+      "role": "slice",
+      "visibility": "public",
+      "metadata": {
+        "section": "Zhuang-ABCA-1.089",
+        "z_mean": 3.506164896889356,
+        "n_obs": 39582,
+        "n_var": 1120
+      }
+    },
+    {
+      "asset_id": "wmb_sec090",
+      "format": "h5ad",
+      "path": "/Users/yiqun/Downloads/paper2bench-data/wmb_cellxgene_paper/wmb_paper_sec090.h5ad",
+      "role": "slice",
+      "visibility": "public",
+      "metadata": {
+        "section": "Zhuang-ABCA-1.090",
+        "z_mean": 3.4961289456160625,
+        "n_obs": 43402,
+        "n_var": 1120
+      }
+    },
+    {
+      "asset_id": "wmb_sec091",
+      "format": "h5ad",
+      "path": "/Users/yiqun/Downloads/paper2bench-data/wmb_cellxgene_paper/wmb_paper_sec091.h5ad",
+      "role": "slice",
+      "visibility": "public",
+      "metadata": {
+        "section": "Zhuang-ABCA-1.091",
+        "z_mean": 3.5489040561382064,
+        "n_obs": 41050,
+        "n_var": 1120
+      }
+    },
+    {
+      "asset_id": "wmb_sec092",
+      "format": "h5ad",
+      "path": "/Users/yiqun/Downloads/paper2bench-data/wmb_cellxgene_paper/wmb_paper_sec092.h5ad",
+      "role": "slice",
+      "visibility": "public",
+      "metadata": {
+        "section": "Zhuang-ABCA-1.092",
+        "z_mean": 3.5222491290957483,
+        "n_obs": 40649,
+        "n_var": 1120
+      }
+    },
+    {
+      "asset_id": "wmb_sec093",
+      "format": "h5ad",
+      "path": "/Users/yiqun/Downloads/paper2bench-data/wmb_cellxgene_paper/wmb_paper_sec093.h5ad",
+      "role": "slice",
+      "visibility": "public",
+      "metadata": {
+        "section": "Zhuang-ABCA-1.093",
+        "z_mean": 3.4862756325956736,
+        "n_obs": 38272,
+        "n_var": 1120
+      }
+    },
+    {
+      "asset_id": "wmb_sec095",
+      "format": "h5ad",
+      "path": "/Users/yiqun/Downloads/paper2bench-data/wmb_cellxgene_paper/wmb_paper_sec095.h5ad",
+      "role": "slice",
+      "visibility": "public",
+      "metadata": {
+        "section": "Zhuang-ABCA-1.095",
+        "z_mean": 3.5442696191806085,
+        "n_obs": 36785,
+        "n_var": 1120
+      }
+    },
+    {
+      "asset_id": "wmb_sec096",
+      "format": "h5ad",
+      "path": "/Users/yiqun/Downloads/paper2bench-data/wmb_cellxgene_paper/wmb_paper_sec096.h5ad",
+      "role": "slice",
+      "visibility": "public",
+      "metadata": {
+        "section": "Zhuang-ABCA-1.096",
+        "z_mean": 3.554308952998263,
+        "n_obs": 35361,
+        "n_var": 1120
+      }
+    },
+    {
+      "asset_id": "wmb_sec097",
+      "format": "h5ad",
+      "path": "/Users/yiqun/Downloads/paper2bench-data/wmb_cellxgene_paper/wmb_paper_sec097.h5ad",
+      "role": "slice",
+      "visibility": "public",
+      "metadata": {
+        "section": "Zhuang-ABCA-1.097",
+        "z_mean": 3.5963761599573063,
+        "n_obs": 34792,
+        "n_var": 1120
+      }
+    },
+    {
+      "asset_id": "wmb_sec098",
+      "format": "h5ad",
+      "path": "/Users/yiqun/Downloads/paper2bench-data/wmb_cellxgene_paper/wmb_paper_sec098.h5ad",
+      "role": "slice",
+      "visibility": "public",
+      "metadata": {
+        "section": "Zhuang-ABCA-1.098",
+        "z_mean": 3.613012867296221,
+        "n_obs": 39383,
+        "n_var": 1120
+      }
+    },
+    {
+      "asset_id": "wmb_sec099",
+      "format": "h5ad",
+      "path": "/Users/yiqun/Downloads/paper2bench-data/wmb_cellxgene_paper/wmb_paper_sec099.h5ad",
+      "role": "slice",
+      "visibility": "public",
+      "metadata": {
+        "section": "Zhuang-ABCA-1.099",
+        "z_mean": 3.6327475684387442,
+        "n_obs": 39042,
+        "n_var": 1120
+      }
+    },
+    {
+      "asset_id": "wmb_sec100",
+      "format": "h5ad",
+      "path": "/Users/yiqun/Downloads/paper2bench-data/wmb_cellxgene_paper/wmb_paper_sec100.h5ad",
+      "role": "slice",
+      "visibility": "public",
+      "metadata": {
+        "section": "Zhuang-ABCA-1.100",
+        "z_mean": 3.589996629091694,
+        "n_obs": 38452,
+        "n_var": 1120
+      }
+    },
+    {
+      "asset_id": "wmb_sec101",
+      "format": "h5ad",
+      "path": "/Users/yiqun/Downloads/paper2bench-data/wmb_cellxgene_paper/wmb_paper_sec101.h5ad",
+      "role": "slice",
+      "visibility": "public",
+      "metadata": {
+        "section": "Zhuang-ABCA-1.101",
+        "z_mean": 3.6860285000759343,
+        "n_obs": 38553,
+        "n_var": 1120
+      }
+    },
+    {
+      "asset_id": "wmb_sec102",
+      "format": "h5ad",
+      "path": "/Users/yiqun/Downloads/paper2bench-data/wmb_cellxgene_paper/wmb_paper_sec102.h5ad",
+      "role": "slice",
+      "visibility": "public",
+      "metadata": {
+        "section": "Zhuang-ABCA-1.102",
+        "z_mean": 3.6057474119162247,
+        "n_obs": 42524,
+        "n_var": 1120
+      }
+    },
+    {
+      "asset_id": "wmb_sec103",
+      "format": "h5ad",
+      "path": "/Users/yiqun/Downloads/paper2bench-data/wmb_cellxgene_paper/wmb_paper_sec103.h5ad",
+      "role": "slice",
+      "visibility": "public",
+      "metadata": {
+        "section": "Zhuang-ABCA-1.103",
+        "z_mean": 3.695799446159415,
+        "n_obs": 39468,
+        "n_var": 1120
+      }
+    },
+    {
+      "asset_id": "wmb_sec104",
+      "format": "h5ad",
+      "path": "/Users/yiqun/Downloads/paper2bench-data/wmb_cellxgene_paper/wmb_paper_sec104.h5ad",
+      "role": "slice",
+      "visibility": "public",
+      "metadata": {
+        "section": "Zhuang-ABCA-1.104",
+        "z_mean": 3.622684749246004,
+        "n_obs": 38441,
+        "n_var": 1120
+      }
+    },
+    {
+      "asset_id": "wmb_sec105",
+      "format": "h5ad",
+      "path": "/Users/yiqun/Downloads/paper2bench-data/wmb_cellxgene_paper/wmb_paper_sec105.h5ad",
+      "role": "slice",
+      "visibility": "public",
+      "metadata": {
+        "section": "Zhuang-ABCA-1.105",
+        "z_mean": 3.732984972452745,
+        "n_obs": 39590,
+        "n_var": 1120
+      }
+    },
+    {
+      "asset_id": "wmb_sec106",
+      "format": "h5ad",
+      "path": "/Users/yiqun/Downloads/paper2bench-data/wmb_cellxgene_paper/wmb_paper_sec106.h5ad",
+      "role": "slice",
+      "visibility": "public",
+      "metadata": {
+        "section": "Zhuang-ABCA-1.106",
+        "z_mean": 3.649151324355221,
+        "n_obs": 35435,
+        "n_var": 1120
+      }
+    },
+    {
+      "asset_id": "wmb_sec107",
+      "format": "h5ad",
+      "path": "/Users/yiqun/Downloads/paper2bench-data/wmb_cellxgene_paper/wmb_paper_sec107.h5ad",
+      "role": "slice",
+      "visibility": "public",
+      "metadata": {
+        "section": "Zhuang-ABCA-1.107",
+        "z_mean": 3.7180908631179683,
+        "n_obs": 35234,
+        "n_var": 1120
+      }
+    },
+    {
+      "asset_id": "wmb_sec108",
+      "format": "h5ad",
+      "path": "/Users/yiqun/Downloads/paper2bench-data/wmb_cellxgene_paper/wmb_paper_sec108.h5ad",
+      "role": "slice",
+      "visibility": "public",
+      "metadata": {
+        "section": "Zhuang-ABCA-1.108",
+        "z_mean": 3.7027281981985563,
+        "n_obs": 35568,
+        "n_var": 1120
+      }
+    },
+    {
+      "asset_id": "wmb_sec109",
+      "format": "h5ad",
+      "path": "/Users/yiqun/Downloads/paper2bench-data/wmb_cellxgene_paper/wmb_paper_sec109.h5ad",
+      "role": "slice",
+      "visibility": "public",
+      "metadata": {
+        "section": "Zhuang-ABCA-1.109",
+        "z_mean": 3.6022594096085117,
+        "n_obs": 32035,
+        "n_var": 1120
+      }
+    },
+    {
+      "asset_id": "wmb_sec110",
+      "format": "h5ad",
+      "path": "/Users/yiqun/Downloads/paper2bench-data/wmb_cellxgene_paper/wmb_paper_sec110.h5ad",
+      "role": "slice",
+      "visibility": "public",
+      "metadata": {
+        "section": "Zhuang-ABCA-1.110",
+        "z_mean": 3.772598222992581,
+        "n_obs": 33862,
+        "n_var": 1120
+      }
+    },
+    {
+      "asset_id": "wmb_sec111",
+      "format": "h5ad",
+      "path": "/Users/yiqun/Downloads/paper2bench-data/wmb_cellxgene_paper/wmb_paper_sec111.h5ad",
+      "role": "slice",
+      "visibility": "public",
+      "metadata": {
+        "section": "Zhuang-ABCA-1.111",
+        "z_mean": 3.7859674527194036,
+        "n_obs": 33406,
+        "n_var": 1120
+      }
+    },
+    {
+      "asset_id": "wmb_sec113",
+      "format": "h5ad",
+      "path": "/Users/yiqun/Downloads/paper2bench-data/wmb_cellxgene_paper/wmb_paper_sec113.h5ad",
+      "role": "slice",
+      "visibility": "public",
+      "metadata": {
+        "section": "Zhuang-ABCA-1.113",
+        "z_mean": 4.021516813835972,
+        "n_obs": 29197,
+        "n_var": 1120
+      }
+    },
+    {
+      "asset_id": "wmb_sec114",
+      "format": "h5ad",
+      "path": "/Users/yiqun/Downloads/paper2bench-data/wmb_cellxgene_paper/wmb_paper_sec114.h5ad",
+      "role": "slice",
+      "visibility": "public",
+      "metadata": {
+        "section": "Zhuang-ABCA-1.114",
+        "z_mean": 3.8992779931870163,
+        "n_obs": 28545,
+        "n_var": 1120
+      }
+    },
+    {
+      "asset_id": "wmb_sec115",
+      "format": "h5ad",
+      "path": "/Users/yiqun/Downloads/paper2bench-data/wmb_cellxgene_paper/wmb_paper_sec115.h5ad",
+      "role": "slice",
+      "visibility": "public",
+      "metadata": {
+        "section": "Zhuang-ABCA-1.115",
+        "z_mean": 4.054350141034095,
+        "n_obs": 25497,
+        "n_var": 1120
+      }
+    },
+    {
+      "asset_id": "wmb_sec116",
+      "format": "h5ad",
+      "path": "/Users/yiqun/Downloads/paper2bench-data/wmb_cellxgene_paper/wmb_paper_sec116.h5ad",
+      "role": "slice",
+      "visibility": "public",
+      "metadata": {
+        "section": "Zhuang-ABCA-1.116",
+        "z_mean": 4.052269785921556,
+        "n_obs": 22510,
+        "n_var": 1120
+      }
+    },
+    {
+      "asset_id": "wmb_sec117",
+      "format": "h5ad",
+      "path": "/Users/yiqun/Downloads/paper2bench-data/wmb_cellxgene_paper/wmb_paper_sec117.h5ad",
+      "role": "slice",
+      "visibility": "public",
+      "metadata": {
+        "section": "Zhuang-ABCA-1.117",
+        "z_mean": 4.081078773389714,
+        "n_obs": 20905,
+        "n_var": 1120
+      }
+    },
+    {
+      "asset_id": "wmb_sec118",
+      "format": "h5ad",
+      "path": "/Users/yiqun/Downloads/paper2bench-data/wmb_cellxgene_paper/wmb_paper_sec118.h5ad",
+      "role": "slice",
+      "visibility": "public",
+      "metadata": {
+        "section": "Zhuang-ABCA-1.118",
+        "z_mean": 4.095037671980643,
+        "n_obs": 29065,
+        "n_var": 1120
+      }
+    },
+    {
+      "asset_id": "wmb_sec119",
+      "format": "h5ad",
+      "path": "/Users/yiqun/Downloads/paper2bench-data/wmb_cellxgene_paper/wmb_paper_sec119.h5ad",
+      "role": "slice",
+      "visibility": "public",
+      "metadata": {
+        "section": "Zhuang-ABCA-1.119",
+        "z_mean": 4.047944172745551,
+        "n_obs": 31808,
+        "n_var": 1120
+      }
+    },
+    {
+      "asset_id": "wmb_sec120",
+      "format": "h5ad",
+      "path": "/Users/yiqun/Downloads/paper2bench-data/wmb_cellxgene_paper/wmb_paper_sec120.h5ad",
+      "role": "slice",
+      "visibility": "public",
+      "metadata": {
+        "section": "Zhuang-ABCA-1.120",
+        "z_mean": 4.050075729597689,
+        "n_obs": 26293,
+        "n_var": 1120
+      }
+    },
+    {
+      "asset_id": "wmb_sec121",
+      "format": "h5ad",
+      "path": "/Users/yiqun/Downloads/paper2bench-data/wmb_cellxgene_paper/wmb_paper_sec121.h5ad",
+      "role": "slice",
+      "visibility": "public",
+      "metadata": {
+        "section": "Zhuang-ABCA-1.121",
+        "z_mean": 4.071160712905039,
+        "n_obs": 23931,
+        "n_var": 1120
+      }
+    },
+    {
+      "asset_id": "wmb_sec122",
+      "format": "h5ad",
+      "path": "/Users/yiqun/Downloads/paper2bench-data/wmb_cellxgene_paper/wmb_paper_sec122.h5ad",
+      "role": "slice",
+      "visibility": "public",
+      "metadata": {
+        "section": "Zhuang-ABCA-1.122",
+        "z_mean": 3.9335848686100747,
+        "n_obs": 28841,
+        "n_var": 1120
+      }
+    },
+    {
+      "asset_id": "wmb_sec123",
+      "format": "h5ad",
+      "path": "/Users/yiqun/Downloads/paper2bench-data/wmb_cellxgene_paper/wmb_paper_sec123.h5ad",
+      "role": "slice",
+      "visibility": "public",
+      "metadata": {
+        "section": "Zhuang-ABCA-1.123",
+        "z_mean": 4.069650097915557,
+        "n_obs": 28548,
+        "n_var": 1120
+      }
+    },
+    {
+      "asset_id": "wmb_sec124",
+      "format": "h5ad",
+      "path": "/Users/yiqun/Downloads/paper2bench-data/wmb_cellxgene_paper/wmb_paper_sec124.h5ad",
+      "role": "slice",
+      "visibility": "public",
+      "metadata": {
+        "section": "Zhuang-ABCA-1.124",
+        "z_mean": 4.057469095936282,
+        "n_obs": 22562,
+        "n_var": 1120
+      }
+    },
+    {
+      "asset_id": "wmb_sec125",
+      "format": "h5ad",
+      "path": "/Users/yiqun/Downloads/paper2bench-data/wmb_cellxgene_paper/wmb_paper_sec125.h5ad",
+      "role": "slice",
+      "visibility": "public",
+      "metadata": {
+        "section": "Zhuang-ABCA-1.125",
+        "z_mean": 3.9876264201602525,
+        "n_obs": 23811,
+        "n_var": 1120
+      }
+    },
+    {
+      "asset_id": "wmb_sec126",
+      "format": "h5ad",
+      "path": "/Users/yiqun/Downloads/paper2bench-data/wmb_cellxgene_paper/wmb_paper_sec126.h5ad",
+      "role": "slice",
+      "visibility": "public",
+      "metadata": {
+        "section": "Zhuang-ABCA-1.126",
+        "z_mean": 4.0894103430522915,
+        "n_obs": 24677,
+        "n_var": 1120
+      }
+    },
+    {
+      "asset_id": "wmb_sec127",
+      "format": "h5ad",
+      "path": "/Users/yiqun/Downloads/paper2bench-data/wmb_cellxgene_paper/wmb_paper_sec127.h5ad",
+      "role": "slice",
+      "visibility": "public",
+      "metadata": {
+        "section": "Zhuang-ABCA-1.127",
+        "z_mean": 4.031332551342666,
+        "n_obs": 23005,
+        "n_var": 1120
+      }
+    },
+    {
+      "asset_id": "wmb_sec128",
+      "format": "h5ad",
+      "path": "/Users/yiqun/Downloads/paper2bench-data/wmb_cellxgene_paper/wmb_paper_sec128.h5ad",
+      "role": "slice",
+      "visibility": "public",
+      "metadata": {
+        "section": "Zhuang-ABCA-1.128",
+        "z_mean": 4.109323062270517,
+        "n_obs": 23221,
+        "n_var": 1120
+      }
+    },
+    {
+      "asset_id": "wmb_sec129",
+      "format": "h5ad",
+      "path": "/Users/yiqun/Downloads/paper2bench-data/wmb_cellxgene_paper/wmb_paper_sec129.h5ad",
+      "role": "slice",
+      "visibility": "public",
+      "metadata": {
+        "section": "Zhuang-ABCA-1.129",
+        "z_mean": 4.161309436984548,
+        "n_obs": 25781,
+        "n_var": 1120
+      }
+    },
+    {
+      "asset_id": "wmb_sec130",
+      "format": "h5ad",
+      "path": "/Users/yiqun/Downloads/paper2bench-data/wmb_cellxgene_paper/wmb_paper_sec130.h5ad",
+      "role": "slice",
+      "visibility": "public",
+      "metadata": {
+        "section": "Zhuang-ABCA-1.130",
+        "z_mean": 4.141614402773094,
+        "n_obs": 23713,
+        "n_var": 1120
+      }
+    },
+    {
+      "asset_id": "wmb_sec131",
+      "format": "h5ad",
+      "path": "/Users/yiqun/Downloads/paper2bench-data/wmb_cellxgene_paper/wmb_paper_sec131.h5ad",
+      "role": "slice",
+      "visibility": "public",
+      "metadata": {
+        "section": "Zhuang-ABCA-1.131",
+        "z_mean": 4.213854269065529,
+        "n_obs": 24997,
+        "n_var": 1120
+      }
+    },
+    {
+      "asset_id": "wmb_sec132",
+      "format": "h5ad",
+      "path": "/Users/yiqun/Downloads/paper2bench-data/wmb_cellxgene_paper/wmb_paper_sec132.h5ad",
+      "role": "slice",
+      "visibility": "public",
+      "metadata": {
+        "section": "Zhuang-ABCA-1.132",
+        "z_mean": 4.268886862200202,
+        "n_obs": 21446,
+        "n_var": 1120
+      }
+    },
+    {
+      "asset_id": "wmb_sec133",
+      "format": "h5ad",
+      "path": "/Users/yiqun/Downloads/paper2bench-data/wmb_cellxgene_paper/wmb_paper_sec133.h5ad",
+      "role": "slice",
+      "visibility": "public",
+      "metadata": {
+        "section": "Zhuang-ABCA-1.133",
+        "z_mean": 4.321245859717301,
+        "n_obs": 23111,
+        "n_var": 1120
+      }
+    },
+    {
+      "asset_id": "wmb_sec134",
+      "format": "h5ad",
+      "path": "/Users/yiqun/Downloads/paper2bench-data/wmb_cellxgene_paper/wmb_paper_sec134.h5ad",
+      "role": "slice",
+      "visibility": "public",
+      "metadata": {
+        "section": "Zhuang-ABCA-1.134",
+        "z_mean": 4.300822351888609,
+        "n_obs": 24587,
+        "n_var": 1120
+      }
+    },
+    {
+      "asset_id": "wmb_sec135",
+      "format": "h5ad",
+      "path": "/Users/yiqun/Downloads/paper2bench-data/wmb_cellxgene_paper/wmb_paper_sec135.h5ad",
+      "role": "slice",
+      "visibility": "public",
+      "metadata": {
+        "section": "Zhuang-ABCA-1.135",
+        "z_mean": 4.418838149156602,
+        "n_obs": 22938,
+        "n_var": 1120
+      }
+    },
+    {
+      "asset_id": "wmb_sec136",
+      "format": "h5ad",
+      "path": "/Users/yiqun/Downloads/paper2bench-data/wmb_cellxgene_paper/wmb_paper_sec136.h5ad",
+      "role": "slice",
+      "visibility": "public",
+      "metadata": {
+        "section": "Zhuang-ABCA-1.136",
+        "z_mean": 4.441147956797075,
+        "n_obs": 19751,
+        "n_var": 1120
+      }
+    },
+    {
+      "asset_id": "wmb_sec137",
+      "format": "h5ad",
+      "path": "/Users/yiqun/Downloads/paper2bench-data/wmb_cellxgene_paper/wmb_paper_sec137.h5ad",
+      "role": "slice",
+      "visibility": "public",
+      "metadata": {
+        "section": "Zhuang-ABCA-1.137",
+        "z_mean": 4.438827061918805,
+        "n_obs": 20643,
+        "n_var": 1120
+      }
+    },
+    {
+      "asset_id": "wmb_sec138",
+      "format": "h5ad",
+      "path": "/Users/yiqun/Downloads/paper2bench-data/wmb_cellxgene_paper/wmb_paper_sec138.h5ad",
+      "role": "slice",
+      "visibility": "public",
+      "metadata": {
+        "section": "Zhuang-ABCA-1.138",
+        "z_mean": 4.395009374197087,
+        "n_obs": 19868,
+        "n_var": 1120
+      }
+    },
+    {
+      "asset_id": "wmb_sec139",
+      "format": "h5ad",
+      "path": "/Users/yiqun/Downloads/paper2bench-data/wmb_cellxgene_paper/wmb_paper_sec139.h5ad",
+      "role": "slice",
+      "visibility": "public",
+      "metadata": {
+        "section": "Zhuang-ABCA-1.139",
+        "z_mean": 4.526095834471545,
+        "n_obs": 23182,
+        "n_var": 1120
+      }
+    },
+    {
+      "asset_id": "wmb_sec140",
+      "format": "h5ad",
+      "path": "/Users/yiqun/Downloads/paper2bench-data/wmb_cellxgene_paper/wmb_paper_sec140.h5ad",
+      "role": "slice",
+      "visibility": "public",
+      "metadata": {
+        "section": "Zhuang-ABCA-1.140",
+        "z_mean": 4.483861578672914,
+        "n_obs": 16016,
+        "n_var": 1120
+      }
+    },
+    {
+      "asset_id": "wmb_sec141",
+      "format": "h5ad",
+      "path": "/Users/yiqun/Downloads/paper2bench-data/wmb_cellxgene_paper/wmb_paper_sec141.h5ad",
+      "role": "slice",
+      "visibility": "public",
+      "metadata": {
+        "section": "Zhuang-ABCA-1.141",
+        "z_mean": 4.53627320540739,
+        "n_obs": 13041,
+        "n_var": 1120
+      }
+    }
+  ]
+}

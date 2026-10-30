@@ -1,0 +1,72 @@
+{
+  "assets": [
+    {
+      "asset_id": "mouse2_slice10",
+      "format": "h5ad",
+      "metadata": {
+        "n_obs": 1160,
+        "sample_ids": "mouse2sample2"
+      },
+      "path": "benchmarks/spatial_alignment/compiled_data/mop_paper/mouse2_slice10.h5ad",
+      "role": "slice",
+      "visibility": "public"
+    },
+    {
+      "asset_id": "mouse2_slice70",
+      "format": "h5ad",
+      "metadata": {
+        "n_obs": 4057,
+        "sample_ids": "mouse2sample2"
+      },
+      "path": "benchmarks/spatial_alignment/compiled_data/mop_paper/mouse2_slice70.h5ad",
+      "role": "slice",
+      "visibility": "public"
+    },
+    {
+      "asset_id": "mouse2_slice129",
+      "format": "h5ad",
+      "metadata": {
+        "n_obs": 5157,
+        "sample_ids": "mouse2sample2"
+      },
+      "path": "benchmarks/spatial_alignment/compiled_data/mop_paper/mouse2_slice129.h5ad",
+      "role": "slice",
+      "visibility": "public"
+    },
+    {
+      "asset_id": "mouse2_slice189",
+      "format": "h5ad",
+      "metadata": {
+        "n_obs": 4433,
+        "sample_ids": "mouse2sample2"
+      },
+      "path": "benchmarks/spatial_alignment/compiled_data/mop_paper/mouse2_slice189.h5ad",
+      "role": "slice",
+      "visibility": "public"
+    },
+    {
+      "asset_id": "mouse2_slice249",
+      "format": "h5ad",
+      "metadata": {
+        "n_obs": 4118,
+        "sample_ids": "mouse2sample2"
+      },
+      "path": "benchmarks/spatial_alignment/compiled_data/mop_paper/mouse2_slice249.h5ad",
+      "role": "slice",
+      "visibility": "public"
+    },
+    {
+      "asset_id": "mouse2_slice309",
+      "format": "h5ad",
+      "metadata": {
+        "n_obs": 3296,
+        "sample_ids": "mouse2sample2"
+      },
+      "path": "benchmarks/spatial_alignment/compiled_data/mop_paper/mouse2_slice309.h5ad",
+      "role": "slice",
+      "visibility": "public"
+    }
+  ],
+  "schema_version": "paper2bench.data_manifest.v0.1",
+  "task_id": "sa-108-mop-mouse2sample2-serial-align"
+}

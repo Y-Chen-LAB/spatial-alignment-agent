@@ -1,0 +1,77 @@
+{
+  "name": "spatial_alignment_runner_plugin",
+  "version": "0.2.0",
+  "description": "Runner adapters for hosted LLM code generation and local coding-agent execution on spatial-alignment benchmark tasks.",
+  "paper2bench_design": "PAPER2BENCH.md",
+  "suite_command": "bash scripts/run_spatial_alignment_agent_suite.sh {mode} --model {model}",
+  "model_policy": {
+    "task_specs_are_model_free": true,
+    "task_files_define": ["data", "instructions", "output_contract", "metric_profile", "scoring_metadata"],
+    "runner_files_define": ["agent_backend", "model", "reasoning_effort", "execution_mode", "run_artifact_location"],
+    "default_model_fields_are_examples": true
+  },
+  "workspace_root": "agent_workspaces",
+  "artifact_roots": {
+    "hosted_openai_codegen": "agent_runs/openai_codegen",
+    "local_coding_agent": "agent_runs/local_coding_agent"
+  },
+  "runners": [
+    {
+      "id": "hosted_openai_codegen_local_exec",
+      "description": "Calls the OpenAI Responses API, asks the model to write a Python solver, executes that solver locally, then runs the deterministic scorer.",
+      "default_model": "gpt-5-mini",
+      "requires": ["OPENAI_API_KEY", "uv"],
+      "dry_run_command": "uv run python scripts/run_openai_solver.py {task} --model gpt-5-mini --dry-run --force",
+      "run_command": "uv run python scripts/run_openai_solver.py {task} --model gpt-5-mini --force"
+    },
+    {
+      "id": "local_codex_cli_agent",
+      "description": "Runs a locally authenticated Codex CLI agent inside the prepared workspace and scores its submitted coordinate CSVs.",
+      "default_model": "gpt-5.3-codex",
+      "requires": ["codex CLI authenticated", "uv"],
+      "dry_run_command": "uv run python scripts/run_local_coding_agent.py {task} --agent codex --model gpt-5.3-codex --dry-run --force",
+      "run_command": "uv run python scripts/run_local_coding_agent.py {task} --agent codex --model gpt-5.3-codex --reasoning-effort xhigh --force"
+    },
+    {
+      "id": "local_claude_cli_agent",
+      "description": "Runs a locally authenticated Claude Code CLI agent inside the prepared workspace and scores its submitted coordinate CSVs.",
+      "default_model": "claude-sonnet-4-6",
+      "requires": ["claude CLI authenticated", "uv"],
+      "dry_run_command": "uv run python scripts/run_local_coding_agent.py {task} --agent claude --model claude-sonnet-4-6 --dry-run --force",
+      "run_command": "uv run python scripts/run_local_coding_agent.py {task} --agent claude --model claude-sonnet-4-6 --force"
+    },
+    {
+      "id": "local_mini_swe_agent",
+      "description": "Runs the mini-SWE-agent CLI against the prepared workspace and scores its submitted coordinate CSVs.",
+      "default_model": "gpt-5-mini",
+      "requires": ["mini CLI on PATH", "uv"],
+      "dry_run_command": "uv run python scripts/run_local_coding_agent.py {task} --agent mini-swe --model gpt-5-mini --dry-run --force",
+      "run_command": "uv run python scripts/run_local_coding_agent.py {task} --agent mini-swe --model gpt-5-mini --dangerous-bypass --force"
+    },
+    {
+      "id": "azure_openai_codegen_local_exec",
+      "description": "Calls an Azure OpenAI Responses deployment, executes the generated solver locally, then runs the deterministic scorer.",
+      "default_model": "gpt-6-astra",
+      "requires": ["AZURE_OPENAI_ENDPOINT", "AZURE_OPENAI_API_KEY", "uv"],
+      "dry_run_command": "uv run python scripts/run_openai_solver.py {task} --provider azure --model gpt-6-astra --dry-run --force",
+      "run_command": "uv run python scripts/run_openai_solver.py {task} --provider azure --model gpt-6-astra --force"
+    }
+  ],
+  "result_artifacts": [
+    "prompt.md",
+    "request_payload.json for hosted OpenAI code generation",
+    "command.json or response.json",
+    "solver_from_openai.py when using hosted code generation",
+    "raw_stdout.jsonl or solver_stdout.txt",
+    "raw_stderr.txt or solver_stderr.txt",
+    "score_stdout.txt",
+    "score_stderr.txt",
+    "scores.json",
+    "manifest.json"
+  ],
+  "submission_contract": {
+    "directory": "submission/aligned_coordinates",
+    "csv_columns": ["obs_id", "x", "y"],
+    "scorer": "uv run python scripts/score_agent_submission.py {task} {workspace}/submission --output {workspace}/scores.json"
+  }
+}

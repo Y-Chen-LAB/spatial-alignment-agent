@@ -1,0 +1,36 @@
+{
+  "schema_version": "paper2bench.data_manifest.v0.1",
+  "task_id": "sa-406-p22-mouse-rna-h3k4me3-cross-modality-pair",
+  "source": "GEASO data release, Zenodo 18811760 (Wang, Liu & Ma, Nat Commun 2026)",
+  "build_script": "scripts/build_geaso_tasks.py",
+  "dataset": "P22 mouse brain spatial epigenome-transcriptome co-profiling (Zhang et al. 2023): RNA of the H3K27ac section vs H3K4me3 peaks of the neighbouring section, as in GEASO Fig. 6C-F",
+  "task_type": "cross_modality_alignment",
+  "um_per_pixel": 20.0,
+  "truth": "none (coordinates)",
+  "labels": "scorer-only shared regions P0-P9 from joint clustering of both sections' RNA (the H3K4me3 section was co-profiled for RNA); the released per-file clusters do not correspond",
+  "paper_source": "Zhang et al. 2023 P22 mouse brain spatial CUT&Tag-RNA-seq (GSE165217), via the GEASO data release (Zenodo 18811760); GEASO Fig. 6C-F and Supplementary Fig. 18.",
+  "assets": [
+    {
+      "asset_id": "rna",
+      "role": "slice",
+      "path": "/users/ychen5/p2b-data/paper2bench-data/geaso_tasks/sa-406/rna.h5ad",
+      "format": "h5ad",
+      "visibility": "public",
+      "metadata": {
+        "n_obs": 9370,
+        "is_reference": true
+      }
+    },
+    {
+      "asset_id": "h3k4me3",
+      "role": "slice",
+      "path": "/users/ychen5/p2b-data/paper2bench-data/geaso_tasks/sa-406/h3k4me3.h5ad",
+      "format": "h5ad",
+      "visibility": "public",
+      "metadata": {
+        "n_obs": 9548,
+        "is_reference": false
+      }
+    }
+  ]
+}

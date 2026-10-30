@@ -1,0 +1,243 @@
+{
+  "schema_version": "paper2bench.data_manifest.v0.1",
+  "task_id": "sa-412-openst-mln-19-section-3d-reconstruction-paper",
+  "source": "GEASO data release, Zenodo 18811760 (Wang, Liu & Ma, Nat Commun 2026)",
+  "build_script": "scripts/build_geaso_tasks.py",
+  "dataset": "Open-ST human metastatic lymph node, 19 sections (Schott et al. 2024; same sections as sa-027)",
+  "task_type": "serial_3d_reconstruction",
+  "rotation_degrees": [
+    0.0,
+    73.42,
+    307.06,
+    338.95,
+    60.64,
+    39.95,
+    307.42,
+    270.91,
+    194.11,
+    105.74,
+    125.59,
+    30.17,
+    53.33,
+    253.32,
+    154.9,
+    147.42,
+    6.83,
+    2.74,
+    12.01
+  ],
+  "protocol": "GEASO OpenST_3D_Rec notebook: obsm['spatial'] input, sections after the first rotated about their own centre, each aligned to the previous; paper metric CLC on `annotation` per pair",
+  "truth": "3D-aligned coordinates (sa-027's x_GT/y_GT) mapped into section 1's input frame",
+  "paper_source": "Schott et al. 2024 Open-ST (GSE251926); GEASO Fig. 2f.",
+  "assets": [
+    {
+      "asset_id": "section_02",
+      "role": "slice",
+      "path": "/users/ychen5/p2b-data/paper2bench-data/geaso_tasks/sa-412/section_02.h5ad",
+      "format": "h5ad",
+      "visibility": "public",
+      "metadata": {
+        "n_obs": 55400,
+        "is_reference": true
+      }
+    },
+    {
+      "asset_id": "section_03",
+      "role": "slice",
+      "path": "/users/ychen5/p2b-data/paper2bench-data/geaso_tasks/sa-412/section_03.h5ad",
+      "format": "h5ad",
+      "visibility": "public",
+      "metadata": {
+        "n_obs": 52405,
+        "is_reference": false
+      }
+    },
+    {
+      "asset_id": "section_04",
+      "role": "slice",
+      "path": "/users/ychen5/p2b-data/paper2bench-data/geaso_tasks/sa-412/section_04.h5ad",
+      "format": "h5ad",
+      "visibility": "public",
+      "metadata": {
+        "n_obs": 77868,
+        "is_reference": false
+      }
+    },
+    {
+      "asset_id": "section_05",
+      "role": "slice",
+      "path": "/users/ychen5/p2b-data/paper2bench-data/geaso_tasks/sa-412/section_05.h5ad",
+      "format": "h5ad",
+      "visibility": "public",
+      "metadata": {
+        "n_obs": 47217,
+        "is_reference": false
+      }
+    },
+    {
+      "asset_id": "section_06",
+      "role": "slice",
+      "path": "/users/ychen5/p2b-data/paper2bench-data/geaso_tasks/sa-412/section_06.h5ad",
+      "format": "h5ad",
+      "visibility": "public",
+      "metadata": {
+        "n_obs": 38555,
+        "is_reference": false
+      }
+    },
+    {
+      "asset_id": "section_07",
+      "role": "slice",
+      "path": "/users/ychen5/p2b-data/paper2bench-data/geaso_tasks/sa-412/section_07.h5ad",
+      "format": "h5ad",
+      "visibility": "public",
+      "metadata": {
+        "n_obs": 27542,
+        "is_reference": false
+      }
+    },
+    {
+      "asset_id": "section_09",
+      "role": "slice",
+      "path": "/users/ychen5/p2b-data/paper2bench-data/geaso_tasks/sa-412/section_09.h5ad",
+      "format": "h5ad",
+      "visibility": "public",
+      "metadata": {
+        "n_obs": 54899,
+        "is_reference": false
+      }
+    },
+    {
+      "asset_id": "section_11",
+      "role": "slice",
+      "path": "/users/ychen5/p2b-data/paper2bench-data/geaso_tasks/sa-412/section_11.h5ad",
+      "format": "h5ad",
+      "visibility": "public",
+      "metadata": {
+        "n_obs": 67206,
+        "is_reference": false
+      }
+    },
+    {
+      "asset_id": "section_17",
+      "role": "slice",
+      "path": "/users/ychen5/p2b-data/paper2bench-data/geaso_tasks/sa-412/section_17.h5ad",
+      "format": "h5ad",
+      "visibility": "public",
+      "metadata": {
+        "n_obs": 70879,
+        "is_reference": false
+      }
+    },
+    {
+      "asset_id": "section_18",
+      "role": "slice",
+      "path": "/users/ychen5/p2b-data/paper2bench-data/geaso_tasks/sa-412/section_18.h5ad",
+      "format": "h5ad",
+      "visibility": "public",
+      "metadata": {
+        "n_obs": 80288,
+        "is_reference": false
+      }
+    },
+    {
+      "asset_id": "section_19",
+      "role": "slice",
+      "path": "/users/ychen5/p2b-data/paper2bench-data/geaso_tasks/sa-412/section_19.h5ad",
+      "format": "h5ad",
+      "visibility": "public",
+      "metadata": {
+        "n_obs": 39167,
+        "is_reference": false
+      }
+    },
+    {
+      "asset_id": "section_23",
+      "role": "slice",
+      "path": "/users/ychen5/p2b-data/paper2bench-data/geaso_tasks/sa-412/section_23.h5ad",
+      "format": "h5ad",
+      "visibility": "public",
+      "metadata": {
+        "n_obs": 66389,
+        "is_reference": false
+      }
+    },
+    {
+      "asset_id": "section_24",
+      "role": "slice",
+      "path": "/users/ychen5/p2b-data/paper2bench-data/geaso_tasks/sa-412/section_24.h5ad",
+      "format": "h5ad",
+      "visibility": "public",
+      "metadata": {
+        "n_obs": 68177,
+        "is_reference": false
+      }
+    },
+    {
+      "asset_id": "section_25",
+      "role": "slice",
+      "path": "/users/ychen5/p2b-data/paper2bench-data/geaso_tasks/sa-412/section_25.h5ad",
+      "format": "h5ad",
+      "visibility": "public",
+      "metadata": {
+        "n_obs": 39646,
+        "is_reference": false
+      }
+    },
+    {
+      "asset_id": "section_26",
+      "role": "slice",
+      "path": "/users/ychen5/p2b-data/paper2bench-data/geaso_tasks/sa-412/section_26.h5ad",
+      "format": "h5ad",
+      "visibility": "public",
+      "metadata": {
+        "n_obs": 82583,
+        "is_reference": false
+      }
+    },
+    {
+      "asset_id": "section_28",
+      "role": "slice",
+      "path": "/users/ychen5/p2b-data/paper2bench-data/geaso_tasks/sa-412/section_28.h5ad",
+      "format": "h5ad",
+      "visibility": "public",
+      "metadata": {
+        "n_obs": 63661,
+        "is_reference": false
+      }
+    },
+    {
+      "asset_id": "section_33",
+      "role": "slice",
+      "path": "/users/ychen5/p2b-data/paper2bench-data/geaso_tasks/sa-412/section_33.h5ad",
+      "format": "h5ad",
+      "visibility": "public",
+      "metadata": {
+        "n_obs": 68138,
+        "is_reference": false
+      }
+    },
+    {
+      "asset_id": "section_34",
+      "role": "slice",
+      "path": "/users/ychen5/p2b-data/paper2bench-data/geaso_tasks/sa-412/section_34.h5ad",
+      "format": "h5ad",
+      "visibility": "public",
+      "metadata": {
+        "n_obs": 57057,
+        "is_reference": false
+      }
+    },
+    {
+      "asset_id": "section_36",
+      "role": "slice",
+      "path": "/users/ychen5/p2b-data/paper2bench-data/geaso_tasks/sa-412/section_36.h5ad",
+      "format": "h5ad",
+      "visibility": "public",
+      "metadata": {
+        "n_obs": 40692,
+        "is_reference": false
+      }
+    }
+  ]
+}

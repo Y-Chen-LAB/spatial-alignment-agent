@@ -1,0 +1,15 @@
+,time,memory,Scalability_overall
+PASTE,4,7,5
+PASTE_p0,8,9,10
+PASTE2,12,5,10
+GPSA,14,14,14
+STAligner_best,8,13,12
+STAligner_worst,8,13,12
+SLAT,3,8,5
+STalign,13,4,10
+CAST,12,10,13
+STAIR,10,6,7
+SPACEL,10,1,5
+Spateo_rigid,2,4,2
+Spateo_nonrigid,2,4,2
+SANTO,5,11,7

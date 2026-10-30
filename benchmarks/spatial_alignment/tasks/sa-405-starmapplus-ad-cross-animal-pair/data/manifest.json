@@ -1,0 +1,40 @@
+{
+  "schema_version": "paper2bench.data_manifest.v0.1",
+  "task_id": "sa-405-starmapplus-ad-cross-animal-pair",
+  "source": "GEASO data release, Zenodo 18811760 (Wang, Liu & Ma, Nat Commun 2026)",
+  "build_script": "scripts/build_geaso_tasks.py",
+  "dataset": "STARmap PLUS, Alzheimer's-model study, 8-month control replicates cr1 and cr2 (as used by SANTO and GEASO)",
+  "task_type": "cross_animal_alignment",
+  "um_per_pixel": 0.0946,
+  "truth": "released (pre-registered) coordinates of cr2, recovered after a known rigid move",
+  "rotation_degrees": 159.21,
+  "shift_um": [
+    138.8,
+    323.4
+  ],
+  "paper_source": "STARmap PLUS Alzheimer's-model mouse brain, 8-month controls, via the GEASO data release (Zenodo 18811760, Fig. 2).",
+  "assets": [
+    {
+      "asset_id": "mouse_cr1",
+      "role": "slice",
+      "path": "/users/ychen5/p2b-data/paper2bench-data/geaso_tasks/sa-405/mouse_cr1.h5ad",
+      "format": "h5ad",
+      "visibility": "public",
+      "metadata": {
+        "n_obs": 8506,
+        "is_reference": true
+      }
+    },
+    {
+      "asset_id": "mouse_cr2",
+      "role": "slice",
+      "path": "/users/ychen5/p2b-data/paper2bench-data/geaso_tasks/sa-405/mouse_cr2.h5ad",
+      "format": "h5ad",
+      "visibility": "public",
+      "metadata": {
+        "n_obs": 9803,
+        "is_reference": false
+      }
+    }
+  ]
+}

@@ -1,0 +1,150 @@
+{
+  "schema_version": "paper2bench.data_manifest.v0.1",
+  "task_id": "sa-043-mhpr-crop-sweep",
+  "family": "robustness_sweep",
+  "compiler": "scripts/build_tasks.py",
+  "registry": "benchmarks/spatial_alignment/task_registry.toml",
+  "paper_reference": "MOESM8 MHPR_crop.csv, 10 levels x 13 method columns",
+  "marker_genes": {
+    "marker_source": "paper_source_data",
+    "marker_source_path": "/Users/yiqun/Desktop/chen-lab/genomics-agent/references/paper_source_data/s43588-026-00977/43588_2026_977_MOESM7_ESM/MHPR_GeneBased_PCC.csv",
+    "n_requested": 155,
+    "n_present_on_all_slices": 155,
+    "n_common_genes": 155
+  },
+  "pair_mode": "star",
+  "assets": [
+    {
+      "asset_id": "data5",
+      "format": "h5ad",
+      "path": "/Users/yiqun/Downloads/paper2bench-data/MHPR_paper/MHPR_animal1_n004.h5ad",
+      "role": "slice",
+      "visibility": "public",
+      "metadata": {
+        "paper_data_id": "Data5",
+        "n_obs": 5488,
+        "n_var": 155
+      }
+    },
+    {
+      "asset_id": "data6_crop010",
+      "format": "h5ad",
+      "path": "benchmarks/spatial_alignment/compiled_data/sweeps/sa-043-mhpr-crop-sweep/data6_crop010.h5ad",
+      "role": "slice",
+      "visibility": "public",
+      "metadata": {
+        "paper_data_id": "Data6",
+        "n_obs": 546,
+        "n_var": 155
+      }
+    },
+    {
+      "asset_id": "data6_crop020",
+      "format": "h5ad",
+      "path": "benchmarks/spatial_alignment/compiled_data/sweeps/sa-043-mhpr-crop-sweep/data6_crop020.h5ad",
+      "role": "slice",
+      "visibility": "public",
+      "metadata": {
+        "paper_data_id": "Data6",
+        "n_obs": 1089,
+        "n_var": 155
+      }
+    },
+    {
+      "asset_id": "data6_crop030",
+      "format": "h5ad",
+      "path": "benchmarks/spatial_alignment/compiled_data/sweeps/sa-043-mhpr-crop-sweep/data6_crop030.h5ad",
+      "role": "slice",
+      "visibility": "public",
+      "metadata": {
+        "paper_data_id": "Data6",
+        "n_obs": 1627,
+        "n_var": 155
+      }
+    },
+    {
+      "asset_id": "data6_crop040",
+      "format": "h5ad",
+      "path": "benchmarks/spatial_alignment/compiled_data/sweeps/sa-043-mhpr-crop-sweep/data6_crop040.h5ad",
+      "role": "slice",
+      "visibility": "public",
+      "metadata": {
+        "paper_data_id": "Data6",
+        "n_obs": 2172,
+        "n_var": 155
+      }
+    },
+    {
+      "asset_id": "data6_crop050",
+      "format": "h5ad",
+      "path": "benchmarks/spatial_alignment/compiled_data/sweeps/sa-043-mhpr-crop-sweep/data6_crop050.h5ad",
+      "role": "slice",
+      "visibility": "public",
+      "metadata": {
+        "paper_data_id": "Data6",
+        "n_obs": 2772,
+        "n_var": 155
+      }
+    },
+    {
+      "asset_id": "data6_crop060",
+      "format": "h5ad",
+      "path": "benchmarks/spatial_alignment/compiled_data/sweeps/sa-043-mhpr-crop-sweep/data6_crop060.h5ad",
+      "role": "slice",
+      "visibility": "public",
+      "metadata": {
+        "paper_data_id": "Data6",
+        "n_obs": 3417,
+        "n_var": 155
+      }
+    },
+    {
+      "asset_id": "data6_crop070",
+      "format": "h5ad",
+      "path": "benchmarks/spatial_alignment/compiled_data/sweeps/sa-043-mhpr-crop-sweep/data6_crop070.h5ad",
+      "role": "slice",
+      "visibility": "public",
+      "metadata": {
+        "paper_data_id": "Data6",
+        "n_obs": 4009,
+        "n_var": 155
+      }
+    },
+    {
+      "asset_id": "data6_crop080",
+      "format": "h5ad",
+      "path": "benchmarks/spatial_alignment/compiled_data/sweeps/sa-043-mhpr-crop-sweep/data6_crop080.h5ad",
+      "role": "slice",
+      "visibility": "public",
+      "metadata": {
+        "paper_data_id": "Data6",
+        "n_obs": 4535,
+        "n_var": 155
+      }
+    },
+    {
+      "asset_id": "data6_crop090",
+      "format": "h5ad",
+      "path": "benchmarks/spatial_alignment/compiled_data/sweeps/sa-043-mhpr-crop-sweep/data6_crop090.h5ad",
+      "role": "slice",
+      "visibility": "public",
+      "metadata": {
+        "paper_data_id": "Data6",
+        "n_obs": 5066,
+        "n_var": 155
+      }
+    },
+    {
+      "asset_id": "data6_crop100",
+      "format": "h5ad",
+      "path": "benchmarks/spatial_alignment/compiled_data/sweeps/sa-043-mhpr-crop-sweep/data6_crop100.h5ad",
+      "role": "slice",
+      "visibility": "public",
+      "metadata": {
+        "paper_data_id": "Data6",
+        "n_obs": 5557,
+        "n_var": 155
+      }
+    }
+  ]
+}

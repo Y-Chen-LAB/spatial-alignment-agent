@@ -1,0 +1,72 @@
+{
+  "assets": [
+    {
+      "asset_id": "mouse2_slice20",
+      "format": "h5ad",
+      "metadata": {
+        "n_obs": 670,
+        "sample_ids": "mouse2sample3"
+      },
+      "path": "benchmarks/spatial_alignment/compiled_data/mop_paper/mouse2_slice20.h5ad",
+      "role": "slice",
+      "visibility": "public"
+    },
+    {
+      "asset_id": "mouse2_slice79",
+      "format": "h5ad",
+      "metadata": {
+        "n_obs": 3870,
+        "sample_ids": "mouse2sample3"
+      },
+      "path": "benchmarks/spatial_alignment/compiled_data/mop_paper/mouse2_slice79.h5ad",
+      "role": "slice",
+      "visibility": "public"
+    },
+    {
+      "asset_id": "mouse2_slice139",
+      "format": "h5ad",
+      "metadata": {
+        "n_obs": 4208,
+        "sample_ids": "mouse2sample3"
+      },
+      "path": "benchmarks/spatial_alignment/compiled_data/mop_paper/mouse2_slice139.h5ad",
+      "role": "slice",
+      "visibility": "public"
+    },
+    {
+      "asset_id": "mouse2_slice201",
+      "format": "h5ad",
+      "metadata": {
+        "n_obs": 3767,
+        "sample_ids": "mouse2sample3"
+      },
+      "path": "benchmarks/spatial_alignment/compiled_data/mop_paper/mouse2_slice201.h5ad",
+      "role": "slice",
+      "visibility": "public"
+    },
+    {
+      "asset_id": "mouse2_slice261",
+      "format": "h5ad",
+      "metadata": {
+        "n_obs": 3566,
+        "sample_ids": "mouse2sample3"
+      },
+      "path": "benchmarks/spatial_alignment/compiled_data/mop_paper/mouse2_slice261.h5ad",
+      "role": "slice",
+      "visibility": "public"
+    },
+    {
+      "asset_id": "mouse2_slice319",
+      "format": "h5ad",
+      "metadata": {
+        "n_obs": 2800,
+        "sample_ids": "mouse2sample3"
+      },
+      "path": "benchmarks/spatial_alignment/compiled_data/mop_paper/mouse2_slice319.h5ad",
+      "role": "slice",
+      "visibility": "public"
+    }
+  ],
+  "schema_version": "paper2bench.data_manifest.v0.1",
+  "task_id": "sa-109-mop-mouse2sample3-serial-align"
+}

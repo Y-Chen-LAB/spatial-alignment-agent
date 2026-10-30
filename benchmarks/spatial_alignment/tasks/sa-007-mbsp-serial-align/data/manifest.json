@@ -1,0 +1,26 @@
+{
+  "source": "10x Genomics adult mouse brain sagittal-posterior serial sections (Data34, Data35 from SABench paper Yan et al. 2026)",
+  "preprocessor": "scripts/preprocess_10x_visium_to_h5ad.py",
+  "raw_inputs": {
+    "Data34_section1": {
+      "h5": "/Users/yiqun/Downloads/paper2bench-data/sabench_full/Data34_MBSP_1/V1_Mouse_Brain_Sagittal_Posterior.h5",
+      "spatial_tar": "/Users/yiqun/Downloads/paper2bench-data/sabench_full/Data34_MBSP_1/V1_Mouse_Brain_Sagittal_Posterior_spatial.tar.gz"
+    },
+    "Data35_section2": {
+      "h5": "/Users/yiqun/Downloads/paper2bench-data/sabench_full/Data35_MBSP_2/V1_Mouse_Brain_Sagittal_Posterior_Section_2.h5",
+      "spatial_tar": "/Users/yiqun/Downloads/paper2bench-data/sabench_full/Data35_MBSP_2/V1_Mouse_Brain_Sagittal_Posterior_Section_2_spatial.tar.gz"
+    }
+  },
+  "slices": [
+    {
+      "id": "Data34_section1",
+      "path": "benchmarks/spatial_alignment/compiled_data/perturbed/Data34_section1_seed34_rigid.h5ad",
+      "report_json": "benchmarks/spatial_alignment/compiled_data/perturbed/reports/sa007_data34_rigid.json"
+    },
+    {
+      "id": "Data35_section2",
+      "path": "benchmarks/spatial_alignment/compiled_data/perturbed/Data35_section2_seed35_rigid.h5ad",
+      "report_json": "benchmarks/spatial_alignment/compiled_data/perturbed/reports/sa007_data35_rigid.json"
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "schema_version": "paper2bench.data_manifest.v0.1",
+  "task_id": "sa-030-mob-stereoseq-slideseqv2-cross-platform",
+  "family": "mob_cross_platform",
+  "compiler": "scripts/build_tasks.py",
+  "registry": "benchmarks/spatial_alignment/task_registry.toml",
+  "paper_reference": "MOESM10 MOB_GeneBased_{PCC,Cos_Sim,SSIM,MI}.csv, 15 method rows",
+  "marker_genes": {
+    "marker_source": "paper_source_data",
+    "marker_source_path": "/Users/yiqun/Desktop/chen-lab/genomics-agent/references/paper_source_data/s43588-026-00977/43588_2026_977_MOESM10_ESM/MOB_GeneBased_PCC.csv",
+    "n_requested": 7,
+    "n_present_on_all_slices": 7,
+    "n_common_genes": 18279
+  },
+  "pair_mode": "consecutive",
+  "assets": [
+    {
+      "asset_id": "mob_stereoseq",
+      "format": "h5ad",
+      "path": "benchmarks/spatial_alignment/compiled_data/mob_stereoseq/data78_mob_stereoseq.h5ad",
+      "role": "slice",
+      "visibility": "public",
+      "metadata": {
+        "paper_data_id": "Data78",
+        "n_obs": 19109,
+        "n_var": 27106
+      }
+    },
+    {
+      "asset_id": "mob_slideseqv2",
+      "format": "h5ad",
+      "path": "/Users/yiqun/Downloads/paper2bench-data/MOB_slideseqv2/data79_mob_slideseqv2.h5ad",
+      "role": "slice",
+      "visibility": "public",
+      "metadata": {
+        "paper_data_id": "Data79",
+        "n_obs": 21724,
+        "n_var": 21220
+      }
+    }
+  ]
+}

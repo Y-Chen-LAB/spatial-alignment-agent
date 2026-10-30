@@ -1,0 +1,33 @@
+{
+  "schema_version": "paper2bench.data_manifest.v0.1",
+  "task_id": "sa-016-ambc-visium-starmapplus-cross-platform",
+  "source": "10x Visium AMBC (Data231) and STARmap+ well11 (Data237) — SABench paper Yan et al. 2026 Data231-240 family",
+  "compilers": [
+    "scripts/preprocess_10x_visium_to_h5ad.py (Data231)",
+    "scripts/compile_starmap_plus_well11.py (Data237)"
+  ],
+  "raw_inputs": [
+    "/Users/yiqun/Downloads/paper2bench-data/sabench_full/Data231_AMBC_Visium/V1_Adult_Mouse_Brain.h5",
+    "/Users/yiqun/Downloads/paper2bench-data/sabench_full/Data231_AMBC_Visium/V1_Adult_Mouse_Brain_spatial.tar.gz",
+    "/Users/yiqun/Downloads/paper2bench-data/sabench_full/Data237_AMBC_STARmapPLUS_well11/well11_spatial.csv",
+    "/Users/yiqun/Downloads/paper2bench-data/sabench_full/Data237_AMBC_STARmapPLUS_well11/well11raw_expression_pd.csv"
+  ],
+  "assets": [
+    {
+      "asset_id": "Data231_visium",
+      "format": "h5ad",
+      "path": "/Users/yiqun/Downloads/paper2bench-data/AMBC_Visium/Data231_adult_mouse_brain.h5ad",
+      "role": "slice",
+      "visibility": "public",
+      "metadata": {"platform": "10x_Visium", "n_obs": 2702, "n_var": 32285}
+    },
+    {
+      "asset_id": "Data237_starmapplus",
+      "format": "h5ad",
+      "path": "benchmarks/spatial_alignment/compiled_data/starmap/data237_starmapplus_well11.h5ad",
+      "role": "slice",
+      "visibility": "public",
+      "metadata": {"platform": "STARmap_PLUS", "n_obs": 43341, "n_var": 1022, "label_key": "Region"}
+    }
+  ]
+}

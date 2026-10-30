@@ -1,0 +1,63 @@
+{
+  "schema_version": "paper2bench.data_manifest.v0.1",
+  "task_id": "sa-409-starmapplus-sagittal3-stitch-overlap50",
+  "source": "GEASO data release, Zenodo 18811760 (Wang, Liu & Ma, Nat Commun 2026)",
+  "build_script": "scripts/build_geaso_tasks.py",
+  "dataset": "STARmap PLUS mouse CNS atlas section sagittal3 (Shi et al. 2023), depth slices 1 and 2",
+  "task_type": "partial_overlap_alignment",
+  "overlap_fraction": 0.5,
+  "rotation_degrees": [
+    30,
+    60,
+    90
+  ],
+  "um_per_pixel": 0.0946,
+  "paper_mae_units": "GEASO reports MAE in the section's raw pixels; divide our \u00b5m by 0.0946 to compare",
+  "paper_source": "Shi et al. 2023 STARmap PLUS atlas (SCP1830), via the GEASO data release (Zenodo 18811760); GEASO Fig. 2C-D.",
+  "assets": [
+    {
+      "asset_id": "target",
+      "role": "slice",
+      "path": "/users/ychen5/p2b-data/paper2bench-data/geaso_tasks/sa-409/target.h5ad",
+      "format": "h5ad",
+      "visibility": "public",
+      "metadata": {
+        "n_obs": 37910,
+        "is_reference": true
+      }
+    },
+    {
+      "asset_id": "source_rot030",
+      "role": "slice",
+      "path": "/users/ychen5/p2b-data/paper2bench-data/geaso_tasks/sa-409/source_rot030.h5ad",
+      "format": "h5ad",
+      "visibility": "public",
+      "metadata": {
+        "n_obs": 34405,
+        "is_reference": false
+      }
+    },
+    {
+      "asset_id": "source_rot060",
+      "role": "slice",
+      "path": "/users/ychen5/p2b-data/paper2bench-data/geaso_tasks/sa-409/source_rot060.h5ad",
+      "format": "h5ad",
+      "visibility": "public",
+      "metadata": {
+        "n_obs": 34405,
+        "is_reference": false
+      }
+    },
+    {
+      "asset_id": "source_rot090",
+      "role": "slice",
+      "path": "/users/ychen5/p2b-data/paper2bench-data/geaso_tasks/sa-409/source_rot090.h5ad",
+      "format": "h5ad",
+      "visibility": "public",
+      "metadata": {
+        "n_obs": 34405,
+        "is_reference": false
+      }
+    }
+  ]
+}

@@ -1,0 +1,120 @@
+{
+  "schema_version": "paper2bench.data_manifest.v0.1",
+  "task_id": "sa-305-albis-visiumhd-bin8-serial-align",
+  "source": "Albis simulator (scripts/alignment_benchmark.py)",
+  "albis_dataset": "visiumhd_bin8",
+  "albis_scale": "full",
+  "albis_catalog": "/users/ychen5/p2b-data/paper2bench-data/albis_sim/visiumhd_bin8/catalog.json",
+  "assets": [
+    {
+      "asset_id": "s00",
+      "role": "slice",
+      "path": "/users/ychen5/p2b-data/paper2bench-data/albis_sim/visiumhd_bin8/slices/s00.h5ad",
+      "format": "h5ad",
+      "visibility": "public",
+      "metadata": {
+        "n_obs": 57616,
+        "is_reference": true
+      }
+    },
+    {
+      "asset_id": "s01",
+      "role": "slice",
+      "path": "/users/ychen5/p2b-data/paper2bench-data/albis_sim/visiumhd_bin8/slices/s01.h5ad",
+      "format": "h5ad",
+      "visibility": "public",
+      "metadata": {
+        "n_obs": 117597,
+        "is_reference": false
+      }
+    },
+    {
+      "asset_id": "s02",
+      "role": "slice",
+      "path": "/users/ychen5/p2b-data/paper2bench-data/albis_sim/visiumhd_bin8/slices/s02.h5ad",
+      "format": "h5ad",
+      "visibility": "public",
+      "metadata": {
+        "n_obs": 162151,
+        "is_reference": false
+      }
+    },
+    {
+      "asset_id": "s03",
+      "role": "slice",
+      "path": "/users/ychen5/p2b-data/paper2bench-data/albis_sim/visiumhd_bin8/slices/s03.h5ad",
+      "format": "h5ad",
+      "visibility": "public",
+      "metadata": {
+        "n_obs": 190090,
+        "is_reference": false
+      }
+    },
+    {
+      "asset_id": "s04",
+      "role": "slice",
+      "path": "/users/ychen5/p2b-data/paper2bench-data/albis_sim/visiumhd_bin8/slices/s04.h5ad",
+      "format": "h5ad",
+      "visibility": "public",
+      "metadata": {
+        "n_obs": 201701,
+        "is_reference": false
+      }
+    },
+    {
+      "asset_id": "s05",
+      "role": "slice",
+      "path": "/users/ychen5/p2b-data/paper2bench-data/albis_sim/visiumhd_bin8/slices/s05.h5ad",
+      "format": "h5ad",
+      "visibility": "public",
+      "metadata": {
+        "n_obs": 201854,
+        "is_reference": false
+      }
+    },
+    {
+      "asset_id": "s06",
+      "role": "slice",
+      "path": "/users/ychen5/p2b-data/paper2bench-data/albis_sim/visiumhd_bin8/slices/s06.h5ad",
+      "format": "h5ad",
+      "visibility": "public",
+      "metadata": {
+        "n_obs": 189872,
+        "is_reference": false
+      }
+    },
+    {
+      "asset_id": "s07",
+      "role": "slice",
+      "path": "/users/ychen5/p2b-data/paper2bench-data/albis_sim/visiumhd_bin8/slices/s07.h5ad",
+      "format": "h5ad",
+      "visibility": "public",
+      "metadata": {
+        "n_obs": 161979,
+        "is_reference": false
+      }
+    },
+    {
+      "asset_id": "s08",
+      "role": "slice",
+      "path": "/users/ychen5/p2b-data/paper2bench-data/albis_sim/visiumhd_bin8/slices/s08.h5ad",
+      "format": "h5ad",
+      "visibility": "public",
+      "metadata": {
+        "n_obs": 117483,
+        "is_reference": false
+      }
+    },
+    {
+      "asset_id": "s09",
+      "role": "slice",
+      "path": "/users/ychen5/p2b-data/paper2bench-data/albis_sim/visiumhd_bin8/slices/s09.h5ad",
+      "format": "h5ad",
+      "visibility": "public",
+      "metadata": {
+        "n_obs": 57695,
+        "is_reference": false
+      }
+    }
+  ]
+}

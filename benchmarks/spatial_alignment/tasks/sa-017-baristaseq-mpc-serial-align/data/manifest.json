@@ -1,0 +1,44 @@
+{
+  "schema_version": "paper2bench.data_manifest.v0.1",
+  "task_id": "sa-017-baristaseq-mpc-serial-align",
+  "source": "https://doi.org/10.1038/s41592-024-02215-8 (SDMBench processed BaristaSeq slices used by SABench Data36-38)",
+  "compiler": "scripts/materialize_sdmbench_imaging_tasks.py",
+  "raw_inputs": [
+    "/Users/yiqun/Downloads/22550074.zip"
+  ],
+  "assets": [
+    {
+      "asset_id": "Data36_slice1",
+      "format": "h5ad",
+      "path": "benchmarks/spatial_alignment/compiled_data/sdmbench/data36_slice1_seed36_rigid.h5ad",
+      "role": "slice",
+      "visibility": "public",
+      "metadata": {
+        "n_obs": 1525,
+        "n_var": 79
+      }
+    },
+    {
+      "asset_id": "Data37_slice2",
+      "format": "h5ad",
+      "path": "benchmarks/spatial_alignment/compiled_data/sdmbench/data37_slice2_seed37_rigid.h5ad",
+      "role": "slice",
+      "visibility": "public",
+      "metadata": {
+        "n_obs": 2042,
+        "n_var": 79
+      }
+    },
+    {
+      "asset_id": "Data38_slice3",
+      "format": "h5ad",
+      "path": "benchmarks/spatial_alignment/compiled_data/sdmbench/data38_slice3_seed38_rigid.h5ad",
+      "role": "slice",
+      "visibility": "public",
+      "metadata": {
+        "n_obs": 1690,
+        "n_var": 79
+      }
+    }
+  ]
+}

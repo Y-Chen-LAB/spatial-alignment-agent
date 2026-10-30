@@ -1,0 +1,16 @@
+id = "sa-404-starmap-ribomap-cross-modality-pair"
+name = "STARmap (RNA) to RIBOmap (translation) cross-modality alignment"
+domain = "spatial_genomics"
+modality = "spatial_transcriptomics"
+task_type = "cross_modality_alignment"
+difficulty = "medium"
+status = "executable_local"
+input_contract = "h5ad_spatial_v1"
+output_contract = "aligned_coordinate_csv_v1"
+metric_profile = "sabench_mae_region_gene_v1"
+label_key = "Region"
+marker_gene_file = "benchmarks/spatial_alignment/tasks/sa-404-starmap-ribomap-cross-modality-pair/data/marker_genes.csv"
+max_marker_genes = 100
+slices = ["starmap=/users/ychen5/p2b-data/paper2bench-data/geaso_tasks/sa-404/starmap.h5ad", "ribomap=/users/ychen5/p2b-data/paper2bench-data/geaso_tasks/sa-404/ribomap.h5ad"]
+paper_source = "STARmap/RIBOmap adjacent mouse brain sections, via the GEASO data release (Zenodo 18811760, Fig. 5)."
+paper_metrics = "geaso_v1"

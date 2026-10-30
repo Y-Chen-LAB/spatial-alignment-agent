@@ -1,0 +1,23 @@
+[project]
+name = "genomics-agent-bench"
+version = "0.1.0"
+description = "Prototype benchmark tooling for biological data-analysis agents."
+requires-python = ">=3.11"
+dependencies = [
+    "alpha-shapes",
+    "h5py",
+    "numpy",
+    "pandas",
+    "scipy",
+    "scikit-learn",
+]
+
+[project.scripts]
+p2b = "paper2bench.cli.main:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"

@@ -1,0 +1,199 @@
+schema_version = "paper2bench.task_registry.v0.1"
+
+# Declarative source of truth for the task families added in September 2026 so that every
+# one of the paper's 240 slices appears in at least one task. Slice paths are never written
+# here: each member names a `data_id` from
+# benchmarks/spatial_alignment/campaigns/paper_slice_isolation_status.csv, and scripts/build_tasks.py
+# resolves it to the current local file. Rebuilding a slice therefore does not require
+# editing this file.
+#
+# The 40 tasks authored before this registry are listed under [legacy] for the coverage
+# check only. They are not regenerated, because several carry hand-authored structure the
+# registry does not model (sa-002's hidden perturbation grid, sa-005's three separate data
+# lists).
+
+[defaults]
+domain = "spatial_genomics"
+modality = "spatial_transcriptomics"
+status = "executable_local"
+input_contract = "h5ad_spatial_v1"
+output_contract = "aligned_coordinate_csv_v1"
+max_marker_genes = 100
+# Scoring uses the full slice, as SABench does. A random half-split depressed every gene
+# metric by about 0.1 without protecting anything: it guarded the solve-time self-scorer,
+# which blind runs withhold and which 7 of 527 historical runs ever invoked.
+# Fallback when SABench defines no gene list for a dataset.
+marker_top_n = 100
+
+# SABench's own marker-gene definitions, preferred over any list we would compute.
+# `panel` is the curated single-column CSV shipped in the code archive; `source_data` reads
+# the column header of a published per-gene results table, which is the set of genes the
+# paper actually scored.
+[marker_sources.dlpfc]
+panel = "~/Downloads/paper2bench-data/DLPFC/DLPFC_gene_list.csv"
+source_data = "references/paper_source_data/s43588-026-00977/43588_2026_977_MOESM7_ESM/DLPFC_GeneBased_PCC.csv"
+
+[marker_sources.mhpr]
+source_data = "references/paper_source_data/s43588-026-00977/43588_2026_977_MOESM7_ESM/MHPR_GeneBased_PCC.csv"
+
+[marker_sources.mob]
+source_data = "references/paper_source_data/s43588-026-00977/43588_2026_977_MOESM10_ESM/MOB_GeneBased_PCC.csv"
+
+# Short names used below, mapped to data_id values in the slice-isolation table.
+[slices]
+ambc_st = "Data231-240/ST"
+ambc_visium = "Data231-240/Visium"
+ambc_visiumhd = "Data231-240/VisiumHD"
+ambc_xenium = "Data231-240/Xenium"
+ambc_xenium5k = "Data231-240/Xenium5k"
+ambc_merfish = "Data231-240/MERFISH"
+ambc_starmapplus = "Data231-240/STARmapPLUS"
+ambc_slideseq = "Data231-240/Slideseq"
+ambc_stereoseq = "Data231-240/Stereoseq"
+ambc_cosmx = "Data231-240/CosMx"
+mob_stereoseq = "Data78"
+mob_slideseqv2 = "Data79"
+mbrm_s1r1 = "Data42"
+mbrm_s1r2 = "Data43"
+mbrm_s1r3 = "Data44"
+bca_visium = "Data228"
+bca_xenium_rep1 = "Data229"
+bca_xenium_rep2 = "Data230"
+
+# Platform families, used to label each AMBC pair as imaging/NGS/mixed in the manifest so
+# the analysis can group the 45 pairs rather than treat them as independent.
+[platform_class]
+ambc_st = "ngs"
+ambc_visium = "ngs"
+ambc_visiumhd = "ngs"
+ambc_slideseq = "ngs"
+ambc_stereoseq = "ngs"
+ambc_xenium = "imaging"
+ambc_xenium5k = "imaging"
+ambc_merfish = "imaging"
+ambc_starmapplus = "imaging"
+ambc_cosmx = "imaging"
+
+# Legacy tasks whose slice set a generated pair reproduces. Recorded in the new task's
+# manifest so the analysis can drop one of the two rather than double-count the pair.
+# sa-015 is deliberately absent: it pairs Visium with the 16 um Visium HD binning, whereas
+# sa-210 uses the 8 um binning the paper reported, so the two are different tasks.
+[supersedes]
+"sa-211-ambc-visium-xenium-pair" = "sa-010-ambc-visium-xenium-cross-platform"
+"sa-212-ambc-visium-xenium5k-pair" = "sa-013-ambc-visium-xenium5k-cross-platform"
+"sa-214-ambc-visium-starmapplus-pair" = "sa-016-ambc-visium-starmapplus-cross-platform"
+
+# --------------------------------------------------------------------------- generated
+# All unordered pairs of the ten AMBC platforms: 45 tasks reproducing the Fig. 5d matrix.
+# Four of these pairs already exist as sa-010/013/015/016; build_tasks.py skips an id whose
+# slice set is already covered by a legacy task unless --rebuild-overlapping is passed.
+[[generated]]
+kind = "all_pairs"
+family = "ambc_cross_platform"
+members = [
+  "ambc_st", "ambc_visium", "ambc_visiumhd", "ambc_xenium", "ambc_xenium5k",
+  "ambc_merfish", "ambc_starmapplus", "ambc_slideseq", "ambc_stereoseq", "ambc_cosmx",
+]
+id_template = "sa-2{index:02d}-ambc-{a}-{b}-pair"
+name_template = "Adult mouse brain coronal cross-platform alignment: {a} to {b}"
+task_type = "cross_platform_pair_alignment"
+difficulty = "medium"
+paper_source = "SABench Data231-240 ten-platform adult mouse brain coronal family; Fig. 5d reports whether each method ran on each platform pair."
+paper_reference = "Fig5D_AMBC_cross_platform_success_long.csv"
+
+# ------------------------------------------------------------------------------- tasks
+[[task]]
+id = "sa-030-mob-stereoseq-slideseqv2-cross-platform"
+name = "Mouse olfactory bulb cross-platform alignment: Stereo-seq to Slide-seqV2"
+family = "mob_cross_platform"
+slices = ["mob_stereoseq", "mob_slideseqv2"]
+task_type = "cross_platform_pair_alignment"
+difficulty = "medium"
+paper_source = "SABench Data78-79, the paper's cross-platform mouse olfactory bulb pair (Fig. 5a, 5b)."
+paper_reference = "MOESM10 MOB_GeneBased_{PCC,Cos_Sim,SSIM,MI}.csv, 15 method rows"
+marker_source = "mob"
+
+[[task]]
+id = "sa-031-mbrm-vizgen-serial-align"
+name = "Vizgen MERFISH mouse brain receptor map serial alignment (S1R1 to S1R3)"
+family = "mbrm_serial"
+slices = ["mbrm_s1r1", "mbrm_s1r2", "mbrm_s1r3"]
+task_type = "serial_alignment"
+difficulty = "medium"
+paper_source = "SABench Data42-44: three replicate coronal sections from Vizgen's MERFISH mouse brain receptor map, right hemisphere only."
+paper_reference = "Supp. Fig. 3a overlays; no per-method numbers published"
+
+[[task]]
+id = "sa-032-bca-visium-xenium-cross-platform"
+name = "Human breast cancer cross-platform alignment: Visium to both Xenium replicates"
+family = "bca_cross_platform"
+slices = ["bca_visium", "bca_xenium_rep1", "bca_xenium_rep2"]
+task_type = "cross_platform_pair_alignment"
+difficulty = "hard"
+# The paper counts two BCA pairs, the Visium slice against each Xenium replicate, so the
+# Visium slice is the reference every other slice is scored against.
+pair_mode = "star"
+paper_source = "SABench Data228-230: the paired Visium and Xenium human breast cancer sections from Janesick et al."
+paper_reference = "Fig. 5e visualisation; no per-method numbers published"
+
+# --------------------------------------------------------------------------- sweeps
+# One task per (dataset, perturbation), carrying every level in a single workspace and
+# scored per level. The paper ran each level as a separate alignment; grouping them keeps
+# the same per-level granularity at a 17-fold lower agent cost.
+[[sweep]]
+id = "sa-040-dlpfc-rotation-sweep"
+marker_source = "dlpfc"
+name = "DLPFC rotation robustness sweep (0 to 360 degrees, 15 degree steps)"
+family = "robustness_sweep"
+reference_slice = "Data1"
+moving_slice = "Data2"
+perturbation = "rotation"
+levels = [0, 15, 30, 45, 60, 75, 90, 105, 120, 135, 150, 165, 180, 195, 210, 225, 240, 255, 270, 285, 300, 315, 330, 345, 360]
+difficulty = "medium"
+paper_source = "SABench Fig. 3b/3c: 151674 rotated clockwise about its centroid in 15 degree steps and aligned to 151673."
+paper_reference = "MOESM8 DLPFC_rotation.csv, 25 levels x 24 method columns"
+
+[[sweep]]
+id = "sa-041-dlpfc-crop-sweep"
+marker_source = "dlpfc"
+name = "DLPFC overlap robustness sweep (10 to 100 percent overlap)"
+family = "robustness_sweep"
+reference_slice = "Data1"
+moving_slice = "Data2"
+perturbation = "crop"
+levels = [10, 20, 30, 40, 50, 60, 70, 80, 90, 100]
+difficulty = "medium"
+paper_source = "SABench Fig. 3a/3e: 151674 cropped along x to the stated overlap percentage and aligned to 151673."
+paper_reference = "MOESM8 DLPFC_crop.csv, 10 levels x 12 method columns"
+
+[[sweep]]
+id = "sa-042-mhpr-rotation-sweep"
+marker_source = "mhpr"
+name = "MHPR MERFISH rotation robustness sweep (0 to 360 degrees, 15 degree steps)"
+family = "robustness_sweep"
+reference_slice = "Data5"
+moving_slice = "Data6"
+perturbation = "rotation"
+levels = [0, 15, 30, 45, 60, 75, 90, 105, 120, 135, 150, 165, 180, 195, 210, 225, 240, 255, 270, 285, 300, 315, 330, 345, 360]
+difficulty = "medium"
+paper_source = "SABench Fig. 3d: MERFISH_0.09 rotated about its centroid and aligned to MERFISH_0.04."
+paper_reference = "MOESM8 MHPR_rotation.csv, 25 levels x 13 method columns"
+
+[[sweep]]
+id = "sa-043-mhpr-crop-sweep"
+marker_source = "mhpr"
+name = "MHPR MERFISH overlap robustness sweep (10 to 100 percent overlap)"
+family = "robustness_sweep"
+reference_slice = "Data5"
+moving_slice = "Data6"
+perturbation = "crop"
+levels = [10, 20, 30, 40, 50, 60, 70, 80, 90, 100]
+difficulty = "medium"
+paper_source = "SABench Fig. 3f: MERFISH_0.09 cropped along x and aligned to MERFISH_0.04."
+paper_reference = "MOESM8 MHPR_crop.csv, 10 levels x 13 method columns"
+
+# ------------------------------------------------------------------------------ legacy
+# Tasks authored before this registry. Listed for --check-coverage only; build_tasks.py
+# never writes these directories.
+[legacy]
+task_glob = "benchmarks/spatial_alignment/tasks/sa-0*/task.toml,benchmarks/spatial_alignment/tasks/sa-1*/task.toml"

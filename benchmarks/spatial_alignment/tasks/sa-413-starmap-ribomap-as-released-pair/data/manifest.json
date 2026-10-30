@@ -1,0 +1,35 @@
+{
+  "schema_version": "paper2bench.data_manifest.v0.1",
+  "task_id": "sa-413-starmap-ribomap-as-released-pair",
+  "source": "GEASO data release, Zenodo 18811760 (Wang, Liu & Ma, Nat Commun 2026)",
+  "build_script": "scripts/build_geaso_tasks.py",
+  "dataset": "STARmap and RIBOmap on adjacent mouse brain sections (Zeng et al. 2023), as released",
+  "task_type": "cross_modality_alignment",
+  "truth": "none (coordinates); labels are the 12 released cell types",
+  "paper_result": "GEASO cell-type concordance 81.8% (paper text; Supplementary Fig. 17)",
+  "paper_source": "Zeng et al. 2023 STARmap/RIBOmap (SCP1835), via the GEASO data release (Zenodo 18811760); GEASO Fig. 6a.",
+  "assets": [
+    {
+      "asset_id": "starmap",
+      "role": "slice",
+      "path": "/users/ychen5/p2b-data/paper2bench-data/geaso_tasks/sa-413/starmap.h5ad",
+      "format": "h5ad",
+      "visibility": "public",
+      "metadata": {
+        "n_obs": 59165,
+        "is_reference": true
+      }
+    },
+    {
+      "asset_id": "ribomap",
+      "role": "slice",
+      "path": "/users/ychen5/p2b-data/paper2bench-data/geaso_tasks/sa-413/ribomap.h5ad",
+      "format": "h5ad",
+      "visibility": "public",
+      "metadata": {
+        "n_obs": 58692,
+        "is_reference": false
+      }
+    }
+  ]
+}

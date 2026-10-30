@@ -1,0 +1,3 @@
+run_index,cell,agent,model,task,condition,rep,prompt_variant,prebootstrap,in_design_subset,shard,runnable_today
+0,bare_rep2_20261017,codex,gpt-6-astra,sa-311-albis-visiumhd-bin32-serial-align,bare,2,full-basic,never,True,1,True
+1,bare_rep2_20261017,codex,gpt-6-astra,sa-312-albis-strongmix-cell-7domain-serial-align,bare,2,full-basic,never,True,1,True

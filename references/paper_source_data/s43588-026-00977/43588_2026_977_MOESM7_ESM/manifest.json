@@ -1,0 +1,89 @@
+{
+  "workbook": "43588_2026_977_MOESM7_ESM.xlsx",
+  "sheets": [
+    {
+      "sheet_name": "DLPFC_GeneBased_PCC",
+      "csv_path": "references/paper_source_data/s43588-026-00977/43588_2026_977_MOESM7_ESM/DLPFC_GeneBased_PCC.csv",
+      "rows": 16,
+      "cols": 124
+    },
+    {
+      "sheet_name": "DLPFC_GeneBased_Cos_Sim",
+      "csv_path": "references/paper_source_data/s43588-026-00977/43588_2026_977_MOESM7_ESM/DLPFC_GeneBased_Cos_Sim.csv",
+      "rows": 16,
+      "cols": 124
+    },
+    {
+      "sheet_name": "DLPFC_GeneBased_SSIM",
+      "csv_path": "references/paper_source_data/s43588-026-00977/43588_2026_977_MOESM7_ESM/DLPFC_GeneBased_SSIM.csv",
+      "rows": 16,
+      "cols": 124
+    },
+    {
+      "sheet_name": "DLPFC_GeneBased_MI",
+      "csv_path": "references/paper_source_data/s43588-026-00977/43588_2026_977_MOESM7_ESM/DLPFC_GeneBased_MI.csv",
+      "rows": 16,
+      "cols": 124
+    },
+    {
+      "sheet_name": "DLPFC_LandmarkBased_Heatmap",
+      "csv_path": "references/paper_source_data/s43588-026-00977/43588_2026_977_MOESM7_ESM/DLPFC_LandmarkBased_Heatmap.csv",
+      "rows": 16,
+      "cols": 8
+    },
+    {
+      "sheet_name": "MHPR_GeneBased_PCC",
+      "csv_path": "references/paper_source_data/s43588-026-00977/43588_2026_977_MOESM7_ESM/MHPR_GeneBased_PCC.csv",
+      "rows": 17,
+      "cols": 156
+    },
+    {
+      "sheet_name": "MHPR_GeneBased_Cos_Sim",
+      "csv_path": "references/paper_source_data/s43588-026-00977/43588_2026_977_MOESM7_ESM/MHPR_GeneBased_Cos_Sim.csv",
+      "rows": 17,
+      "cols": 156
+    },
+    {
+      "sheet_name": "MHPR_GeneBased_SSIM",
+      "csv_path": "references/paper_source_data/s43588-026-00977/43588_2026_977_MOESM7_ESM/MHPR_GeneBased_SSIM.csv",
+      "rows": 17,
+      "cols": 156
+    },
+    {
+      "sheet_name": "MHPR_GeneBased_MI",
+      "csv_path": "references/paper_source_data/s43588-026-00977/43588_2026_977_MOESM7_ESM/MHPR_GeneBased_MI.csv",
+      "rows": 17,
+      "cols": 156
+    },
+    {
+      "sheet_name": "MHPR_LandmarkBased_Heatmap",
+      "csv_path": "references/paper_source_data/s43588-026-00977/43588_2026_977_MOESM7_ESM/MHPR_LandmarkBased_Heatmap.csv",
+      "rows": 17,
+      "cols": 10
+    },
+    {
+      "sheet_name": "2E_DLPFC_ARI",
+      "csv_path": "references/paper_source_data/s43588-026-00977/43588_2026_977_MOESM7_ESM/2E_DLPFC_ARI.csv",
+      "rows": 16,
+      "cols": 5
+    },
+    {
+      "sheet_name": "2E_DLPFC_NMI",
+      "csv_path": "references/paper_source_data/s43588-026-00977/43588_2026_977_MOESM7_ESM/2E_DLPFC_NMI.csv",
+      "rows": 16,
+      "cols": 5
+    },
+    {
+      "sheet_name": "2E_DLPFC_HOM",
+      "csv_path": "references/paper_source_data/s43588-026-00977/43588_2026_977_MOESM7_ESM/2E_DLPFC_HOM.csv",
+      "rows": 16,
+      "cols": 5
+    },
+    {
+      "sheet_name": "2E_DLPFC_COM",
+      "csv_path": "references/paper_source_data/s43588-026-00977/43588_2026_977_MOESM7_ESM/2E_DLPFC_COM.csv",
+      "rows": 16,
+      "cols": 5
+    }
+  ]
+}

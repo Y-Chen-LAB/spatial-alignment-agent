@@ -1,0 +1,21 @@
+{
+  "source": "SABench Zenodo tutorial Data_DLPFC",
+  "slices": [
+    {
+      "id": "151673",
+      "path": "/Users/yiqun/Downloads/paper2bench-data/DLPFC/151673.h5ad"
+    },
+    {
+      "id": "151674",
+      "path": "/Users/yiqun/Downloads/paper2bench-data/DLPFC/151674.h5ad"
+    },
+    {
+      "id": "151675",
+      "path": "/Users/yiqun/Downloads/paper2bench-data/DLPFC/151675.h5ad"
+    },
+    {
+      "id": "151676",
+      "path": "/Users/yiqun/Downloads/paper2bench-data/DLPFC/151676.h5ad"
+    }
+  ]
+}

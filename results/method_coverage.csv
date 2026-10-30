@@ -1,0 +1,122 @@
+task,scripted,ours,n_ours,paper,n_paper,paper_metric,n_any
+sa-001-dlpfc-serial-align,3,,0,CAST PASTE PASTE2 SANTO SLAT SPACEL STAIR STAligner STalign Spateo,10,SABench: per-gene PCC/cosine/SSIM/MI + landmark accuracy (DLPFC),10
+sa-002-dlpfc-robust-perturb,4,,0,,0,,0
+sa-003-dlpfc-coarse-shuffled-pair,4,,0,,0,,0
+sa-004-bca-downsampled-pair-align,4,,0,,0,,0
+sa-005-bca-resolution-recovery,0,,0,,0,,0
+sa-006-mbsa-serial-align,4,,0,,0,,0
+sa-007-mbsp-serial-align,4,,0,,0,,0
+sa-008-ambc-xenium-multisection-serial-align,3,,0,,0,,0
+sa-009-mhpr-merfish-serial-align,4,,0,CAST GPSA PASTE PASTE2 SANTO SLAT SPACEL STAIR STAligner STalign Spateo,11,SABench: per-gene + landmark (MHPR),11
+sa-010-ambc-visium-xenium-cross-platform,4,,0,,0,,0
+sa-011-scc-p2-serial-align,4,,0,,0,,0
+sa-012-scc-p5-serial-align,4,,0,,0,,0
+sa-013-ambc-visium-xenium5k-cross-platform,4,,0,,0,,0
+sa-014-bca-xenium-serial-align,4,,0,,0,,0
+sa-015-ambc-visium-visiumhd-cross-resolution,4,,0,,0,,0
+sa-016-ambc-visium-starmapplus-cross-platform,4,,0,,0,,0
+sa-017-baristaseq-mpc-serial-align,4,,0,,0,,0
+sa-018-starmap-mmpc-serial-align,4,,0,,0,,0
+sa-019-flysta3d-e14-16-3d-serial-align,4,,0,CAST PASTE PASTE2 SANTO SLAT SPACEL STAIR STalign Spateo,9,SABench: per-slice MAE (Flysta3D),9
+sa-020-mop-mouse1-atlas-serial-align,4,,0,,0,,0
+sa-021-mop-mouse2-atlas-serial-align,4,,0,,0,,0
+sa-022-openst-mln-serial-align,4,,0,,0,,0
+sa-023-wmb-zhuang-abca1-129-section-3d-mae,4,,0,,0,,0
+sa-025-openst-mln-adjacent-02-03-3d-align,4,,0,,0,,0
+sa-026-openst-mln-early-window-02-06-3d-align,4,,0,,0,,0
+sa-027-openst-mln-full-19-slice-3d-align,4,,0,CAST GEASO Moscot PASTE PASTE2 SANTO SLAT SPACEL STAlign STalign Spateo,11,SABench: per-slice MAE (MLN); GEASO Fig.2f: CLC per pair,11
+sa-028-wmb-animal1-window5-serial-align,4,,0,,0,,0
+sa-029-wmb-animal1-window10-serial-align,4,,0,,0,,0
+sa-030-mob-stereoseq-slideseqv2-cross-platform,4,,0,CAST PASTE PASTE2 SANTO SLAT STAIR STAligner STalign Spateo,9,SABench: per-gene (MOB),9
+sa-031-mbrm-vizgen-serial-align,4,,0,,0,,0
+sa-032-bca-visium-xenium-cross-platform,4,,0,,0,,0
+sa-040-dlpfc-rotation-sweep,4,,0,CAST PASTE PASTE2 SANTO SLAT SPACEL STAIR STAligner STalign Spateo,10,SABench: rotation robustness (DLPFC),10
+sa-041-dlpfc-crop-sweep,4,,0,CAST PASTE PASTE2 SANTO SLAT SPACEL STAIR STAligner STalign Spateo,10,SABench: crop robustness (DLPFC),10
+sa-042-mhpr-rotation-sweep,4,,0,CAST GPSA PASTE PASTE2 SANTO SLAT SPACEL STAIR STAligner STalign Spateo,11,SABench: rotation robustness (MHPR),11
+sa-043-mhpr-crop-sweep,4,,0,CAST GPSA PASTE PASTE2 SANTO SLAT SPACEL STAIR STAligner STalign Spateo,11,SABench: crop robustness (MHPR),11
+sa-101-mop-mouse1sample1-serial-align,4,,0,,0,,0
+sa-102-mop-mouse1sample2-serial-align,4,,0,,0,,0
+sa-103-mop-mouse1sample3-serial-align,4,,0,,0,,0
+sa-104-mop-mouse1sample4-serial-align,4,,0,,0,,0
+sa-105-mop-mouse1sample5-serial-align,4,,0,,0,,0
+sa-106-mop-mouse1sample6-serial-align,4,,0,,0,,0
+sa-107-mop-mouse2sample1-serial-align,4,,0,,0,,0
+sa-108-mop-mouse2sample2-serial-align,4,,0,,0,,0
+sa-109-mop-mouse2sample3-serial-align,4,,0,,0,,0
+sa-110-mop-mouse2sample4-serial-align,4,,0,,0,,0
+sa-111-mop-mouse2sample5-serial-align,4,,0,,0,,0
+sa-112-mop-mouse2sample6-serial-align,4,,0,,0,,0
+sa-201-ambc-st-visium-pair,4,,0,,0,SABench Fig.5d: success/fail only (no scores),0
+sa-202-ambc-st-visiumhd-pair,4,,0,,0,SABench Fig.5d: success/fail only (no scores),0
+sa-203-ambc-st-xenium-pair,4,,0,,0,SABench Fig.5d: success/fail only (no scores),0
+sa-204-ambc-st-xenium5k-pair,4,,0,,0,SABench Fig.5d: success/fail only (no scores),0
+sa-205-ambc-st-merfish-pair,4,,0,,0,SABench Fig.5d: success/fail only (no scores),0
+sa-206-ambc-st-starmapplus-pair,4,,0,,0,SABench Fig.5d: success/fail only (no scores),0
+sa-207-ambc-st-slideseq-pair,4,,0,,0,SABench Fig.5d: success/fail only (no scores),0
+sa-208-ambc-st-stereoseq-pair,4,,0,,0,SABench Fig.5d: success/fail only (no scores),0
+sa-209-ambc-st-cosmx-pair,4,,0,,0,SABench Fig.5d: success/fail only (no scores),0
+sa-210-ambc-visium-visiumhd-pair,4,,0,,0,SABench Fig.5d: success/fail only (no scores),0
+sa-211-ambc-visium-xenium-pair,4,,0,,0,SABench Fig.5d: success/fail only (no scores),0
+sa-212-ambc-visium-xenium5k-pair,4,,0,,0,SABench Fig.5d: success/fail only (no scores),0
+sa-213-ambc-visium-merfish-pair,4,,0,,0,SABench Fig.5d: success/fail only (no scores),0
+sa-214-ambc-visium-starmapplus-pair,4,,0,,0,SABench Fig.5d: success/fail only (no scores),0
+sa-215-ambc-visium-slideseq-pair,4,,0,,0,SABench Fig.5d: success/fail only (no scores),0
+sa-216-ambc-visium-stereoseq-pair,4,,0,,0,SABench Fig.5d: success/fail only (no scores),0
+sa-217-ambc-visium-cosmx-pair,4,,0,,0,SABench Fig.5d: success/fail only (no scores),0
+sa-218-ambc-visiumhd-xenium-pair,4,,0,,0,SABench Fig.5d: success/fail only (no scores),0
+sa-219-ambc-visiumhd-xenium5k-pair,4,,0,,0,SABench Fig.5d: success/fail only (no scores),0
+sa-220-ambc-visiumhd-merfish-pair,4,,0,,0,SABench Fig.5d: success/fail only (no scores),0
+sa-221-ambc-visiumhd-starmapplus-pair,4,,0,,0,SABench Fig.5d: success/fail only (no scores),0
+sa-222-ambc-visiumhd-slideseq-pair,4,,0,,0,SABench Fig.5d: success/fail only (no scores),0
+sa-223-ambc-visiumhd-stereoseq-pair,4,,0,,0,SABench Fig.5d: success/fail only (no scores),0
+sa-224-ambc-visiumhd-cosmx-pair,4,,0,,0,SABench Fig.5d: success/fail only (no scores),0
+sa-225-ambc-xenium-xenium5k-pair,4,,0,,0,SABench Fig.5d: success/fail only (no scores),0
+sa-226-ambc-xenium-merfish-pair,4,,0,,0,SABench Fig.5d: success/fail only (no scores),0
+sa-227-ambc-xenium-starmapplus-pair,4,,0,,0,SABench Fig.5d: success/fail only (no scores),0
+sa-228-ambc-xenium-slideseq-pair,4,,0,,0,SABench Fig.5d: success/fail only (no scores),0
+sa-229-ambc-xenium-stereoseq-pair,4,,0,,0,SABench Fig.5d: success/fail only (no scores),0
+sa-230-ambc-xenium-cosmx-pair,4,,0,,0,SABench Fig.5d: success/fail only (no scores),0
+sa-231-ambc-xenium5k-merfish-pair,4,,0,,0,SABench Fig.5d: success/fail only (no scores),0
+sa-232-ambc-xenium5k-starmapplus-pair,4,,0,,0,SABench Fig.5d: success/fail only (no scores),0
+sa-233-ambc-xenium5k-slideseq-pair,4,,0,,0,SABench Fig.5d: success/fail only (no scores),0
+sa-234-ambc-xenium5k-stereoseq-pair,4,,0,,0,SABench Fig.5d: success/fail only (no scores),0
+sa-235-ambc-xenium5k-cosmx-pair,4,,0,,0,SABench Fig.5d: success/fail only (no scores),0
+sa-236-ambc-merfish-starmapplus-pair,4,,0,,0,SABench Fig.5d: success/fail only (no scores),0
+sa-237-ambc-merfish-slideseq-pair,4,,0,,0,SABench Fig.5d: success/fail only (no scores),0
+sa-238-ambc-merfish-stereoseq-pair,4,,0,,0,SABench Fig.5d: success/fail only (no scores),0
+sa-239-ambc-merfish-cosmx-pair,4,,0,,0,SABench Fig.5d: success/fail only (no scores),0
+sa-240-ambc-starmapplus-slideseq-pair,4,,0,,0,SABench Fig.5d: success/fail only (no scores),0
+sa-241-ambc-starmapplus-stereoseq-pair,4,,0,,0,SABench Fig.5d: success/fail only (no scores),0
+sa-242-ambc-starmapplus-cosmx-pair,4,,0,,0,SABench Fig.5d: success/fail only (no scores),0
+sa-243-ambc-slideseq-stereoseq-pair,4,,0,,0,SABench Fig.5d: success/fail only (no scores),0
+sa-244-ambc-slideseq-cosmx-pair,4,,0,,0,SABench Fig.5d: success/fail only (no scores),0
+sa-245-ambc-stereoseq-cosmx-pair,4,,0,,0,SABench Fig.5d: success/fail only (no scores),0
+sa-301-albis-strongmix-cell-serial-align,4,CAST GEASO GPSA Moscot PASTE PASTE2 SANTO SLAT SPACEL STAIR STAligner STalign Spateo,13,,0,,13
+sa-302-albis-xenium-cell-serial-align,4,CAST GEASO GPSA Moscot PASTE PASTE2 SANTO SLAT SPACEL STAIR STAligner STalign Spateo,13,,0,,13
+sa-303-albis-visium-spot-serial-align,4,CAST GEASO GPSA Moscot PASTE PASTE2 SANTO SLAT SPACEL STAIR STAligner STalign Spateo,13,,0,,13
+sa-304-albis-visiumhd-bin16-serial-align,4,CAST GEASO GPSA Moscot PASTE PASTE2 SANTO SLAT SPACEL STAIR STAligner STalign Spateo,13,,0,,13
+sa-305-albis-visiumhd-bin8-serial-align,4,CAST GEASO GPSA Moscot PASTE PASTE2 SANTO SLAT SPACEL STAIR STAligner STalign Spateo,13,,0,,13
+sa-306-albis-visium-spot-slide-serial-align,4,CAST GEASO GPSA Moscot PASTE PASTE2 SANTO SLAT SPACEL STAIR STAligner STalign Spateo,13,,0,,13
+sa-307-albis-visiumhd-bin16-slide-serial-align,4,CAST GEASO GPSA Moscot PASTE PASTE2 SANTO SLAT SPACEL STAIR STAligner STalign Spateo,13,,0,,13
+sa-308-albis-strongmix-cell-gap-serial-align,4,CAST GEASO GPSA Moscot PASTE PASTE2 SANTO SLAT SPACEL STAIR STAligner STalign Spateo,13,,0,,13
+sa-309-albis-visium-spot-sparse-serial-align,4,CAST GEASO GPSA Moscot PASTE PASTE2 SANTO SLAT SPACEL STAIR STAligner STalign Spateo,13,,0,,13
+sa-310-albis-visium-spot-sparse-gap-serial-align,4,CAST GEASO GPSA Moscot PASTE PASTE2 SANTO SLAT SPACEL STAIR STAligner STalign Spateo,13,,0,,13
+sa-311-albis-visiumhd-bin32-serial-align,4,CAST GEASO GPSA Moscot PASTE PASTE2 SANTO SLAT SPACEL STAIR STAligner STalign Spateo,13,,0,,13
+sa-312-albis-strongmix-cell-7domain-serial-align,4,CAST GEASO GPSA Moscot PASTE PASTE2 SANTO SLAT SPACEL STAIR STAligner STalign Spateo,13,,0,,13
+sa-401-starmapplus-sagittal3-depth-stack,4,SPACEL,1,,0,,1
+sa-402-starmapplus-sagittal3-overlap-pair,4,SPACEL,1,,0,,1
+sa-403-starmapplus-sagittal3-overlap-sweep,4,SPACEL,1,,0,,1
+sa-404-starmap-ribomap-cross-modality-pair,4,SPACEL,1,,0,,1
+sa-405-starmapplus-ad-cross-animal-pair,4,SPACEL,1,,0,,1
+sa-406-p22-mouse-rna-h3k4me3-cross-modality-pair,4,,0,,0,,0
+sa-407-starmapplus-ad-rotation-sweep,4,GEASO PASTE2 SPACEL Spateo,4,CAST GEASO Moscot PASTE PASTE2 SLAT SPACEL STAlign Spateo,9,GEASO Fig.2a-b: PCC/CLC/AAS by angle,9
+sa-408-starmapplus-sagittal3-stitch-overlap20,4,GEASO PASTE2 SPACEL Spateo,4,CAST GEASO Moscot PASTE PASTE2 SLAT SPACEL STAlign Spateo,9,GEASO Fig.2c-d: stitching MAE,9
+sa-409-starmapplus-sagittal3-stitch-overlap50,4,GEASO PASTE2 SPACEL Spateo,4,CAST GEASO Moscot PASTE PASTE2 SLAT SPACEL STAlign Spateo,9,GEASO Fig.2c-d: stitching MAE,9
+sa-410-starmapplus-sagittal3-stitch-overlap80,4,GEASO PASTE2 SPACEL Spateo,4,CAST GEASO Moscot PASTE PASTE2 SLAT SPACEL STAlign Spateo,9,GEASO Fig.2c-d: stitching MAE,9
+sa-411-merfish-hemibrain-129-section-3d-reconstruction,4,GEASO PASTE2 SPACEL Spateo,4,CAST GEASO Moscot PASTE PASTE2 SLAT SPACEL STAlign Spateo,9,GEASO Fig.2e: per-pair MAE,9
+sa-412-openst-mln-19-section-3d-reconstruction-paper,4,SPACEL,1,CAST GEASO Moscot PASTE PASTE2 SLAT SPACEL STAlign Spateo,9,GEASO Fig.2f: CLC per pair (same OpenST data as sa-027),9
+sa-413-starmap-ribomap-as-released-pair,4,SPACEL,1,,0,,1
+sa-414-wmb-merfish-129-section-raw-coords-3d,4,GEASO PASTE2 SPACEL Spateo,4,,0,,4
+sa-415-wmb-merfish-33-section-raw-coords-3d,4,GEASO PASTE2 SPACEL Spateo,4,,0,,4
+sa-416-wmb-merfish-17-section-raw-coords-3d,4,GEASO PASTE2 SPACEL Spateo,4,,0,,4
+sa-417-wmb-merfish-33-section-raw-coords-3d-irregular-sparse,4,GEASO PASTE2 SPACEL Spateo,4,,0,,4

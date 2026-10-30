@@ -1,0 +1,1696 @@
+{
+  "schema_version": "paper2bench.data_manifest.v0.1",
+  "task_id": "sa-411-merfish-hemibrain-129-section-3d-reconstruction",
+  "source": "GEASO data release, Zenodo 18811760 (Wang, Liu & Ma, Nat Commun 2026)",
+  "build_script": "scripts/build_geaso_tasks.py",
+  "dataset": "MERFISH whole mouse brain, Zhuang ABCA-1 animal 1 (Zhang et al. 2023), 129 sections as released with GEASO (Fig2_3d_MERFISH, slice_9 to slice_137)",
+  "task_type": "serial_3d_reconstruction",
+  "n_sections": 129,
+  "section_files": [
+    "slice_9.h5ad",
+    "slice_10.h5ad",
+    "slice_11.h5ad",
+    "slice_12.h5ad",
+    "slice_13.h5ad",
+    "slice_14.h5ad",
+    "slice_15.h5ad",
+    "slice_16.h5ad",
+    "slice_17.h5ad",
+    "slice_18.h5ad",
+    "slice_19.h5ad",
+    "slice_20.h5ad",
+    "slice_21.h5ad",
+    "slice_22.h5ad",
+    "slice_23.h5ad",
+    "slice_24.h5ad",
+    "slice_25.h5ad",
+    "slice_26.h5ad",
+    "slice_27.h5ad",
+    "slice_28.h5ad",
+    "slice_29.h5ad",
+    "slice_30.h5ad",
+    "slice_31.h5ad",
+    "slice_32.h5ad",
+    "slice_33.h5ad",
+    "slice_34.h5ad",
+    "slice_35.h5ad",
+    "slice_36.h5ad",
+    "slice_37.h5ad",
+    "slice_38.h5ad",
+    "slice_39.h5ad",
+    "slice_40.h5ad",
+    "slice_41.h5ad",
+    "slice_42.h5ad",
+    "slice_43.h5ad",
+    "slice_44.h5ad",
+    "slice_45.h5ad",
+    "slice_46.h5ad",
+    "slice_47.h5ad",
+    "slice_48.h5ad",
+    "slice_49.h5ad",
+    "slice_50.h5ad",
+    "slice_51.h5ad",
+    "slice_52.h5ad",
+    "slice_53.h5ad",
+    "slice_54.h5ad",
+    "slice_55.h5ad",
+    "slice_56.h5ad",
+    "slice_57.h5ad",
+    "slice_58.h5ad",
+    "slice_59.h5ad",
+    "slice_60.h5ad",
+    "slice_61.h5ad",
+    "slice_62.h5ad",
+    "slice_63.h5ad",
+    "slice_64.h5ad",
+    "slice_65.h5ad",
+    "slice_66.h5ad",
+    "slice_67.h5ad",
+    "slice_68.h5ad",
+    "slice_69.h5ad",
+    "slice_70.h5ad",
+    "slice_71.h5ad",
+    "slice_72.h5ad",
+    "slice_73.h5ad",
+    "slice_74.h5ad",
+    "slice_75.h5ad",
+    "slice_76.h5ad",
+    "slice_77.h5ad",
+    "slice_78.h5ad",
+    "slice_79.h5ad",
+    "slice_80.h5ad",
+    "slice_81.h5ad",
+    "slice_82.h5ad",
+    "slice_83.h5ad",
+    "slice_84.h5ad",
+    "slice_85.h5ad",
+    "slice_86.h5ad",
+    "slice_87.h5ad",
+    "slice_88.h5ad",
+    "slice_89.h5ad",
+    "slice_90.h5ad",
+    "slice_91.h5ad",
+    "slice_92.h5ad",
+    "slice_93.h5ad",
+    "slice_94.h5ad",
+    "slice_95.h5ad",
+    "slice_96.h5ad",
+    "slice_97.h5ad",
+    "slice_98.h5ad",
+    "slice_99.h5ad",
+    "slice_100.h5ad",
+    "slice_101.h5ad",
+    "slice_102.h5ad",
+    "slice_103.h5ad",
+    "slice_104.h5ad",
+    "slice_105.h5ad",
+    "slice_106.h5ad",
+    "slice_107.h5ad",
+    "slice_108.h5ad",
+    "slice_109.h5ad",
+    "slice_110.h5ad",
+    "slice_111.h5ad",
+    "slice_112.h5ad",
+    "slice_113.h5ad",
+    "slice_114.h5ad",
+    "slice_115.h5ad",
+    "slice_116.h5ad",
+    "slice_117.h5ad",
+    "slice_118.h5ad",
+    "slice_119.h5ad",
+    "slice_120.h5ad",
+    "slice_121.h5ad",
+    "slice_122.h5ad",
+    "slice_123.h5ad",
+    "slice_124.h5ad",
+    "slice_125.h5ad",
+    "slice_126.h5ad",
+    "slice_127.h5ad",
+    "slice_128.h5ad",
+    "slice_129.h5ad",
+    "slice_130.h5ad",
+    "slice_131.h5ad",
+    "slice_132.h5ad",
+    "slice_133.h5ad",
+    "slice_134.h5ad",
+    "slice_135.h5ad",
+    "slice_136.h5ad",
+    "slice_137.h5ad"
+  ],
+  "rotation_degrees": [
+    0.0,
+    254.37,
+    291.32,
+    310.14,
+    298.32,
+    120.32,
+    275.44,
+    19.62,
+    329.46,
+    349.37,
+    1.04,
+    303.91,
+    346.12,
+    124.53,
+    218.09,
+    310.41,
+    85.83,
+    40.93,
+    247.11,
+    122.43,
+    245.99,
+    212.98,
+    83.08,
+    354.03,
+    300.94,
+    186.43,
+    259.28,
+    122.4,
+    206.29,
+    19.34,
+    51.15,
+    105.69,
+    65.97,
+    300.36,
+    21.03,
+    277.36,
+    296.01,
+    195.08,
+    86.17,
+    218.63,
+    54.11,
+    252.63,
+    144.63,
+    54.44,
+    114.36,
+    265.82,
+    129.23,
+    63.74,
+    35.12,
+    89.82,
+    102.41,
+    220.24,
+    204.74,
+    3.63,
+    334.25,
+    182.24,
+    256.31,
+    249.16,
+    91.01,
+    298.84,
+    153.63,
+    65.58,
+    337.95,
+    23.17,
+    297.06,
+    162.43,
+    192.8,
+    118.43,
+    11.48,
+    233.07,
+    293.39,
+    146.4,
+    205.69,
+    209.2,
+    10.41,
+    67.03,
+    210.42,
+    81.3,
+    290.87,
+    299.35,
+    255.99,
+    257.5,
+    234.43,
+    354.68,
+    240.59,
+    82.1,
+    259.08,
+    36.39,
+    238.33,
+    256.48,
+    118.26,
+    106.32,
+    117.32,
+    25.83,
+    127.1,
+    143.88,
+    172.23,
+    303.73,
+    318.23,
+    144.89,
+    249.29,
+    194.86,
+    143.19,
+    289.23,
+    161.34,
+    158.71,
+    177.29,
+    277.85,
+    175.93,
+    209.25,
+    148.74,
+    239.97,
+    224.15,
+    193.58,
+    226.69,
+    121.16,
+    23.97,
+    196.38,
+    126.79,
+    223.69,
+    162.27,
+    251.96,
+    143.23,
+    118.76,
+    162.24,
+    13.8,
+    91.92,
+    48.95,
+    200.24
+  ],
+  "labels": "cell_type (as in the release)",
+  "protocol": "first section is the reference; others rotated about their own centre (GEASO OpenST notebook); each aligned to the previous one; paper MAE per consecutive pair",
+  "discrepancy": "the paper text states 9.3 million cells; the released files hold about 1.6 million",
+  "paper_source": "Zhang et al. 2023 MERFISH whole mouse brain via the GEASO data release (Zenodo 18811760); GEASO Fig. 2e.",
+  "assets": [
+    {
+      "asset_id": "s000",
+      "role": "slice",
+      "path": "/users/ychen5/p2b-data/paper2bench-data/geaso_tasks/sa-411/s000.h5ad",
+      "format": "h5ad",
+      "visibility": "public",
+      "metadata": {
+        "n_obs": 12531,
+        "is_reference": true
+      }
+    },
+    {
+      "asset_id": "s001",
+      "role": "slice",
+      "path": "/users/ychen5/p2b-data/paper2bench-data/geaso_tasks/sa-411/s001.h5ad",
+      "format": "h5ad",
+      "visibility": "public",
+      "metadata": {
+        "n_obs": 13952,
+        "is_reference": false
+      }
+    },
+    {
+      "asset_id": "s002",
+      "role": "slice",
+      "path": "/users/ychen5/p2b-data/paper2bench-data/geaso_tasks/sa-411/s002.h5ad",
+      "format": "h5ad",
+      "visibility": "public",
+      "metadata": {
+        "n_obs": 13721,
+        "is_reference": false
+      }
+    },
+    {
+      "asset_id": "s003",
+      "role": "slice",
+      "path": "/users/ychen5/p2b-data/paper2bench-data/geaso_tasks/sa-411/s003.h5ad",
+      "format": "h5ad",
+      "visibility": "public",
+      "metadata": {
+        "n_obs": 16960,
+        "is_reference": false
+      }
+    },
+    {
+      "asset_id": "s004",
+      "role": "slice",
+      "path": "/users/ychen5/p2b-data/paper2bench-data/geaso_tasks/sa-411/s004.h5ad",
+      "format": "h5ad",
+      "visibility": "public",
+      "metadata": {
+        "n_obs": 16775,
+        "is_reference": false
+      }
+    },
+    {
+      "asset_id": "s005",
+      "role": "slice",
+      "path": "/users/ychen5/p2b-data/paper2bench-data/geaso_tasks/sa-411/s005.h5ad",
+      "format": "h5ad",
+      "visibility": "public",
+      "metadata": {
+        "n_obs": 16736,
+        "is_reference": false
+      }
+    },
+    {
+      "asset_id": "s006",
+      "role": "slice",
+      "path": "/users/ychen5/p2b-data/paper2bench-data/geaso_tasks/sa-411/s006.h5ad",
+      "format": "h5ad",
+      "visibility": "public",
+      "metadata": {
+        "n_obs": 16800,
+        "is_reference": false
+      }
+    },
+    {
+      "asset_id": "s007",
+      "role": "slice",
+      "path": "/users/ychen5/p2b-data/paper2bench-data/geaso_tasks/sa-411/s007.h5ad",
+      "format": "h5ad",
+      "visibility": "public",
+      "metadata": {
+        "n_obs": 15959,
+        "is_reference": false
+      }
+    },
+    {
+      "asset_id": "s008",
+      "role": "slice",
+      "path": "/users/ychen5/p2b-data/paper2bench-data/geaso_tasks/sa-411/s008.h5ad",
+      "format": "h5ad",
+      "visibility": "public",
+      "metadata": {
+        "n_obs": 16713,
+        "is_reference": false
+      }
+    },
+    {
+      "asset_id": "s009",
+      "role": "slice",
+      "path": "/users/ychen5/p2b-data/paper2bench-data/geaso_tasks/sa-411/s009.h5ad",
+      "format": "h5ad",
+      "visibility": "public",
+      "metadata": {
+        "n_obs": 16260,
+        "is_reference": false
+      }
+    },
+    {
+      "asset_id": "s010",
+      "role": "slice",
+      "path": "/users/ychen5/p2b-data/paper2bench-data/geaso_tasks/sa-411/s010.h5ad",
+      "format": "h5ad",
+      "visibility": "public",
+      "metadata": {
+        "n_obs": 18132,
+        "is_reference": false
+      }
+    },
+    {
+      "asset_id": "s011",
+      "role": "slice",
+      "path": "/users/ychen5/p2b-data/paper2bench-data/geaso_tasks/sa-411/s011.h5ad",
+      "format": "h5ad",
+      "visibility": "public",
+      "metadata": {
+        "n_obs": 18744,
+        "is_reference": false
+      }
+    },
+    {
+      "asset_id": "s012",
+      "role": "slice",
+      "path": "/users/ychen5/p2b-data/paper2bench-data/geaso_tasks/sa-411/s012.h5ad",
+      "format": "h5ad",
+      "visibility": "public",
+      "metadata": {
+        "n_obs": 18952,
+        "is_reference": false
+      }
+    },
+    {
+      "asset_id": "s013",
+      "role": "slice",
+      "path": "/users/ychen5/p2b-data/paper2bench-data/geaso_tasks/sa-411/s013.h5ad",
+      "format": "h5ad",
+      "visibility": "public",
+      "metadata": {
+        "n_obs": 15390,
+        "is_reference": false
+      }
+    },
+    {
+      "asset_id": "s014",
+      "role": "slice",
+      "path": "/users/ychen5/p2b-data/paper2bench-data/geaso_tasks/sa-411/s014.h5ad",
+      "format": "h5ad",
+      "visibility": "public",
+      "metadata": {
+        "n_obs": 15797,
+        "is_reference": false
+      }
+    },
+    {
+      "asset_id": "s015",
+      "role": "slice",
+      "path": "/users/ychen5/p2b-data/paper2bench-data/geaso_tasks/sa-411/s015.h5ad",
+      "format": "h5ad",
+      "visibility": "public",
+      "metadata": {
+        "n_obs": 14964,
+        "is_reference": false
+      }
+    },
+    {
+      "asset_id": "s016",
+      "role": "slice",
+      "path": "/users/ychen5/p2b-data/paper2bench-data/geaso_tasks/sa-411/s016.h5ad",
+      "format": "h5ad",
+      "visibility": "public",
+      "metadata": {
+        "n_obs": 13497,
+        "is_reference": false
+      }
+    },
+    {
+      "asset_id": "s017",
+      "role": "slice",
+      "path": "/users/ychen5/p2b-data/paper2bench-data/geaso_tasks/sa-411/s017.h5ad",
+      "format": "h5ad",
+      "visibility": "public",
+      "metadata": {
+        "n_obs": 11660,
+        "is_reference": false
+      }
+    },
+    {
+      "asset_id": "s018",
+      "role": "slice",
+      "path": "/users/ychen5/p2b-data/paper2bench-data/geaso_tasks/sa-411/s018.h5ad",
+      "format": "h5ad",
+      "visibility": "public",
+      "metadata": {
+        "n_obs": 14830,
+        "is_reference": false
+      }
+    },
+    {
+      "asset_id": "s019",
+      "role": "slice",
+      "path": "/users/ychen5/p2b-data/paper2bench-data/geaso_tasks/sa-411/s019.h5ad",
+      "format": "h5ad",
+      "visibility": "public",
+      "metadata": {
+        "n_obs": 13036,
+        "is_reference": false
+      }
+    },
+    {
+      "asset_id": "s020",
+      "role": "slice",
+      "path": "/users/ychen5/p2b-data/paper2bench-data/geaso_tasks/sa-411/s020.h5ad",
+      "format": "h5ad",
+      "visibility": "public",
+      "metadata": {
+        "n_obs": 15469,
+        "is_reference": false
+      }
+    },
+    {
+      "asset_id": "s021",
+      "role": "slice",
+      "path": "/users/ychen5/p2b-data/paper2bench-data/geaso_tasks/sa-411/s021.h5ad",
+      "format": "h5ad",
+      "visibility": "public",
+      "metadata": {
+        "n_obs": 16241,
+        "is_reference": false
+      }
+    },
+    {
+      "asset_id": "s022",
+      "role": "slice",
+      "path": "/users/ychen5/p2b-data/paper2bench-data/geaso_tasks/sa-411/s022.h5ad",
+      "format": "h5ad",
+      "visibility": "public",
+      "metadata": {
+        "n_obs": 15636,
+        "is_reference": false
+      }
+    },
+    {
+      "asset_id": "s023",
+      "role": "slice",
+      "path": "/users/ychen5/p2b-data/paper2bench-data/geaso_tasks/sa-411/s023.h5ad",
+      "format": "h5ad",
+      "visibility": "public",
+      "metadata": {
+        "n_obs": 16710,
+        "is_reference": false
+      }
+    },
+    {
+      "asset_id": "s024",
+      "role": "slice",
+      "path": "/users/ychen5/p2b-data/paper2bench-data/geaso_tasks/sa-411/s024.h5ad",
+      "format": "h5ad",
+      "visibility": "public",
+      "metadata": {
+        "n_obs": 15231,
+        "is_reference": false
+      }
+    },
+    {
+      "asset_id": "s025",
+      "role": "slice",
+      "path": "/users/ychen5/p2b-data/paper2bench-data/geaso_tasks/sa-411/s025.h5ad",
+      "format": "h5ad",
+      "visibility": "public",
+      "metadata": {
+        "n_obs": 14731,
+        "is_reference": false
+      }
+    },
+    {
+      "asset_id": "s026",
+      "role": "slice",
+      "path": "/users/ychen5/p2b-data/paper2bench-data/geaso_tasks/sa-411/s026.h5ad",
+      "format": "h5ad",
+      "visibility": "public",
+      "metadata": {
+        "n_obs": 13807,
+        "is_reference": false
+      }
+    },
+    {
+      "asset_id": "s027",
+      "role": "slice",
+      "path": "/users/ychen5/p2b-data/paper2bench-data/geaso_tasks/sa-411/s027.h5ad",
+      "format": "h5ad",
+      "visibility": "public",
+      "metadata": {
+        "n_obs": 13369,
+        "is_reference": false
+      }
+    },
+    {
+      "asset_id": "s028",
+      "role": "slice",
+      "path": "/users/ychen5/p2b-data/paper2bench-data/geaso_tasks/sa-411/s028.h5ad",
+      "format": "h5ad",
+      "visibility": "public",
+      "metadata": {
+        "n_obs": 16214,
+        "is_reference": false
+      }
+    },
+    {
+      "asset_id": "s029",
+      "role": "slice",
+      "path": "/users/ychen5/p2b-data/paper2bench-data/geaso_tasks/sa-411/s029.h5ad",
+      "format": "h5ad",
+      "visibility": "public",
+      "metadata": {
+        "n_obs": 16551,
+        "is_reference": false
+      }
+    },
+    {
+      "asset_id": "s030",
+      "role": "slice",
+      "path": "/users/ychen5/p2b-data/paper2bench-data/geaso_tasks/sa-411/s030.h5ad",
+      "format": "h5ad",
+      "visibility": "public",
+      "metadata": {
+        "n_obs": 18521,
+        "is_reference": false
+      }
+    },
+    {
+      "asset_id": "s031",
+      "role": "slice",
+      "path": "/users/ychen5/p2b-data/paper2bench-data/geaso_tasks/sa-411/s031.h5ad",
+      "format": "h5ad",
+      "visibility": "public",
+      "metadata": {
+        "n_obs": 18543,
+        "is_reference": false
+      }
+    },
+    {
+      "asset_id": "s032",
+      "role": "slice",
+      "path": "/users/ychen5/p2b-data/paper2bench-data/geaso_tasks/sa-411/s032.h5ad",
+      "format": "h5ad",
+      "visibility": "public",
+      "metadata": {
+        "n_obs": 21575,
+        "is_reference": false
+      }
+    },
+    {
+      "asset_id": "s033",
+      "role": "slice",
+      "path": "/users/ychen5/p2b-data/paper2bench-data/geaso_tasks/sa-411/s033.h5ad",
+      "format": "h5ad",
+      "visibility": "public",
+      "metadata": {
+        "n_obs": 21709,
+        "is_reference": false
+      }
+    },
+    {
+      "asset_id": "s034",
+      "role": "slice",
+      "path": "/users/ychen5/p2b-data/paper2bench-data/geaso_tasks/sa-411/s034.h5ad",
+      "format": "h5ad",
+      "visibility": "public",
+      "metadata": {
+        "n_obs": 24574,
+        "is_reference": false
+      }
+    },
+    {
+      "asset_id": "s035",
+      "role": "slice",
+      "path": "/users/ychen5/p2b-data/paper2bench-data/geaso_tasks/sa-411/s035.h5ad",
+      "format": "h5ad",
+      "visibility": "public",
+      "metadata": {
+        "n_obs": 25620,
+        "is_reference": false
+      }
+    },
+    {
+      "asset_id": "s036",
+      "role": "slice",
+      "path": "/users/ychen5/p2b-data/paper2bench-data/geaso_tasks/sa-411/s036.h5ad",
+      "format": "h5ad",
+      "visibility": "public",
+      "metadata": {
+        "n_obs": 29311,
+        "is_reference": false
+      }
+    },
+    {
+      "asset_id": "s037",
+      "role": "slice",
+      "path": "/users/ychen5/p2b-data/paper2bench-data/geaso_tasks/sa-411/s037.h5ad",
+      "format": "h5ad",
+      "visibility": "public",
+      "metadata": {
+        "n_obs": 28670,
+        "is_reference": false
+      }
+    },
+    {
+      "asset_id": "s038",
+      "role": "slice",
+      "path": "/users/ychen5/p2b-data/paper2bench-data/geaso_tasks/sa-411/s038.h5ad",
+      "format": "h5ad",
+      "visibility": "public",
+      "metadata": {
+        "n_obs": 28935,
+        "is_reference": false
+      }
+    },
+    {
+      "asset_id": "s039",
+      "role": "slice",
+      "path": "/users/ychen5/p2b-data/paper2bench-data/geaso_tasks/sa-411/s039.h5ad",
+      "format": "h5ad",
+      "visibility": "public",
+      "metadata": {
+        "n_obs": 29084,
+        "is_reference": false
+      }
+    },
+    {
+      "asset_id": "s040",
+      "role": "slice",
+      "path": "/users/ychen5/p2b-data/paper2bench-data/geaso_tasks/sa-411/s040.h5ad",
+      "format": "h5ad",
+      "visibility": "public",
+      "metadata": {
+        "n_obs": 31731,
+        "is_reference": false
+      }
+    },
+    {
+      "asset_id": "s041",
+      "role": "slice",
+      "path": "/users/ychen5/p2b-data/paper2bench-data/geaso_tasks/sa-411/s041.h5ad",
+      "format": "h5ad",
+      "visibility": "public",
+      "metadata": {
+        "n_obs": 29744,
+        "is_reference": false
+      }
+    },
+    {
+      "asset_id": "s042",
+      "role": "slice",
+      "path": "/users/ychen5/p2b-data/paper2bench-data/geaso_tasks/sa-411/s042.h5ad",
+      "format": "h5ad",
+      "visibility": "public",
+      "metadata": {
+        "n_obs": 33372,
+        "is_reference": false
+      }
+    },
+    {
+      "asset_id": "s043",
+      "role": "slice",
+      "path": "/users/ychen5/p2b-data/paper2bench-data/geaso_tasks/sa-411/s043.h5ad",
+      "format": "h5ad",
+      "visibility": "public",
+      "metadata": {
+        "n_obs": 33836,
+        "is_reference": false
+      }
+    },
+    {
+      "asset_id": "s044",
+      "role": "slice",
+      "path": "/users/ychen5/p2b-data/paper2bench-data/geaso_tasks/sa-411/s044.h5ad",
+      "format": "h5ad",
+      "visibility": "public",
+      "metadata": {
+        "n_obs": 34776,
+        "is_reference": false
+      }
+    },
+    {
+      "asset_id": "s045",
+      "role": "slice",
+      "path": "/users/ychen5/p2b-data/paper2bench-data/geaso_tasks/sa-411/s045.h5ad",
+      "format": "h5ad",
+      "visibility": "public",
+      "metadata": {
+        "n_obs": 34019,
+        "is_reference": false
+      }
+    },
+    {
+      "asset_id": "s046",
+      "role": "slice",
+      "path": "/users/ychen5/p2b-data/paper2bench-data/geaso_tasks/sa-411/s046.h5ad",
+      "format": "h5ad",
+      "visibility": "public",
+      "metadata": {
+        "n_obs": 31420,
+        "is_reference": false
+      }
+    },
+    {
+      "asset_id": "s047",
+      "role": "slice",
+      "path": "/users/ychen5/p2b-data/paper2bench-data/geaso_tasks/sa-411/s047.h5ad",
+      "format": "h5ad",
+      "visibility": "public",
+      "metadata": {
+        "n_obs": 34441,
+        "is_reference": false
+      }
+    },
+    {
+      "asset_id": "s048",
+      "role": "slice",
+      "path": "/users/ychen5/p2b-data/paper2bench-data/geaso_tasks/sa-411/s048.h5ad",
+      "format": "h5ad",
+      "visibility": "public",
+      "metadata": {
+        "n_obs": 35647,
+        "is_reference": false
+      }
+    },
+    {
+      "asset_id": "s049",
+      "role": "slice",
+      "path": "/users/ychen5/p2b-data/paper2bench-data/geaso_tasks/sa-411/s049.h5ad",
+      "format": "h5ad",
+      "visibility": "public",
+      "metadata": {
+        "n_obs": 34958,
+        "is_reference": false
+      }
+    },
+    {
+      "asset_id": "s050",
+      "role": "slice",
+      "path": "/users/ychen5/p2b-data/paper2bench-data/geaso_tasks/sa-411/s050.h5ad",
+      "format": "h5ad",
+      "visibility": "public",
+      "metadata": {
+        "n_obs": 37848,
+        "is_reference": false
+      }
+    },
+    {
+      "asset_id": "s051",
+      "role": "slice",
+      "path": "/users/ychen5/p2b-data/paper2bench-data/geaso_tasks/sa-411/s051.h5ad",
+      "format": "h5ad",
+      "visibility": "public",
+      "metadata": {
+        "n_obs": 38176,
+        "is_reference": false
+      }
+    },
+    {
+      "asset_id": "s052",
+      "role": "slice",
+      "path": "/users/ychen5/p2b-data/paper2bench-data/geaso_tasks/sa-411/s052.h5ad",
+      "format": "h5ad",
+      "visibility": "public",
+      "metadata": {
+        "n_obs": 41099,
+        "is_reference": false
+      }
+    },
+    {
+      "asset_id": "s053",
+      "role": "slice",
+      "path": "/users/ychen5/p2b-data/paper2bench-data/geaso_tasks/sa-411/s053.h5ad",
+      "format": "h5ad",
+      "visibility": "public",
+      "metadata": {
+        "n_obs": 37420,
+        "is_reference": false
+      }
+    },
+    {
+      "asset_id": "s054",
+      "role": "slice",
+      "path": "/users/ychen5/p2b-data/paper2bench-data/geaso_tasks/sa-411/s054.h5ad",
+      "format": "h5ad",
+      "visibility": "public",
+      "metadata": {
+        "n_obs": 42966,
+        "is_reference": false
+      }
+    },
+    {
+      "asset_id": "s055",
+      "role": "slice",
+      "path": "/users/ychen5/p2b-data/paper2bench-data/geaso_tasks/sa-411/s055.h5ad",
+      "format": "h5ad",
+      "visibility": "public",
+      "metadata": {
+        "n_obs": 41486,
+        "is_reference": false
+      }
+    },
+    {
+      "asset_id": "s056",
+      "role": "slice",
+      "path": "/users/ychen5/p2b-data/paper2bench-data/geaso_tasks/sa-411/s056.h5ad",
+      "format": "h5ad",
+      "visibility": "public",
+      "metadata": {
+        "n_obs": 37500,
+        "is_reference": false
+      }
+    },
+    {
+      "asset_id": "s057",
+      "role": "slice",
+      "path": "/users/ychen5/p2b-data/paper2bench-data/geaso_tasks/sa-411/s057.h5ad",
+      "format": "h5ad",
+      "visibility": "public",
+      "metadata": {
+        "n_obs": 38603,
+        "is_reference": false
+      }
+    },
+    {
+      "asset_id": "s058",
+      "role": "slice",
+      "path": "/users/ychen5/p2b-data/paper2bench-data/geaso_tasks/sa-411/s058.h5ad",
+      "format": "h5ad",
+      "visibility": "public",
+      "metadata": {
+        "n_obs": 39250,
+        "is_reference": false
+      }
+    },
+    {
+      "asset_id": "s059",
+      "role": "slice",
+      "path": "/users/ychen5/p2b-data/paper2bench-data/geaso_tasks/sa-411/s059.h5ad",
+      "format": "h5ad",
+      "visibility": "public",
+      "metadata": {
+        "n_obs": 34678,
+        "is_reference": false
+      }
+    },
+    {
+      "asset_id": "s060",
+      "role": "slice",
+      "path": "/users/ychen5/p2b-data/paper2bench-data/geaso_tasks/sa-411/s060.h5ad",
+      "format": "h5ad",
+      "visibility": "public",
+      "metadata": {
+        "n_obs": 37329,
+        "is_reference": false
+      }
+    },
+    {
+      "asset_id": "s061",
+      "role": "slice",
+      "path": "/users/ychen5/p2b-data/paper2bench-data/geaso_tasks/sa-411/s061.h5ad",
+      "format": "h5ad",
+      "visibility": "public",
+      "metadata": {
+        "n_obs": 46571,
+        "is_reference": false
+      }
+    },
+    {
+      "asset_id": "s062",
+      "role": "slice",
+      "path": "/users/ychen5/p2b-data/paper2bench-data/geaso_tasks/sa-411/s062.h5ad",
+      "format": "h5ad",
+      "visibility": "public",
+      "metadata": {
+        "n_obs": 36120,
+        "is_reference": false
+      }
+    },
+    {
+      "asset_id": "s063",
+      "role": "slice",
+      "path": "/users/ychen5/p2b-data/paper2bench-data/geaso_tasks/sa-411/s063.h5ad",
+      "format": "h5ad",
+      "visibility": "public",
+      "metadata": {
+        "n_obs": 46065,
+        "is_reference": false
+      }
+    },
+    {
+      "asset_id": "s064",
+      "role": "slice",
+      "path": "/users/ychen5/p2b-data/paper2bench-data/geaso_tasks/sa-411/s064.h5ad",
+      "format": "h5ad",
+      "visibility": "public",
+      "metadata": {
+        "n_obs": 39928,
+        "is_reference": false
+      }
+    },
+    {
+      "asset_id": "s065",
+      "role": "slice",
+      "path": "/users/ychen5/p2b-data/paper2bench-data/geaso_tasks/sa-411/s065.h5ad",
+      "format": "h5ad",
+      "visibility": "public",
+      "metadata": {
+        "n_obs": 43618,
+        "is_reference": false
+      }
+    },
+    {
+      "asset_id": "s066",
+      "role": "slice",
+      "path": "/users/ychen5/p2b-data/paper2bench-data/geaso_tasks/sa-411/s066.h5ad",
+      "format": "h5ad",
+      "visibility": "public",
+      "metadata": {
+        "n_obs": 44710,
+        "is_reference": false
+      }
+    },
+    {
+      "asset_id": "s067",
+      "role": "slice",
+      "path": "/users/ychen5/p2b-data/paper2bench-data/geaso_tasks/sa-411/s067.h5ad",
+      "format": "h5ad",
+      "visibility": "public",
+      "metadata": {
+        "n_obs": 46259,
+        "is_reference": false
+      }
+    },
+    {
+      "asset_id": "s068",
+      "role": "slice",
+      "path": "/users/ychen5/p2b-data/paper2bench-data/geaso_tasks/sa-411/s068.h5ad",
+      "format": "h5ad",
+      "visibility": "public",
+      "metadata": {
+        "n_obs": 45824,
+        "is_reference": false
+      }
+    },
+    {
+      "asset_id": "s069",
+      "role": "slice",
+      "path": "/users/ychen5/p2b-data/paper2bench-data/geaso_tasks/sa-411/s069.h5ad",
+      "format": "h5ad",
+      "visibility": "public",
+      "metadata": {
+        "n_obs": 50461,
+        "is_reference": false
+      }
+    },
+    {
+      "asset_id": "s070",
+      "role": "slice",
+      "path": "/users/ychen5/p2b-data/paper2bench-data/geaso_tasks/sa-411/s070.h5ad",
+      "format": "h5ad",
+      "visibility": "public",
+      "metadata": {
+        "n_obs": 49482,
+        "is_reference": false
+      }
+    },
+    {
+      "asset_id": "s071",
+      "role": "slice",
+      "path": "/users/ychen5/p2b-data/paper2bench-data/geaso_tasks/sa-411/s071.h5ad",
+      "format": "h5ad",
+      "visibility": "public",
+      "metadata": {
+        "n_obs": 41711,
+        "is_reference": false
+      }
+    },
+    {
+      "asset_id": "s072",
+      "role": "slice",
+      "path": "/users/ychen5/p2b-data/paper2bench-data/geaso_tasks/sa-411/s072.h5ad",
+      "format": "h5ad",
+      "visibility": "public",
+      "metadata": {
+        "n_obs": 48881,
+        "is_reference": false
+      }
+    },
+    {
+      "asset_id": "s073",
+      "role": "slice",
+      "path": "/users/ychen5/p2b-data/paper2bench-data/geaso_tasks/sa-411/s073.h5ad",
+      "format": "h5ad",
+      "visibility": "public",
+      "metadata": {
+        "n_obs": 43212,
+        "is_reference": false
+      }
+    },
+    {
+      "asset_id": "s074",
+      "role": "slice",
+      "path": "/users/ychen5/p2b-data/paper2bench-data/geaso_tasks/sa-411/s074.h5ad",
+      "format": "h5ad",
+      "visibility": "public",
+      "metadata": {
+        "n_obs": 46004,
+        "is_reference": false
+      }
+    },
+    {
+      "asset_id": "s075",
+      "role": "slice",
+      "path": "/users/ychen5/p2b-data/paper2bench-data/geaso_tasks/sa-411/s075.h5ad",
+      "format": "h5ad",
+      "visibility": "public",
+      "metadata": {
+        "n_obs": 46791,
+        "is_reference": false
+      }
+    },
+    {
+      "asset_id": "s076",
+      "role": "slice",
+      "path": "/users/ychen5/p2b-data/paper2bench-data/geaso_tasks/sa-411/s076.h5ad",
+      "format": "h5ad",
+      "visibility": "public",
+      "metadata": {
+        "n_obs": 42152,
+        "is_reference": false
+      }
+    },
+    {
+      "asset_id": "s077",
+      "role": "slice",
+      "path": "/users/ychen5/p2b-data/paper2bench-data/geaso_tasks/sa-411/s077.h5ad",
+      "format": "h5ad",
+      "visibility": "public",
+      "metadata": {
+        "n_obs": 43110,
+        "is_reference": false
+      }
+    },
+    {
+      "asset_id": "s078",
+      "role": "slice",
+      "path": "/users/ychen5/p2b-data/paper2bench-data/geaso_tasks/sa-411/s078.h5ad",
+      "format": "h5ad",
+      "visibility": "public",
+      "metadata": {
+        "n_obs": 40863,
+        "is_reference": false
+      }
+    },
+    {
+      "asset_id": "s079",
+      "role": "slice",
+      "path": "/users/ychen5/p2b-data/paper2bench-data/geaso_tasks/sa-411/s079.h5ad",
+      "format": "h5ad",
+      "visibility": "public",
+      "metadata": {
+        "n_obs": 44647,
+        "is_reference": false
+      }
+    },
+    {
+      "asset_id": "s080",
+      "role": "slice",
+      "path": "/users/ychen5/p2b-data/paper2bench-data/geaso_tasks/sa-411/s080.h5ad",
+      "format": "h5ad",
+      "visibility": "public",
+      "metadata": {
+        "n_obs": 42262,
+        "is_reference": false
+      }
+    },
+    {
+      "asset_id": "s081",
+      "role": "slice",
+      "path": "/users/ychen5/p2b-data/paper2bench-data/geaso_tasks/sa-411/s081.h5ad",
+      "format": "h5ad",
+      "visibility": "public",
+      "metadata": {
+        "n_obs": 41910,
+        "is_reference": false
+      }
+    },
+    {
+      "asset_id": "s082",
+      "role": "slice",
+      "path": "/users/ychen5/p2b-data/paper2bench-data/geaso_tasks/sa-411/s082.h5ad",
+      "format": "h5ad",
+      "visibility": "public",
+      "metadata": {
+        "n_obs": 39752,
+        "is_reference": false
+      }
+    },
+    {
+      "asset_id": "s083",
+      "role": "slice",
+      "path": "/users/ychen5/p2b-data/paper2bench-data/geaso_tasks/sa-411/s083.h5ad",
+      "format": "h5ad",
+      "visibility": "public",
+      "metadata": {
+        "n_obs": 38537,
+        "is_reference": false
+      }
+    },
+    {
+      "asset_id": "s084",
+      "role": "slice",
+      "path": "/users/ychen5/p2b-data/paper2bench-data/geaso_tasks/sa-411/s084.h5ad",
+      "format": "h5ad",
+      "visibility": "public",
+      "metadata": {
+        "n_obs": 37912,
+        "is_reference": false
+      }
+    },
+    {
+      "asset_id": "s085",
+      "role": "slice",
+      "path": "/users/ychen5/p2b-data/paper2bench-data/geaso_tasks/sa-411/s085.h5ad",
+      "format": "h5ad",
+      "visibility": "public",
+      "metadata": {
+        "n_obs": 36515,
+        "is_reference": false
+      }
+    },
+    {
+      "asset_id": "s086",
+      "role": "slice",
+      "path": "/users/ychen5/p2b-data/paper2bench-data/geaso_tasks/sa-411/s086.h5ad",
+      "format": "h5ad",
+      "visibility": "public",
+      "metadata": {
+        "n_obs": 40697,
+        "is_reference": false
+      }
+    },
+    {
+      "asset_id": "s087",
+      "role": "slice",
+      "path": "/users/ychen5/p2b-data/paper2bench-data/geaso_tasks/sa-411/s087.h5ad",
+      "format": "h5ad",
+      "visibility": "public",
+      "metadata": {
+        "n_obs": 40730,
+        "is_reference": false
+      }
+    },
+    {
+      "asset_id": "s088",
+      "role": "slice",
+      "path": "/users/ychen5/p2b-data/paper2bench-data/geaso_tasks/sa-411/s088.h5ad",
+      "format": "h5ad",
+      "visibility": "public",
+      "metadata": {
+        "n_obs": 39749,
+        "is_reference": false
+      }
+    },
+    {
+      "asset_id": "s089",
+      "role": "slice",
+      "path": "/users/ychen5/p2b-data/paper2bench-data/geaso_tasks/sa-411/s089.h5ad",
+      "format": "h5ad",
+      "visibility": "public",
+      "metadata": {
+        "n_obs": 39827,
+        "is_reference": false
+      }
+    },
+    {
+      "asset_id": "s090",
+      "role": "slice",
+      "path": "/users/ychen5/p2b-data/paper2bench-data/geaso_tasks/sa-411/s090.h5ad",
+      "format": "h5ad",
+      "visibility": "public",
+      "metadata": {
+        "n_obs": 43506,
+        "is_reference": false
+      }
+    },
+    {
+      "asset_id": "s091",
+      "role": "slice",
+      "path": "/users/ychen5/p2b-data/paper2bench-data/geaso_tasks/sa-411/s091.h5ad",
+      "format": "h5ad",
+      "visibility": "public",
+      "metadata": {
+        "n_obs": 41094,
+        "is_reference": false
+      }
+    },
+    {
+      "asset_id": "s092",
+      "role": "slice",
+      "path": "/users/ychen5/p2b-data/paper2bench-data/geaso_tasks/sa-411/s092.h5ad",
+      "format": "h5ad",
+      "visibility": "public",
+      "metadata": {
+        "n_obs": 40022,
+        "is_reference": false
+      }
+    },
+    {
+      "asset_id": "s093",
+      "role": "slice",
+      "path": "/users/ychen5/p2b-data/paper2bench-data/geaso_tasks/sa-411/s093.h5ad",
+      "format": "h5ad",
+      "visibility": "public",
+      "metadata": {
+        "n_obs": 41075,
+        "is_reference": false
+      }
+    },
+    {
+      "asset_id": "s094",
+      "role": "slice",
+      "path": "/users/ychen5/p2b-data/paper2bench-data/geaso_tasks/sa-411/s094.h5ad",
+      "format": "h5ad",
+      "visibility": "public",
+      "metadata": {
+        "n_obs": 36897,
+        "is_reference": false
+      }
+    },
+    {
+      "asset_id": "s095",
+      "role": "slice",
+      "path": "/users/ychen5/p2b-data/paper2bench-data/geaso_tasks/sa-411/s095.h5ad",
+      "format": "h5ad",
+      "visibility": "public",
+      "metadata": {
+        "n_obs": 36637,
+        "is_reference": false
+      }
+    },
+    {
+      "asset_id": "s096",
+      "role": "slice",
+      "path": "/users/ychen5/p2b-data/paper2bench-data/geaso_tasks/sa-411/s096.h5ad",
+      "format": "h5ad",
+      "visibility": "public",
+      "metadata": {
+        "n_obs": 37060,
+        "is_reference": false
+      }
+    },
+    {
+      "asset_id": "s097",
+      "role": "slice",
+      "path": "/users/ychen5/p2b-data/paper2bench-data/geaso_tasks/sa-411/s097.h5ad",
+      "format": "h5ad",
+      "visibility": "public",
+      "metadata": {
+        "n_obs": 33691,
+        "is_reference": false
+      }
+    },
+    {
+      "asset_id": "s098",
+      "role": "slice",
+      "path": "/users/ychen5/p2b-data/paper2bench-data/geaso_tasks/sa-411/s098.h5ad",
+      "format": "h5ad",
+      "visibility": "public",
+      "metadata": {
+        "n_obs": 35145,
+        "is_reference": false
+      }
+    },
+    {
+      "asset_id": "s099",
+      "role": "slice",
+      "path": "/users/ychen5/p2b-data/paper2bench-data/geaso_tasks/sa-411/s099.h5ad",
+      "format": "h5ad",
+      "visibility": "public",
+      "metadata": {
+        "n_obs": 34925,
+        "is_reference": false
+      }
+    },
+    {
+      "asset_id": "s100",
+      "role": "slice",
+      "path": "/users/ychen5/p2b-data/paper2bench-data/geaso_tasks/sa-411/s100.h5ad",
+      "format": "h5ad",
+      "visibility": "public",
+      "metadata": {
+        "n_obs": 30548,
+        "is_reference": false
+      }
+    },
+    {
+      "asset_id": "s101",
+      "role": "slice",
+      "path": "/users/ychen5/p2b-data/paper2bench-data/geaso_tasks/sa-411/s101.h5ad",
+      "format": "h5ad",
+      "visibility": "public",
+      "metadata": {
+        "n_obs": 31313,
+        "is_reference": false
+      }
+    },
+    {
+      "asset_id": "s102",
+      "role": "slice",
+      "path": "/users/ychen5/p2b-data/paper2bench-data/geaso_tasks/sa-411/s102.h5ad",
+      "format": "h5ad",
+      "visibility": "public",
+      "metadata": {
+        "n_obs": 27834,
+        "is_reference": false
+      }
+    },
+    {
+      "asset_id": "s103",
+      "role": "slice",
+      "path": "/users/ychen5/p2b-data/paper2bench-data/geaso_tasks/sa-411/s103.h5ad",
+      "format": "h5ad",
+      "visibility": "public",
+      "metadata": {
+        "n_obs": 25140,
+        "is_reference": false
+      }
+    },
+    {
+      "asset_id": "s104",
+      "role": "slice",
+      "path": "/users/ychen5/p2b-data/paper2bench-data/geaso_tasks/sa-411/s104.h5ad",
+      "format": "h5ad",
+      "visibility": "public",
+      "metadata": {
+        "n_obs": 22662,
+        "is_reference": false
+      }
+    },
+    {
+      "asset_id": "s105",
+      "role": "slice",
+      "path": "/users/ychen5/p2b-data/paper2bench-data/geaso_tasks/sa-411/s105.h5ad",
+      "format": "h5ad",
+      "visibility": "public",
+      "metadata": {
+        "n_obs": 30597,
+        "is_reference": false
+      }
+    },
+    {
+      "asset_id": "s106",
+      "role": "slice",
+      "path": "/users/ychen5/p2b-data/paper2bench-data/geaso_tasks/sa-411/s106.h5ad",
+      "format": "h5ad",
+      "visibility": "public",
+      "metadata": {
+        "n_obs": 33294,
+        "is_reference": false
+      }
+    },
+    {
+      "asset_id": "s107",
+      "role": "slice",
+      "path": "/users/ychen5/p2b-data/paper2bench-data/geaso_tasks/sa-411/s107.h5ad",
+      "format": "h5ad",
+      "visibility": "public",
+      "metadata": {
+        "n_obs": 27170,
+        "is_reference": false
+      }
+    },
+    {
+      "asset_id": "s108",
+      "role": "slice",
+      "path": "/users/ychen5/p2b-data/paper2bench-data/geaso_tasks/sa-411/s108.h5ad",
+      "format": "h5ad",
+      "visibility": "public",
+      "metadata": {
+        "n_obs": 24569,
+        "is_reference": false
+      }
+    },
+    {
+      "asset_id": "s109",
+      "role": "slice",
+      "path": "/users/ychen5/p2b-data/paper2bench-data/geaso_tasks/sa-411/s109.h5ad",
+      "format": "h5ad",
+      "visibility": "public",
+      "metadata": {
+        "n_obs": 29605,
+        "is_reference": false
+      }
+    },
+    {
+      "asset_id": "s110",
+      "role": "slice",
+      "path": "/users/ychen5/p2b-data/paper2bench-data/geaso_tasks/sa-411/s110.h5ad",
+      "format": "h5ad",
+      "visibility": "public",
+      "metadata": {
+        "n_obs": 29273,
+        "is_reference": false
+      }
+    },
+    {
+      "asset_id": "s111",
+      "role": "slice",
+      "path": "/users/ychen5/p2b-data/paper2bench-data/geaso_tasks/sa-411/s111.h5ad",
+      "format": "h5ad",
+      "visibility": "public",
+      "metadata": {
+        "n_obs": 23148,
+        "is_reference": false
+      }
+    },
+    {
+      "asset_id": "s112",
+      "role": "slice",
+      "path": "/users/ychen5/p2b-data/paper2bench-data/geaso_tasks/sa-411/s112.h5ad",
+      "format": "h5ad",
+      "visibility": "public",
+      "metadata": {
+        "n_obs": 24632,
+        "is_reference": false
+      }
+    },
+    {
+      "asset_id": "s113",
+      "role": "slice",
+      "path": "/users/ychen5/p2b-data/paper2bench-data/geaso_tasks/sa-411/s113.h5ad",
+      "format": "h5ad",
+      "visibility": "public",
+      "metadata": {
+        "n_obs": 25377,
+        "is_reference": false
+      }
+    },
+    {
+      "asset_id": "s114",
+      "role": "slice",
+      "path": "/users/ychen5/p2b-data/paper2bench-data/geaso_tasks/sa-411/s114.h5ad",
+      "format": "h5ad",
+      "visibility": "public",
+      "metadata": {
+        "n_obs": 23539,
+        "is_reference": false
+      }
+    },
+    {
+      "asset_id": "s115",
+      "role": "slice",
+      "path": "/users/ychen5/p2b-data/paper2bench-data/geaso_tasks/sa-411/s115.h5ad",
+      "format": "h5ad",
+      "visibility": "public",
+      "metadata": {
+        "n_obs": 23700,
+        "is_reference": false
+      }
+    },
+    {
+      "asset_id": "s116",
+      "role": "slice",
+      "path": "/users/ychen5/p2b-data/paper2bench-data/geaso_tasks/sa-411/s116.h5ad",
+      "format": "h5ad",
+      "visibility": "public",
+      "metadata": {
+        "n_obs": 26356,
+        "is_reference": false
+      }
+    },
+    {
+      "asset_id": "s117",
+      "role": "slice",
+      "path": "/users/ychen5/p2b-data/paper2bench-data/geaso_tasks/sa-411/s117.h5ad",
+      "format": "h5ad",
+      "visibility": "public",
+      "metadata": {
+        "n_obs": 24306,
+        "is_reference": false
+      }
+    },
+    {
+      "asset_id": "s118",
+      "role": "slice",
+      "path": "/users/ychen5/p2b-data/paper2bench-data/geaso_tasks/sa-411/s118.h5ad",
+      "format": "h5ad",
+      "visibility": "public",
+      "metadata": {
+        "n_obs": 25628,
+        "is_reference": false
+      }
+    },
+    {
+      "asset_id": "s119",
+      "role": "slice",
+      "path": "/users/ychen5/p2b-data/paper2bench-data/geaso_tasks/sa-411/s119.h5ad",
+      "format": "h5ad",
+      "visibility": "public",
+      "metadata": {
+        "n_obs": 22197,
+        "is_reference": false
+      }
+    },
+    {
+      "asset_id": "s120",
+      "role": "slice",
+      "path": "/users/ychen5/p2b-data/paper2bench-data/geaso_tasks/sa-411/s120.h5ad",
+      "format": "h5ad",
+      "visibility": "public",
+      "metadata": {
+        "n_obs": 23640,
+        "is_reference": false
+      }
+    },
+    {
+      "asset_id": "s121",
+      "role": "slice",
+      "path": "/users/ychen5/p2b-data/paper2bench-data/geaso_tasks/sa-411/s121.h5ad",
+      "format": "h5ad",
+      "visibility": "public",
+      "metadata": {
+        "n_obs": 24870,
+        "is_reference": false
+      }
+    },
+    {
+      "asset_id": "s122",
+      "role": "slice",
+      "path": "/users/ychen5/p2b-data/paper2bench-data/geaso_tasks/sa-411/s122.h5ad",
+      "format": "h5ad",
+      "visibility": "public",
+      "metadata": {
+        "n_obs": 23619,
+        "is_reference": false
+      }
+    },
+    {
+      "asset_id": "s123",
+      "role": "slice",
+      "path": "/users/ychen5/p2b-data/paper2bench-data/geaso_tasks/sa-411/s123.h5ad",
+      "format": "h5ad",
+      "visibility": "public",
+      "metadata": {
+        "n_obs": 20326,
+        "is_reference": false
+      }
+    },
+    {
+      "asset_id": "s124",
+      "role": "slice",
+      "path": "/users/ychen5/p2b-data/paper2bench-data/geaso_tasks/sa-411/s124.h5ad",
+      "format": "h5ad",
+      "visibility": "public",
+      "metadata": {
+        "n_obs": 21165,
+        "is_reference": false
+      }
+    },
+    {
+      "asset_id": "s125",
+      "role": "slice",
+      "path": "/users/ychen5/p2b-data/paper2bench-data/geaso_tasks/sa-411/s125.h5ad",
+      "format": "h5ad",
+      "visibility": "public",
+      "metadata": {
+        "n_obs": 20407,
+        "is_reference": false
+      }
+    },
+    {
+      "asset_id": "s126",
+      "role": "slice",
+      "path": "/users/ychen5/p2b-data/paper2bench-data/geaso_tasks/sa-411/s126.h5ad",
+      "format": "h5ad",
+      "visibility": "public",
+      "metadata": {
+        "n_obs": 24255,
+        "is_reference": false
+      }
+    },
+    {
+      "asset_id": "s127",
+      "role": "slice",
+      "path": "/users/ychen5/p2b-data/paper2bench-data/geaso_tasks/sa-411/s127.h5ad",
+      "format": "h5ad",
+      "visibility": "public",
+      "metadata": {
+        "n_obs": 16887,
+        "is_reference": false
+      }
+    },
+    {
+      "asset_id": "s128",
+      "role": "slice",
+      "path": "/users/ychen5/p2b-data/paper2bench-data/geaso_tasks/sa-411/s128.h5ad",
+      "format": "h5ad",
+      "visibility": "public",
+      "metadata": {
+        "n_obs": 13675,
+        "is_reference": false
+      }
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+id = "sa-026-openst-mln-early-window-02-06-3d-align"
+name = "Open-ST metastatic lymph node 5-slice serial alignment (sections 02-06)"
+domain = "spatial_genomics"
+modality = "spatial_transcriptomics"
+task_type = "serial_alignment_3d_ground_truth"
+difficulty = "hard"
+status = "executable_local"
+input_contract = "h5ad_spatial_v1"
+output_contract = "aligned_coordinate_csv_v1"
+metric_profile = "sabench_mae_gene_efficiency_v1"
+label_key = "Region"
+marker_gene_file = "benchmarks/spatial_alignment/tasks/sa-026-openst-mln-early-window-02-06-3d-align/data/marker_genes.csv"
+max_marker_genes = 100
+slices = ["section_02=benchmarks/spatial_alignment/compiled_data/openst_mln/section_02.h5ad", "section_03=benchmarks/spatial_alignment/compiled_data/openst_mln/section_03.h5ad", "section_04=benchmarks/spatial_alignment/compiled_data/openst_mln/section_04.h5ad", "section_05=benchmarks/spatial_alignment/compiled_data/openst_mln/section_05.h5ad", "section_06=benchmarks/spatial_alignment/compiled_data/openst_mln/section_06.h5ad"]
+paper_data_ids = ["Data80", "Data81", "Data82", "Data83", "Data84", "Data85", "Data86", "Data87", "Data88", "Data89", "Data90", "Data91", "Data92", "Data93", "Data94", "Data95", "Data96", "Data97", "Data98"]
+paper_source = "https://doi.org/10.1016/j.cell.2024.05.055"

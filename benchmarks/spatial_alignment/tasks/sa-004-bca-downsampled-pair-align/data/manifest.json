@@ -1,0 +1,13 @@
+{
+  "source": "SABench BCA downsampled tutorial data",
+  "slices": [
+    {
+      "id": "slice_Rep1_DR",
+      "path": "/Users/yiqun/Downloads/paper2bench-data/BCA_downsampled/slice_Rep1_DR.h5ad"
+    },
+    {
+      "id": "slice_Rep2_DR",
+      "path": "/Users/yiqun/Downloads/paper2bench-data/BCA_downsampled/slice_Rep2_DR.h5ad"
+    }
+  ]
+}

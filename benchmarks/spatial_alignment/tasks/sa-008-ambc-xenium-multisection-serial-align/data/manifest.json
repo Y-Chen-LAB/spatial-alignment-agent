@@ -1,0 +1,37 @@
+{
+  "schema_version": "paper2bench.data_manifest.v0.1",
+  "task_id": "sa-008-ambc-xenium-multisection-serial-align",
+  "source": "10x Genomics Xenium V1 fresh-frozen mouse brain multisection replicates (Data234 family in SABench paper Yan et al. 2026)",
+  "compiler": "scripts/compile_xenium_10x_bundle.py",
+  "raw_inputs": [
+    "/Users/yiqun/Downloads/paper2bench-data/sabench_full/Data234_AMBC_Xenium/Xenium_V1_FF_Mouse_Brain_MultiSection_1_outs.zip",
+    "/Users/yiqun/Downloads/paper2bench-data/sabench_full/Data234_AMBC_Xenium/Xenium_V1_FF_Mouse_Brain_MultiSection_2_outs.zip",
+    "/Users/yiqun/Downloads/paper2bench-data/sabench_full/Data234_AMBC_Xenium/Xenium_V1_FF_Mouse_Brain_MultiSection_3_outs.zip"
+  ],
+  "assets": [
+    {
+      "asset_id": "xenium_v1_ff_mouse_brain_multisection_1",
+      "format": "h5ad",
+      "path": "benchmarks/spatial_alignment/compiled_data/xenium/xenium_v1_ff_mouse_brain_multisection_1.h5ad",
+      "role": "slice",
+      "visibility": "public",
+      "metadata": {"n_obs": 162033, "n_var": 541}
+    },
+    {
+      "asset_id": "xenium_v1_ff_mouse_brain_multisection_2",
+      "format": "h5ad",
+      "path": "benchmarks/spatial_alignment/compiled_data/xenium/xenium_v1_ff_mouse_brain_multisection_2.h5ad",
+      "role": "slice",
+      "visibility": "public",
+      "metadata": {"n_obs": 154654, "n_var": 541}
+    },
+    {
+      "asset_id": "xenium_v1_ff_mouse_brain_multisection_3",
+      "format": "h5ad",
+      "path": "benchmarks/spatial_alignment/compiled_data/xenium/xenium_v1_ff_mouse_brain_multisection_3.h5ad",
+      "role": "slice",
+      "visibility": "public",
+      "metadata": {"n_obs": 158047, "n_var": 541}
+    }
+  ]
+}

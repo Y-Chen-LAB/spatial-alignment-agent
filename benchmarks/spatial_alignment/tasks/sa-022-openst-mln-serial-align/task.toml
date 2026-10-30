@@ -1,0 +1,37 @@
+id = "sa-022-openst-mln-serial-align"
+name = "Open-ST human metastatic lymph node 19-section serial alignment (Data80-98)"
+domain = "spatial_genomics"
+modality = "spatial_transcriptomics"
+task_type = "large_scale_serial_alignment"
+difficulty = "hard"
+status = "executable_local"
+input_contract = "h5ad_spatial_v1"
+output_contract = "aligned_coordinate_csv_v1"
+metric_profile = "sabench_light_alignment_v1"
+label_key = "Region"
+marker_gene_file = "benchmarks/spatial_alignment/tasks/sa-022-openst-mln-serial-align/data/marker_genes.csv"
+max_marker_genes = 100
+slices = [
+  "openst_mln_section02=benchmarks/spatial_alignment/compiled_data/openst_mln/section_02.h5ad",
+  "openst_mln_section03=benchmarks/spatial_alignment/compiled_data/openst_mln/section_03.h5ad",
+  "openst_mln_section04=benchmarks/spatial_alignment/compiled_data/openst_mln/section_04.h5ad",
+  "openst_mln_section05=benchmarks/spatial_alignment/compiled_data/openst_mln/section_05.h5ad",
+  "openst_mln_section06=benchmarks/spatial_alignment/compiled_data/openst_mln/section_06.h5ad",
+  "openst_mln_section07=benchmarks/spatial_alignment/compiled_data/openst_mln/section_07.h5ad",
+  "openst_mln_section09=benchmarks/spatial_alignment/compiled_data/openst_mln/section_09.h5ad",
+  "openst_mln_section11=benchmarks/spatial_alignment/compiled_data/openst_mln/section_11.h5ad",
+  "openst_mln_section17=benchmarks/spatial_alignment/compiled_data/openst_mln/section_17.h5ad",
+  "openst_mln_section18=benchmarks/spatial_alignment/compiled_data/openst_mln/section_18.h5ad",
+  "openst_mln_section19=benchmarks/spatial_alignment/compiled_data/openst_mln/section_19.h5ad",
+  "openst_mln_section23=benchmarks/spatial_alignment/compiled_data/openst_mln/section_23.h5ad",
+  "openst_mln_section24=benchmarks/spatial_alignment/compiled_data/openst_mln/section_24.h5ad",
+  "openst_mln_section25=benchmarks/spatial_alignment/compiled_data/openst_mln/section_25.h5ad",
+  "openst_mln_section26=benchmarks/spatial_alignment/compiled_data/openst_mln/section_26.h5ad",
+  "openst_mln_section28=benchmarks/spatial_alignment/compiled_data/openst_mln/section_28.h5ad",
+  "openst_mln_section33=benchmarks/spatial_alignment/compiled_data/openst_mln/section_33.h5ad",
+  "openst_mln_section34=benchmarks/spatial_alignment/compiled_data/openst_mln/section_34.h5ad",
+  "openst_mln_section36=benchmarks/spatial_alignment/compiled_data/openst_mln/section_36.h5ad",
+]
+paper_data_ids = ["Data80", "Data81", "Data82", "Data83", "Data84", "Data85", "Data86", "Data87", "Data88", "Data89", "Data90", "Data91", "Data92", "Data93", "Data94", "Data95", "Data96", "Data97", "Data98"]
+paper_source = "https://doi.org/10.1016/j.cell.2024.05.055 — Schott et al. 2024 Open-ST human metastatic lymph node atlas (Data80-98 in SABench paper Yan et al. 2026)"
+

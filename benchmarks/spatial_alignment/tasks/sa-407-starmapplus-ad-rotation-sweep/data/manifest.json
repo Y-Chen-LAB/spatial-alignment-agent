@@ -1,0 +1,111 @@
+{
+  "schema_version": "paper2bench.data_manifest.v0.1",
+  "task_id": "sa-407-starmapplus-ad-rotation-sweep",
+  "source": "GEASO data release, Zenodo 18811760 (Wang, Liu & Ma, Nat Commun 2026)",
+  "build_script": "scripts/build_geaso_tasks.py",
+  "dataset": "STARmap PLUS, Alzheimer's-model study (Zeng et al. 2023), 8-month controls: target cr2, source cr1",
+  "task_type": "robustness_sweep",
+  "rotation_degrees": [
+    30,
+    60,
+    90,
+    120,
+    135,
+    150,
+    180
+  ],
+  "um_per_pixel": 0.0946,
+  "protocol": "GEASO R2S10 notebook: source cr1 rotated about its centre and placed on the target's centre",
+  "truth": "released (pre-registered) coordinates of cr1",
+  "paper_source": "Zeng et al. 2023 STARmap PLUS (SCP1375), via the GEASO data release (Zenodo 18811760); GEASO Fig. 2a-b.",
+  "assets": [
+    {
+      "asset_id": "target",
+      "role": "slice",
+      "path": "/users/ychen5/p2b-data/paper2bench-data/geaso_tasks/sa-407/target.h5ad",
+      "format": "h5ad",
+      "visibility": "public",
+      "metadata": {
+        "n_obs": 9803,
+        "is_reference": true
+      }
+    },
+    {
+      "asset_id": "source_rot030",
+      "role": "slice",
+      "path": "/users/ychen5/p2b-data/paper2bench-data/geaso_tasks/sa-407/source_rot030.h5ad",
+      "format": "h5ad",
+      "visibility": "public",
+      "metadata": {
+        "n_obs": 8506,
+        "is_reference": false
+      }
+    },
+    {
+      "asset_id": "source_rot060",
+      "role": "slice",
+      "path": "/users/ychen5/p2b-data/paper2bench-data/geaso_tasks/sa-407/source_rot060.h5ad",
+      "format": "h5ad",
+      "visibility": "public",
+      "metadata": {
+        "n_obs": 8506,
+        "is_reference": false
+      }
+    },
+    {
+      "asset_id": "source_rot090",
+      "role": "slice",
+      "path": "/users/ychen5/p2b-data/paper2bench-data/geaso_tasks/sa-407/source_rot090.h5ad",
+      "format": "h5ad",
+      "visibility": "public",
+      "metadata": {
+        "n_obs": 8506,
+        "is_reference": false
+      }
+    },
+    {
+      "asset_id": "source_rot120",
+      "role": "slice",
+      "path": "/users/ychen5/p2b-data/paper2bench-data/geaso_tasks/sa-407/source_rot120.h5ad",
+      "format": "h5ad",
+      "visibility": "public",
+      "metadata": {
+        "n_obs": 8506,
+        "is_reference": false
+      }
+    },
+    {
+      "asset_id": "source_rot135",
+      "role": "slice",
+      "path": "/users/ychen5/p2b-data/paper2bench-data/geaso_tasks/sa-407/source_rot135.h5ad",
+      "format": "h5ad",
+      "visibility": "public",
+      "metadata": {
+        "n_obs": 8506,
+        "is_reference": false
+      }
+    },
+    {
+      "asset_id": "source_rot150",
+      "role": "slice",
+      "path": "/users/ychen5/p2b-data/paper2bench-data/geaso_tasks/sa-407/source_rot150.h5ad",
+      "format": "h5ad",
+      "visibility": "public",
+      "metadata": {
+        "n_obs": 8506,
+        "is_reference": false
+      }
+    },
+    {
+      "asset_id": "source_rot180",
+      "role": "slice",
+      "path": "/users/ychen5/p2b-data/paper2bench-data/geaso_tasks/sa-407/source_rot180.h5ad",
+      "format": "h5ad",
+      "visibility": "public",
+      "metadata": {
+        "n_obs": 8506,
+        "is_reference": false
+      }
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "schema_version": "paper2bench.data_manifest.v0.1",
+  "task_id": "sa-214-ambc-visium-starmapplus-pair",
+  "family": "ambc_cross_platform",
+  "compiler": "scripts/build_tasks.py",
+  "registry": "benchmarks/spatial_alignment/task_registry.toml",
+  "paper_reference": "Fig5D_AMBC_cross_platform_success_long.csv",
+  "marker_genes": {
+    "marker_source": "log1p_variance_ranking",
+    "marker_source_path": null,
+    "n_requested": 100,
+    "n_present_on_all_slices": 100,
+    "n_common_genes": 1021
+  },
+  "pair_mode": "consecutive",
+  "supersedes": "sa-016-ambc-visium-starmapplus-cross-platform",
+  "assets": [
+    {
+      "asset_id": "ambc_visium",
+      "format": "h5ad",
+      "path": "/Users/yiqun/Downloads/paper2bench-data/AMBC_Visium/Data231_adult_mouse_brain.h5ad",
+      "role": "slice",
+      "visibility": "public",
+      "metadata": {
+        "paper_data_id": "Data231-240/Visium",
+        "n_obs": 2702,
+        "n_var": 32285
+      }
+    },
+    {
+      "asset_id": "ambc_starmapplus",
+      "format": "h5ad",
+      "path": "benchmarks/spatial_alignment/compiled_data/starmap/data237_starmapplus_well11.h5ad",
+      "role": "slice",
+      "visibility": "public",
+      "metadata": {
+        "paper_data_id": "Data231-240/STARmapPLUS",
+        "n_obs": 43341,
+        "n_var": 1022
+      }
+    }
+  ],
+  "platform_pair": [
+    "visium",
+    "starmapplus"
+  ],
+  "platform_pair_class": "mixed"
+}

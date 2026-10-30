@@ -1,0 +1,3 @@
+run_index,cell,agent,model,task,condition,rep,prompt_variant,prebootstrap,in_design_subset,shard,runnable_today
+0,bare_rep1_20261017,gemini,gemini-4-argon,sa-311-albis-visiumhd-bin32-serial-align,bare,1,full-basic,never,True,1,True
+1,bare_rep1_20261017,gemini,gemini-4-argon,sa-312-albis-strongmix-cell-7domain-serial-align,bare,1,full-basic,never,True,1,True

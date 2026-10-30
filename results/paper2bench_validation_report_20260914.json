@@ -1,0 +1,4392 @@
+{
+  "issue_counts": {},
+  "n_failed": 0,
+  "n_ok": 40,
+  "n_tasks": 40,
+  "reports": [
+    {
+      "checks": {
+        "asset_count": 4,
+        "assets": [
+          {
+            "asset_id": "151673",
+            "exists": true,
+            "mtime_ns": 1764254835000000000,
+            "path": "/Users/yiqun/Downloads/paper2bench-data/DLPFC/151673.h5ad",
+            "role": "slice",
+            "size_bytes": 119677487
+          },
+          {
+            "asset_id": "151674",
+            "exists": true,
+            "mtime_ns": 1764254838000000000,
+            "path": "/Users/yiqun/Downloads/paper2bench-data/DLPFC/151674.h5ad",
+            "role": "slice",
+            "size_bytes": 134376263
+          },
+          {
+            "asset_id": "151675",
+            "exists": true,
+            "mtime_ns": 1764254831000000000,
+            "path": "/Users/yiqun/Downloads/paper2bench-data/DLPFC/151675.h5ad",
+            "role": "slice",
+            "size_bytes": 107456522
+          },
+          {
+            "asset_id": "151676",
+            "exists": true,
+            "mtime_ns": 1764254832000000000,
+            "path": "/Users/yiqun/Downloads/paper2bench-data/DLPFC/151676.h5ad",
+            "role": "slice",
+            "size_bytes": 109049675
+          }
+        ],
+        "instruction_nonempty": true,
+        "instruction_present": true,
+        "marker_gene_file": {
+          "exists": true,
+          "mtime_ns": 1777091465866209987,
+          "path": "benchmarks/spatial_alignment/tasks/sa-001-dlpfc-serial-align/data/marker_genes.csv",
+          "size_bytes": 751
+        },
+        "public_score_split": "train",
+        "score_split": "eval",
+        "split_manifest": {
+          "exists": true,
+          "mtime_ns": 1777060745085824896,
+          "path": "benchmarks/spatial_alignment/tasks/sa-001-dlpfc-serial-align/data/split_manifest.json",
+          "size_bytes": 465
+        },
+        "split_manifest_schema": "paper2bench.split_manifest.v0.1",
+        "split_visibility": "scorer_only",
+        "task_id_matches_directory": true
+      },
+      "hashes": {
+        "definition_hash": "53bbd7c997fb223b4cb01ea14d70cf0ad9b78aa91f6b9642dabcf869bb8c00bd"
+      },
+      "issues": [],
+      "ok": true,
+      "task_id": "sa-001-dlpfc-serial-align",
+      "task_path": "benchmarks/spatial_alignment/tasks/sa-001-dlpfc-serial-align/task.toml"
+    },
+    {
+      "checks": {
+        "asset_count": 2,
+        "assets": [
+          {
+            "asset_id": "reference",
+            "exists": true,
+            "mtime_ns": 1764254835000000000,
+            "path": "/Users/yiqun/Downloads/paper2bench-data/DLPFC/151673.h5ad",
+            "role": "slice",
+            "size_bytes": 119677487
+          },
+          {
+            "asset_id": "moving",
+            "exists": true,
+            "mtime_ns": 1777081749670798199,
+            "path": "benchmarks/spatial_alignment/compiled_data/perturbed/151674_rot090_crop050.h5ad",
+            "role": "slice",
+            "size_bytes": 12835904
+          }
+        ],
+        "instruction_nonempty": true,
+        "instruction_present": true,
+        "marker_gene_file": {
+          "exists": true,
+          "mtime_ns": 1777091465868421887,
+          "path": "benchmarks/spatial_alignment/tasks/sa-002-dlpfc-robust-perturb/data/marker_genes.csv",
+          "size_bytes": 751
+        },
+        "public_score_split": "train",
+        "score_split": "eval",
+        "split_manifest": {
+          "exists": true,
+          "mtime_ns": 1777060745114864635,
+          "path": "benchmarks/spatial_alignment/tasks/sa-002-dlpfc-robust-perturb/data/split_manifest.json",
+          "size_bytes": 467
+        },
+        "split_manifest_schema": "paper2bench.split_manifest.v0.1",
+        "split_visibility": "scorer_only",
+        "task_id_matches_directory": true
+      },
+      "hashes": {
+        "definition_hash": "ee18d3891eaaeabf42bf2698dafb81035202b6044e26ce5377b1299b0c38e66d"
+      },
+      "issues": [],
+      "ok": true,
+      "task_id": "sa-002-dlpfc-robust-perturb",
+      "task_path": "benchmarks/spatial_alignment/tasks/sa-002-dlpfc-robust-perturb/task.toml"
+    },
+    {
+      "checks": {
+        "asset_count": 2,
+        "assets": [
+          {
+            "asset_id": "151673_shuffled",
+            "exists": true,
+            "mtime_ns": 1763367411000000000,
+            "path": "/Users/yiqun/Downloads/paper2bench-data/coarse_align/151673_shuffled.h5ad",
+            "role": "slice",
+            "size_bytes": 119677783
+          },
+          {
+            "asset_id": "151674_shuffled",
+            "exists": true,
+            "mtime_ns": 1763367411000000000,
+            "path": "/Users/yiqun/Downloads/paper2bench-data/coarse_align/151674_shuffled.h5ad",
+            "role": "slice",
+            "size_bytes": 134376559
+          }
+        ],
+        "instruction_nonempty": true,
+        "instruction_present": true,
+        "marker_gene_file": {
+          "exists": true,
+          "mtime_ns": 1777091465870486615,
+          "path": "benchmarks/spatial_alignment/tasks/sa-003-dlpfc-coarse-shuffled-pair/data/marker_genes.csv",
+          "size_bytes": 751
+        },
+        "public_score_split": "train",
+        "score_split": "eval",
+        "split_manifest": {
+          "exists": true,
+          "mtime_ns": 1777060745142700494,
+          "path": "benchmarks/spatial_alignment/tasks/sa-003-dlpfc-coarse-shuffled-pair/data/split_manifest.json",
+          "size_bytes": 473
+        },
+        "split_manifest_schema": "paper2bench.split_manifest.v0.1",
+        "split_visibility": "scorer_only",
+        "task_id_matches_directory": true
+      },
+      "hashes": {
+        "definition_hash": "7b6bdc4c0ba47708437f11eb1037150d02fcbd19b322f69f2eabe4894db0bdcd"
+      },
+      "issues": [],
+      "ok": true,
+      "task_id": "sa-003-dlpfc-coarse-shuffled-pair",
+      "task_path": "benchmarks/spatial_alignment/tasks/sa-003-dlpfc-coarse-shuffled-pair/task.toml"
+    },
+    {
+      "checks": {
+        "asset_count": 2,
+        "assets": [
+          {
+            "asset_id": "slice_Rep1_DR",
+            "exists": true,
+            "mtime_ns": 1764254839000000000,
+            "path": "/Users/yiqun/Downloads/paper2bench-data/BCA_downsampled/slice_Rep1_DR.h5ad",
+            "role": "slice",
+            "size_bytes": 138680724
+          },
+          {
+            "asset_id": "slice_Rep2_DR",
+            "exists": true,
+            "mtime_ns": 1764254830000000000,
+            "path": "/Users/yiqun/Downloads/paper2bench-data/BCA_downsampled/slice_Rep2_DR.h5ad",
+            "role": "slice",
+            "size_bytes": 101520384
+          }
+        ],
+        "instruction_nonempty": true,
+        "instruction_present": true,
+        "marker_gene_file": {
+          "exists": true,
+          "mtime_ns": 1777079742222846743,
+          "path": "benchmarks/spatial_alignment/tasks/sa-004-bca-downsampled-pair-align/data/marker_genes.csv",
+          "size_bytes": 594
+        },
+        "public_score_split": "train",
+        "score_split": "eval",
+        "split_manifest": {
+          "exists": true,
+          "mtime_ns": 1777060745167902516,
+          "path": "benchmarks/spatial_alignment/tasks/sa-004-bca-downsampled-pair-align/data/split_manifest.json",
+          "size_bytes": 473
+        },
+        "split_manifest_schema": "paper2bench.split_manifest.v0.1",
+        "split_visibility": "scorer_only",
+        "task_id_matches_directory": true
+      },
+      "hashes": {
+        "definition_hash": "a4a408184a12b1cf2a446dc9cf463da3756bd83210d63273f5f2a03d660f4796"
+      },
+      "issues": [],
+      "ok": true,
+      "task_id": "sa-004-bca-downsampled-pair-align",
+      "task_path": "benchmarks/spatial_alignment/tasks/sa-004-bca-downsampled-pair-align/task.toml"
+    },
+    {
+      "checks": {
+        "asset_count": 6,
+        "assets": [
+          {
+            "asset_id": "slice_Rep1",
+            "exists": true,
+            "mtime_ns": 1764254831000000000,
+            "path": "/Users/yiqun/Downloads/paper2bench-data/BCA_raw/slice_Rep1.h5ad",
+            "role": "raw_slice",
+            "size_bytes": 107297388
+          },
+          {
+            "asset_id": "slice_Rep2",
+            "exists": true,
+            "mtime_ns": 1764254819000000000,
+            "path": "/Users/yiqun/Downloads/paper2bench-data/BCA_raw/slice_Rep2.h5ad",
+            "role": "raw_slice",
+            "size_bytes": 77679592
+          },
+          {
+            "asset_id": "slice_Rep1_DR",
+            "exists": true,
+            "mtime_ns": 1764254839000000000,
+            "path": "/Users/yiqun/Downloads/paper2bench-data/BCA_downsampled/slice_Rep1_DR.h5ad",
+            "role": "downsampled_slice",
+            "size_bytes": 138680724
+          },
+          {
+            "asset_id": "slice_Rep2_DR",
+            "exists": true,
+            "mtime_ns": 1764254830000000000,
+            "path": "/Users/yiqun/Downloads/paper2bench-data/BCA_downsampled/slice_Rep2_DR.h5ad",
+            "role": "downsampled_slice",
+            "size_bytes": 101520384
+          },
+          {
+            "asset_id": "STAligner_BCA_new_slices_Rep1",
+            "exists": true,
+            "mtime_ns": 1764254852000000000,
+            "path": "/Users/yiqun/Downloads/paper2bench-data/BCA_STAligner_DR/STAligner_BCA_new_slices_Rep1.h5ad",
+            "role": "provided_downsampled_reference",
+            "size_bytes": 195710321
+          },
+          {
+            "asset_id": "STAligner_BCA_new_slices_Rep2",
+            "exists": true,
+            "mtime_ns": 1764254838000000000,
+            "path": "/Users/yiqun/Downloads/paper2bench-data/BCA_STAligner_DR/STAligner_BCA_new_slices_Rep2.h5ad",
+            "role": "provided_downsampled_reference",
+            "size_bytes": 136698080
+          }
+        ],
+        "instruction_nonempty": true,
+        "instruction_present": true,
+        "marker_gene_file": {
+          "exists": true,
+          "mtime_ns": 1777079743640980659,
+          "path": "benchmarks/spatial_alignment/tasks/sa-005-bca-resolution-recovery/data/marker_genes.csv",
+          "size_bytes": 591
+        },
+        "public_score_split": "train",
+        "score_split": "eval",
+        "split_manifest": {
+          "exists": true,
+          "mtime_ns": 1777060745195807748,
+          "path": "benchmarks/spatial_alignment/tasks/sa-005-bca-resolution-recovery/data/split_manifest.json",
+          "size_bytes": 470
+        },
+        "split_manifest_schema": "paper2bench.split_manifest.v0.1",
+        "split_visibility": "scorer_only",
+        "task_id_matches_directory": true
+      },
+      "hashes": {
+        "definition_hash": "a1d2593ab1759282200be8ade43af91a72b632fa50d1c053f1eb8a48e1478535"
+      },
+      "issues": [],
+      "ok": true,
+      "task_id": "sa-005-bca-resolution-recovery",
+      "task_path": "benchmarks/spatial_alignment/tasks/sa-005-bca-resolution-recovery/task.toml"
+    },
+    {
+      "checks": {
+        "asset_count": 2,
+        "assets": [
+          {
+            "asset_id": "Data32_section1",
+            "exists": true,
+            "mtime_ns": 1777081750852519981,
+            "path": "benchmarks/spatial_alignment/compiled_data/perturbed/Data32_section1_seed32_rigid.h5ad",
+            "role": "slice",
+            "size_bytes": 34857524
+          },
+          {
+            "asset_id": "Data33_section2",
+            "exists": true,
+            "mtime_ns": 1777081750711179783,
+            "path": "benchmarks/spatial_alignment/compiled_data/perturbed/Data33_section2_seed33_rigid.h5ad",
+            "role": "slice",
+            "size_bytes": 33506007
+          }
+        ],
+        "instruction_nonempty": true,
+        "instruction_present": true,
+        "marker_gene_file": {
+          "exists": true,
+          "mtime_ns": 1777079738733962335,
+          "path": "benchmarks/spatial_alignment/tasks/sa-006-mbsa-serial-align/data/marker_genes.csv",
+          "size_bytes": 606
+        },
+        "public_score_split": "train",
+        "score_split": "eval",
+        "split_manifest": {
+          "exists": true,
+          "mtime_ns": 1777079019641726888,
+          "path": "benchmarks/spatial_alignment/tasks/sa-006-mbsa-serial-align/data/split_manifest.json",
+          "size_bytes": 464
+        },
+        "split_manifest_schema": "paper2bench.split_manifest.v0.1",
+        "split_visibility": "scorer_only",
+        "task_id_matches_directory": true
+      },
+      "hashes": {
+        "definition_hash": "c470319a2a2d363dd559c788b420fd1e657d2ca1d77c18717f35ef1991a77c01"
+      },
+      "issues": [],
+      "ok": true,
+      "task_id": "sa-006-mbsa-serial-align",
+      "task_path": "benchmarks/spatial_alignment/tasks/sa-006-mbsa-serial-align/task.toml"
+    },
+    {
+      "checks": {
+        "asset_count": 2,
+        "assets": [
+          {
+            "asset_id": "Data34_section1",
+            "exists": true,
+            "mtime_ns": 1777081750909324394,
+            "path": "benchmarks/spatial_alignment/compiled_data/perturbed/Data34_section1_seed34_rigid.h5ad",
+            "role": "slice",
+            "size_bytes": 36684311
+          },
+          {
+            "asset_id": "Data35_section2",
+            "exists": true,
+            "mtime_ns": 1777081750797174779,
+            "path": "benchmarks/spatial_alignment/compiled_data/perturbed/Data35_section2_seed35_rigid.h5ad",
+            "role": "slice",
+            "size_bytes": 34707491
+          }
+        ],
+        "instruction_nonempty": true,
+        "instruction_present": true,
+        "marker_gene_file": {
+          "exists": true,
+          "mtime_ns": 1777079741089451535,
+          "path": "benchmarks/spatial_alignment/tasks/sa-007-mbsp-serial-align/data/marker_genes.csv",
+          "size_bytes": 582
+        },
+        "public_score_split": "train",
+        "score_split": "eval",
+        "split_manifest": {
+          "exists": true,
+          "mtime_ns": 1777079019641853600,
+          "path": "benchmarks/spatial_alignment/tasks/sa-007-mbsp-serial-align/data/split_manifest.json",
+          "size_bytes": 464
+        },
+        "split_manifest_schema": "paper2bench.split_manifest.v0.1",
+        "split_visibility": "scorer_only",
+        "task_id_matches_directory": true
+      },
+      "hashes": {
+        "definition_hash": "47ca67def5b955959a308e2dbecfe90031130c3bdc9333748469455c353d569c"
+      },
+      "issues": [],
+      "ok": true,
+      "task_id": "sa-007-mbsp-serial-align",
+      "task_path": "benchmarks/spatial_alignment/tasks/sa-007-mbsp-serial-align/task.toml"
+    },
+    {
+      "checks": {
+        "asset_count": 3,
+        "assets": [
+          {
+            "asset_id": "xenium_v1_ff_mouse_brain_multisection_1",
+            "exists": true,
+            "mtime_ns": 1777078868922164356,
+            "path": "benchmarks/spatial_alignment/compiled_data/xenium/xenium_v1_ff_mouse_brain_multisection_1.h5ad",
+            "role": "slice",
+            "size_bytes": 30210914
+          },
+          {
+            "asset_id": "xenium_v1_ff_mouse_brain_multisection_2",
+            "exists": true,
+            "mtime_ns": 1777078870543671623,
+            "path": "benchmarks/spatial_alignment/compiled_data/xenium/xenium_v1_ff_mouse_brain_multisection_2.h5ad",
+            "role": "slice",
+            "size_bytes": 28468817
+          },
+          {
+            "asset_id": "xenium_v1_ff_mouse_brain_multisection_3",
+            "exists": true,
+            "mtime_ns": 1777078872197293270,
+            "path": "benchmarks/spatial_alignment/compiled_data/xenium/xenium_v1_ff_mouse_brain_multisection_3.h5ad",
+            "role": "slice",
+            "size_bytes": 28959990
+          }
+        ],
+        "instruction_nonempty": true,
+        "instruction_present": true,
+        "marker_gene_file": {
+          "exists": true,
+          "mtime_ns": 1777080096605105001,
+          "path": "benchmarks/spatial_alignment/tasks/sa-008-ambc-xenium-multisection-serial-align/data/marker_genes.csv",
+          "size_bytes": 639
+        },
+        "public_score_split": "train",
+        "score_split": "eval",
+        "split_manifest": {
+          "exists": true,
+          "mtime_ns": 1777080097295321122,
+          "path": "benchmarks/spatial_alignment/tasks/sa-008-ambc-xenium-multisection-serial-align/data/split_manifest.json",
+          "size_bytes": 484
+        },
+        "split_manifest_schema": "paper2bench.split_manifest.v0.1",
+        "split_visibility": "scorer_only",
+        "task_id_matches_directory": true
+      },
+      "hashes": {
+        "definition_hash": "4ffb52dbba8adf349364323e6ac817693a0ee1b786ccabca8ceab30f8dfc459a"
+      },
+      "issues": [],
+      "ok": true,
+      "task_id": "sa-008-ambc-xenium-multisection-serial-align",
+      "task_path": "benchmarks/spatial_alignment/tasks/sa-008-ambc-xenium-multisection-serial-align/task.toml"
+    },
+    {
+      "checks": {
+        "asset_count": 5,
+        "assets": [
+          {
+            "asset_id": "MHPR_animal1_n004",
+            "exists": true,
+            "mtime_ns": 1789435932872955271,
+            "path": "/Users/yiqun/Downloads/paper2bench-data/MHPR_paper/MHPR_animal1_n004.h5ad",
+            "role": "slice",
+            "size_bytes": 3910816
+          },
+          {
+            "asset_id": "MHPR_animal1_n009",
+            "exists": true,
+            "mtime_ns": 1789435932883377227,
+            "path": "/Users/yiqun/Downloads/paper2bench-data/MHPR_paper/MHPR_animal1_n009.h5ad",
+            "role": "slice",
+            "size_bytes": 3959806
+          },
+          {
+            "asset_id": "MHPR_animal1_n014",
+            "exists": true,
+            "mtime_ns": 1789435932892952559,
+            "path": "/Users/yiqun/Downloads/paper2bench-data/MHPR_paper/MHPR_animal1_n014.h5ad",
+            "role": "slice",
+            "size_bytes": 4221796
+          },
+          {
+            "asset_id": "MHPR_animal1_n019",
+            "exists": true,
+            "mtime_ns": 1789435932904083682,
+            "path": "/Users/yiqun/Downloads/paper2bench-data/MHPR_paper/MHPR_animal1_n019.h5ad",
+            "role": "slice",
+            "size_bytes": 4134466
+          },
+          {
+            "asset_id": "MHPR_animal1_n024",
+            "exists": true,
+            "mtime_ns": 1789435932913813139,
+            "path": "/Users/yiqun/Downloads/paper2bench-data/MHPR_paper/MHPR_animal1_n024.h5ad",
+            "role": "slice",
+            "size_bytes": 3949866
+          }
+        ],
+        "instruction_nonempty": true,
+        "instruction_present": true,
+        "marker_gene_file": {
+          "exists": true,
+          "mtime_ns": 1777081023198413948,
+          "path": "benchmarks/spatial_alignment/tasks/sa-009-mhpr-merfish-serial-align/data/marker_genes.csv",
+          "size_bytes": 603
+        },
+        "public_score_split": "train",
+        "score_split": "eval",
+        "split_manifest": {
+          "exists": true,
+          "mtime_ns": 1777080917431657778,
+          "path": "benchmarks/spatial_alignment/tasks/sa-009-mhpr-merfish-serial-align/data/split_manifest.json",
+          "size_bytes": 472
+        },
+        "split_manifest_schema": "paper2bench.split_manifest.v0.1",
+        "split_visibility": "scorer_only",
+        "task_id_matches_directory": true
+      },
+      "hashes": {
+        "definition_hash": "5abd394bf173e569c018a745f63ff4444b9037b1286f4bb99a31d54d5fd19941"
+      },
+      "issues": [],
+      "ok": true,
+      "task_id": "sa-009-mhpr-merfish-serial-align",
+      "task_path": "benchmarks/spatial_alignment/tasks/sa-009-mhpr-merfish-serial-align/task.toml"
+    },
+    {
+      "checks": {
+        "asset_count": 2,
+        "assets": [
+          {
+            "asset_id": "Data231_visium",
+            "exists": true,
+            "mtime_ns": 1777081105555959647,
+            "path": "/Users/yiqun/Downloads/paper2bench-data/AMBC_Visium/Data231_adult_mouse_brain.h5ad",
+            "role": "slice",
+            "size_bytes": 193020988
+          },
+          {
+            "asset_id": "Data234_xenium_v1_section1",
+            "exists": true,
+            "mtime_ns": 1777078868922164356,
+            "path": "benchmarks/spatial_alignment/compiled_data/xenium/xenium_v1_ff_mouse_brain_multisection_1.h5ad",
+            "role": "slice",
+            "size_bytes": 30210914
+          }
+        ],
+        "instruction_nonempty": true,
+        "instruction_present": true,
+        "marker_gene_file": {
+          "exists": true,
+          "mtime_ns": 1777081182059966962,
+          "path": "benchmarks/spatial_alignment/tasks/sa-010-ambc-visium-xenium-cross-platform/data/marker_genes.csv",
+          "size_bytes": 643
+        },
+        "public_score_split": "train",
+        "score_split": "eval",
+        "split_manifest": {
+          "exists": true,
+          "mtime_ns": 1777081182953087337,
+          "path": "benchmarks/spatial_alignment/tasks/sa-010-ambc-visium-xenium-cross-platform/data/split_manifest.json",
+          "size_bytes": 480
+        },
+        "split_manifest_schema": "paper2bench.split_manifest.v0.1",
+        "split_visibility": "scorer_only",
+        "task_id_matches_directory": true
+      },
+      "hashes": {
+        "definition_hash": "f99c252cb9dbc5490277d52ccef3f1d1cb36a93e24e519177a0aeb3333341dcc"
+      },
+      "issues": [],
+      "ok": true,
+      "task_id": "sa-010-ambc-visium-xenium-cross-platform",
+      "task_path": "benchmarks/spatial_alignment/tasks/sa-010-ambc-visium-xenium-cross-platform/task.toml"
+    },
+    {
+      "checks": {
+        "asset_count": 3,
+        "assets": [
+          {
+            "asset_id": "SCC_P2_rep1",
+            "exists": true,
+            "mtime_ns": 1777081548779265593,
+            "path": "/Users/yiqun/Downloads/paper2bench-data/SCC/SCC_P2_rep1.h5ad",
+            "role": "slice",
+            "size_bytes": 46005480
+          },
+          {
+            "asset_id": "SCC_P2_rep2",
+            "exists": true,
+            "mtime_ns": 1777081552210847157,
+            "path": "/Users/yiqun/Downloads/paper2bench-data/SCC/SCC_P2_rep2.h5ad",
+            "role": "slice",
+            "size_bytes": 45170238
+          },
+          {
+            "asset_id": "SCC_P2_rep3",
+            "exists": true,
+            "mtime_ns": 1777081555696576596,
+            "path": "/Users/yiqun/Downloads/paper2bench-data/SCC/SCC_P2_rep3.h5ad",
+            "role": "slice",
+            "size_bytes": 46000831
+          }
+        ],
+        "instruction_nonempty": true,
+        "instruction_present": true,
+        "marker_gene_file": {
+          "exists": true,
+          "mtime_ns": 1777081594441214302,
+          "path": "benchmarks/spatial_alignment/tasks/sa-011-scc-p2-serial-align/data/marker_genes.csv",
+          "size_bytes": 602
+        },
+        "public_score_split": "train",
+        "score_split": "eval",
+        "split_manifest": {
+          "exists": true,
+          "mtime_ns": 1777081596330400932,
+          "path": "benchmarks/spatial_alignment/tasks/sa-011-scc-p2-serial-align/data/split_manifest.json",
+          "size_bytes": 466
+        },
+        "split_manifest_schema": "paper2bench.split_manifest.v0.1",
+        "split_visibility": "scorer_only",
+        "task_id_matches_directory": true
+      },
+      "hashes": {
+        "definition_hash": "e993eacfc5378215a8a3f1f19c5a4cb851a856df2cdee6176ec7878c10e9f4c7"
+      },
+      "issues": [],
+      "ok": true,
+      "task_id": "sa-011-scc-p2-serial-align",
+      "task_path": "benchmarks/spatial_alignment/tasks/sa-011-scc-p2-serial-align/task.toml"
+    },
+    {
+      "checks": {
+        "asset_count": 3,
+        "assets": [
+          {
+            "asset_id": "SCC_P5_rep1",
+            "exists": true,
+            "mtime_ns": 1777081558984108256,
+            "path": "/Users/yiqun/Downloads/paper2bench-data/SCC/SCC_P5_rep1.h5ad",
+            "role": "slice",
+            "size_bytes": 40368091
+          },
+          {
+            "asset_id": "SCC_P5_rep2",
+            "exists": true,
+            "mtime_ns": 1777081562496818921,
+            "path": "/Users/yiqun/Downloads/paper2bench-data/SCC/SCC_P5_rep2.h5ad",
+            "role": "slice",
+            "size_bytes": 37221148
+          },
+          {
+            "asset_id": "SCC_P5_rep3",
+            "exists": true,
+            "mtime_ns": 1777081565836917116,
+            "path": "/Users/yiqun/Downloads/paper2bench-data/SCC/SCC_P5_rep3.h5ad",
+            "role": "slice",
+            "size_bytes": 36611278
+          }
+        ],
+        "instruction_nonempty": true,
+        "instruction_present": true,
+        "marker_gene_file": {
+          "exists": true,
+          "mtime_ns": 1777081595500520787,
+          "path": "benchmarks/spatial_alignment/tasks/sa-012-scc-p5-serial-align/data/marker_genes.csv",
+          "size_bytes": 607
+        },
+        "public_score_split": "train",
+        "score_split": "eval",
+        "split_manifest": {
+          "exists": true,
+          "mtime_ns": 1777081596330558353,
+          "path": "benchmarks/spatial_alignment/tasks/sa-012-scc-p5-serial-align/data/split_manifest.json",
+          "size_bytes": 466
+        },
+        "split_manifest_schema": "paper2bench.split_manifest.v0.1",
+        "split_visibility": "scorer_only",
+        "task_id_matches_directory": true
+      },
+      "hashes": {
+        "definition_hash": "46318e20d8a9c63ee8e34d47f535c408a3a8f408c0cc03cf9bf3132cfee27291"
+      },
+      "issues": [],
+      "ok": true,
+      "task_id": "sa-012-scc-p5-serial-align",
+      "task_path": "benchmarks/spatial_alignment/tasks/sa-012-scc-p5-serial-align/task.toml"
+    },
+    {
+      "checks": {
+        "asset_count": 2,
+        "assets": [
+          {
+            "asset_id": "Data231_visium",
+            "exists": true,
+            "mtime_ns": 1777081105555959647,
+            "path": "/Users/yiqun/Downloads/paper2bench-data/AMBC_Visium/Data231_adult_mouse_brain.h5ad",
+            "role": "slice",
+            "size_bytes": 193020988
+          },
+          {
+            "asset_id": "Data235_xenium_prime",
+            "exists": true,
+            "mtime_ns": 1777078876902151865,
+            "path": "benchmarks/spatial_alignment/compiled_data/xenium/xenium_prime_mouse_brain_coronal_ff.h5ad",
+            "role": "slice",
+            "size_bytes": 92519017
+          }
+        ],
+        "instruction_nonempty": true,
+        "instruction_present": true,
+        "marker_gene_file": {
+          "exists": true,
+          "mtime_ns": 1777082038489201570,
+          "path": "benchmarks/spatial_alignment/tasks/sa-013-ambc-visium-xenium5k-cross-platform/data/marker_genes.csv",
+          "size_bytes": 613
+        },
+        "public_score_split": "train",
+        "score_split": "eval",
+        "split_manifest": {
+          "exists": true,
+          "mtime_ns": 1777082163598059041,
+          "path": "benchmarks/spatial_alignment/tasks/sa-013-ambc-visium-xenium5k-cross-platform/data/split_manifest.json",
+          "size_bytes": 482
+        },
+        "split_manifest_schema": "paper2bench.split_manifest.v0.1",
+        "split_visibility": "scorer_only",
+        "task_id_matches_directory": true
+      },
+      "hashes": {
+        "definition_hash": "3d09648a517d591e5f759a2d114e3a2fae6f8fdb5c54c58fe1bc4b5d4e1d9bb9"
+      },
+      "issues": [],
+      "ok": true,
+      "task_id": "sa-013-ambc-visium-xenium5k-cross-platform",
+      "task_path": "benchmarks/spatial_alignment/tasks/sa-013-ambc-visium-xenium5k-cross-platform/task.toml"
+    },
+    {
+      "checks": {
+        "asset_count": 2,
+        "assets": [
+          {
+            "asset_id": "slice_Rep1",
+            "exists": true,
+            "mtime_ns": 1764254831000000000,
+            "path": "/Users/yiqun/Downloads/paper2bench-data/BCA_raw/slice_Rep1.h5ad",
+            "role": "slice",
+            "size_bytes": 107297388
+          },
+          {
+            "asset_id": "slice_Rep2",
+            "exists": true,
+            "mtime_ns": 1764254819000000000,
+            "path": "/Users/yiqun/Downloads/paper2bench-data/BCA_raw/slice_Rep2.h5ad",
+            "role": "slice",
+            "size_bytes": 77679592
+          }
+        ],
+        "instruction_nonempty": true,
+        "instruction_present": true,
+        "marker_gene_file": {
+          "exists": true,
+          "mtime_ns": 1777082028289891156,
+          "path": "benchmarks/spatial_alignment/tasks/sa-014-bca-xenium-serial-align/data/marker_genes.csv",
+          "size_bytes": 591
+        },
+        "public_score_split": "train",
+        "score_split": "eval",
+        "split_manifest": {
+          "exists": true,
+          "mtime_ns": 1777082163694644022,
+          "path": "benchmarks/spatial_alignment/tasks/sa-014-bca-xenium-serial-align/data/split_manifest.json",
+          "size_bytes": 470
+        },
+        "split_manifest_schema": "paper2bench.split_manifest.v0.1",
+        "split_visibility": "scorer_only",
+        "task_id_matches_directory": true
+      },
+      "hashes": {
+        "definition_hash": "e0c1c98cdb8726dedd5537c63b792761002f7c921456899478201f1b813e38f1"
+      },
+      "issues": [],
+      "ok": true,
+      "task_id": "sa-014-bca-xenium-serial-align",
+      "task_path": "benchmarks/spatial_alignment/tasks/sa-014-bca-xenium-serial-align/task.toml"
+    },
+    {
+      "checks": {
+        "asset_count": 2,
+        "assets": [
+          {
+            "asset_id": "Data231_visium",
+            "exists": true,
+            "mtime_ns": 1777081105555959647,
+            "path": "/Users/yiqun/Downloads/paper2bench-data/AMBC_Visium/Data231_adult_mouse_brain.h5ad",
+            "role": "slice",
+            "size_bytes": 193020988
+          },
+          {
+            "asset_id": "Data232_visiumhd_16um",
+            "exists": true,
+            "mtime_ns": 1777082630020310984,
+            "path": "benchmarks/spatial_alignment/compiled_data/visiumhd/data232_visiumhd_16um.h5ad",
+            "role": "slice",
+            "size_bytes": 590771216
+          }
+        ],
+        "instruction_nonempty": true,
+        "instruction_present": true,
+        "marker_gene_file": {
+          "exists": true,
+          "mtime_ns": 1777082729748584805,
+          "path": "benchmarks/spatial_alignment/tasks/sa-015-ambc-visium-visiumhd-cross-resolution/data/marker_genes.csv",
+          "size_bytes": 591
+        },
+        "public_score_split": "train",
+        "score_split": "eval",
+        "split_manifest": {
+          "exists": true,
+          "mtime_ns": 1777082711009361256,
+          "path": "benchmarks/spatial_alignment/tasks/sa-015-ambc-visium-visiumhd-cross-resolution/data/split_manifest.json",
+          "size_bytes": 484
+        },
+        "split_manifest_schema": "paper2bench.split_manifest.v0.1",
+        "split_visibility": "scorer_only",
+        "task_id_matches_directory": true
+      },
+      "hashes": {
+        "definition_hash": "bc4e8e59ecede788f1b6ee2409074383895b4b7e45f73bc578916a1faf140f4b"
+      },
+      "issues": [],
+      "ok": true,
+      "task_id": "sa-015-ambc-visium-visiumhd-cross-resolution",
+      "task_path": "benchmarks/spatial_alignment/tasks/sa-015-ambc-visium-visiumhd-cross-resolution/task.toml"
+    },
+    {
+      "checks": {
+        "asset_count": 2,
+        "assets": [
+          {
+            "asset_id": "Data231_visium",
+            "exists": true,
+            "mtime_ns": 1777081105555959647,
+            "path": "/Users/yiqun/Downloads/paper2bench-data/AMBC_Visium/Data231_adult_mouse_brain.h5ad",
+            "role": "slice",
+            "size_bytes": 193020988
+          },
+          {
+            "asset_id": "Data237_starmapplus",
+            "exists": true,
+            "mtime_ns": 1777082825572724303,
+            "path": "benchmarks/spatial_alignment/compiled_data/starmap/data237_starmapplus_well11.h5ad",
+            "role": "slice",
+            "size_bytes": 181230207
+          }
+        ],
+        "instruction_nonempty": true,
+        "instruction_present": true,
+        "marker_gene_file": {
+          "exists": true,
+          "mtime_ns": 1777082838402795050,
+          "path": "benchmarks/spatial_alignment/tasks/sa-016-ambc-visium-starmapplus-cross-platform/data/marker_genes.csv",
+          "size_bytes": 603
+        },
+        "public_score_split": "train",
+        "score_split": "eval",
+        "split_manifest": {
+          "exists": true,
+          "mtime_ns": 1777082711114302153,
+          "path": "benchmarks/spatial_alignment/tasks/sa-016-ambc-visium-starmapplus-cross-platform/data/split_manifest.json",
+          "size_bytes": 485
+        },
+        "split_manifest_schema": "paper2bench.split_manifest.v0.1",
+        "split_visibility": "scorer_only",
+        "task_id_matches_directory": true
+      },
+      "hashes": {
+        "definition_hash": "0fadd508054fd4d458bd55ee6fb606a0b2398e6d0b24e8fbb1b529796c28a2e1"
+      },
+      "issues": [],
+      "ok": true,
+      "task_id": "sa-016-ambc-visium-starmapplus-cross-platform",
+      "task_path": "benchmarks/spatial_alignment/tasks/sa-016-ambc-visium-starmapplus-cross-platform/task.toml"
+    },
+    {
+      "checks": {
+        "asset_count": 3,
+        "assets": [
+          {
+            "asset_id": "Data36_slice1",
+            "exists": true,
+            "mtime_ns": 1777084827239113951,
+            "path": "benchmarks/spatial_alignment/compiled_data/sdmbench/data36_slice1_seed36_rigid.h5ad",
+            "role": "slice",
+            "size_bytes": 290644
+          },
+          {
+            "asset_id": "Data37_slice2",
+            "exists": true,
+            "mtime_ns": 1777084827381883775,
+            "path": "benchmarks/spatial_alignment/compiled_data/sdmbench/data37_slice2_seed37_rigid.h5ad",
+            "role": "slice",
+            "size_bytes": 393707
+          },
+          {
+            "asset_id": "Data38_slice3",
+            "exists": true,
+            "mtime_ns": 1777084827527046880,
+            "path": "benchmarks/spatial_alignment/compiled_data/sdmbench/data38_slice3_seed38_rigid.h5ad",
+            "role": "slice",
+            "size_bytes": 333636
+          }
+        ],
+        "instruction_nonempty": true,
+        "instruction_present": true,
+        "marker_gene_file": {
+          "exists": true,
+          "mtime_ns": 1777084827971717136,
+          "path": "benchmarks/spatial_alignment/tasks/sa-017-baristaseq-mpc-serial-align/data/marker_genes.csv",
+          "size_bytes": 550
+        },
+        "public_score_split": "train",
+        "score_split": "eval",
+        "split_manifest": {
+          "exists": true,
+          "mtime_ns": 1777084827971878724,
+          "path": "benchmarks/spatial_alignment/tasks/sa-017-baristaseq-mpc-serial-align/data/split_manifest.json",
+          "size_bytes": 474
+        },
+        "split_manifest_schema": "paper2bench.split_manifest.v0.1",
+        "split_visibility": "scorer_only",
+        "task_id_matches_directory": true
+      },
+      "hashes": {
+        "definition_hash": "c0860d5db27ab8860c2ee74994f76513b7fa3b1f34cdce1e754915de9d6905ac"
+      },
+      "issues": [],
+      "ok": true,
+      "task_id": "sa-017-baristaseq-mpc-serial-align",
+      "task_path": "benchmarks/spatial_alignment/tasks/sa-017-baristaseq-mpc-serial-align/task.toml"
+    },
+    {
+      "checks": {
+        "asset_count": 3,
+        "assets": [
+          {
+            "asset_id": "Data39_slice1",
+            "exists": true,
+            "mtime_ns": 1777084827667937148,
+            "path": "benchmarks/spatial_alignment/compiled_data/sdmbench/data39_slice1_seed39_rigid.h5ad",
+            "role": "slice",
+            "size_bytes": 233226
+          },
+          {
+            "asset_id": "Data40_slice2",
+            "exists": true,
+            "mtime_ns": 1777084827814425709,
+            "path": "benchmarks/spatial_alignment/compiled_data/sdmbench/data40_slice2_seed40_rigid.h5ad",
+            "role": "slice",
+            "size_bytes": 210416
+          },
+          {
+            "asset_id": "Data41_slice3",
+            "exists": true,
+            "mtime_ns": 1777084827956310715,
+            "path": "benchmarks/spatial_alignment/compiled_data/sdmbench/data41_slice3_seed41_rigid.h5ad",
+            "role": "slice",
+            "size_bytes": 232776
+          }
+        ],
+        "instruction_nonempty": true,
+        "instruction_present": true,
+        "marker_gene_file": {
+          "exists": true,
+          "mtime_ns": 1777084827974522678,
+          "path": "benchmarks/spatial_alignment/tasks/sa-018-starmap-mmpc-serial-align/data/marker_genes.csv",
+          "size_bytes": 1151
+        },
+        "public_score_split": "train",
+        "score_split": "eval",
+        "split_manifest": {
+          "exists": true,
+          "mtime_ns": 1777084827974611556,
+          "path": "benchmarks/spatial_alignment/tasks/sa-018-starmap-mmpc-serial-align/data/split_manifest.json",
+          "size_bytes": 472
+        },
+        "split_manifest_schema": "paper2bench.split_manifest.v0.1",
+        "split_visibility": "scorer_only",
+        "task_id_matches_directory": true
+      },
+      "hashes": {
+        "definition_hash": "4abc5d0b8a24d277b392f19eac1f7f0c28049fb75433ada338f5cec4ae11ae40"
+      },
+      "issues": [],
+      "ok": true,
+      "task_id": "sa-018-starmap-mmpc-serial-align",
+      "task_path": "benchmarks/spatial_alignment/tasks/sa-018-starmap-mmpc-serial-align/task.toml"
+    },
+    {
+      "checks": {
+        "asset_count": 16,
+        "assets": [
+          {
+            "asset_id": "flysta3d_e14_16_slice00",
+            "exists": true,
+            "mtime_ns": 1777085085107013547,
+            "path": "/Users/yiqun/Downloads/paper2bench-data/Flysta3D/flysta3d_e14_16_slice00.h5ad",
+            "role": "slice",
+            "size_bytes": 26849458
+          },
+          {
+            "asset_id": "flysta3d_e14_16_slice01",
+            "exists": true,
+            "mtime_ns": 1777085085115071830,
+            "path": "/Users/yiqun/Downloads/paper2bench-data/Flysta3D/flysta3d_e14_16_slice01.h5ad",
+            "role": "slice",
+            "size_bytes": 30517239
+          },
+          {
+            "asset_id": "flysta3d_e14_16_slice02",
+            "exists": true,
+            "mtime_ns": 1777085085123815425,
+            "path": "/Users/yiqun/Downloads/paper2bench-data/Flysta3D/flysta3d_e14_16_slice02.h5ad",
+            "role": "slice",
+            "size_bytes": 33199646
+          },
+          {
+            "asset_id": "flysta3d_e14_16_slice03",
+            "exists": true,
+            "mtime_ns": 1777085085134260197,
+            "path": "/Users/yiqun/Downloads/paper2bench-data/Flysta3D/flysta3d_e14_16_slice03.h5ad",
+            "role": "slice",
+            "size_bytes": 39495091
+          },
+          {
+            "asset_id": "flysta3d_e14_16_slice04",
+            "exists": true,
+            "mtime_ns": 1777085085145486575,
+            "path": "/Users/yiqun/Downloads/paper2bench-data/Flysta3D/flysta3d_e14_16_slice04.h5ad",
+            "role": "slice",
+            "size_bytes": 41192124
+          },
+          {
+            "asset_id": "flysta3d_e14_16_slice05",
+            "exists": true,
+            "mtime_ns": 1777085085159112526,
+            "path": "/Users/yiqun/Downloads/paper2bench-data/Flysta3D/flysta3d_e14_16_slice05.h5ad",
+            "role": "slice",
+            "size_bytes": 45078877
+          },
+          {
+            "asset_id": "flysta3d_e14_16_slice06",
+            "exists": true,
+            "mtime_ns": 1777085085172760018,
+            "path": "/Users/yiqun/Downloads/paper2bench-data/Flysta3D/flysta3d_e14_16_slice06.h5ad",
+            "role": "slice",
+            "size_bytes": 51100607
+          },
+          {
+            "asset_id": "flysta3d_e14_16_slice07",
+            "exists": true,
+            "mtime_ns": 1777085085190625763,
+            "path": "/Users/yiqun/Downloads/paper2bench-data/Flysta3D/flysta3d_e14_16_slice07.h5ad",
+            "role": "slice",
+            "size_bytes": 70096428
+          },
+          {
+            "asset_id": "flysta3d_e14_16_slice08",
+            "exists": true,
+            "mtime_ns": 1777085085207510977,
+            "path": "/Users/yiqun/Downloads/paper2bench-data/Flysta3D/flysta3d_e14_16_slice08.h5ad",
+            "role": "slice",
+            "size_bytes": 69603741
+          },
+          {
+            "asset_id": "flysta3d_e14_16_slice09",
+            "exists": true,
+            "mtime_ns": 1777085085223526083,
+            "path": "/Users/yiqun/Downloads/paper2bench-data/Flysta3D/flysta3d_e14_16_slice09.h5ad",
+            "role": "slice",
+            "size_bytes": 68782596
+          },
+          {
+            "asset_id": "flysta3d_e14_16_slice10",
+            "exists": true,
+            "mtime_ns": 1777085085237191701,
+            "path": "/Users/yiqun/Downloads/paper2bench-data/Flysta3D/flysta3d_e14_16_slice10.h5ad",
+            "role": "slice",
+            "size_bytes": 57342348
+          },
+          {
+            "asset_id": "flysta3d_e14_16_slice11",
+            "exists": true,
+            "mtime_ns": 1777085085253464356,
+            "path": "/Users/yiqun/Downloads/paper2bench-data/Flysta3D/flysta3d_e14_16_slice11.h5ad",
+            "role": "slice",
+            "size_bytes": 69440772
+          },
+          {
+            "asset_id": "flysta3d_e14_16_slice12",
+            "exists": true,
+            "mtime_ns": 1777085085266750463,
+            "path": "/Users/yiqun/Downloads/paper2bench-data/Flysta3D/flysta3d_e14_16_slice12.h5ad",
+            "role": "slice",
+            "size_bytes": 52962828
+          },
+          {
+            "asset_id": "flysta3d_e14_16_slice13",
+            "exists": true,
+            "mtime_ns": 1777085085281214147,
+            "path": "/Users/yiqun/Downloads/paper2bench-data/Flysta3D/flysta3d_e14_16_slice13.h5ad",
+            "role": "slice",
+            "size_bytes": 59477364
+          },
+          {
+            "asset_id": "flysta3d_e14_16_slice14",
+            "exists": true,
+            "mtime_ns": 1777085085297429217,
+            "path": "/Users/yiqun/Downloads/paper2bench-data/Flysta3D/flysta3d_e14_16_slice14.h5ad",
+            "role": "slice",
+            "size_bytes": 68345892
+          },
+          {
+            "asset_id": "flysta3d_e14_16_slice15",
+            "exists": true,
+            "mtime_ns": 1777085085311949527,
+            "path": "/Users/yiqun/Downloads/paper2bench-data/Flysta3D/flysta3d_e14_16_slice15.h5ad",
+            "role": "slice",
+            "size_bytes": 61229172
+          }
+        ],
+        "instruction_nonempty": true,
+        "instruction_present": true,
+        "marker_gene_file": {
+          "exists": true,
+          "mtime_ns": 1777085196016252771,
+          "path": "benchmarks/spatial_alignment/tasks/sa-019-flysta3d-e14-16-3d-serial-align/data/marker_genes.csv",
+          "size_bytes": 684
+        },
+        "public_score_split": "train",
+        "score_split": "eval",
+        "split_manifest": {
+          "exists": true,
+          "mtime_ns": 1777085196881631647,
+          "path": "benchmarks/spatial_alignment/tasks/sa-019-flysta3d-e14-16-3d-serial-align/data/split_manifest.json",
+          "size_bytes": 478
+        },
+        "split_manifest_schema": "paper2bench.split_manifest.v0.1",
+        "split_visibility": "scorer_only",
+        "task_id_matches_directory": true
+      },
+      "hashes": {
+        "definition_hash": "6aef1d0e48498a530d78c00ac46ee1d60c7870acb05fbbb95557ca38ed934bf3"
+      },
+      "issues": [],
+      "ok": true,
+      "task_id": "sa-019-flysta3d-e14-16-3d-serial-align",
+      "task_path": "benchmarks/spatial_alignment/tasks/sa-019-flysta3d-e14-16-3d-serial-align/task.toml"
+    },
+    {
+      "checks": {
+        "asset_count": 33,
+        "assets": [
+          {
+            "asset_id": "mouse1_slice1",
+            "exists": true,
+            "mtime_ns": 1789436277403063669,
+            "path": "benchmarks/spatial_alignment/compiled_data/mop_paper/mouse1_slice1.h5ad",
+            "role": "slice",
+            "size_bytes": 1616054
+          },
+          {
+            "asset_id": "mouse1_slice10",
+            "exists": true,
+            "mtime_ns": 1789436277454389994,
+            "path": "benchmarks/spatial_alignment/compiled_data/mop_paper/mouse1_slice10.h5ad",
+            "role": "slice",
+            "size_bytes": 1633766
+          },
+          {
+            "asset_id": "mouse1_slice21",
+            "exists": true,
+            "mtime_ns": 1789436278795289553,
+            "path": "benchmarks/spatial_alignment/compiled_data/mop_paper/mouse1_slice21.h5ad",
+            "role": "slice",
+            "size_bytes": 1378234
+          },
+          {
+            "asset_id": "mouse1_slice31",
+            "exists": true,
+            "mtime_ns": 1789436279851855244,
+            "path": "benchmarks/spatial_alignment/compiled_data/mop_paper/mouse1_slice31.h5ad",
+            "role": "slice",
+            "size_bytes": 2070031
+          },
+          {
+            "asset_id": "mouse1_slice40",
+            "exists": true,
+            "mtime_ns": 1789436280093458828,
+            "path": "benchmarks/spatial_alignment/compiled_data/mop_paper/mouse1_slice40.h5ad",
+            "role": "slice",
+            "size_bytes": 2719520
+          },
+          {
+            "asset_id": "mouse1_slice50",
+            "exists": true,
+            "mtime_ns": 1789436280178851896,
+            "path": "benchmarks/spatial_alignment/compiled_data/mop_paper/mouse1_slice50.h5ad",
+            "role": "slice",
+            "size_bytes": 2774454
+          },
+          {
+            "asset_id": "mouse1_slice62",
+            "exists": true,
+            "mtime_ns": 1789436280279083170,
+            "path": "benchmarks/spatial_alignment/compiled_data/mop_paper/mouse1_slice62.h5ad",
+            "role": "slice",
+            "size_bytes": 3295721
+          },
+          {
+            "asset_id": "mouse1_slice71",
+            "exists": true,
+            "mtime_ns": 1789436280403654274,
+            "path": "benchmarks/spatial_alignment/compiled_data/mop_paper/mouse1_slice71.h5ad",
+            "role": "slice",
+            "size_bytes": 4117727
+          },
+          {
+            "asset_id": "mouse1_slice81",
+            "exists": true,
+            "mtime_ns": 1789436280520399212,
+            "path": "benchmarks/spatial_alignment/compiled_data/mop_paper/mouse1_slice81.h5ad",
+            "role": "slice",
+            "size_bytes": 3797583
+          },
+          {
+            "asset_id": "mouse1_slice91",
+            "exists": true,
+            "mtime_ns": 1789436280638609983,
+            "path": "benchmarks/spatial_alignment/compiled_data/mop_paper/mouse1_slice91.h5ad",
+            "role": "slice",
+            "size_bytes": 4028332
+          },
+          {
+            "asset_id": "mouse1_slice102",
+            "exists": true,
+            "mtime_ns": 1789436277592045053,
+            "path": "benchmarks/spatial_alignment/compiled_data/mop_paper/mouse1_slice102.h5ad",
+            "role": "slice",
+            "size_bytes": 4768507
+          },
+          {
+            "asset_id": "mouse1_slice112",
+            "exists": true,
+            "mtime_ns": 1789436277725328197,
+            "path": "benchmarks/spatial_alignment/compiled_data/mop_paper/mouse1_slice112.h5ad",
+            "role": "slice",
+            "size_bytes": 3497771
+          },
+          {
+            "asset_id": "mouse1_slice122",
+            "exists": true,
+            "mtime_ns": 1789436277849088634,
+            "path": "benchmarks/spatial_alignment/compiled_data/mop_paper/mouse1_slice122.h5ad",
+            "role": "slice",
+            "size_bytes": 4269736
+          },
+          {
+            "asset_id": "mouse1_slice131",
+            "exists": true,
+            "mtime_ns": 1789436277948187075,
+            "path": "benchmarks/spatial_alignment/compiled_data/mop_paper/mouse1_slice131.h5ad",
+            "role": "slice",
+            "size_bytes": 3495656
+          },
+          {
+            "asset_id": "mouse1_slice153",
+            "exists": true,
+            "mtime_ns": 1789436278087937259,
+            "path": "benchmarks/spatial_alignment/compiled_data/mop_paper/mouse1_slice153.h5ad",
+            "role": "slice",
+            "size_bytes": 5166929
+          },
+          {
+            "asset_id": "mouse1_slice162",
+            "exists": true,
+            "mtime_ns": 1789436278226080151,
+            "path": "benchmarks/spatial_alignment/compiled_data/mop_paper/mouse1_slice162.h5ad",
+            "role": "slice",
+            "size_bytes": 4921721
+          },
+          {
+            "asset_id": "mouse1_slice170",
+            "exists": true,
+            "mtime_ns": 1789436278353956879,
+            "path": "benchmarks/spatial_alignment/compiled_data/mop_paper/mouse1_slice170.h5ad",
+            "role": "slice",
+            "size_bytes": 4575666
+          },
+          {
+            "asset_id": "mouse1_slice180",
+            "exists": true,
+            "mtime_ns": 1789436278475823692,
+            "path": "benchmarks/spatial_alignment/compiled_data/mop_paper/mouse1_slice180.h5ad",
+            "role": "slice",
+            "size_bytes": 4400478
+          },
+          {
+            "asset_id": "mouse1_slice190",
+            "exists": true,
+            "mtime_ns": 1789436278587144047,
+            "path": "benchmarks/spatial_alignment/compiled_data/mop_paper/mouse1_slice190.h5ad",
+            "role": "slice",
+            "size_bytes": 4021059
+          },
+          {
+            "asset_id": "mouse1_slice200",
+            "exists": true,
+            "mtime_ns": 1789436278633311497,
+            "path": "benchmarks/spatial_alignment/compiled_data/mop_paper/mouse1_slice200.h5ad",
+            "role": "slice",
+            "size_bytes": 1531856
+          },
+          {
+            "asset_id": "mouse1_slice201",
+            "exists": true,
+            "mtime_ns": 1789436278751462477,
+            "path": "benchmarks/spatial_alignment/compiled_data/mop_paper/mouse1_slice201.h5ad",
+            "role": "slice",
+            "size_bytes": 4380241
+          },
+          {
+            "asset_id": "mouse1_slice212",
+            "exists": true,
+            "mtime_ns": 1789436278931487612,
+            "path": "benchmarks/spatial_alignment/compiled_data/mop_paper/mouse1_slice212.h5ad",
+            "role": "slice",
+            "size_bytes": 4611946
+          },
+          {
+            "asset_id": "mouse1_slice221",
+            "exists": true,
+            "mtime_ns": 1789436279048912884,
+            "path": "benchmarks/spatial_alignment/compiled_data/mop_paper/mouse1_slice221.h5ad",
+            "role": "slice",
+            "size_bytes": 4116719
+          },
+          {
+            "asset_id": "mouse1_slice232",
+            "exists": true,
+            "mtime_ns": 1789436279157761240,
+            "path": "benchmarks/spatial_alignment/compiled_data/mop_paper/mouse1_slice232.h5ad",
+            "role": "slice",
+            "size_bytes": 3793270
+          },
+          {
+            "asset_id": "mouse1_slice241",
+            "exists": true,
+            "mtime_ns": 1789436279236145851,
+            "path": "benchmarks/spatial_alignment/compiled_data/mop_paper/mouse1_slice241.h5ad",
+            "role": "slice",
+            "size_bytes": 2781374
+          },
+          {
+            "asset_id": "mouse1_slice251",
+            "exists": true,
+            "mtime_ns": 1789436279327919210,
+            "path": "benchmarks/spatial_alignment/compiled_data/mop_paper/mouse1_slice251.h5ad",
+            "role": "slice",
+            "size_bytes": 2974547
+          },
+          {
+            "asset_id": "mouse1_slice260",
+            "exists": true,
+            "mtime_ns": 1789436279449225564,
+            "path": "benchmarks/spatial_alignment/compiled_data/mop_paper/mouse1_slice260.h5ad",
+            "role": "slice",
+            "size_bytes": 4053268
+          },
+          {
+            "asset_id": "mouse1_slice271",
+            "exists": true,
+            "mtime_ns": 1789436279525168468,
+            "path": "benchmarks/spatial_alignment/compiled_data/mop_paper/mouse1_slice271.h5ad",
+            "role": "slice",
+            "size_bytes": 2533132
+          },
+          {
+            "asset_id": "mouse1_slice283",
+            "exists": true,
+            "mtime_ns": 1789436279607034704,
+            "path": "benchmarks/spatial_alignment/compiled_data/mop_paper/mouse1_slice283.h5ad",
+            "role": "slice",
+            "size_bytes": 2782564
+          },
+          {
+            "asset_id": "mouse1_slice291",
+            "exists": true,
+            "mtime_ns": 1789436279698188146,
+            "path": "benchmarks/spatial_alignment/compiled_data/mop_paper/mouse1_slice291.h5ad",
+            "role": "slice",
+            "size_bytes": 2926435
+          },
+          {
+            "asset_id": "mouse1_slice301",
+            "exists": true,
+            "mtime_ns": 1789436279784934340,
+            "path": "benchmarks/spatial_alignment/compiled_data/mop_paper/mouse1_slice301.h5ad",
+            "role": "slice",
+            "size_bytes": 2886770
+          },
+          {
+            "asset_id": "mouse1_slice313",
+            "exists": true,
+            "mtime_ns": 1789436279927571106,
+            "path": "benchmarks/spatial_alignment/compiled_data/mop_paper/mouse1_slice313.h5ad",
+            "role": "slice",
+            "size_bytes": 2537342
+          },
+          {
+            "asset_id": "mouse1_slice326",
+            "exists": true,
+            "mtime_ns": 1789436280012184675,
+            "path": "benchmarks/spatial_alignment/compiled_data/mop_paper/mouse1_slice326.h5ad",
+            "role": "slice",
+            "size_bytes": 2721463
+          }
+        ],
+        "instruction_nonempty": true,
+        "instruction_present": true,
+        "marker_gene_file": {
+          "exists": true,
+          "mtime_ns": 1777086959774462400,
+          "path": "benchmarks/spatial_alignment/tasks/sa-020-mop-mouse1-atlas-serial-align/data/marker_genes.csv",
+          "size_bytes": 641
+        },
+        "public_score_split": "train",
+        "score_split": "eval",
+        "split_manifest": {
+          "exists": true,
+          "mtime_ns": 1777086960630323949,
+          "path": "benchmarks/spatial_alignment/tasks/sa-020-mop-mouse1-atlas-serial-align/data/split_manifest.json",
+          "size_bytes": 476
+        },
+        "split_manifest_schema": "paper2bench.split_manifest.v0.1",
+        "split_visibility": "scorer_only",
+        "task_id_matches_directory": true
+      },
+      "hashes": {
+        "definition_hash": "632fe7f1e9537c952ef4a93fd4944a16e909bd8bd83f67e2551cc0a90078959b"
+      },
+      "issues": [],
+      "ok": true,
+      "task_id": "sa-020-mop-mouse1-atlas-serial-align",
+      "task_path": "benchmarks/spatial_alignment/tasks/sa-020-mop-mouse1-atlas-serial-align/task.toml"
+    },
+    {
+      "checks": {
+        "asset_count": 31,
+        "assets": [
+          {
+            "asset_id": "mouse2_slice1",
+            "exists": true,
+            "mtime_ns": 1789436280677411935,
+            "path": "benchmarks/spatial_alignment/compiled_data/mop_paper/mouse2_slice1.h5ad",
+            "role": "slice",
+            "size_bytes": 1192297
+          },
+          {
+            "asset_id": "mouse2_slice10",
+            "exists": true,
+            "mtime_ns": 1789436280703034805,
+            "path": "benchmarks/spatial_alignment/compiled_data/mop_paper/mouse2_slice10.h5ad",
+            "role": "slice",
+            "size_bytes": 806368
+          },
+          {
+            "asset_id": "mouse2_slice20",
+            "exists": true,
+            "mtime_ns": 1789436281561991073,
+            "path": "benchmarks/spatial_alignment/compiled_data/mop_paper/mouse2_slice20.h5ad",
+            "role": "slice",
+            "size_bytes": 433347
+          },
+          {
+            "asset_id": "mouse2_slice31",
+            "exists": true,
+            "mtime_ns": 1789436282469074999,
+            "path": "benchmarks/spatial_alignment/compiled_data/mop_paper/mouse2_slice31.h5ad",
+            "role": "slice",
+            "size_bytes": 1412364
+          },
+          {
+            "asset_id": "mouse2_slice40",
+            "exists": true,
+            "mtime_ns": 1789436282577974522,
+            "path": "benchmarks/spatial_alignment/compiled_data/mop_paper/mouse2_slice40.h5ad",
+            "role": "slice",
+            "size_bytes": 2142806
+          },
+          {
+            "asset_id": "mouse2_slice50",
+            "exists": true,
+            "mtime_ns": 1789436282641105219,
+            "path": "benchmarks/spatial_alignment/compiled_data/mop_paper/mouse2_slice50.h5ad",
+            "role": "slice",
+            "size_bytes": 1988966
+          },
+          {
+            "asset_id": "mouse2_slice61",
+            "exists": true,
+            "mtime_ns": 1789436282707731832,
+            "path": "benchmarks/spatial_alignment/compiled_data/mop_paper/mouse2_slice61.h5ad",
+            "role": "slice",
+            "size_bytes": 2287503
+          },
+          {
+            "asset_id": "mouse2_slice70",
+            "exists": true,
+            "mtime_ns": 1789436282794532276,
+            "path": "benchmarks/spatial_alignment/compiled_data/mop_paper/mouse2_slice70.h5ad",
+            "role": "slice",
+            "size_bytes": 2812304
+          },
+          {
+            "asset_id": "mouse2_slice79",
+            "exists": true,
+            "mtime_ns": 1789436282865876430,
+            "path": "benchmarks/spatial_alignment/compiled_data/mop_paper/mouse2_slice79.h5ad",
+            "role": "slice",
+            "size_bytes": 2503296
+          },
+          {
+            "asset_id": "mouse2_slice90",
+            "exists": true,
+            "mtime_ns": 1789436282971303787,
+            "path": "benchmarks/spatial_alignment/compiled_data/mop_paper/mouse2_slice90.h5ad",
+            "role": "slice",
+            "size_bytes": 3542375
+          },
+          {
+            "asset_id": "mouse2_slice99",
+            "exists": true,
+            "mtime_ns": 1789436283099121306,
+            "path": "benchmarks/spatial_alignment/compiled_data/mop_paper/mouse2_slice99.h5ad",
+            "role": "slice",
+            "size_bytes": 3634670
+          },
+          {
+            "asset_id": "mouse2_slice109",
+            "exists": true,
+            "mtime_ns": 1789436280808458662,
+            "path": "benchmarks/spatial_alignment/compiled_data/mop_paper/mouse2_slice109.h5ad",
+            "role": "slice",
+            "size_bytes": 3652509
+          },
+          {
+            "asset_id": "mouse2_slice119",
+            "exists": true,
+            "mtime_ns": 1789436280918608143,
+            "path": "benchmarks/spatial_alignment/compiled_data/mop_paper/mouse2_slice119.h5ad",
+            "role": "slice",
+            "size_bytes": 3602061
+          },
+          {
+            "asset_id": "mouse2_slice129",
+            "exists": true,
+            "mtime_ns": 1789436281027293207,
+            "path": "benchmarks/spatial_alignment/compiled_data/mop_paper/mouse2_slice129.h5ad",
+            "role": "slice",
+            "size_bytes": 3611247
+          },
+          {
+            "asset_id": "mouse2_slice139",
+            "exists": true,
+            "mtime_ns": 1789436281108975318,
+            "path": "benchmarks/spatial_alignment/compiled_data/mop_paper/mouse2_slice139.h5ad",
+            "role": "slice",
+            "size_bytes": 2697401
+          },
+          {
+            "asset_id": "mouse2_slice151",
+            "exists": true,
+            "mtime_ns": 1789436281257311709,
+            "path": "benchmarks/spatial_alignment/compiled_data/mop_paper/mouse2_slice151.h5ad",
+            "role": "slice",
+            "size_bytes": 3551673
+          },
+          {
+            "asset_id": "mouse2_slice160",
+            "exists": true,
+            "mtime_ns": 1789436281347951860,
+            "path": "benchmarks/spatial_alignment/compiled_data/mop_paper/mouse2_slice160.h5ad",
+            "role": "slice",
+            "size_bytes": 2956661
+          },
+          {
+            "asset_id": "mouse2_slice169",
+            "exists": true,
+            "mtime_ns": 1789436281458629049,
+            "path": "benchmarks/spatial_alignment/compiled_data/mop_paper/mouse2_slice169.h5ad",
+            "role": "slice",
+            "size_bytes": 3615872
+          },
+          {
+            "asset_id": "mouse2_slice189",
+            "exists": true,
+            "mtime_ns": 1789436281546957659,
+            "path": "benchmarks/spatial_alignment/compiled_data/mop_paper/mouse2_slice189.h5ad",
+            "role": "slice",
+            "size_bytes": 2956083
+          },
+          {
+            "asset_id": "mouse2_slice201",
+            "exists": true,
+            "mtime_ns": 1789436281632672311,
+            "path": "benchmarks/spatial_alignment/compiled_data/mop_paper/mouse2_slice201.h5ad",
+            "role": "slice",
+            "size_bytes": 2423240
+          },
+          {
+            "asset_id": "mouse2_slice209",
+            "exists": true,
+            "mtime_ns": 1789436281720999295,
+            "path": "benchmarks/spatial_alignment/compiled_data/mop_paper/mouse2_slice209.h5ad",
+            "role": "slice",
+            "size_bytes": 2997890
+          },
+          {
+            "asset_id": "mouse2_slice219",
+            "exists": true,
+            "mtime_ns": 1789436281792675241,
+            "path": "benchmarks/spatial_alignment/compiled_data/mop_paper/mouse2_slice219.h5ad",
+            "role": "slice",
+            "size_bytes": 2353108
+          },
+          {
+            "asset_id": "mouse2_slice229",
+            "exists": true,
+            "mtime_ns": 1789436281889024975,
+            "path": "benchmarks/spatial_alignment/compiled_data/mop_paper/mouse2_slice229.h5ad",
+            "role": "slice",
+            "size_bytes": 3487779
+          },
+          {
+            "asset_id": "mouse2_slice249",
+            "exists": true,
+            "mtime_ns": 1789436281970667210,
+            "path": "benchmarks/spatial_alignment/compiled_data/mop_paper/mouse2_slice249.h5ad",
+            "role": "slice",
+            "size_bytes": 2744535
+          },
+          {
+            "asset_id": "mouse2_slice261",
+            "exists": true,
+            "mtime_ns": 1789436282040675740,
+            "path": "benchmarks/spatial_alignment/compiled_data/mop_paper/mouse2_slice261.h5ad",
+            "role": "slice",
+            "size_bytes": 2231866
+          },
+          {
+            "asset_id": "mouse2_slice270",
+            "exists": true,
+            "mtime_ns": 1789436282124233309,
+            "path": "benchmarks/spatial_alignment/compiled_data/mop_paper/mouse2_slice270.h5ad",
+            "role": "slice",
+            "size_bytes": 2796343
+          },
+          {
+            "asset_id": "mouse2_slice280",
+            "exists": true,
+            "mtime_ns": 1789436282195276213,
+            "path": "benchmarks/spatial_alignment/compiled_data/mop_paper/mouse2_slice280.h5ad",
+            "role": "slice",
+            "size_bytes": 2540089
+          },
+          {
+            "asset_id": "mouse2_slice289",
+            "exists": true,
+            "mtime_ns": 1789436282283898364,
+            "path": "benchmarks/spatial_alignment/compiled_data/mop_paper/mouse2_slice289.h5ad",
+            "role": "slice",
+            "size_bytes": 2893096
+          },
+          {
+            "asset_id": "mouse2_slice300",
+            "exists": true,
+            "mtime_ns": 1789436282361558143,
+            "path": "benchmarks/spatial_alignment/compiled_data/mop_paper/mouse2_slice300.h5ad",
+            "role": "slice",
+            "size_bytes": 2579417
+          },
+          {
+            "asset_id": "mouse2_slice309",
+            "exists": true,
+            "mtime_ns": 1789436282423792882,
+            "path": "benchmarks/spatial_alignment/compiled_data/mop_paper/mouse2_slice309.h5ad",
+            "role": "slice",
+            "size_bytes": 2198797
+          },
+          {
+            "asset_id": "mouse2_slice319",
+            "exists": true,
+            "mtime_ns": 1789436282518957490,
+            "path": "benchmarks/spatial_alignment/compiled_data/mop_paper/mouse2_slice319.h5ad",
+            "role": "slice",
+            "size_bytes": 1782589
+          }
+        ],
+        "instruction_nonempty": true,
+        "instruction_present": true,
+        "marker_gene_file": {
+          "exists": true,
+          "mtime_ns": 1777087103911527922,
+          "path": "benchmarks/spatial_alignment/tasks/sa-021-mop-mouse2-atlas-serial-align/data/marker_genes.csv",
+          "size_bytes": 636
+        },
+        "public_score_split": "train",
+        "score_split": "eval",
+        "split_manifest": {
+          "exists": true,
+          "mtime_ns": 1777087104764605763,
+          "path": "benchmarks/spatial_alignment/tasks/sa-021-mop-mouse2-atlas-serial-align/data/split_manifest.json",
+          "size_bytes": 476
+        },
+        "split_manifest_schema": "paper2bench.split_manifest.v0.1",
+        "split_visibility": "scorer_only",
+        "task_id_matches_directory": true
+      },
+      "hashes": {
+        "definition_hash": "445b7186afc1f7eec478c043f4ce708a606564fce0f5fdf70281a1b210fd0401"
+      },
+      "issues": [],
+      "ok": true,
+      "task_id": "sa-021-mop-mouse2-atlas-serial-align",
+      "task_path": "benchmarks/spatial_alignment/tasks/sa-021-mop-mouse2-atlas-serial-align/task.toml"
+    },
+    {
+      "checks": {
+        "asset_count": 19,
+        "assets": [
+          {
+            "asset_id": "openst_mln_section02",
+            "exists": true,
+            "mtime_ns": 1777086960835456686,
+            "path": "benchmarks/spatial_alignment/compiled_data/openst_mln/section_02.h5ad",
+            "role": "slice",
+            "size_bytes": 134386845
+          },
+          {
+            "asset_id": "openst_mln_section03",
+            "exists": true,
+            "mtime_ns": 1777086965086993222,
+            "path": "benchmarks/spatial_alignment/compiled_data/openst_mln/section_03.h5ad",
+            "role": "slice",
+            "size_bytes": 125789979
+          },
+          {
+            "asset_id": "openst_mln_section04",
+            "exists": true,
+            "mtime_ns": 1777086956146105558,
+            "path": "benchmarks/spatial_alignment/compiled_data/openst_mln/section_04.h5ad",
+            "role": "slice",
+            "size_bytes": 257219608
+          },
+          {
+            "asset_id": "openst_mln_section05",
+            "exists": true,
+            "mtime_ns": 1777086968471119279,
+            "path": "benchmarks/spatial_alignment/compiled_data/openst_mln/section_05.h5ad",
+            "role": "slice",
+            "size_bytes": 100067500
+          },
+          {
+            "asset_id": "openst_mln_section06",
+            "exists": true,
+            "mtime_ns": 1777086971489692287,
+            "path": "benchmarks/spatial_alignment/compiled_data/openst_mln/section_06.h5ad",
+            "role": "slice",
+            "size_bytes": 89220590
+          },
+          {
+            "asset_id": "openst_mln_section07",
+            "exists": true,
+            "mtime_ns": 1777086974920253197,
+            "path": "benchmarks/spatial_alignment/compiled_data/openst_mln/section_07.h5ad",
+            "role": "slice",
+            "size_bytes": 97811293
+          },
+          {
+            "asset_id": "openst_mln_section09",
+            "exists": true,
+            "mtime_ns": 1777086979639753812,
+            "path": "benchmarks/spatial_alignment/compiled_data/openst_mln/section_09.h5ad",
+            "role": "slice",
+            "size_bytes": 136324564
+          },
+          {
+            "asset_id": "openst_mln_section11",
+            "exists": true,
+            "mtime_ns": 1777086985723615147,
+            "path": "benchmarks/spatial_alignment/compiled_data/openst_mln/section_11.h5ad",
+            "role": "slice",
+            "size_bytes": 177029921
+          },
+          {
+            "asset_id": "openst_mln_section17",
+            "exists": true,
+            "mtime_ns": 1777086991655549216,
+            "path": "benchmarks/spatial_alignment/compiled_data/openst_mln/section_17.h5ad",
+            "role": "slice",
+            "size_bytes": 171285598
+          },
+          {
+            "asset_id": "openst_mln_section18",
+            "exists": true,
+            "mtime_ns": 1777086999051033105,
+            "path": "benchmarks/spatial_alignment/compiled_data/openst_mln/section_18.h5ad",
+            "role": "slice",
+            "size_bytes": 212649179
+          },
+          {
+            "asset_id": "openst_mln_section19",
+            "exists": true,
+            "mtime_ns": 1777087001521999769,
+            "path": "benchmarks/spatial_alignment/compiled_data/openst_mln/section_19.h5ad",
+            "role": "slice",
+            "size_bytes": 74120549
+          },
+          {
+            "asset_id": "openst_mln_section23",
+            "exists": true,
+            "mtime_ns": 1777087007058715566,
+            "path": "benchmarks/spatial_alignment/compiled_data/openst_mln/section_23.h5ad",
+            "role": "slice",
+            "size_bytes": 158957393
+          },
+          {
+            "asset_id": "openst_mln_section24",
+            "exists": true,
+            "mtime_ns": 1777087012712455915,
+            "path": "benchmarks/spatial_alignment/compiled_data/openst_mln/section_24.h5ad",
+            "role": "slice",
+            "size_bytes": 161199181
+          },
+          {
+            "asset_id": "openst_mln_section25",
+            "exists": true,
+            "mtime_ns": 1777087015629138742,
+            "path": "benchmarks/spatial_alignment/compiled_data/openst_mln/section_25.h5ad",
+            "role": "slice",
+            "size_bytes": 85501031
+          },
+          {
+            "asset_id": "openst_mln_section26",
+            "exists": true,
+            "mtime_ns": 1777087022900660287,
+            "path": "benchmarks/spatial_alignment/compiled_data/openst_mln/section_26.h5ad",
+            "role": "slice",
+            "size_bytes": 207991902
+          },
+          {
+            "asset_id": "openst_mln_section28",
+            "exists": true,
+            "mtime_ns": 1777087028632858990,
+            "path": "benchmarks/spatial_alignment/compiled_data/openst_mln/section_28.h5ad",
+            "role": "slice",
+            "size_bytes": 161472524
+          },
+          {
+            "asset_id": "openst_mln_section33",
+            "exists": true,
+            "mtime_ns": 1777087034179738924,
+            "path": "benchmarks/spatial_alignment/compiled_data/openst_mln/section_33.h5ad",
+            "role": "slice",
+            "size_bytes": 158032944
+          },
+          {
+            "asset_id": "openst_mln_section34",
+            "exists": true,
+            "mtime_ns": 1777087038485045324,
+            "path": "benchmarks/spatial_alignment/compiled_data/openst_mln/section_34.h5ad",
+            "role": "slice",
+            "size_bytes": 126047207
+          },
+          {
+            "asset_id": "openst_mln_section36",
+            "exists": true,
+            "mtime_ns": 1777087041602523299,
+            "path": "benchmarks/spatial_alignment/compiled_data/openst_mln/section_36.h5ad",
+            "role": "slice",
+            "size_bytes": 91035766
+          }
+        ],
+        "instruction_nonempty": true,
+        "instruction_present": true,
+        "marker_gene_file": {
+          "exists": true,
+          "mtime_ns": 1789436383776410258,
+          "path": "benchmarks/spatial_alignment/tasks/sa-022-openst-mln-serial-align/data/marker_genes.csv",
+          "size_bytes": 267839
+        },
+        "public_score_split": "train",
+        "score_split": "eval",
+        "split_manifest": {
+          "exists": true,
+          "mtime_ns": 1789436383776700049,
+          "path": "benchmarks/spatial_alignment/tasks/sa-022-openst-mln-serial-align/data/split_manifest.json",
+          "size_bytes": 470
+        },
+        "split_manifest_schema": "paper2bench.split_manifest.v0.1",
+        "split_visibility": "scorer_only",
+        "task_id_matches_directory": true
+      },
+      "hashes": {
+        "definition_hash": "b6a8fd2354176af9033b206db3659e5fc22560c35959dd5e3abb97cfec8d505e"
+      },
+      "issues": [],
+      "ok": true,
+      "task_id": "sa-022-openst-mln-serial-align",
+      "task_path": "benchmarks/spatial_alignment/tasks/sa-022-openst-mln-serial-align/task.toml"
+    },
+    {
+      "checks": {
+        "asset_count": 129,
+        "assets": [
+          {
+            "asset_id": "wmb_sec010",
+            "exists": true,
+            "mtime_ns": 1777093287231340647,
+            "path": "/Users/yiqun/Downloads/paper2bench-data/wmb_zhuang_abca1/wmb_zhuang_abca1_sec010.h5ad",
+            "role": "slice",
+            "size_bytes": 36798561
+          },
+          {
+            "asset_id": "wmb_sec011",
+            "exists": true,
+            "mtime_ns": 1777093288873273943,
+            "path": "/Users/yiqun/Downloads/paper2bench-data/wmb_zhuang_abca1/wmb_zhuang_abca1_sec011.h5ad",
+            "role": "slice",
+            "size_bytes": 34824150
+          },
+          {
+            "asset_id": "wmb_sec012",
+            "exists": true,
+            "mtime_ns": 1777093290515574624,
+            "path": "/Users/yiqun/Downloads/paper2bench-data/wmb_zhuang_abca1/wmb_zhuang_abca1_sec012.h5ad",
+            "role": "slice",
+            "size_bytes": 36858114
+          },
+          {
+            "asset_id": "wmb_sec013",
+            "exists": true,
+            "mtime_ns": 1777093292479638041,
+            "path": "/Users/yiqun/Downloads/paper2bench-data/wmb_zhuang_abca1/wmb_zhuang_abca1_sec013.h5ad",
+            "role": "slice",
+            "size_bytes": 47055420
+          },
+          {
+            "asset_id": "wmb_sec014",
+            "exists": true,
+            "mtime_ns": 1777093294565742745,
+            "path": "/Users/yiqun/Downloads/paper2bench-data/wmb_zhuang_abca1/wmb_zhuang_abca1_sec014.h5ad",
+            "role": "slice",
+            "size_bytes": 50821002
+          },
+          {
+            "asset_id": "wmb_sec015",
+            "exists": true,
+            "mtime_ns": 1777093296373452680,
+            "path": "/Users/yiqun/Downloads/paper2bench-data/wmb_zhuang_abca1/wmb_zhuang_abca1_sec015.h5ad",
+            "role": "slice",
+            "size_bytes": 50816421
+          },
+          {
+            "asset_id": "wmb_sec016",
+            "exists": true,
+            "mtime_ns": 1777093298190813239,
+            "path": "/Users/yiqun/Downloads/paper2bench-data/wmb_zhuang_abca1/wmb_zhuang_abca1_sec016.h5ad",
+            "role": "slice",
+            "size_bytes": 42859224
+          },
+          {
+            "asset_id": "wmb_sec017",
+            "exists": true,
+            "mtime_ns": 1777093299815840069,
+            "path": "/Users/yiqun/Downloads/paper2bench-data/wmb_zhuang_abca1/wmb_zhuang_abca1_sec017.h5ad",
+            "role": "slice",
+            "size_bytes": 38475207
+          },
+          {
+            "asset_id": "wmb_sec018",
+            "exists": true,
+            "mtime_ns": 1777093301578023388,
+            "path": "/Users/yiqun/Downloads/paper2bench-data/wmb_zhuang_abca1/wmb_zhuang_abca1_sec018.h5ad",
+            "role": "slice",
+            "size_bytes": 49968936
+          },
+          {
+            "asset_id": "wmb_sec019",
+            "exists": true,
+            "mtime_ns": 1777093303333432505,
+            "path": "/Users/yiqun/Downloads/paper2bench-data/wmb_zhuang_abca1/wmb_zhuang_abca1_sec019.h5ad",
+            "role": "slice",
+            "size_bytes": 36276327
+          },
+          {
+            "asset_id": "wmb_sec020",
+            "exists": true,
+            "mtime_ns": 1777093305201722133,
+            "path": "/Users/yiqun/Downloads/paper2bench-data/wmb_zhuang_abca1/wmb_zhuang_abca1_sec020.h5ad",
+            "role": "slice",
+            "size_bytes": 53789490
+          },
+          {
+            "asset_id": "wmb_sec021",
+            "exists": true,
+            "mtime_ns": 1777093307387675331,
+            "path": "/Users/yiqun/Downloads/paper2bench-data/wmb_zhuang_abca1/wmb_zhuang_abca1_sec021.h5ad",
+            "role": "slice",
+            "size_bytes": 50678991
+          },
+          {
+            "asset_id": "wmb_sec022",
+            "exists": true,
+            "mtime_ns": 1777093309601033726,
+            "path": "/Users/yiqun/Downloads/paper2bench-data/wmb_zhuang_abca1/wmb_zhuang_abca1_sec022.h5ad",
+            "role": "slice",
+            "size_bytes": 49625361
+          },
+          {
+            "asset_id": "wmb_sec023",
+            "exists": true,
+            "mtime_ns": 1777093311255290934,
+            "path": "/Users/yiqun/Downloads/paper2bench-data/wmb_zhuang_abca1/wmb_zhuang_abca1_sec023.h5ad",
+            "role": "slice",
+            "size_bytes": 39753306
+          },
+          {
+            "asset_id": "wmb_sec024",
+            "exists": true,
+            "mtime_ns": 1777093313125806378,
+            "path": "/Users/yiqun/Downloads/paper2bench-data/wmb_zhuang_abca1/wmb_zhuang_abca1_sec024.h5ad",
+            "role": "slice",
+            "size_bytes": 45749835
+          },
+          {
+            "asset_id": "wmb_sec025",
+            "exists": true,
+            "mtime_ns": 1777093315222065678,
+            "path": "/Users/yiqun/Downloads/paper2bench-data/wmb_zhuang_abca1/wmb_zhuang_abca1_sec025.h5ad",
+            "role": "slice",
+            "size_bytes": 44654976
+          },
+          {
+            "asset_id": "wmb_sec026",
+            "exists": true,
+            "mtime_ns": 1777093317852250285,
+            "path": "/Users/yiqun/Downloads/paper2bench-data/wmb_zhuang_abca1/wmb_zhuang_abca1_sec026.h5ad",
+            "role": "slice",
+            "size_bytes": 41095539
+          },
+          {
+            "asset_id": "wmb_sec027",
+            "exists": true,
+            "mtime_ns": 1777093320217446111,
+            "path": "/Users/yiqun/Downloads/paper2bench-data/wmb_zhuang_abca1/wmb_zhuang_abca1_sec027.h5ad",
+            "role": "slice",
+            "size_bytes": 32203818
+          },
+          {
+            "asset_id": "wmb_sec028",
+            "exists": true,
+            "mtime_ns": 1777093323065130410,
+            "path": "/Users/yiqun/Downloads/paper2bench-data/wmb_zhuang_abca1/wmb_zhuang_abca1_sec028.h5ad",
+            "role": "slice",
+            "size_bytes": 49753629
+          },
+          {
+            "asset_id": "wmb_sec029",
+            "exists": true,
+            "mtime_ns": 1777093325393733345,
+            "path": "/Users/yiqun/Downloads/paper2bench-data/wmb_zhuang_abca1/wmb_zhuang_abca1_sec029.h5ad",
+            "role": "slice",
+            "size_bytes": 36743589
+          },
+          {
+            "asset_id": "wmb_sec030",
+            "exists": true,
+            "mtime_ns": 1777093328348865909,
+            "path": "/Users/yiqun/Downloads/paper2bench-data/wmb_zhuang_abca1/wmb_zhuang_abca1_sec030.h5ad",
+            "role": "slice",
+            "size_bytes": 50935527
+          },
+          {
+            "asset_id": "wmb_sec031",
+            "exists": true,
+            "mtime_ns": 1777093331289384243,
+            "path": "/Users/yiqun/Downloads/paper2bench-data/wmb_zhuang_abca1/wmb_zhuang_abca1_sec031.h5ad",
+            "role": "slice",
+            "size_bytes": 48109050
+          },
+          {
+            "asset_id": "wmb_sec032",
+            "exists": true,
+            "mtime_ns": 1777093334335285404,
+            "path": "/Users/yiqun/Downloads/paper2bench-data/wmb_zhuang_abca1/wmb_zhuang_abca1_sec032.h5ad",
+            "role": "slice",
+            "size_bytes": 43784586
+          },
+          {
+            "asset_id": "wmb_sec033",
+            "exists": true,
+            "mtime_ns": 1777093337781162314,
+            "path": "/Users/yiqun/Downloads/paper2bench-data/wmb_zhuang_abca1/wmb_zhuang_abca1_sec033.h5ad",
+            "role": "slice",
+            "size_bytes": 49588713
+          },
+          {
+            "asset_id": "wmb_sec034",
+            "exists": true,
+            "mtime_ns": 1777093341340370707,
+            "path": "/Users/yiqun/Downloads/paper2bench-data/wmb_zhuang_abca1/wmb_zhuang_abca1_sec034.h5ad",
+            "role": "slice",
+            "size_bytes": 47595978
+          },
+          {
+            "asset_id": "wmb_sec035",
+            "exists": true,
+            "mtime_ns": 1777093344673613321,
+            "path": "/Users/yiqun/Downloads/paper2bench-data/wmb_zhuang_abca1/wmb_zhuang_abca1_sec035.h5ad",
+            "role": "slice",
+            "size_bytes": 46716426
+          },
+          {
+            "asset_id": "wmb_sec036",
+            "exists": true,
+            "mtime_ns": 1777093348113214668,
+            "path": "/Users/yiqun/Downloads/paper2bench-data/wmb_zhuang_abca1/wmb_zhuang_abca1_sec036.h5ad",
+            "role": "slice",
+            "size_bytes": 43120341
+          },
+          {
+            "asset_id": "wmb_sec037",
+            "exists": true,
+            "mtime_ns": 1777093350899541459,
+            "path": "/Users/yiqun/Downloads/paper2bench-data/wmb_zhuang_abca1/wmb_zhuang_abca1_sec037.h5ad",
+            "role": "slice",
+            "size_bytes": 36899343
+          },
+          {
+            "asset_id": "wmb_sec038",
+            "exists": true,
+            "mtime_ns": 1777093354284303620,
+            "path": "/Users/yiqun/Downloads/paper2bench-data/wmb_zhuang_abca1/wmb_zhuang_abca1_sec038.h5ad",
+            "role": "slice",
+            "size_bytes": 52676307
+          },
+          {
+            "asset_id": "wmb_sec039",
+            "exists": true,
+            "mtime_ns": 1777093357386926024,
+            "path": "/Users/yiqun/Downloads/paper2bench-data/wmb_zhuang_abca1/wmb_zhuang_abca1_sec039.h5ad",
+            "role": "slice",
+            "size_bytes": 47573073
+          },
+          {
+            "asset_id": "wmb_sec040",
+            "exists": true,
+            "mtime_ns": 1777093360890864801,
+            "path": "/Users/yiqun/Downloads/paper2bench-data/wmb_zhuang_abca1/wmb_zhuang_abca1_sec040.h5ad",
+            "role": "slice",
+            "size_bytes": 60917526
+          },
+          {
+            "asset_id": "wmb_sec041",
+            "exists": true,
+            "mtime_ns": 1777093364254794586,
+            "path": "/Users/yiqun/Downloads/paper2bench-data/wmb_zhuang_abca1/wmb_zhuang_abca1_sec041.h5ad",
+            "role": "slice",
+            "size_bytes": 56391498
+          },
+          {
+            "asset_id": "wmb_sec042",
+            "exists": true,
+            "mtime_ns": 1777093367908803655,
+            "path": "/Users/yiqun/Downloads/paper2bench-data/wmb_zhuang_abca1/wmb_zhuang_abca1_sec042.h5ad",
+            "role": "slice",
+            "size_bytes": 66094056
+          },
+          {
+            "asset_id": "wmb_sec043",
+            "exists": true,
+            "mtime_ns": 1777093371562062036,
+            "path": "/Users/yiqun/Downloads/paper2bench-data/wmb_zhuang_abca1/wmb_zhuang_abca1_sec043.h5ad",
+            "role": "slice",
+            "size_bytes": 68637742
+          },
+          {
+            "asset_id": "wmb_sec044",
+            "exists": true,
+            "mtime_ns": 1777093375572115370,
+            "path": "/Users/yiqun/Downloads/paper2bench-data/wmb_zhuang_abca1/wmb_zhuang_abca1_sec044.h5ad",
+            "role": "slice",
+            "size_bytes": 79684944
+          },
+          {
+            "asset_id": "wmb_sec045",
+            "exists": true,
+            "mtime_ns": 1777093379361886555,
+            "path": "/Users/yiqun/Downloads/paper2bench-data/wmb_zhuang_abca1/wmb_zhuang_abca1_sec045.h5ad",
+            "role": "slice",
+            "size_bytes": 66044330
+          },
+          {
+            "asset_id": "wmb_sec046",
+            "exists": true,
+            "mtime_ns": 1777093383884515556,
+            "path": "/Users/yiqun/Downloads/paper2bench-data/wmb_zhuang_abca1/wmb_zhuang_abca1_sec046.h5ad",
+            "role": "slice",
+            "size_bytes": 98874360
+          },
+          {
+            "asset_id": "wmb_sec047",
+            "exists": true,
+            "mtime_ns": 1777093388170439874,
+            "path": "/Users/yiqun/Downloads/paper2bench-data/wmb_zhuang_abca1/wmb_zhuang_abca1_sec047.h5ad",
+            "role": "slice",
+            "size_bytes": 94844561
+          },
+          {
+            "asset_id": "wmb_sec048",
+            "exists": true,
+            "mtime_ns": 1777093392562017819,
+            "path": "/Users/yiqun/Downloads/paper2bench-data/wmb_zhuang_abca1/wmb_zhuang_abca1_sec048.h5ad",
+            "role": "slice",
+            "size_bytes": 95742829
+          },
+          {
+            "asset_id": "wmb_sec049",
+            "exists": true,
+            "mtime_ns": 1777093396934025927,
+            "path": "/Users/yiqun/Downloads/paper2bench-data/wmb_zhuang_abca1/wmb_zhuang_abca1_sec049.h5ad",
+            "role": "slice",
+            "size_bytes": 93868382
+          },
+          {
+            "asset_id": "wmb_sec050",
+            "exists": true,
+            "mtime_ns": 1777093401681640053,
+            "path": "/Users/yiqun/Downloads/paper2bench-data/wmb_zhuang_abca1/wmb_zhuang_abca1_sec050.h5ad",
+            "role": "slice",
+            "size_bytes": 109313092
+          },
+          {
+            "asset_id": "wmb_sec051",
+            "exists": true,
+            "mtime_ns": 1777093406000314353,
+            "path": "/Users/yiqun/Downloads/paper2bench-data/wmb_zhuang_abca1/wmb_zhuang_abca1_sec051.h5ad",
+            "role": "slice",
+            "size_bytes": 96214878
+          },
+          {
+            "asset_id": "wmb_sec052",
+            "exists": true,
+            "mtime_ns": 1777093410794458957,
+            "path": "/Users/yiqun/Downloads/paper2bench-data/wmb_zhuang_abca1/wmb_zhuang_abca1_sec052.h5ad",
+            "role": "slice",
+            "size_bytes": 110032623
+          },
+          {
+            "asset_id": "wmb_sec053",
+            "exists": true,
+            "mtime_ns": 1777093415437915542,
+            "path": "/Users/yiqun/Downloads/paper2bench-data/wmb_zhuang_abca1/wmb_zhuang_abca1_sec053.h5ad",
+            "role": "slice",
+            "size_bytes": 112699929
+          },
+          {
+            "asset_id": "wmb_sec054",
+            "exists": true,
+            "mtime_ns": 1777093420110896554,
+            "path": "/Users/yiqun/Downloads/paper2bench-data/wmb_zhuang_abca1/wmb_zhuang_abca1_sec054.h5ad",
+            "role": "slice",
+            "size_bytes": 116600062
+          },
+          {
+            "asset_id": "wmb_sec055",
+            "exists": true,
+            "mtime_ns": 1777093424425942870,
+            "path": "/Users/yiqun/Downloads/paper2bench-data/wmb_zhuang_abca1/wmb_zhuang_abca1_sec055.h5ad",
+            "role": "slice",
+            "size_bytes": 81865505
+          },
+          {
+            "asset_id": "wmb_sec056",
+            "exists": true,
+            "mtime_ns": 1777093429116983340,
+            "path": "/Users/yiqun/Downloads/paper2bench-data/wmb_zhuang_abca1/wmb_zhuang_abca1_sec056.h5ad",
+            "role": "slice",
+            "size_bytes": 104510108
+          },
+          {
+            "asset_id": "wmb_sec057",
+            "exists": true,
+            "mtime_ns": 1777093433945155215,
+            "path": "/Users/yiqun/Downloads/paper2bench-data/wmb_zhuang_abca1/wmb_zhuang_abca1_sec057.h5ad",
+            "role": "slice",
+            "size_bytes": 114717204
+          },
+          {
+            "asset_id": "wmb_sec058",
+            "exists": true,
+            "mtime_ns": 1777093438533217804,
+            "path": "/Users/yiqun/Downloads/paper2bench-data/wmb_zhuang_abca1/wmb_zhuang_abca1_sec058.h5ad",
+            "role": "slice",
+            "size_bytes": 120275694
+          },
+          {
+            "asset_id": "wmb_sec059",
+            "exists": true,
+            "mtime_ns": 1777093442983974400,
+            "path": "/Users/yiqun/Downloads/paper2bench-data/wmb_zhuang_abca1/wmb_zhuang_abca1_sec059.h5ad",
+            "role": "slice",
+            "size_bytes": 108938394
+          },
+          {
+            "asset_id": "wmb_sec060",
+            "exists": true,
+            "mtime_ns": 1777093448272925765,
+            "path": "/Users/yiqun/Downloads/paper2bench-data/wmb_zhuang_abca1/wmb_zhuang_abca1_sec060.h5ad",
+            "role": "slice",
+            "size_bytes": 130020264
+          },
+          {
+            "asset_id": "wmb_sec061",
+            "exists": true,
+            "mtime_ns": 1777093453318073483,
+            "path": "/Users/yiqun/Downloads/paper2bench-data/wmb_zhuang_abca1/wmb_zhuang_abca1_sec061.h5ad",
+            "role": "slice",
+            "size_bytes": 123731964
+          },
+          {
+            "asset_id": "wmb_sec062",
+            "exists": true,
+            "mtime_ns": 1777093458386440438,
+            "path": "/Users/yiqun/Downloads/paper2bench-data/wmb_zhuang_abca1/wmb_zhuang_abca1_sec062.h5ad",
+            "role": "slice",
+            "size_bytes": 131204484
+          },
+          {
+            "asset_id": "wmb_sec063",
+            "exists": true,
+            "mtime_ns": 1777093463668261047,
+            "path": "/Users/yiqun/Downloads/paper2bench-data/wmb_zhuang_abca1/wmb_zhuang_abca1_sec063.h5ad",
+            "role": "slice",
+            "size_bytes": 120041604
+          },
+          {
+            "asset_id": "wmb_sec064",
+            "exists": true,
+            "mtime_ns": 1777093469439596340,
+            "path": "/Users/yiqun/Downloads/paper2bench-data/wmb_zhuang_abca1/wmb_zhuang_abca1_sec064.h5ad",
+            "role": "slice",
+            "size_bytes": 142192944
+          },
+          {
+            "asset_id": "wmb_sec065",
+            "exists": true,
+            "mtime_ns": 1777093473868409360,
+            "path": "/Users/yiqun/Downloads/paper2bench-data/wmb_zhuang_abca1/wmb_zhuang_abca1_sec065.h5ad",
+            "role": "slice",
+            "size_bytes": 90289224
+          },
+          {
+            "asset_id": "wmb_sec066",
+            "exists": true,
+            "mtime_ns": 1777093479229387136,
+            "path": "/Users/yiqun/Downloads/paper2bench-data/wmb_zhuang_abca1/wmb_zhuang_abca1_sec066.h5ad",
+            "role": "slice",
+            "size_bytes": 122575284
+          },
+          {
+            "asset_id": "wmb_sec067",
+            "exists": true,
+            "mtime_ns": 1777093484466327231,
+            "path": "/Users/yiqun/Downloads/paper2bench-data/wmb_zhuang_abca1/wmb_zhuang_abca1_sec067.h5ad",
+            "role": "slice",
+            "size_bytes": 125297154
+          },
+          {
+            "asset_id": "wmb_sec068",
+            "exists": true,
+            "mtime_ns": 1777093489466279275,
+            "path": "/Users/yiqun/Downloads/paper2bench-data/wmb_zhuang_abca1/wmb_zhuang_abca1_sec068.h5ad",
+            "role": "slice",
+            "size_bytes": 129767814
+          },
+          {
+            "asset_id": "wmb_sec069",
+            "exists": true,
+            "mtime_ns": 1777093494348994625,
+            "path": "/Users/yiqun/Downloads/paper2bench-data/wmb_zhuang_abca1/wmb_zhuang_abca1_sec069.h5ad",
+            "role": "slice",
+            "size_bytes": 102475674
+          },
+          {
+            "asset_id": "wmb_sec070",
+            "exists": true,
+            "mtime_ns": 1777093499960305968,
+            "path": "/Users/yiqun/Downloads/paper2bench-data/wmb_zhuang_abca1/wmb_zhuang_abca1_sec070.h5ad",
+            "role": "slice",
+            "size_bytes": 126697104
+          },
+          {
+            "asset_id": "wmb_sec071",
+            "exists": true,
+            "mtime_ns": 1777093505573271329,
+            "path": "/Users/yiqun/Downloads/paper2bench-data/wmb_zhuang_abca1/wmb_zhuang_abca1_sec071.h5ad",
+            "role": "slice",
+            "size_bytes": 119651454
+          },
+          {
+            "asset_id": "wmb_sec072",
+            "exists": true,
+            "mtime_ns": 1777093510597866432,
+            "path": "/Users/yiqun/Downloads/paper2bench-data/wmb_zhuang_abca1/wmb_zhuang_abca1_sec072.h5ad",
+            "role": "slice",
+            "size_bytes": 111453714
+          },
+          {
+            "asset_id": "wmb_sec073",
+            "exists": true,
+            "mtime_ns": 1777093516201105954,
+            "path": "/Users/yiqun/Downloads/paper2bench-data/wmb_zhuang_abca1/wmb_zhuang_abca1_sec073.h5ad",
+            "role": "slice",
+            "size_bytes": 113188734
+          },
+          {
+            "asset_id": "wmb_sec074",
+            "exists": true,
+            "mtime_ns": 1777093521568114668,
+            "path": "/Users/yiqun/Downloads/paper2bench-data/wmb_zhuang_abca1/wmb_zhuang_abca1_sec074.h5ad",
+            "role": "slice",
+            "size_bytes": 125035524
+          },
+          {
+            "asset_id": "wmb_sec076",
+            "exists": true,
+            "mtime_ns": 1777093527137100738,
+            "path": "/Users/yiqun/Downloads/paper2bench-data/wmb_zhuang_abca1/wmb_zhuang_abca1_sec076.h5ad",
+            "role": "slice",
+            "size_bytes": 126977094
+          },
+          {
+            "asset_id": "wmb_sec077",
+            "exists": true,
+            "mtime_ns": 1777093532996521431,
+            "path": "/Users/yiqun/Downloads/paper2bench-data/wmb_zhuang_abca1/wmb_zhuang_abca1_sec077.h5ad",
+            "role": "slice",
+            "size_bytes": 140168754
+          },
+          {
+            "asset_id": "wmb_sec078",
+            "exists": true,
+            "mtime_ns": 1777093539190312864,
+            "path": "/Users/yiqun/Downloads/paper2bench-data/wmb_zhuang_abca1/wmb_zhuang_abca1_sec078.h5ad",
+            "role": "slice",
+            "size_bytes": 157463874
+          },
+          {
+            "asset_id": "wmb_sec079",
+            "exists": true,
+            "mtime_ns": 1777093545050362050,
+            "path": "/Users/yiqun/Downloads/paper2bench-data/wmb_zhuang_abca1/wmb_zhuang_abca1_sec079.h5ad",
+            "role": "slice",
+            "size_bytes": 145387584
+          },
+          {
+            "asset_id": "wmb_sec080",
+            "exists": true,
+            "mtime_ns": 1777093551510419018,
+            "path": "/Users/yiqun/Downloads/paper2bench-data/wmb_zhuang_abca1/wmb_zhuang_abca1_sec080.h5ad",
+            "role": "slice",
+            "size_bytes": 168186114
+          },
+          {
+            "asset_id": "wmb_sec081",
+            "exists": true,
+            "mtime_ns": 1777093557072659753,
+            "path": "/Users/yiqun/Downloads/paper2bench-data/wmb_zhuang_abca1/wmb_zhuang_abca1_sec081.h5ad",
+            "role": "slice",
+            "size_bytes": 138236364
+          },
+          {
+            "asset_id": "wmb_sec082",
+            "exists": true,
+            "mtime_ns": 1777093562829657736,
+            "path": "/Users/yiqun/Downloads/paper2bench-data/wmb_zhuang_abca1/wmb_zhuang_abca1_sec082.h5ad",
+            "role": "slice",
+            "size_bytes": 122749704
+          },
+          {
+            "asset_id": "wmb_sec083",
+            "exists": true,
+            "mtime_ns": 1777093568586566963,
+            "path": "/Users/yiqun/Downloads/paper2bench-data/wmb_zhuang_abca1/wmb_zhuang_abca1_sec083.h5ad",
+            "role": "slice",
+            "size_bytes": 138667824
+          },
+          {
+            "asset_id": "wmb_sec084",
+            "exists": true,
+            "mtime_ns": 1777093573965125256,
+            "path": "/Users/yiqun/Downloads/paper2bench-data/wmb_zhuang_abca1/wmb_zhuang_abca1_sec084.h5ad",
+            "role": "slice",
+            "size_bytes": 127656414
+          },
+          {
+            "asset_id": "wmb_sec085",
+            "exists": true,
+            "mtime_ns": 1777093579654590996,
+            "path": "/Users/yiqun/Downloads/paper2bench-data/wmb_zhuang_abca1/wmb_zhuang_abca1_sec085.h5ad",
+            "role": "slice",
+            "size_bytes": 145901664
+          },
+          {
+            "asset_id": "wmb_sec086",
+            "exists": true,
+            "mtime_ns": 1777093585446915715,
+            "path": "/Users/yiqun/Downloads/paper2bench-data/wmb_zhuang_abca1/wmb_zhuang_abca1_sec086.h5ad",
+            "role": "slice",
+            "size_bytes": 136909854
+          },
+          {
+            "asset_id": "wmb_sec087",
+            "exists": true,
+            "mtime_ns": 1777093591020088759,
+            "path": "/Users/yiqun/Downloads/paper2bench-data/wmb_zhuang_abca1/wmb_zhuang_abca1_sec087.h5ad",
+            "role": "slice",
+            "size_bytes": 131929704
+          },
+          {
+            "asset_id": "wmb_sec088",
+            "exists": true,
+            "mtime_ns": 1777093596867062335,
+            "path": "/Users/yiqun/Downloads/paper2bench-data/wmb_zhuang_abca1/wmb_zhuang_abca1_sec088.h5ad",
+            "role": "slice",
+            "size_bytes": 146934414
+          },
+          {
+            "asset_id": "wmb_sec089",
+            "exists": true,
+            "mtime_ns": 1777093602190684350,
+            "path": "/Users/yiqun/Downloads/paper2bench-data/wmb_zhuang_abca1/wmb_zhuang_abca1_sec089.h5ad",
+            "role": "slice",
+            "size_bytes": 129914694
+          },
+          {
+            "asset_id": "wmb_sec090",
+            "exists": true,
+            "mtime_ns": 1777093607828205967,
+            "path": "/Users/yiqun/Downloads/paper2bench-data/wmb_zhuang_abca1/wmb_zhuang_abca1_sec090.h5ad",
+            "role": "slice",
+            "size_bytes": 148963194
+          },
+          {
+            "asset_id": "wmb_sec091",
+            "exists": true,
+            "mtime_ns": 1777093613229521009,
+            "path": "/Users/yiqun/Downloads/paper2bench-data/wmb_zhuang_abca1/wmb_zhuang_abca1_sec091.h5ad",
+            "role": "slice",
+            "size_bytes": 118324944
+          },
+          {
+            "asset_id": "wmb_sec092",
+            "exists": true,
+            "mtime_ns": 1777093618587980152,
+            "path": "/Users/yiqun/Downloads/paper2bench-data/wmb_zhuang_abca1/wmb_zhuang_abca1_sec092.h5ad",
+            "role": "slice",
+            "size_bytes": 139718934
+          },
+          {
+            "asset_id": "wmb_sec093",
+            "exists": true,
+            "mtime_ns": 1777093623737844834,
+            "path": "/Users/yiqun/Downloads/paper2bench-data/wmb_zhuang_abca1/wmb_zhuang_abca1_sec093.h5ad",
+            "role": "slice",
+            "size_bytes": 132200514
+          },
+          {
+            "asset_id": "wmb_sec095",
+            "exists": true,
+            "mtime_ns": 1777093628642006640,
+            "path": "/Users/yiqun/Downloads/paper2bench-data/wmb_zhuang_abca1/wmb_zhuang_abca1_sec095.h5ad",
+            "role": "slice",
+            "size_bytes": 111416994
+          },
+          {
+            "asset_id": "wmb_sec096",
+            "exists": true,
+            "mtime_ns": 1777093633867943980,
+            "path": "/Users/yiqun/Downloads/paper2bench-data/wmb_zhuang_abca1/wmb_zhuang_abca1_sec096.h5ad",
+            "role": "slice",
+            "size_bytes": 129501594
+          },
+          {
+            "asset_id": "wmb_sec097",
+            "exists": true,
+            "mtime_ns": 1777093638717356555,
+            "path": "/Users/yiqun/Downloads/paper2bench-data/wmb_zhuang_abca1/wmb_zhuang_abca1_sec097.h5ad",
+            "role": "slice",
+            "size_bytes": 118288224
+          },
+          {
+            "asset_id": "wmb_sec098",
+            "exists": true,
+            "mtime_ns": 1777093643873030300,
+            "path": "/Users/yiqun/Downloads/paper2bench-data/wmb_zhuang_abca1/wmb_zhuang_abca1_sec098.h5ad",
+            "role": "slice",
+            "size_bytes": 121602204
+          },
+          {
+            "asset_id": "wmb_sec099",
+            "exists": true,
+            "mtime_ns": 1777093649209627350,
+            "path": "/Users/yiqun/Downloads/paper2bench-data/wmb_zhuang_abca1/wmb_zhuang_abca1_sec099.h5ad",
+            "role": "slice",
+            "size_bytes": 125650584
+          },
+          {
+            "asset_id": "wmb_sec100",
+            "exists": true,
+            "mtime_ns": 1777093654459616193,
+            "path": "/Users/yiqun/Downloads/paper2bench-data/wmb_zhuang_abca1/wmb_zhuang_abca1_sec100.h5ad",
+            "role": "slice",
+            "size_bytes": 132930324
+          },
+          {
+            "asset_id": "wmb_sec101",
+            "exists": true,
+            "mtime_ns": 1777093659229977535,
+            "path": "/Users/yiqun/Downloads/paper2bench-data/wmb_zhuang_abca1/wmb_zhuang_abca1_sec101.h5ad",
+            "role": "slice",
+            "size_bytes": 116387964
+          },
+          {
+            "asset_id": "wmb_sec102",
+            "exists": true,
+            "mtime_ns": 1777093664654757077,
+            "path": "/Users/yiqun/Downloads/paper2bench-data/wmb_zhuang_abca1/wmb_zhuang_abca1_sec102.h5ad",
+            "role": "slice",
+            "size_bytes": 140177934
+          },
+          {
+            "asset_id": "wmb_sec103",
+            "exists": true,
+            "mtime_ns": 1777093669857612079,
+            "path": "/Users/yiqun/Downloads/paper2bench-data/wmb_zhuang_abca1/wmb_zhuang_abca1_sec103.h5ad",
+            "role": "slice",
+            "size_bytes": 133164414
+          },
+          {
+            "asset_id": "wmb_sec104",
+            "exists": true,
+            "mtime_ns": 1777093675089893898,
+            "path": "/Users/yiqun/Downloads/paper2bench-data/wmb_zhuang_abca1/wmb_zhuang_abca1_sec104.h5ad",
+            "role": "slice",
+            "size_bytes": 136997064
+          },
+          {
+            "asset_id": "wmb_sec105",
+            "exists": true,
+            "mtime_ns": 1777093679972081736,
+            "path": "/Users/yiqun/Downloads/paper2bench-data/wmb_zhuang_abca1/wmb_zhuang_abca1_sec105.h5ad",
+            "role": "slice",
+            "size_bytes": 116342064
+          },
+          {
+            "asset_id": "wmb_sec106",
+            "exists": true,
+            "mtime_ns": 1777093684848131637,
+            "path": "/Users/yiqun/Downloads/paper2bench-data/wmb_zhuang_abca1/wmb_zhuang_abca1_sec106.h5ad",
+            "role": "slice",
+            "size_bytes": 123892614
+          },
+          {
+            "asset_id": "wmb_sec107",
+            "exists": true,
+            "mtime_ns": 1777093689514391415,
+            "path": "/Users/yiqun/Downloads/paper2bench-data/wmb_zhuang_abca1/wmb_zhuang_abca1_sec107.h5ad",
+            "role": "slice",
+            "size_bytes": 115720126
+          },
+          {
+            "asset_id": "wmb_sec108",
+            "exists": true,
+            "mtime_ns": 1777093694213649457,
+            "path": "/Users/yiqun/Downloads/paper2bench-data/wmb_zhuang_abca1/wmb_zhuang_abca1_sec108.h5ad",
+            "role": "slice",
+            "size_bytes": 112411200
+          },
+          {
+            "asset_id": "wmb_sec109",
+            "exists": true,
+            "mtime_ns": 1777093698950523829,
+            "path": "/Users/yiqun/Downloads/paper2bench-data/wmb_zhuang_abca1/wmb_zhuang_abca1_sec109.h5ad",
+            "role": "slice",
+            "size_bytes": 98772192
+          },
+          {
+            "asset_id": "wmb_sec110",
+            "exists": true,
+            "mtime_ns": 1777093703767449430,
+            "path": "/Users/yiqun/Downloads/paper2bench-data/wmb_zhuang_abca1/wmb_zhuang_abca1_sec110.h5ad",
+            "role": "slice",
+            "size_bytes": 119258202
+          },
+          {
+            "asset_id": "wmb_sec111",
+            "exists": true,
+            "mtime_ns": 1777093708664870466,
+            "path": "/Users/yiqun/Downloads/paper2bench-data/wmb_zhuang_abca1/wmb_zhuang_abca1_sec111.h5ad",
+            "role": "slice",
+            "size_bytes": 95330359
+          },
+          {
+            "asset_id": "wmb_sec113",
+            "exists": true,
+            "mtime_ns": 1777093712616428749,
+            "path": "/Users/yiqun/Downloads/paper2bench-data/wmb_zhuang_abca1/wmb_zhuang_abca1_sec113.h5ad",
+            "role": "slice",
+            "size_bytes": 92649304
+          },
+          {
+            "asset_id": "wmb_sec114",
+            "exists": true,
+            "mtime_ns": 1777093716683902721,
+            "path": "/Users/yiqun/Downloads/paper2bench-data/wmb_zhuang_abca1/wmb_zhuang_abca1_sec114.h5ad",
+            "role": "slice",
+            "size_bytes": 104225962
+          },
+          {
+            "asset_id": "wmb_sec115",
+            "exists": true,
+            "mtime_ns": 1777093720330432495,
+            "path": "/Users/yiqun/Downloads/paper2bench-data/wmb_zhuang_abca1/wmb_zhuang_abca1_sec115.h5ad",
+            "role": "slice",
+            "size_bytes": 79601503
+          },
+          {
+            "asset_id": "wmb_sec116",
+            "exists": true,
+            "mtime_ns": 1777093723642263152,
+            "path": "/Users/yiqun/Downloads/paper2bench-data/wmb_zhuang_abca1/wmb_zhuang_abca1_sec116.h5ad",
+            "role": "slice",
+            "size_bytes": 86260602
+          },
+          {
+            "asset_id": "wmb_sec117",
+            "exists": true,
+            "mtime_ns": 1777093726229744347,
+            "path": "/Users/yiqun/Downloads/paper2bench-data/wmb_zhuang_abca1/wmb_zhuang_abca1_sec117.h5ad",
+            "role": "slice",
+            "size_bytes": 73455700
+          },
+          {
+            "asset_id": "wmb_sec118",
+            "exists": true,
+            "mtime_ns": 1777093729411380361,
+            "path": "/Users/yiqun/Downloads/paper2bench-data/wmb_zhuang_abca1/wmb_zhuang_abca1_sec118.h5ad",
+            "role": "slice",
+            "size_bytes": 100889538
+          },
+          {
+            "asset_id": "wmb_sec119",
+            "exists": true,
+            "mtime_ns": 1777093732629956918,
+            "path": "/Users/yiqun/Downloads/paper2bench-data/wmb_zhuang_abca1/wmb_zhuang_abca1_sec119.h5ad",
+            "role": "slice",
+            "size_bytes": 110005125
+          },
+          {
+            "asset_id": "wmb_sec120",
+            "exists": true,
+            "mtime_ns": 1777093735564952977,
+            "path": "/Users/yiqun/Downloads/paper2bench-data/wmb_zhuang_abca1/wmb_zhuang_abca1_sec120.h5ad",
+            "role": "slice",
+            "size_bytes": 101127854
+          },
+          {
+            "asset_id": "wmb_sec121",
+            "exists": true,
+            "mtime_ns": 1777093738271413060,
+            "path": "/Users/yiqun/Downloads/paper2bench-data/wmb_zhuang_abca1/wmb_zhuang_abca1_sec121.h5ad",
+            "role": "slice",
+            "size_bytes": 85596067
+          },
+          {
+            "asset_id": "wmb_sec122",
+            "exists": true,
+            "mtime_ns": 1777093741480658856,
+            "path": "/Users/yiqun/Downloads/paper2bench-data/wmb_zhuang_abca1/wmb_zhuang_abca1_sec122.h5ad",
+            "role": "slice",
+            "size_bytes": 115481810
+          },
+          {
+            "asset_id": "wmb_sec123",
+            "exists": true,
+            "mtime_ns": 1777093744664848238,
+            "path": "/Users/yiqun/Downloads/paper2bench-data/wmb_zhuang_abca1/wmb_zhuang_abca1_sec123.h5ad",
+            "role": "slice",
+            "size_bytes": 94624577
+          },
+          {
+            "asset_id": "wmb_sec124",
+            "exists": true,
+            "mtime_ns": 1777093747202818266,
+            "path": "/Users/yiqun/Downloads/paper2bench-data/wmb_zhuang_abca1/wmb_zhuang_abca1_sec124.h5ad",
+            "role": "slice",
+            "size_bytes": 78841856
+          },
+          {
+            "asset_id": "wmb_sec125",
+            "exists": true,
+            "mtime_ns": 1777093749967737484,
+            "path": "/Users/yiqun/Downloads/paper2bench-data/wmb_zhuang_abca1/wmb_zhuang_abca1_sec125.h5ad",
+            "role": "slice",
+            "size_bytes": 92665750
+          },
+          {
+            "asset_id": "wmb_sec126",
+            "exists": true,
+            "mtime_ns": 1777093752621570829,
+            "path": "/Users/yiqun/Downloads/paper2bench-data/wmb_zhuang_abca1/wmb_zhuang_abca1_sec126.h5ad",
+            "role": "slice",
+            "size_bytes": 91680620
+          },
+          {
+            "asset_id": "wmb_sec127",
+            "exists": true,
+            "mtime_ns": 1777093755178745167,
+            "path": "/Users/yiqun/Downloads/paper2bench-data/wmb_zhuang_abca1/wmb_zhuang_abca1_sec127.h5ad",
+            "role": "slice",
+            "size_bytes": 84147812
+          },
+          {
+            "asset_id": "wmb_sec128",
+            "exists": true,
+            "mtime_ns": 1777093757647334389,
+            "path": "/Users/yiqun/Downloads/paper2bench-data/wmb_zhuang_abca1/wmb_zhuang_abca1_sec128.h5ad",
+            "role": "slice",
+            "size_bytes": 79144268
+          },
+          {
+            "asset_id": "wmb_sec129",
+            "exists": true,
+            "mtime_ns": 1777093760373790696,
+            "path": "/Users/yiqun/Downloads/paper2bench-data/wmb_zhuang_abca1/wmb_zhuang_abca1_sec129.h5ad",
+            "role": "slice",
+            "size_bytes": 94051702
+          },
+          {
+            "asset_id": "wmb_sec130",
+            "exists": true,
+            "mtime_ns": 1777093763199896207,
+            "path": "/Users/yiqun/Downloads/paper2bench-data/wmb_zhuang_abca1/wmb_zhuang_abca1_sec130.h5ad",
+            "role": "slice",
+            "size_bytes": 89725350
+          },
+          {
+            "asset_id": "wmb_sec131",
+            "exists": true,
+            "mtime_ns": 1777093765699199700,
+            "path": "/Users/yiqun/Downloads/paper2bench-data/wmb_zhuang_abca1/wmb_zhuang_abca1_sec131.h5ad",
+            "role": "slice",
+            "size_bytes": 77082368
+          },
+          {
+            "asset_id": "wmb_sec132",
+            "exists": true,
+            "mtime_ns": 1777093768215320761,
+            "path": "/Users/yiqun/Downloads/paper2bench-data/wmb_zhuang_abca1/wmb_zhuang_abca1_sec132.h5ad",
+            "role": "slice",
+            "size_bytes": 77035023
+          },
+          {
+            "asset_id": "wmb_sec133",
+            "exists": true,
+            "mtime_ns": 1777093770789951957,
+            "path": "/Users/yiqun/Downloads/paper2bench-data/wmb_zhuang_abca1/wmb_zhuang_abca1_sec133.h5ad",
+            "role": "slice",
+            "size_bytes": 87974644
+          },
+          {
+            "asset_id": "wmb_sec134",
+            "exists": true,
+            "mtime_ns": 1777093773638637891,
+            "path": "/Users/yiqun/Downloads/paper2bench-data/wmb_zhuang_abca1/wmb_zhuang_abca1_sec134.h5ad",
+            "role": "slice",
+            "size_bytes": 89267050
+          },
+          {
+            "asset_id": "wmb_sec135",
+            "exists": true,
+            "mtime_ns": 1777093776086935098,
+            "path": "/Users/yiqun/Downloads/paper2bench-data/wmb_zhuang_abca1/wmb_zhuang_abca1_sec135.h5ad",
+            "role": "slice",
+            "size_bytes": 80857245
+          },
+          {
+            "asset_id": "wmb_sec136",
+            "exists": true,
+            "mtime_ns": 1777093778543046195,
+            "path": "/Users/yiqun/Downloads/paper2bench-data/wmb_zhuang_abca1/wmb_zhuang_abca1_sec136.h5ad",
+            "role": "slice",
+            "size_bytes": 66154981
+          },
+          {
+            "asset_id": "wmb_sec137",
+            "exists": true,
+            "mtime_ns": 1777093780906615940,
+            "path": "/Users/yiqun/Downloads/paper2bench-data/wmb_zhuang_abca1/wmb_zhuang_abca1_sec137.h5ad",
+            "role": "slice",
+            "size_bytes": 73050208
+          },
+          {
+            "asset_id": "wmb_sec138",
+            "exists": true,
+            "mtime_ns": 1777093783361006793,
+            "path": "/Users/yiqun/Downloads/paper2bench-data/wmb_zhuang_abca1/wmb_zhuang_abca1_sec138.h5ad",
+            "role": "slice",
+            "size_bytes": 75229321
+          },
+          {
+            "asset_id": "wmb_sec139",
+            "exists": true,
+            "mtime_ns": 1777093785797997997,
+            "path": "/Users/yiqun/Downloads/paper2bench-data/wmb_zhuang_abca1/wmb_zhuang_abca1_sec139.h5ad",
+            "role": "slice",
+            "size_bytes": 70490499
+          },
+          {
+            "asset_id": "wmb_sec140",
+            "exists": true,
+            "mtime_ns": 1777093787835501596,
+            "path": "/Users/yiqun/Downloads/paper2bench-data/wmb_zhuang_abca1/wmb_zhuang_abca1_sec140.h5ad",
+            "role": "slice",
+            "size_bytes": 53088848
+          },
+          {
+            "asset_id": "wmb_sec141",
+            "exists": true,
+            "mtime_ns": 1777093789822307866,
+            "path": "/Users/yiqun/Downloads/paper2bench-data/wmb_zhuang_abca1/wmb_zhuang_abca1_sec141.h5ad",
+            "role": "slice",
+            "size_bytes": 48400439
+          }
+        ],
+        "instruction_nonempty": true,
+        "instruction_present": true,
+        "marker_gene_file": {
+          "exists": true,
+          "mtime_ns": 1777125924761432053,
+          "path": "benchmarks/spatial_alignment/tasks/sa-023-wmb-zhuang-abca1-129-section-3d-mae/data/marker_genes.csv",
+          "size_bytes": 633
+        },
+        "public_score_split": "train",
+        "score_split": "eval",
+        "split_manifest": {
+          "exists": true,
+          "mtime_ns": 1777125927335508671,
+          "path": "benchmarks/spatial_alignment/tasks/sa-023-wmb-zhuang-abca1-129-section-3d-mae/data/split_manifest.json",
+          "size_bytes": 482
+        },
+        "split_manifest_schema": "paper2bench.split_manifest.v0.1",
+        "split_visibility": "scorer_only",
+        "task_id_matches_directory": true
+      },
+      "hashes": {
+        "definition_hash": "dbd907c679ad3193fc357afd9aa864181c919d000de022fb116b785ce8d50534"
+      },
+      "issues": [],
+      "ok": true,
+      "task_id": "sa-023-wmb-zhuang-abca1-129-section-3d-mae",
+      "task_path": "benchmarks/spatial_alignment/tasks/sa-023-wmb-zhuang-abca1-129-section-3d-mae/task.toml"
+    },
+    {
+      "checks": {
+        "asset_count": 2,
+        "assets": [
+          {
+            "asset_id": "section_02",
+            "exists": true,
+            "mtime_ns": 1777086960835456686,
+            "path": "benchmarks/spatial_alignment/compiled_data/openst_mln/section_02.h5ad",
+            "role": "slice",
+            "size_bytes": 134386845
+          },
+          {
+            "asset_id": "section_03",
+            "exists": true,
+            "mtime_ns": 1777086965086993222,
+            "path": "benchmarks/spatial_alignment/compiled_data/openst_mln/section_03.h5ad",
+            "role": "slice",
+            "size_bytes": 125789979
+          }
+        ],
+        "instruction_nonempty": true,
+        "instruction_present": true,
+        "marker_gene_file": {
+          "exists": true,
+          "mtime_ns": 1777087233998848485,
+          "path": "benchmarks/spatial_alignment/tasks/sa-025-openst-mln-adjacent-02-03-3d-align/data/marker_genes.csv",
+          "size_bytes": 296783
+        },
+        "public_score_split": "train",
+        "score_split": "eval",
+        "split_manifest": {
+          "exists": true,
+          "mtime_ns": 1777087233999174745,
+          "path": "benchmarks/spatial_alignment/tasks/sa-025-openst-mln-adjacent-02-03-3d-align/data/split_manifest.json",
+          "size_bytes": 481
+        },
+        "split_manifest_schema": "paper2bench.split_manifest.v0.1",
+        "split_visibility": "scorer_only",
+        "task_id_matches_directory": true
+      },
+      "hashes": {
+        "definition_hash": "7bad28c65146891443e6cc981ba109a9c69ef1c414818de60238bef6163c8f3a"
+      },
+      "issues": [],
+      "ok": true,
+      "task_id": "sa-025-openst-mln-adjacent-02-03-3d-align",
+      "task_path": "benchmarks/spatial_alignment/tasks/sa-025-openst-mln-adjacent-02-03-3d-align/task.toml"
+    },
+    {
+      "checks": {
+        "asset_count": 5,
+        "assets": [
+          {
+            "asset_id": "section_02",
+            "exists": true,
+            "mtime_ns": 1777086960835456686,
+            "path": "benchmarks/spatial_alignment/compiled_data/openst_mln/section_02.h5ad",
+            "role": "slice",
+            "size_bytes": 134386845
+          },
+          {
+            "asset_id": "section_03",
+            "exists": true,
+            "mtime_ns": 1777086965086993222,
+            "path": "benchmarks/spatial_alignment/compiled_data/openst_mln/section_03.h5ad",
+            "role": "slice",
+            "size_bytes": 125789979
+          },
+          {
+            "asset_id": "section_04",
+            "exists": true,
+            "mtime_ns": 1777086956146105558,
+            "path": "benchmarks/spatial_alignment/compiled_data/openst_mln/section_04.h5ad",
+            "role": "slice",
+            "size_bytes": 257219608
+          },
+          {
+            "asset_id": "section_05",
+            "exists": true,
+            "mtime_ns": 1777086968471119279,
+            "path": "benchmarks/spatial_alignment/compiled_data/openst_mln/section_05.h5ad",
+            "role": "slice",
+            "size_bytes": 100067500
+          },
+          {
+            "asset_id": "section_06",
+            "exists": true,
+            "mtime_ns": 1777086971489692287,
+            "path": "benchmarks/spatial_alignment/compiled_data/openst_mln/section_06.h5ad",
+            "role": "slice",
+            "size_bytes": 89220590
+          }
+        ],
+        "instruction_nonempty": true,
+        "instruction_present": true,
+        "marker_gene_file": {
+          "exists": true,
+          "mtime_ns": 1777087234045604638,
+          "path": "benchmarks/spatial_alignment/tasks/sa-026-openst-mln-early-window-02-06-3d-align/data/marker_genes.csv",
+          "size_bytes": 296783
+        },
+        "public_score_split": "train",
+        "score_split": "eval",
+        "split_manifest": {
+          "exists": true,
+          "mtime_ns": 1777087234045800519,
+          "path": "benchmarks/spatial_alignment/tasks/sa-026-openst-mln-early-window-02-06-3d-align/data/split_manifest.json",
+          "size_bytes": 485
+        },
+        "split_manifest_schema": "paper2bench.split_manifest.v0.1",
+        "split_visibility": "scorer_only",
+        "task_id_matches_directory": true
+      },
+      "hashes": {
+        "definition_hash": "2ef7a7e13b89e2b2294e234cb40432b19d5373ff31634c7ffefb55ee7683e257"
+      },
+      "issues": [],
+      "ok": true,
+      "task_id": "sa-026-openst-mln-early-window-02-06-3d-align",
+      "task_path": "benchmarks/spatial_alignment/tasks/sa-026-openst-mln-early-window-02-06-3d-align/task.toml"
+    },
+    {
+      "checks": {
+        "asset_count": 19,
+        "assets": [
+          {
+            "asset_id": "section_02",
+            "exists": true,
+            "mtime_ns": 1777086960835456686,
+            "path": "benchmarks/spatial_alignment/compiled_data/openst_mln/section_02.h5ad",
+            "role": "slice",
+            "size_bytes": 134386845
+          },
+          {
+            "asset_id": "section_03",
+            "exists": true,
+            "mtime_ns": 1777086965086993222,
+            "path": "benchmarks/spatial_alignment/compiled_data/openst_mln/section_03.h5ad",
+            "role": "slice",
+            "size_bytes": 125789979
+          },
+          {
+            "asset_id": "section_04",
+            "exists": true,
+            "mtime_ns": 1777086956146105558,
+            "path": "benchmarks/spatial_alignment/compiled_data/openst_mln/section_04.h5ad",
+            "role": "slice",
+            "size_bytes": 257219608
+          },
+          {
+            "asset_id": "section_05",
+            "exists": true,
+            "mtime_ns": 1777086968471119279,
+            "path": "benchmarks/spatial_alignment/compiled_data/openst_mln/section_05.h5ad",
+            "role": "slice",
+            "size_bytes": 100067500
+          },
+          {
+            "asset_id": "section_06",
+            "exists": true,
+            "mtime_ns": 1777086971489692287,
+            "path": "benchmarks/spatial_alignment/compiled_data/openst_mln/section_06.h5ad",
+            "role": "slice",
+            "size_bytes": 89220590
+          },
+          {
+            "asset_id": "section_07",
+            "exists": true,
+            "mtime_ns": 1777086974920253197,
+            "path": "benchmarks/spatial_alignment/compiled_data/openst_mln/section_07.h5ad",
+            "role": "slice",
+            "size_bytes": 97811293
+          },
+          {
+            "asset_id": "section_09",
+            "exists": true,
+            "mtime_ns": 1777086979639753812,
+            "path": "benchmarks/spatial_alignment/compiled_data/openst_mln/section_09.h5ad",
+            "role": "slice",
+            "size_bytes": 136324564
+          },
+          {
+            "asset_id": "section_11",
+            "exists": true,
+            "mtime_ns": 1777086985723615147,
+            "path": "benchmarks/spatial_alignment/compiled_data/openst_mln/section_11.h5ad",
+            "role": "slice",
+            "size_bytes": 177029921
+          },
+          {
+            "asset_id": "section_17",
+            "exists": true,
+            "mtime_ns": 1777086991655549216,
+            "path": "benchmarks/spatial_alignment/compiled_data/openst_mln/section_17.h5ad",
+            "role": "slice",
+            "size_bytes": 171285598
+          },
+          {
+            "asset_id": "section_18",
+            "exists": true,
+            "mtime_ns": 1777086999051033105,
+            "path": "benchmarks/spatial_alignment/compiled_data/openst_mln/section_18.h5ad",
+            "role": "slice",
+            "size_bytes": 212649179
+          },
+          {
+            "asset_id": "section_19",
+            "exists": true,
+            "mtime_ns": 1777087001521999769,
+            "path": "benchmarks/spatial_alignment/compiled_data/openst_mln/section_19.h5ad",
+            "role": "slice",
+            "size_bytes": 74120549
+          },
+          {
+            "asset_id": "section_23",
+            "exists": true,
+            "mtime_ns": 1777087007058715566,
+            "path": "benchmarks/spatial_alignment/compiled_data/openst_mln/section_23.h5ad",
+            "role": "slice",
+            "size_bytes": 158957393
+          },
+          {
+            "asset_id": "section_24",
+            "exists": true,
+            "mtime_ns": 1777087012712455915,
+            "path": "benchmarks/spatial_alignment/compiled_data/openst_mln/section_24.h5ad",
+            "role": "slice",
+            "size_bytes": 161199181
+          },
+          {
+            "asset_id": "section_25",
+            "exists": true,
+            "mtime_ns": 1777087015629138742,
+            "path": "benchmarks/spatial_alignment/compiled_data/openst_mln/section_25.h5ad",
+            "role": "slice",
+            "size_bytes": 85501031
+          },
+          {
+            "asset_id": "section_26",
+            "exists": true,
+            "mtime_ns": 1777087022900660287,
+            "path": "benchmarks/spatial_alignment/compiled_data/openst_mln/section_26.h5ad",
+            "role": "slice",
+            "size_bytes": 207991902
+          },
+          {
+            "asset_id": "section_28",
+            "exists": true,
+            "mtime_ns": 1777087028632858990,
+            "path": "benchmarks/spatial_alignment/compiled_data/openst_mln/section_28.h5ad",
+            "role": "slice",
+            "size_bytes": 161472524
+          },
+          {
+            "asset_id": "section_33",
+            "exists": true,
+            "mtime_ns": 1777087034179738924,
+            "path": "benchmarks/spatial_alignment/compiled_data/openst_mln/section_33.h5ad",
+            "role": "slice",
+            "size_bytes": 158032944
+          },
+          {
+            "asset_id": "section_34",
+            "exists": true,
+            "mtime_ns": 1777087038485045324,
+            "path": "benchmarks/spatial_alignment/compiled_data/openst_mln/section_34.h5ad",
+            "role": "slice",
+            "size_bytes": 126047207
+          },
+          {
+            "asset_id": "section_36",
+            "exists": true,
+            "mtime_ns": 1777087041602523299,
+            "path": "benchmarks/spatial_alignment/compiled_data/openst_mln/section_36.h5ad",
+            "role": "slice",
+            "size_bytes": 91035766
+          }
+        ],
+        "instruction_nonempty": true,
+        "instruction_present": true,
+        "marker_gene_file": {
+          "exists": true,
+          "mtime_ns": 1777087234143058395,
+          "path": "benchmarks/spatial_alignment/tasks/sa-027-openst-mln-full-19-slice-3d-align/data/marker_genes.csv",
+          "size_bytes": 296783
+        },
+        "public_score_split": "train",
+        "score_split": "eval",
+        "split_manifest": {
+          "exists": true,
+          "mtime_ns": 1777087234143237067,
+          "path": "benchmarks/spatial_alignment/tasks/sa-027-openst-mln-full-19-slice-3d-align/data/split_manifest.json",
+          "size_bytes": 480
+        },
+        "split_manifest_schema": "paper2bench.split_manifest.v0.1",
+        "split_visibility": "scorer_only",
+        "task_id_matches_directory": true
+      },
+      "hashes": {
+        "definition_hash": "23dd11288beaebcbca6fe6355ca9c5dd938c43533ba44d2a16898f044b5c4ebb"
+      },
+      "issues": [],
+      "ok": true,
+      "task_id": "sa-027-openst-mln-full-19-slice-3d-align",
+      "task_path": "benchmarks/spatial_alignment/tasks/sa-027-openst-mln-full-19-slice-3d-align/task.toml"
+    },
+    {
+      "checks": {
+        "asset_count": 5,
+        "assets": [
+          {
+            "asset_id": "C57BL6J-1.071",
+            "exists": true,
+            "mtime_ns": 1777087235702730056,
+            "path": "benchmarks/spatial_alignment/compiled_data/wmb_partial/C57BL6J-1.071.h5ad",
+            "role": "slice",
+            "size_bytes": 18336142
+          },
+          {
+            "asset_id": "C57BL6J-1.081",
+            "exists": true,
+            "mtime_ns": 1777087236250493820,
+            "path": "benchmarks/spatial_alignment/compiled_data/wmb_partial/C57BL6J-1.081.h5ad",
+            "role": "slice",
+            "size_bytes": 21012907
+          },
+          {
+            "asset_id": "C57BL6J-1.073",
+            "exists": true,
+            "mtime_ns": 1777087236642114902,
+            "path": "benchmarks/spatial_alignment/compiled_data/wmb_partial/C57BL6J-1.073.h5ad",
+            "role": "slice",
+            "size_bytes": 16825790
+          },
+          {
+            "asset_id": "C57BL6J-1.083",
+            "exists": true,
+            "mtime_ns": 1777087237126696147,
+            "path": "benchmarks/spatial_alignment/compiled_data/wmb_partial/C57BL6J-1.083.h5ad",
+            "role": "slice",
+            "size_bytes": 19533321
+          },
+          {
+            "asset_id": "C57BL6J-1.046",
+            "exists": true,
+            "mtime_ns": 1777087237621729413,
+            "path": "benchmarks/spatial_alignment/compiled_data/wmb_partial/C57BL6J-1.046.h5ad",
+            "role": "slice",
+            "size_bytes": 16075067
+          }
+        ],
+        "instruction_nonempty": true,
+        "instruction_present": true,
+        "marker_gene_file": {
+          "exists": true,
+          "mtime_ns": 1777087240590776519,
+          "path": "benchmarks/spatial_alignment/tasks/sa-028-wmb-animal1-window5-serial-align/data/marker_genes.csv",
+          "size_bytes": 22406
+        },
+        "public_score_split": "train",
+        "score_split": "eval",
+        "split_manifest": {
+          "exists": true,
+          "mtime_ns": 1777087240590971775,
+          "path": "benchmarks/spatial_alignment/tasks/sa-028-wmb-animal1-window5-serial-align/data/split_manifest.json",
+          "size_bytes": 479
+        },
+        "split_manifest_schema": "paper2bench.split_manifest.v0.1",
+        "split_visibility": "scorer_only",
+        "task_id_matches_directory": true
+      },
+      "hashes": {
+        "definition_hash": "a8fef8c84b7f4d319b1e5755f4992010b132646a9ce829c4a8e3621248bf4c99"
+      },
+      "issues": [],
+      "ok": true,
+      "task_id": "sa-028-wmb-animal1-window5-serial-align",
+      "task_path": "benchmarks/spatial_alignment/tasks/sa-028-wmb-animal1-window5-serial-align/task.toml"
+    },
+    {
+      "checks": {
+        "asset_count": 10,
+        "assets": [
+          {
+            "asset_id": "C57BL6J-1.071",
+            "exists": true,
+            "mtime_ns": 1777087235702730056,
+            "path": "benchmarks/spatial_alignment/compiled_data/wmb_partial/C57BL6J-1.071.h5ad",
+            "role": "slice",
+            "size_bytes": 18336142
+          },
+          {
+            "asset_id": "C57BL6J-1.081",
+            "exists": true,
+            "mtime_ns": 1777087236250493820,
+            "path": "benchmarks/spatial_alignment/compiled_data/wmb_partial/C57BL6J-1.081.h5ad",
+            "role": "slice",
+            "size_bytes": 21012907
+          },
+          {
+            "asset_id": "C57BL6J-1.073",
+            "exists": true,
+            "mtime_ns": 1777087236642114902,
+            "path": "benchmarks/spatial_alignment/compiled_data/wmb_partial/C57BL6J-1.073.h5ad",
+            "role": "slice",
+            "size_bytes": 16825790
+          },
+          {
+            "asset_id": "C57BL6J-1.083",
+            "exists": true,
+            "mtime_ns": 1777087237126696147,
+            "path": "benchmarks/spatial_alignment/compiled_data/wmb_partial/C57BL6J-1.083.h5ad",
+            "role": "slice",
+            "size_bytes": 19533321
+          },
+          {
+            "asset_id": "C57BL6J-1.046",
+            "exists": true,
+            "mtime_ns": 1777087237621729413,
+            "path": "benchmarks/spatial_alignment/compiled_data/wmb_partial/C57BL6J-1.046.h5ad",
+            "role": "slice",
+            "size_bytes": 16075067
+          },
+          {
+            "asset_id": "C57BL6J-1.056",
+            "exists": true,
+            "mtime_ns": 1777087238131265323,
+            "path": "benchmarks/spatial_alignment/compiled_data/wmb_partial/C57BL6J-1.056.h5ad",
+            "role": "slice",
+            "size_bytes": 16964348
+          },
+          {
+            "asset_id": "C57BL6J-1.066",
+            "exists": true,
+            "mtime_ns": 1777087238740812858,
+            "path": "benchmarks/spatial_alignment/compiled_data/wmb_partial/C57BL6J-1.066.h5ad",
+            "role": "slice",
+            "size_bytes": 19876613
+          },
+          {
+            "asset_id": "C57BL6J-1.102",
+            "exists": true,
+            "mtime_ns": 1777087239329452432,
+            "path": "benchmarks/spatial_alignment/compiled_data/wmb_partial/C57BL6J-1.102.h5ad",
+            "role": "slice",
+            "size_bytes": 20412605
+          },
+          {
+            "asset_id": "C57BL6J-1.096",
+            "exists": true,
+            "mtime_ns": 1777087239958174334,
+            "path": "benchmarks/spatial_alignment/compiled_data/wmb_partial/C57BL6J-1.096.h5ad",
+            "role": "slice",
+            "size_bytes": 20471037
+          },
+          {
+            "asset_id": "C57BL6J-1.106",
+            "exists": true,
+            "mtime_ns": 1777087240563263319,
+            "path": "benchmarks/spatial_alignment/compiled_data/wmb_partial/C57BL6J-1.106.h5ad",
+            "role": "slice",
+            "size_bytes": 19597923
+          }
+        ],
+        "instruction_nonempty": true,
+        "instruction_present": true,
+        "marker_gene_file": {
+          "exists": true,
+          "mtime_ns": 1777087240646379854,
+          "path": "benchmarks/spatial_alignment/tasks/sa-029-wmb-animal1-window10-serial-align/data/marker_genes.csv",
+          "size_bytes": 22406
+        },
+        "public_score_split": "train",
+        "score_split": "eval",
+        "split_manifest": {
+          "exists": true,
+          "mtime_ns": 1777087240646560734,
+          "path": "benchmarks/spatial_alignment/tasks/sa-029-wmb-animal1-window10-serial-align/data/split_manifest.json",
+          "size_bytes": 480
+        },
+        "split_manifest_schema": "paper2bench.split_manifest.v0.1",
+        "split_visibility": "scorer_only",
+        "task_id_matches_directory": true
+      },
+      "hashes": {
+        "definition_hash": "88405ed362d6e1fd3a27bed29dff31a9a43e7e5f9664d871d245c6d166086bf5"
+      },
+      "issues": [],
+      "ok": true,
+      "task_id": "sa-029-wmb-animal1-window10-serial-align",
+      "task_path": "benchmarks/spatial_alignment/tasks/sa-029-wmb-animal1-window10-serial-align/task.toml"
+    },
+    {
+      "checks": {
+        "asset_count": 6,
+        "assets": [
+          {
+            "asset_id": "mouse1_slice1",
+            "exists": true,
+            "mtime_ns": 1789436277403063669,
+            "path": "benchmarks/spatial_alignment/compiled_data/mop_paper/mouse1_slice1.h5ad",
+            "role": "slice",
+            "size_bytes": 1616054
+          },
+          {
+            "asset_id": "mouse1_slice10",
+            "exists": true,
+            "mtime_ns": 1789436277454389994,
+            "path": "benchmarks/spatial_alignment/compiled_data/mop_paper/mouse1_slice10.h5ad",
+            "role": "slice",
+            "size_bytes": 1633766
+          },
+          {
+            "asset_id": "mouse1_slice21",
+            "exists": true,
+            "mtime_ns": 1789436278795289553,
+            "path": "benchmarks/spatial_alignment/compiled_data/mop_paper/mouse1_slice21.h5ad",
+            "role": "slice",
+            "size_bytes": 1378234
+          },
+          {
+            "asset_id": "mouse1_slice31",
+            "exists": true,
+            "mtime_ns": 1789436279851855244,
+            "path": "benchmarks/spatial_alignment/compiled_data/mop_paper/mouse1_slice31.h5ad",
+            "role": "slice",
+            "size_bytes": 2070031
+          },
+          {
+            "asset_id": "mouse1_slice40",
+            "exists": true,
+            "mtime_ns": 1789436280093458828,
+            "path": "benchmarks/spatial_alignment/compiled_data/mop_paper/mouse1_slice40.h5ad",
+            "role": "slice",
+            "size_bytes": 2719520
+          },
+          {
+            "asset_id": "mouse1_slice50",
+            "exists": true,
+            "mtime_ns": 1789436280178851896,
+            "path": "benchmarks/spatial_alignment/compiled_data/mop_paper/mouse1_slice50.h5ad",
+            "role": "slice",
+            "size_bytes": 2774454
+          }
+        ],
+        "instruction_nonempty": true,
+        "instruction_present": true,
+        "marker_gene_file": {
+          "exists": true,
+          "mtime_ns": 1777126476630758014,
+          "path": "benchmarks/spatial_alignment/tasks/sa-101-mop-mouse1sample1-serial-align/data/marker_genes.csv",
+          "size_bytes": 1871
+        },
+        "public_score_split": "train",
+        "score_split": "eval",
+        "split_manifest": {
+          "exists": true,
+          "mtime_ns": 1777126476631098554,
+          "path": "benchmarks/spatial_alignment/tasks/sa-101-mop-mouse1sample1-serial-align/data/split_manifest.json",
+          "size_bytes": 477
+        },
+        "split_manifest_schema": "paper2bench.split_manifest.v0.1",
+        "split_visibility": "scorer_only",
+        "task_id_matches_directory": true
+      },
+      "hashes": {
+        "definition_hash": "2628e809056f2d8f7031a97afb8d38c41c34adb0ad82bb56fd5281188aed0d19"
+      },
+      "issues": [],
+      "ok": true,
+      "task_id": "sa-101-mop-mouse1sample1-serial-align",
+      "task_path": "benchmarks/spatial_alignment/tasks/sa-101-mop-mouse1sample1-serial-align/task.toml"
+    },
+    {
+      "checks": {
+        "asset_count": 5,
+        "assets": [
+          {
+            "asset_id": "mouse1_slice62",
+            "exists": true,
+            "mtime_ns": 1789436280279083170,
+            "path": "benchmarks/spatial_alignment/compiled_data/mop_paper/mouse1_slice62.h5ad",
+            "role": "slice",
+            "size_bytes": 3295721
+          },
+          {
+            "asset_id": "mouse1_slice71",
+            "exists": true,
+            "mtime_ns": 1789436280403654274,
+            "path": "benchmarks/spatial_alignment/compiled_data/mop_paper/mouse1_slice71.h5ad",
+            "role": "slice",
+            "size_bytes": 4117727
+          },
+          {
+            "asset_id": "mouse1_slice81",
+            "exists": true,
+            "mtime_ns": 1789436280520399212,
+            "path": "benchmarks/spatial_alignment/compiled_data/mop_paper/mouse1_slice81.h5ad",
+            "role": "slice",
+            "size_bytes": 3797583
+          },
+          {
+            "asset_id": "mouse1_slice91",
+            "exists": true,
+            "mtime_ns": 1789436280638609983,
+            "path": "benchmarks/spatial_alignment/compiled_data/mop_paper/mouse1_slice91.h5ad",
+            "role": "slice",
+            "size_bytes": 4028332
+          },
+          {
+            "asset_id": "mouse1_slice102",
+            "exists": true,
+            "mtime_ns": 1789436277592045053,
+            "path": "benchmarks/spatial_alignment/compiled_data/mop_paper/mouse1_slice102.h5ad",
+            "role": "slice",
+            "size_bytes": 4768507
+          }
+        ],
+        "instruction_nonempty": true,
+        "instruction_present": true,
+        "marker_gene_file": {
+          "exists": true,
+          "mtime_ns": 1777126476632452295,
+          "path": "benchmarks/spatial_alignment/tasks/sa-102-mop-mouse1sample2-serial-align/data/marker_genes.csv",
+          "size_bytes": 1871
+        },
+        "public_score_split": "train",
+        "score_split": "eval",
+        "split_manifest": {
+          "exists": true,
+          "mtime_ns": 1777126476632676627,
+          "path": "benchmarks/spatial_alignment/tasks/sa-102-mop-mouse1sample2-serial-align/data/split_manifest.json",
+          "size_bytes": 477
+        },
+        "split_manifest_schema": "paper2bench.split_manifest.v0.1",
+        "split_visibility": "scorer_only",
+        "task_id_matches_directory": true
+      },
+      "hashes": {
+        "definition_hash": "95d41f452721cff3132b846ec4a2340dbf0c37782932bee2ac4e7d2447257d34"
+      },
+      "issues": [],
+      "ok": true,
+      "task_id": "sa-102-mop-mouse1sample2-serial-align",
+      "task_path": "benchmarks/spatial_alignment/tasks/sa-102-mop-mouse1sample2-serial-align/task.toml"
+    },
+    {
+      "checks": {
+        "asset_count": 4,
+        "assets": [
+          {
+            "asset_id": "mouse1_slice112",
+            "exists": true,
+            "mtime_ns": 1789436277725328197,
+            "path": "benchmarks/spatial_alignment/compiled_data/mop_paper/mouse1_slice112.h5ad",
+            "role": "slice",
+            "size_bytes": 3497771
+          },
+          {
+            "asset_id": "mouse1_slice122",
+            "exists": true,
+            "mtime_ns": 1789436277849088634,
+            "path": "benchmarks/spatial_alignment/compiled_data/mop_paper/mouse1_slice122.h5ad",
+            "role": "slice",
+            "size_bytes": 4269736
+          },
+          {
+            "asset_id": "mouse1_slice131",
+            "exists": true,
+            "mtime_ns": 1789436277948187075,
+            "path": "benchmarks/spatial_alignment/compiled_data/mop_paper/mouse1_slice131.h5ad",
+            "role": "slice",
+            "size_bytes": 3495656
+          },
+          {
+            "asset_id": "mouse1_slice153",
+            "exists": true,
+            "mtime_ns": 1789436278087937259,
+            "path": "benchmarks/spatial_alignment/compiled_data/mop_paper/mouse1_slice153.h5ad",
+            "role": "slice",
+            "size_bytes": 5166929
+          }
+        ],
+        "instruction_nonempty": true,
+        "instruction_present": true,
+        "marker_gene_file": {
+          "exists": true,
+          "mtime_ns": 1777126476633753495,
+          "path": "benchmarks/spatial_alignment/tasks/sa-103-mop-mouse1sample3-serial-align/data/marker_genes.csv",
+          "size_bytes": 1871
+        },
+        "public_score_split": "train",
+        "score_split": "eval",
+        "split_manifest": {
+          "exists": true,
+          "mtime_ns": 1777126476633995494,
+          "path": "benchmarks/spatial_alignment/tasks/sa-103-mop-mouse1sample3-serial-align/data/split_manifest.json",
+          "size_bytes": 477
+        },
+        "split_manifest_schema": "paper2bench.split_manifest.v0.1",
+        "split_visibility": "scorer_only",
+        "task_id_matches_directory": true
+      },
+      "hashes": {
+        "definition_hash": "765cbaa7698c785aceb39c70890fe877d42e1fa6d1eb906e7344709d6ded9f4b"
+      },
+      "issues": [],
+      "ok": true,
+      "task_id": "sa-103-mop-mouse1sample3-serial-align",
+      "task_path": "benchmarks/spatial_alignment/tasks/sa-103-mop-mouse1sample3-serial-align/task.toml"
+    },
+    {
+      "checks": {
+        "asset_count": 6,
+        "assets": [
+          {
+            "asset_id": "mouse1_slice162",
+            "exists": true,
+            "mtime_ns": 1789436278226080151,
+            "path": "benchmarks/spatial_alignment/compiled_data/mop_paper/mouse1_slice162.h5ad",
+            "role": "slice",
+            "size_bytes": 4921721
+          },
+          {
+            "asset_id": "mouse1_slice170",
+            "exists": true,
+            "mtime_ns": 1789436278353956879,
+            "path": "benchmarks/spatial_alignment/compiled_data/mop_paper/mouse1_slice170.h5ad",
+            "role": "slice",
+            "size_bytes": 4575666
+          },
+          {
+            "asset_id": "mouse1_slice180",
+            "exists": true,
+            "mtime_ns": 1789436278475823692,
+            "path": "benchmarks/spatial_alignment/compiled_data/mop_paper/mouse1_slice180.h5ad",
+            "role": "slice",
+            "size_bytes": 4400478
+          },
+          {
+            "asset_id": "mouse1_slice190",
+            "exists": true,
+            "mtime_ns": 1789436278587144047,
+            "path": "benchmarks/spatial_alignment/compiled_data/mop_paper/mouse1_slice190.h5ad",
+            "role": "slice",
+            "size_bytes": 4021059
+          },
+          {
+            "asset_id": "mouse1_slice200",
+            "exists": true,
+            "mtime_ns": 1789436278633311497,
+            "path": "benchmarks/spatial_alignment/compiled_data/mop_paper/mouse1_slice200.h5ad",
+            "role": "slice",
+            "size_bytes": 1531856
+          },
+          {
+            "asset_id": "mouse1_slice201",
+            "exists": true,
+            "mtime_ns": 1789436278751462477,
+            "path": "benchmarks/spatial_alignment/compiled_data/mop_paper/mouse1_slice201.h5ad",
+            "role": "slice",
+            "size_bytes": 4380241
+          }
+        ],
+        "instruction_nonempty": true,
+        "instruction_present": true,
+        "marker_gene_file": {
+          "exists": true,
+          "mtime_ns": 1777126476634593949,
+          "path": "benchmarks/spatial_alignment/tasks/sa-104-mop-mouse1sample4-serial-align/data/marker_genes.csv",
+          "size_bytes": 1871
+        },
+        "public_score_split": "train",
+        "score_split": "eval",
+        "split_manifest": {
+          "exists": true,
+          "mtime_ns": 1777126476634758989,
+          "path": "benchmarks/spatial_alignment/tasks/sa-104-mop-mouse1sample4-serial-align/data/split_manifest.json",
+          "size_bytes": 477
+        },
+        "split_manifest_schema": "paper2bench.split_manifest.v0.1",
+        "split_visibility": "scorer_only",
+        "task_id_matches_directory": true
+      },
+      "hashes": {
+        "definition_hash": "affd16fa01e1a0f17408e96c39a481f91b862c9ab4293115ae46df9ad953ffd7"
+      },
+      "issues": [],
+      "ok": true,
+      "task_id": "sa-104-mop-mouse1sample4-serial-align",
+      "task_path": "benchmarks/spatial_alignment/tasks/sa-104-mop-mouse1sample4-serial-align/task.toml"
+    },
+    {
+      "checks": {
+        "asset_count": 6,
+        "assets": [
+          {
+            "asset_id": "mouse1_slice212",
+            "exists": true,
+            "mtime_ns": 1789436278931487612,
+            "path": "benchmarks/spatial_alignment/compiled_data/mop_paper/mouse1_slice212.h5ad",
+            "role": "slice",
+            "size_bytes": 4611946
+          },
+          {
+            "asset_id": "mouse1_slice221",
+            "exists": true,
+            "mtime_ns": 1789436279048912884,
+            "path": "benchmarks/spatial_alignment/compiled_data/mop_paper/mouse1_slice221.h5ad",
+            "role": "slice",
+            "size_bytes": 4116719
+          },
+          {
+            "asset_id": "mouse1_slice232",
+            "exists": true,
+            "mtime_ns": 1789436279157761240,
+            "path": "benchmarks/spatial_alignment/compiled_data/mop_paper/mouse1_slice232.h5ad",
+            "role": "slice",
+            "size_bytes": 3793270
+          },
+          {
+            "asset_id": "mouse1_slice241",
+            "exists": true,
+            "mtime_ns": 1789436279236145851,
+            "path": "benchmarks/spatial_alignment/compiled_data/mop_paper/mouse1_slice241.h5ad",
+            "role": "slice",
+            "size_bytes": 2781374
+          },
+          {
+            "asset_id": "mouse1_slice251",
+            "exists": true,
+            "mtime_ns": 1789436279327919210,
+            "path": "benchmarks/spatial_alignment/compiled_data/mop_paper/mouse1_slice251.h5ad",
+            "role": "slice",
+            "size_bytes": 2974547
+          },
+          {
+            "asset_id": "mouse1_slice260",
+            "exists": true,
+            "mtime_ns": 1789436279449225564,
+            "path": "benchmarks/spatial_alignment/compiled_data/mop_paper/mouse1_slice260.h5ad",
+            "role": "slice",
+            "size_bytes": 4053268
+          }
+        ],
+        "instruction_nonempty": true,
+        "instruction_present": true,
+        "marker_gene_file": {
+          "exists": true,
+          "mtime_ns": 1777126476635401819,
+          "path": "benchmarks/spatial_alignment/tasks/sa-105-mop-mouse1sample5-serial-align/data/marker_genes.csv",
+          "size_bytes": 1871
+        },
+        "public_score_split": "train",
+        "score_split": "eval",
+        "split_manifest": {
+          "exists": true,
+          "mtime_ns": 1777126476635550901,
+          "path": "benchmarks/spatial_alignment/tasks/sa-105-mop-mouse1sample5-serial-align/data/split_manifest.json",
+          "size_bytes": 477
+        },
+        "split_manifest_schema": "paper2bench.split_manifest.v0.1",
+        "split_visibility": "scorer_only",
+        "task_id_matches_directory": true
+      },
+      "hashes": {
+        "definition_hash": "0bc5421c420d6c68b12e431993ec4c6d8aaede46107c101679f095ef8cabdacb"
+      },
+      "issues": [],
+      "ok": true,
+      "task_id": "sa-105-mop-mouse1sample5-serial-align",
+      "task_path": "benchmarks/spatial_alignment/tasks/sa-105-mop-mouse1sample5-serial-align/task.toml"
+    },
+    {
+      "checks": {
+        "asset_count": 6,
+        "assets": [
+          {
+            "asset_id": "mouse1_slice271",
+            "exists": true,
+            "mtime_ns": 1789436279525168468,
+            "path": "benchmarks/spatial_alignment/compiled_data/mop_paper/mouse1_slice271.h5ad",
+            "role": "slice",
+            "size_bytes": 2533132
+          },
+          {
+            "asset_id": "mouse1_slice283",
+            "exists": true,
+            "mtime_ns": 1789436279607034704,
+            "path": "benchmarks/spatial_alignment/compiled_data/mop_paper/mouse1_slice283.h5ad",
+            "role": "slice",
+            "size_bytes": 2782564
+          },
+          {
+            "asset_id": "mouse1_slice291",
+            "exists": true,
+            "mtime_ns": 1789436279698188146,
+            "path": "benchmarks/spatial_alignment/compiled_data/mop_paper/mouse1_slice291.h5ad",
+            "role": "slice",
+            "size_bytes": 2926435
+          },
+          {
+            "asset_id": "mouse1_slice301",
+            "exists": true,
+            "mtime_ns": 1789436279784934340,
+            "path": "benchmarks/spatial_alignment/compiled_data/mop_paper/mouse1_slice301.h5ad",
+            "role": "slice",
+            "size_bytes": 2886770
+          },
+          {
+            "asset_id": "mouse1_slice313",
+            "exists": true,
+            "mtime_ns": 1789436279927571106,
+            "path": "benchmarks/spatial_alignment/compiled_data/mop_paper/mouse1_slice313.h5ad",
+            "role": "slice",
+            "size_bytes": 2537342
+          },
+          {
+            "asset_id": "mouse1_slice326",
+            "exists": true,
+            "mtime_ns": 1789436280012184675,
+            "path": "benchmarks/spatial_alignment/compiled_data/mop_paper/mouse1_slice326.h5ad",
+            "role": "slice",
+            "size_bytes": 2721463
+          }
+        ],
+        "instruction_nonempty": true,
+        "instruction_present": true,
+        "marker_gene_file": {
+          "exists": true,
+          "mtime_ns": 1777126476636020065,
+          "path": "benchmarks/spatial_alignment/tasks/sa-106-mop-mouse1sample6-serial-align/data/marker_genes.csv",
+          "size_bytes": 1871
+        },
+        "public_score_split": "train",
+        "score_split": "eval",
+        "split_manifest": {
+          "exists": true,
+          "mtime_ns": 1777126476636163814,
+          "path": "benchmarks/spatial_alignment/tasks/sa-106-mop-mouse1sample6-serial-align/data/split_manifest.json",
+          "size_bytes": 477
+        },
+        "split_manifest_schema": "paper2bench.split_manifest.v0.1",
+        "split_visibility": "scorer_only",
+        "task_id_matches_directory": true
+      },
+      "hashes": {
+        "definition_hash": "132107a77cf996b5dca8372a2cd6920ef22c50daabe5d1fbc02946aee047d2c4"
+      },
+      "issues": [],
+      "ok": true,
+      "task_id": "sa-106-mop-mouse1sample6-serial-align",
+      "task_path": "benchmarks/spatial_alignment/tasks/sa-106-mop-mouse1sample6-serial-align/task.toml"
+    },
+    {
+      "checks": {
+        "asset_count": 4,
+        "assets": [
+          {
+            "asset_id": "mouse2_slice1",
+            "exists": true,
+            "mtime_ns": 1789436280677411935,
+            "path": "benchmarks/spatial_alignment/compiled_data/mop_paper/mouse2_slice1.h5ad",
+            "role": "slice",
+            "size_bytes": 1192297
+          },
+          {
+            "asset_id": "mouse2_slice61",
+            "exists": true,
+            "mtime_ns": 1789436282707731832,
+            "path": "benchmarks/spatial_alignment/compiled_data/mop_paper/mouse2_slice61.h5ad",
+            "role": "slice",
+            "size_bytes": 2287503
+          },
+          {
+            "asset_id": "mouse2_slice119",
+            "exists": true,
+            "mtime_ns": 1789436280918608143,
+            "path": "benchmarks/spatial_alignment/compiled_data/mop_paper/mouse2_slice119.h5ad",
+            "role": "slice",
+            "size_bytes": 3602061
+          },
+          {
+            "asset_id": "mouse2_slice300",
+            "exists": true,
+            "mtime_ns": 1789436282361558143,
+            "path": "benchmarks/spatial_alignment/compiled_data/mop_paper/mouse2_slice300.h5ad",
+            "role": "slice",
+            "size_bytes": 2579417
+          }
+        ],
+        "instruction_nonempty": true,
+        "instruction_present": true,
+        "marker_gene_file": {
+          "exists": true,
+          "mtime_ns": 1777126476636785769,
+          "path": "benchmarks/spatial_alignment/tasks/sa-107-mop-mouse2sample1-serial-align/data/marker_genes.csv",
+          "size_bytes": 1871
+        },
+        "public_score_split": "train",
+        "score_split": "eval",
+        "split_manifest": {
+          "exists": true,
+          "mtime_ns": 1777126476636933518,
+          "path": "benchmarks/spatial_alignment/tasks/sa-107-mop-mouse2sample1-serial-align/data/split_manifest.json",
+          "size_bytes": 477
+        },
+        "split_manifest_schema": "paper2bench.split_manifest.v0.1",
+        "split_visibility": "scorer_only",
+        "task_id_matches_directory": true
+      },
+      "hashes": {
+        "definition_hash": "5bb7432a300941073f25d98867d0cbf02b6779803b3860aafa6d05cc38a08f34"
+      },
+      "issues": [],
+      "ok": true,
+      "task_id": "sa-107-mop-mouse2sample1-serial-align",
+      "task_path": "benchmarks/spatial_alignment/tasks/sa-107-mop-mouse2sample1-serial-align/task.toml"
+    },
+    {
+      "checks": {
+        "asset_count": 6,
+        "assets": [
+          {
+            "asset_id": "mouse2_slice10",
+            "exists": true,
+            "mtime_ns": 1789436280703034805,
+            "path": "benchmarks/spatial_alignment/compiled_data/mop_paper/mouse2_slice10.h5ad",
+            "role": "slice",
+            "size_bytes": 806368
+          },
+          {
+            "asset_id": "mouse2_slice70",
+            "exists": true,
+            "mtime_ns": 1789436282794532276,
+            "path": "benchmarks/spatial_alignment/compiled_data/mop_paper/mouse2_slice70.h5ad",
+            "role": "slice",
+            "size_bytes": 2812304
+          },
+          {
+            "asset_id": "mouse2_slice129",
+            "exists": true,
+            "mtime_ns": 1789436281027293207,
+            "path": "benchmarks/spatial_alignment/compiled_data/mop_paper/mouse2_slice129.h5ad",
+            "role": "slice",
+            "size_bytes": 3611247
+          },
+          {
+            "asset_id": "mouse2_slice189",
+            "exists": true,
+            "mtime_ns": 1789436281546957659,
+            "path": "benchmarks/spatial_alignment/compiled_data/mop_paper/mouse2_slice189.h5ad",
+            "role": "slice",
+            "size_bytes": 2956083
+          },
+          {
+            "asset_id": "mouse2_slice249",
+            "exists": true,
+            "mtime_ns": 1789436281970667210,
+            "path": "benchmarks/spatial_alignment/compiled_data/mop_paper/mouse2_slice249.h5ad",
+            "role": "slice",
+            "size_bytes": 2744535
+          },
+          {
+            "asset_id": "mouse2_slice309",
+            "exists": true,
+            "mtime_ns": 1789436282423792882,
+            "path": "benchmarks/spatial_alignment/compiled_data/mop_paper/mouse2_slice309.h5ad",
+            "role": "slice",
+            "size_bytes": 2198797
+          }
+        ],
+        "instruction_nonempty": true,
+        "instruction_present": true,
+        "marker_gene_file": {
+          "exists": true,
+          "mtime_ns": 1777126476637631180,
+          "path": "benchmarks/spatial_alignment/tasks/sa-108-mop-mouse2sample2-serial-align/data/marker_genes.csv",
+          "size_bytes": 1871
+        },
+        "public_score_split": "train",
+        "score_split": "eval",
+        "split_manifest": {
+          "exists": true,
+          "mtime_ns": 1777126476637777762,
+          "path": "benchmarks/spatial_alignment/tasks/sa-108-mop-mouse2sample2-serial-align/data/split_manifest.json",
+          "size_bytes": 477
+        },
+        "split_manifest_schema": "paper2bench.split_manifest.v0.1",
+        "split_visibility": "scorer_only",
+        "task_id_matches_directory": true
+      },
+      "hashes": {
+        "definition_hash": "cac0f8d1b123d8a5b9d57cb36376fd610e07959b05587e0d499fbe256b50e053"
+      },
+      "issues": [],
+      "ok": true,
+      "task_id": "sa-108-mop-mouse2sample2-serial-align",
+      "task_path": "benchmarks/spatial_alignment/tasks/sa-108-mop-mouse2sample2-serial-align/task.toml"
+    },
+    {
+      "checks": {
+        "asset_count": 6,
+        "assets": [
+          {
+            "asset_id": "mouse2_slice20",
+            "exists": true,
+            "mtime_ns": 1789436281561991073,
+            "path": "benchmarks/spatial_alignment/compiled_data/mop_paper/mouse2_slice20.h5ad",
+            "role": "slice",
+            "size_bytes": 433347
+          },
+          {
+            "asset_id": "mouse2_slice79",
+            "exists": true,
+            "mtime_ns": 1789436282865876430,
+            "path": "benchmarks/spatial_alignment/compiled_data/mop_paper/mouse2_slice79.h5ad",
+            "role": "slice",
+            "size_bytes": 2503296
+          },
+          {
+            "asset_id": "mouse2_slice139",
+            "exists": true,
+            "mtime_ns": 1789436281108975318,
+            "path": "benchmarks/spatial_alignment/compiled_data/mop_paper/mouse2_slice139.h5ad",
+            "role": "slice",
+            "size_bytes": 2697401
+          },
+          {
+            "asset_id": "mouse2_slice201",
+            "exists": true,
+            "mtime_ns": 1789436281632672311,
+            "path": "benchmarks/spatial_alignment/compiled_data/mop_paper/mouse2_slice201.h5ad",
+            "role": "slice",
+            "size_bytes": 2423240
+          },
+          {
+            "asset_id": "mouse2_slice261",
+            "exists": true,
+            "mtime_ns": 1789436282040675740,
+            "path": "benchmarks/spatial_alignment/compiled_data/mop_paper/mouse2_slice261.h5ad",
+            "role": "slice",
+            "size_bytes": 2231866
+          },
+          {
+            "asset_id": "mouse2_slice319",
+            "exists": true,
+            "mtime_ns": 1789436282518957490,
+            "path": "benchmarks/spatial_alignment/compiled_data/mop_paper/mouse2_slice319.h5ad",
+            "role": "slice",
+            "size_bytes": 1782589
+          }
+        ],
+        "instruction_nonempty": true,
+        "instruction_present": true,
+        "marker_gene_file": {
+          "exists": true,
+          "mtime_ns": 1777126476638378259,
+          "path": "benchmarks/spatial_alignment/tasks/sa-109-mop-mouse2sample3-serial-align/data/marker_genes.csv",
+          "size_bytes": 1871
+        },
+        "public_score_split": "train",
+        "score_split": "eval",
+        "split_manifest": {
+          "exists": true,
+          "mtime_ns": 1777126476638521258,
+          "path": "benchmarks/spatial_alignment/tasks/sa-109-mop-mouse2sample3-serial-align/data/split_manifest.json",
+          "size_bytes": 477
+        },
+        "split_manifest_schema": "paper2bench.split_manifest.v0.1",
+        "split_visibility": "scorer_only",
+        "task_id_matches_directory": true
+      },
+      "hashes": {
+        "definition_hash": "e55decfe62db37eae73eaddd10447c498977a1f6ce9a2f588ce378f8c621b660"
+      },
+      "issues": [],
+      "ok": true,
+      "task_id": "sa-109-mop-mouse2sample3-serial-align",
+      "task_path": "benchmarks/spatial_alignment/tasks/sa-109-mop-mouse2sample3-serial-align/task.toml"
+    },
+    {
+      "checks": {
+        "asset_count": 5,
+        "assets": [
+          {
+            "asset_id": "mouse2_slice31",
+            "exists": true,
+            "mtime_ns": 1789436282469074999,
+            "path": "benchmarks/spatial_alignment/compiled_data/mop_paper/mouse2_slice31.h5ad",
+            "role": "slice",
+            "size_bytes": 1412364
+          },
+          {
+            "asset_id": "mouse2_slice90",
+            "exists": true,
+            "mtime_ns": 1789436282971303787,
+            "path": "benchmarks/spatial_alignment/compiled_data/mop_paper/mouse2_slice90.h5ad",
+            "role": "slice",
+            "size_bytes": 3542375
+          },
+          {
+            "asset_id": "mouse2_slice151",
+            "exists": true,
+            "mtime_ns": 1789436281257311709,
+            "path": "benchmarks/spatial_alignment/compiled_data/mop_paper/mouse2_slice151.h5ad",
+            "role": "slice",
+            "size_bytes": 3551673
+          },
+          {
+            "asset_id": "mouse2_slice209",
+            "exists": true,
+            "mtime_ns": 1789436281720999295,
+            "path": "benchmarks/spatial_alignment/compiled_data/mop_paper/mouse2_slice209.h5ad",
+            "role": "slice",
+            "size_bytes": 2997890
+          },
+          {
+            "asset_id": "mouse2_slice270",
+            "exists": true,
+            "mtime_ns": 1789436282124233309,
+            "path": "benchmarks/spatial_alignment/compiled_data/mop_paper/mouse2_slice270.h5ad",
+            "role": "slice",
+            "size_bytes": 2796343
+          }
+        ],
+        "instruction_nonempty": true,
+        "instruction_present": true,
+        "marker_gene_file": {
+          "exists": true,
+          "mtime_ns": 1777126476639032921,
+          "path": "benchmarks/spatial_alignment/tasks/sa-110-mop-mouse2sample4-serial-align/data/marker_genes.csv",
+          "size_bytes": 1871
+        },
+        "public_score_split": "train",
+        "score_split": "eval",
+        "split_manifest": {
+          "exists": true,
+          "mtime_ns": 1777126476639182921,
+          "path": "benchmarks/spatial_alignment/tasks/sa-110-mop-mouse2sample4-serial-align/data/split_manifest.json",
+          "size_bytes": 477
+        },
+        "split_manifest_schema": "paper2bench.split_manifest.v0.1",
+        "split_visibility": "scorer_only",
+        "task_id_matches_directory": true
+      },
+      "hashes": {
+        "definition_hash": "7d67cb319a5dc5984756e3db52278742e0bd71fa2770511dd9c12b62e3f70caa"
+      },
+      "issues": [],
+      "ok": true,
+      "task_id": "sa-110-mop-mouse2sample4-serial-align",
+      "task_path": "benchmarks/spatial_alignment/tasks/sa-110-mop-mouse2sample4-serial-align/task.toml"
+    },
+    {
+      "checks": {
+        "asset_count": 5,
+        "assets": [
+          {
+            "asset_id": "mouse2_slice40",
+            "exists": true,
+            "mtime_ns": 1789436282577974522,
+            "path": "benchmarks/spatial_alignment/compiled_data/mop_paper/mouse2_slice40.h5ad",
+            "role": "slice",
+            "size_bytes": 2142806
+          },
+          {
+            "asset_id": "mouse2_slice99",
+            "exists": true,
+            "mtime_ns": 1789436283099121306,
+            "path": "benchmarks/spatial_alignment/compiled_data/mop_paper/mouse2_slice99.h5ad",
+            "role": "slice",
+            "size_bytes": 3634670
+          },
+          {
+            "asset_id": "mouse2_slice160",
+            "exists": true,
+            "mtime_ns": 1789436281347951860,
+            "path": "benchmarks/spatial_alignment/compiled_data/mop_paper/mouse2_slice160.h5ad",
+            "role": "slice",
+            "size_bytes": 2956661
+          },
+          {
+            "asset_id": "mouse2_slice219",
+            "exists": true,
+            "mtime_ns": 1789436281792675241,
+            "path": "benchmarks/spatial_alignment/compiled_data/mop_paper/mouse2_slice219.h5ad",
+            "role": "slice",
+            "size_bytes": 2353108
+          },
+          {
+            "asset_id": "mouse2_slice280",
+            "exists": true,
+            "mtime_ns": 1789436282195276213,
+            "path": "benchmarks/spatial_alignment/compiled_data/mop_paper/mouse2_slice280.h5ad",
+            "role": "slice",
+            "size_bytes": 2540089
+          }
+        ],
+        "instruction_nonempty": true,
+        "instruction_present": true,
+        "marker_gene_file": {
+          "exists": true,
+          "mtime_ns": 1777126476639902750,
+          "path": "benchmarks/spatial_alignment/tasks/sa-111-mop-mouse2sample5-serial-align/data/marker_genes.csv",
+          "size_bytes": 1871
+        },
+        "public_score_split": "train",
+        "score_split": "eval",
+        "split_manifest": {
+          "exists": true,
+          "mtime_ns": 1777126476640054999,
+          "path": "benchmarks/spatial_alignment/tasks/sa-111-mop-mouse2sample5-serial-align/data/split_manifest.json",
+          "size_bytes": 477
+        },
+        "split_manifest_schema": "paper2bench.split_manifest.v0.1",
+        "split_visibility": "scorer_only",
+        "task_id_matches_directory": true
+      },
+      "hashes": {
+        "definition_hash": "8ed67884adbfdfd012514d1d243a2adb6fd9006ec977d2854890fe066c614755"
+      },
+      "issues": [],
+      "ok": true,
+      "task_id": "sa-111-mop-mouse2sample5-serial-align",
+      "task_path": "benchmarks/spatial_alignment/tasks/sa-111-mop-mouse2sample5-serial-align/task.toml"
+    },
+    {
+      "checks": {
+        "asset_count": 5,
+        "assets": [
+          {
+            "asset_id": "mouse2_slice50",
+            "exists": true,
+            "mtime_ns": 1789436282641105219,
+            "path": "benchmarks/spatial_alignment/compiled_data/mop_paper/mouse2_slice50.h5ad",
+            "role": "slice",
+            "size_bytes": 1988966
+          },
+          {
+            "asset_id": "mouse2_slice109",
+            "exists": true,
+            "mtime_ns": 1789436280808458662,
+            "path": "benchmarks/spatial_alignment/compiled_data/mop_paper/mouse2_slice109.h5ad",
+            "role": "slice",
+            "size_bytes": 3652509
+          },
+          {
+            "asset_id": "mouse2_slice169",
+            "exists": true,
+            "mtime_ns": 1789436281458629049,
+            "path": "benchmarks/spatial_alignment/compiled_data/mop_paper/mouse2_slice169.h5ad",
+            "role": "slice",
+            "size_bytes": 3615872
+          },
+          {
+            "asset_id": "mouse2_slice229",
+            "exists": true,
+            "mtime_ns": 1789436281889024975,
+            "path": "benchmarks/spatial_alignment/compiled_data/mop_paper/mouse2_slice229.h5ad",
+            "role": "slice",
+            "size_bytes": 3487779
+          },
+          {
+            "asset_id": "mouse2_slice289",
+            "exists": true,
+            "mtime_ns": 1789436282283898364,
+            "path": "benchmarks/spatial_alignment/compiled_data/mop_paper/mouse2_slice289.h5ad",
+            "role": "slice",
+            "size_bytes": 2893096
+          }
+        ],
+        "instruction_nonempty": true,
+        "instruction_present": true,
+        "marker_gene_file": {
+          "exists": true,
+          "mtime_ns": 1777126476640626953,
+          "path": "benchmarks/spatial_alignment/tasks/sa-112-mop-mouse2sample6-serial-align/data/marker_genes.csv",
+          "size_bytes": 1871
+        },
+        "public_score_split": "train",
+        "score_split": "eval",
+        "split_manifest": {
+          "exists": true,
+          "mtime_ns": 1777126476640771453,
+          "path": "benchmarks/spatial_alignment/tasks/sa-112-mop-mouse2sample6-serial-align/data/split_manifest.json",
+          "size_bytes": 477
+        },
+        "split_manifest_schema": "paper2bench.split_manifest.v0.1",
+        "split_visibility": "scorer_only",
+        "task_id_matches_directory": true
+      },
+      "hashes": {
+        "definition_hash": "d408e0ccbc5d45747de1e8bff3d768d9019dc2f029c5c98408fca369150e1b15"
+      },
+      "issues": [],
+      "ok": true,
+      "task_id": "sa-112-mop-mouse2sample6-serial-align",
+      "task_path": "benchmarks/spatial_alignment/tasks/sa-112-mop-mouse2sample6-serial-align/task.toml"
+    }
+  ]
+}

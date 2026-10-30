@@ -1,0 +1,17 @@
+dataset,moesm9_table,metric,n_methods,kendall_tau
+DLPFC,NGS_datasets_rank,PCC,13,0.5128205128205127
+DLPFC,NGS_datasets_rank,Cos_Sim,13,0.4156194667729048
+DLPFC,NGS_datasets_rank,SSIM,13,0.4871794871794871
+DLPFC,NGS_datasets_rank,MI,13,0.4871794871794871
+DLPFC,NGS_datasets_rank,Average_Accuracy,13,0.5548502571494472
+DLPFC,NGS_datasets_rank,ROI_Overlap_Overall,13,0.5806572458540727
+DLPFC,NGS_datasets_rank,Gene_based_overall,13,0.5128205128205127
+DLPFC,NGS_datasets_rank,Landmark_based_overall,13,0.5789974915645967
+MHPR,Image_datasets_rank,PCC,14,0.6257080882770583
+MHPR,Image_datasets_rank,Cos_Sim,14,0.7303831843351789
+MHPR,Image_datasets_rank,SSIM,14,0.6927482405924573
+MHPR,Image_datasets_rank,MI,14,0.7615603457420287
+MHPR,Image_datasets_rank,Average_Accuracy,14,0.8491752626617218
+MHPR,Image_datasets_rank,ROI_Overlap_Overall,14,0.7222222222222222
+MHPR,Image_datasets_rank,Gene_based_overall,14,0.7613636363636362
+MHPR,Image_datasets_rank,Landmark_based_overall,14,0.7978031705815031

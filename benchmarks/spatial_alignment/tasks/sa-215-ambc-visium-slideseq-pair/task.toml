@@ -1,0 +1,16 @@
+id = "sa-215-ambc-visium-slideseq-pair"
+name = "Adult mouse brain coronal cross-platform alignment: visium to slideseq"
+domain = "spatial_genomics"
+modality = "spatial_transcriptomics"
+task_type = "cross_platform_pair_alignment"
+difficulty = "medium"
+status = "executable_local"
+input_contract = "h5ad_spatial_v1"
+output_contract = "aligned_coordinate_csv_v1"
+metric_profile = "sabench_gene_only_alignment_v1"
+label_key = "Region"
+marker_gene_file = "benchmarks/spatial_alignment/tasks/sa-215-ambc-visium-slideseq-pair/data/marker_genes.csv"
+max_marker_genes = 100
+slices = ["ambc_visium=/users/ychen5/p2b-data/paper2bench-data/AMBC_Visium/Data231_adult_mouse_brain.h5ad", "ambc_slideseq=/users/ychen5/p2b-data/paper2bench-data/AMBC_Slideseq/data236_ambc_slideseq_puck46_L.h5ad"]
+paper_data_ids = ["Data231-240/Slideseq", "Data231-240/Visium"]
+paper_source = "SABench Data231-240 ten-platform adult mouse brain coronal family; Fig. 5d reports whether each method ran on each platform pair."

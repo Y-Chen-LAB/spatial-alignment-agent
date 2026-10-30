@@ -1,0 +1,87 @@
+{
+  "schema_version": "paper2bench.data_manifest.v0.1",
+  "task_id": "sa-308-albis-strongmix-cell-gap-serial-align-smoke",
+  "source": "Albis simulator (scripts/alignment_benchmark.py)",
+  "albis_dataset": "strong_mix_cell_gap",
+  "albis_scale": "smoke",
+  "albis_base_dataset": "strong_mix_cell",
+  "slide_frame_grid": false,
+  "albis_slice_ids": [
+    1,
+    2,
+    4,
+    5,
+    10,
+    11
+  ],
+  "qc": null,
+  "albis_catalog": "/users/ychen5/p2b-data/paper2bench-data/albis_sim_smoke/strong_mix_cell_gap/catalog.json",
+  "assets": [
+    {
+      "asset_id": "s00",
+      "role": "slice",
+      "path": "/users/ychen5/p2b-data/paper2bench-data/albis_sim_smoke/strong_mix_cell_gap/slices/s00.h5ad",
+      "format": "h5ad",
+      "visibility": "public",
+      "metadata": {
+        "n_obs": 272,
+        "is_reference": true
+      }
+    },
+    {
+      "asset_id": "s01",
+      "role": "slice",
+      "path": "/users/ychen5/p2b-data/paper2bench-data/albis_sim_smoke/strong_mix_cell_gap/slices/s01.h5ad",
+      "format": "h5ad",
+      "visibility": "public",
+      "metadata": {
+        "n_obs": 359,
+        "is_reference": false
+      }
+    },
+    {
+      "asset_id": "s02",
+      "role": "slice",
+      "path": "/users/ychen5/p2b-data/paper2bench-data/albis_sim_smoke/strong_mix_cell_gap/slices/s02.h5ad",
+      "format": "h5ad",
+      "visibility": "public",
+      "metadata": {
+        "n_obs": 589,
+        "is_reference": false
+      }
+    },
+    {
+      "asset_id": "s03",
+      "role": "slice",
+      "path": "/users/ychen5/p2b-data/paper2bench-data/albis_sim_smoke/strong_mix_cell_gap/slices/s03.h5ad",
+      "format": "h5ad",
+      "visibility": "public",
+      "metadata": {
+        "n_obs": 626,
+        "is_reference": false
+      }
+    },
+    {
+      "asset_id": "s04",
+      "role": "slice",
+      "path": "/users/ychen5/p2b-data/paper2bench-data/albis_sim_smoke/strong_mix_cell_gap/slices/s04.h5ad",
+      "format": "h5ad",
+      "visibility": "public",
+      "metadata": {
+        "n_obs": 256,
+        "is_reference": false
+      }
+    },
+    {
+      "asset_id": "s05",
+      "role": "slice",
+      "path": "/users/ychen5/p2b-data/paper2bench-data/albis_sim_smoke/strong_mix_cell_gap/slices/s05.h5ad",
+      "format": "h5ad",
+      "visibility": "public",
+      "metadata": {
+        "n_obs": 92,
+        "is_reference": false
+      }
+    }
+  ]
+}

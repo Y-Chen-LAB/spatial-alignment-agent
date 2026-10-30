@@ -1,0 +1,150 @@
+{
+  "schema_version": "paper2bench.data_manifest.v0.1",
+  "task_id": "sa-041-dlpfc-crop-sweep",
+  "family": "robustness_sweep",
+  "compiler": "scripts/build_tasks.py",
+  "registry": "benchmarks/spatial_alignment/task_registry.toml",
+  "paper_reference": "MOESM8 DLPFC_crop.csv, 10 levels x 12 method columns",
+  "marker_genes": {
+    "marker_source": "sabench_panel",
+    "marker_source_path": "/Users/yiqun/Downloads/paper2bench-data/DLPFC/DLPFC_gene_list.csv",
+    "n_requested": 124,
+    "n_present_on_all_slices": 124,
+    "n_common_genes": 33538
+  },
+  "pair_mode": "star",
+  "assets": [
+    {
+      "asset_id": "data1",
+      "format": "h5ad",
+      "path": "/Users/yiqun/Downloads/paper2bench-data/DLPFC/151673.h5ad",
+      "role": "slice",
+      "visibility": "public",
+      "metadata": {
+        "paper_data_id": "Data1",
+        "n_obs": 3611,
+        "n_var": 33538
+      }
+    },
+    {
+      "asset_id": "data2_crop010",
+      "format": "h5ad",
+      "path": "benchmarks/spatial_alignment/compiled_data/sweeps/sa-041-dlpfc-crop-sweep/data2_crop010.h5ad",
+      "role": "slice",
+      "visibility": "public",
+      "metadata": {
+        "paper_data_id": "Data2",
+        "n_obs": 247,
+        "n_var": 33538
+      }
+    },
+    {
+      "asset_id": "data2_crop020",
+      "format": "h5ad",
+      "path": "benchmarks/spatial_alignment/compiled_data/sweeps/sa-041-dlpfc-crop-sweep/data2_crop020.h5ad",
+      "role": "slice",
+      "visibility": "public",
+      "metadata": {
+        "paper_data_id": "Data2",
+        "n_obs": 633,
+        "n_var": 33538
+      }
+    },
+    {
+      "asset_id": "data2_crop030",
+      "format": "h5ad",
+      "path": "benchmarks/spatial_alignment/compiled_data/sweeps/sa-041-dlpfc-crop-sweep/data2_crop030.h5ad",
+      "role": "slice",
+      "visibility": "public",
+      "metadata": {
+        "paper_data_id": "Data2",
+        "n_obs": 1041,
+        "n_var": 33538
+      }
+    },
+    {
+      "asset_id": "data2_crop040",
+      "format": "h5ad",
+      "path": "benchmarks/spatial_alignment/compiled_data/sweeps/sa-041-dlpfc-crop-sweep/data2_crop040.h5ad",
+      "role": "slice",
+      "visibility": "public",
+      "metadata": {
+        "paper_data_id": "Data2",
+        "n_obs": 1461,
+        "n_var": 33538
+      }
+    },
+    {
+      "asset_id": "data2_crop050",
+      "format": "h5ad",
+      "path": "benchmarks/spatial_alignment/compiled_data/sweeps/sa-041-dlpfc-crop-sweep/data2_crop050.h5ad",
+      "role": "slice",
+      "visibility": "public",
+      "metadata": {
+        "paper_data_id": "Data2",
+        "n_obs": 1874,
+        "n_var": 33538
+      }
+    },
+    {
+      "asset_id": "data2_crop060",
+      "format": "h5ad",
+      "path": "benchmarks/spatial_alignment/compiled_data/sweeps/sa-041-dlpfc-crop-sweep/data2_crop060.h5ad",
+      "role": "slice",
+      "visibility": "public",
+      "metadata": {
+        "paper_data_id": "Data2",
+        "n_obs": 2288,
+        "n_var": 33538
+      }
+    },
+    {
+      "asset_id": "data2_crop070",
+      "format": "h5ad",
+      "path": "benchmarks/spatial_alignment/compiled_data/sweeps/sa-041-dlpfc-crop-sweep/data2_crop070.h5ad",
+      "role": "slice",
+      "visibility": "public",
+      "metadata": {
+        "paper_data_id": "Data2",
+        "n_obs": 2690,
+        "n_var": 33538
+      }
+    },
+    {
+      "asset_id": "data2_crop080",
+      "format": "h5ad",
+      "path": "benchmarks/spatial_alignment/compiled_data/sweeps/sa-041-dlpfc-crop-sweep/data2_crop080.h5ad",
+      "role": "slice",
+      "visibility": "public",
+      "metadata": {
+        "paper_data_id": "Data2",
+        "n_obs": 3083,
+        "n_var": 33538
+      }
+    },
+    {
+      "asset_id": "data2_crop090",
+      "format": "h5ad",
+      "path": "benchmarks/spatial_alignment/compiled_data/sweeps/sa-041-dlpfc-crop-sweep/data2_crop090.h5ad",
+      "role": "slice",
+      "visibility": "public",
+      "metadata": {
+        "paper_data_id": "Data2",
+        "n_obs": 3442,
+        "n_var": 33538
+      }
+    },
+    {
+      "asset_id": "data2_crop100",
+      "format": "h5ad",
+      "path": "benchmarks/spatial_alignment/compiled_data/sweeps/sa-041-dlpfc-crop-sweep/data2_crop100.h5ad",
+      "role": "slice",
+      "visibility": "public",
+      "metadata": {
+        "paper_data_id": "Data2",
+        "n_obs": 3635,
+        "n_var": 33538
+      }
+    }
+  ]
+}

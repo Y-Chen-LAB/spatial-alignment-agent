@@ -1,0 +1,48 @@
+{
+  "schema_version": "paper2bench.data_manifest.v0.1",
+  "task_id": "sa-245-ambc-stereoseq-cosmx-pair",
+  "family": "ambc_cross_platform",
+  "compiler": "scripts/build_tasks.py",
+  "registry": "benchmarks/spatial_alignment/task_registry.toml",
+  "paper_reference": "Fig5D_AMBC_cross_platform_success_long.csv",
+  "marker_genes": {
+    "marker_source": "log1p_variance_ranking",
+    "marker_source_path": null,
+    "n_requested": 100,
+    "n_present_on_all_slices": 100,
+    "n_common_genes": 937
+  },
+  "pair_mode": "consecutive",
+  "supersedes": null,
+  "assets": [
+    {
+      "asset_id": "ambc_stereoseq",
+      "format": "h5ad",
+      "path": "/Users/yiqun/Downloads/paper2bench-data/AMBC_Stereoseq/data239_ambc_stereoseq_T312.h5ad",
+      "role": "slice",
+      "visibility": "public",
+      "metadata": {
+        "paper_data_id": "Data231-240/Stereoseq",
+        "n_obs": 74466,
+        "n_var": 24536
+      }
+    },
+    {
+      "asset_id": "ambc_cosmx",
+      "format": "h5ad",
+      "path": "/Users/yiqun/Downloads/paper2bench-data/AMBC_CosMx/data240_ambc_cosmx_quarter_S3.h5ad",
+      "role": "slice",
+      "visibility": "public",
+      "metadata": {
+        "paper_data_id": "Data231-240/CosMx",
+        "n_obs": 38996,
+        "n_var": 950
+      }
+    }
+  ],
+  "platform_pair": [
+    "stereoseq",
+    "cosmx"
+  ],
+  "platform_pair_class": "mixed"
+}

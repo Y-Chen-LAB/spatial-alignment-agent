@@ -1,0 +1,35 @@
+{
+  "workbook": "43588_2026_977_MOESM9_ESM.xlsx",
+  "sheets": [
+    {
+      "sheet_name": "4A",
+      "csv_path": "references/paper_source_data/s43588-026-00977/43588_2026_977_MOESM9_ESM/4A.csv",
+      "rows": 47,
+      "cols": 19
+    },
+    {
+      "sheet_name": "NGS_datasets_rank_timememory",
+      "csv_path": "references/paper_source_data/s43588-026-00977/43588_2026_977_MOESM9_ESM/NGS_datasets_rank_timememory.csv",
+      "rows": 15,
+      "cols": 4
+    },
+    {
+      "sheet_name": "NGS_datasets_rank",
+      "csv_path": "references/paper_source_data/s43588-026-00977/43588_2026_977_MOESM9_ESM/NGS_datasets_rank.csv",
+      "rows": 15,
+      "cols": 9
+    },
+    {
+      "sheet_name": "Image_datasets_rank_timememory",
+      "csv_path": "references/paper_source_data/s43588-026-00977/43588_2026_977_MOESM9_ESM/Image_datasets_rank_timememory.csv",
+      "rows": 15,
+      "cols": 4
+    },
+    {
+      "sheet_name": "Image_datasets_rank",
+      "csv_path": "references/paper_source_data/s43588-026-00977/43588_2026_977_MOESM9_ESM/Image_datasets_rank.csv",
+      "rows": 15,
+      "cols": 9
+    }
+  ]
+}

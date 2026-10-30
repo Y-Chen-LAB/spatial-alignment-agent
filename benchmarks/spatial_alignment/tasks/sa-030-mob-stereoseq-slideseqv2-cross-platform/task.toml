@@ -1,0 +1,16 @@
+id = "sa-030-mob-stereoseq-slideseqv2-cross-platform"
+name = "Mouse olfactory bulb cross-platform alignment: Stereo-seq to Slide-seqV2"
+domain = "spatial_genomics"
+modality = "spatial_transcriptomics"
+task_type = "cross_platform_pair_alignment"
+difficulty = "medium"
+status = "executable_local"
+input_contract = "h5ad_spatial_v1"
+output_contract = "aligned_coordinate_csv_v1"
+metric_profile = "sabench_gene_only_alignment_v1"
+label_key = "Region"
+marker_gene_file = "benchmarks/spatial_alignment/tasks/sa-030-mob-stereoseq-slideseqv2-cross-platform/data/marker_genes.csv"
+max_marker_genes = 7
+slices = ["mob_stereoseq=benchmarks/spatial_alignment/compiled_data/mob_stereoseq/data78_mob_stereoseq.h5ad", "mob_slideseqv2=/users/ychen5/p2b-data/paper2bench-data/MOB_slideseqv2/data79_mob_slideseqv2.h5ad"]
+paper_data_ids = ["Data78", "Data79"]
+paper_source = "SABench Data78-79, the paper's cross-platform mouse olfactory bulb pair (Fig. 5a, 5b)."

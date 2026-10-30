@@ -1,0 +1,17 @@
+id = "sa-003-dlpfc-coarse-shuffled-pair"
+name = "DLPFC coarse alignment from shuffled coordinates"
+domain = "spatial_genomics"
+modality = "spatial_transcriptomics"
+task_type = "coarse_pair_alignment"
+difficulty = "medium"
+status = "executable_local"
+input_contract = "h5ad_spatial_with_region_v1"
+output_contract = "aligned_coordinate_csv_v1"
+metric_profile = "sabench_light_alignment_v1"
+label_key = "Region"
+marker_gene_file = "benchmarks/spatial_alignment/tasks/sa-003-dlpfc-coarse-shuffled-pair/data/marker_genes.csv"
+max_marker_genes = 25
+slices = [
+  "151673_shuffled=/users/ychen5/p2b-data/paper2bench-data/coarse_align/151673_shuffled.h5ad",
+  "151674_shuffled=/users/ychen5/p2b-data/paper2bench-data/coarse_align/151674_shuffled.h5ad",
+]

@@ -1,0 +1,41 @@
+{
+  "workbook": "43588_2026_977_MOESM10_ESM.xlsx",
+  "sheets": [
+    {
+      "sheet_name": "MOB_GeneBased_PCC",
+      "csv_path": "references/paper_source_data/s43588-026-00977/43588_2026_977_MOESM10_ESM/MOB_GeneBased_PCC.csv",
+      "rows": 16,
+      "cols": 8
+    },
+    {
+      "sheet_name": "MOB_GeneBased_Cos_Sim",
+      "csv_path": "references/paper_source_data/s43588-026-00977/43588_2026_977_MOESM10_ESM/MOB_GeneBased_Cos_Sim.csv",
+      "rows": 16,
+      "cols": 8
+    },
+    {
+      "sheet_name": "MOB_GeneBased_SSIM",
+      "csv_path": "references/paper_source_data/s43588-026-00977/43588_2026_977_MOESM10_ESM/MOB_GeneBased_SSIM.csv",
+      "rows": 16,
+      "cols": 8
+    },
+    {
+      "sheet_name": "MOB_GeneBased_MI",
+      "csv_path": "references/paper_source_data/s43588-026-00977/43588_2026_977_MOESM10_ESM/MOB_GeneBased_MI.csv",
+      "rows": 16,
+      "cols": 8
+    },
+    {
+      "sheet_name": "Flysta3D_MAE",
+      "csv_path": "references/paper_source_data/s43588-026-00977/43588_2026_977_MOESM10_ESM/Flysta3D_MAE.csv",
+      "rows": 17,
+      "cols": 11
+    },
+    {
+      "sheet_name": "MLN_MAE",
+      "csv_path": "references/paper_source_data/s43588-026-00977/43588_2026_977_MOESM10_ESM/MLN_MAE.csv",
+      "rows": 20,
+      "cols": 6
+    }
+  ]
+}

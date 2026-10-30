@@ -1,0 +1,63 @@
+{
+  "schema_version": "paper2bench.data_manifest.v0.1",
+  "task_id": "sa-028-wmb-animal1-window5-serial-align",
+  "source": "https://cellxgene.cziscience.com/collections/0cca8620-8dee-45d0-aef5-23f032a5cf09",
+  "compiler": "scripts/materialize_wmb_partial_tasks.py",
+  "assets": [
+    {
+      "asset_id": "C57BL6J-1.071",
+      "format": "h5ad",
+      "path": "benchmarks/spatial_alignment/compiled_data/wmb_partial/C57BL6J-1.071.h5ad",
+      "role": "slice",
+      "visibility": "public",
+      "metadata": {
+        "n_obs": 47083,
+        "n_var": 1120
+      }
+    },
+    {
+      "asset_id": "C57BL6J-1.081",
+      "format": "h5ad",
+      "path": "benchmarks/spatial_alignment/compiled_data/wmb_partial/C57BL6J-1.081.h5ad",
+      "role": "slice",
+      "visibility": "public",
+      "metadata": {
+        "n_obs": 50126,
+        "n_var": 1120
+      }
+    },
+    {
+      "asset_id": "C57BL6J-1.073",
+      "format": "h5ad",
+      "path": "benchmarks/spatial_alignment/compiled_data/wmb_partial/C57BL6J-1.073.h5ad",
+      "role": "slice",
+      "visibility": "public",
+      "metadata": {
+        "n_obs": 46437,
+        "n_var": 1120
+      }
+    },
+    {
+      "asset_id": "C57BL6J-1.083",
+      "format": "h5ad",
+      "path": "benchmarks/spatial_alignment/compiled_data/wmb_partial/C57BL6J-1.083.h5ad",
+      "role": "slice",
+      "visibility": "public",
+      "metadata": {
+        "n_obs": 49430,
+        "n_var": 1120
+      }
+    },
+    {
+      "asset_id": "C57BL6J-1.046",
+      "format": "h5ad",
+      "path": "benchmarks/spatial_alignment/compiled_data/wmb_partial/C57BL6J-1.046.h5ad",
+      "role": "slice",
+      "visibility": "public",
+      "metadata": {
+        "n_obs": 29627,
+        "n_var": 1120
+      }
+    }
+  ]
+}

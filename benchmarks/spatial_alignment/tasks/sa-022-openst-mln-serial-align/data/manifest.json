@@ -1,0 +1,217 @@
+{
+  "schema_version": "paper2bench.data_manifest.v0.1",
+  "task_id": "sa-022-openst-mln-serial-align",
+  "source": "https://doi.org/10.1016/j.cell.2024.05.055 (Open-ST human metastatic lymph node; SABench Data80-98)",
+  "compiler": "scripts/materialize_openst_mln_tasks.py; data/ restored 2026-09-14/15: marker_genes.csv = scripts/compute_marker_gene_list.py --top-n 100 over the 19 sections (re-scoring an April submission reproduces its original scores exactly), split_manifest = obs_train_test_split_50_seed_0",
+  "assets": [
+    {
+      "asset_id": "openst_mln_section02",
+      "format": "h5ad",
+      "path": "benchmarks/spatial_alignment/compiled_data/openst_mln/section_02.h5ad",
+      "role": "slice",
+      "visibility": "public",
+      "metadata": {
+        "n_obs": 55400,
+        "n_var": 28943
+      }
+    },
+    {
+      "asset_id": "openst_mln_section03",
+      "format": "h5ad",
+      "path": "benchmarks/spatial_alignment/compiled_data/openst_mln/section_03.h5ad",
+      "role": "slice",
+      "visibility": "public",
+      "metadata": {
+        "n_obs": 52405,
+        "n_var": 28943
+      }
+    },
+    {
+      "asset_id": "openst_mln_section04",
+      "format": "h5ad",
+      "path": "benchmarks/spatial_alignment/compiled_data/openst_mln/section_04.h5ad",
+      "role": "slice",
+      "visibility": "public",
+      "metadata": {
+        "n_obs": 77868,
+        "n_var": 28943
+      }
+    },
+    {
+      "asset_id": "openst_mln_section05",
+      "format": "h5ad",
+      "path": "benchmarks/spatial_alignment/compiled_data/openst_mln/section_05.h5ad",
+      "role": "slice",
+      "visibility": "public",
+      "metadata": {
+        "n_obs": 47217,
+        "n_var": 28943
+      }
+    },
+    {
+      "asset_id": "openst_mln_section06",
+      "format": "h5ad",
+      "path": "benchmarks/spatial_alignment/compiled_data/openst_mln/section_06.h5ad",
+      "role": "slice",
+      "visibility": "public",
+      "metadata": {
+        "n_obs": 38555,
+        "n_var": 28943
+      }
+    },
+    {
+      "asset_id": "openst_mln_section07",
+      "format": "h5ad",
+      "path": "benchmarks/spatial_alignment/compiled_data/openst_mln/section_07.h5ad",
+      "role": "slice",
+      "visibility": "public",
+      "metadata": {
+        "n_obs": 27542,
+        "n_var": 28943
+      }
+    },
+    {
+      "asset_id": "openst_mln_section09",
+      "format": "h5ad",
+      "path": "benchmarks/spatial_alignment/compiled_data/openst_mln/section_09.h5ad",
+      "role": "slice",
+      "visibility": "public",
+      "metadata": {
+        "n_obs": 54899,
+        "n_var": 28943
+      }
+    },
+    {
+      "asset_id": "openst_mln_section11",
+      "format": "h5ad",
+      "path": "benchmarks/spatial_alignment/compiled_data/openst_mln/section_11.h5ad",
+      "role": "slice",
+      "visibility": "public",
+      "metadata": {
+        "n_obs": 67206,
+        "n_var": 28943
+      }
+    },
+    {
+      "asset_id": "openst_mln_section17",
+      "format": "h5ad",
+      "path": "benchmarks/spatial_alignment/compiled_data/openst_mln/section_17.h5ad",
+      "role": "slice",
+      "visibility": "public",
+      "metadata": {
+        "n_obs": 70879,
+        "n_var": 28943
+      }
+    },
+    {
+      "asset_id": "openst_mln_section18",
+      "format": "h5ad",
+      "path": "benchmarks/spatial_alignment/compiled_data/openst_mln/section_18.h5ad",
+      "role": "slice",
+      "visibility": "public",
+      "metadata": {
+        "n_obs": 80288,
+        "n_var": 28943
+      }
+    },
+    {
+      "asset_id": "openst_mln_section19",
+      "format": "h5ad",
+      "path": "benchmarks/spatial_alignment/compiled_data/openst_mln/section_19.h5ad",
+      "role": "slice",
+      "visibility": "public",
+      "metadata": {
+        "n_obs": 39167,
+        "n_var": 28943
+      }
+    },
+    {
+      "asset_id": "openst_mln_section23",
+      "format": "h5ad",
+      "path": "benchmarks/spatial_alignment/compiled_data/openst_mln/section_23.h5ad",
+      "role": "slice",
+      "visibility": "public",
+      "metadata": {
+        "n_obs": 66389,
+        "n_var": 28943
+      }
+    },
+    {
+      "asset_id": "openst_mln_section24",
+      "format": "h5ad",
+      "path": "benchmarks/spatial_alignment/compiled_data/openst_mln/section_24.h5ad",
+      "role": "slice",
+      "visibility": "public",
+      "metadata": {
+        "n_obs": 68177,
+        "n_var": 28943
+      }
+    },
+    {
+      "asset_id": "openst_mln_section25",
+      "format": "h5ad",
+      "path": "benchmarks/spatial_alignment/compiled_data/openst_mln/section_25.h5ad",
+      "role": "slice",
+      "visibility": "public",
+      "metadata": {
+        "n_obs": 39646,
+        "n_var": 28943
+      }
+    },
+    {
+      "asset_id": "openst_mln_section26",
+      "format": "h5ad",
+      "path": "benchmarks/spatial_alignment/compiled_data/openst_mln/section_26.h5ad",
+      "role": "slice",
+      "visibility": "public",
+      "metadata": {
+        "n_obs": 82583,
+        "n_var": 28943
+      }
+    },
+    {
+      "asset_id": "openst_mln_section28",
+      "format": "h5ad",
+      "path": "benchmarks/spatial_alignment/compiled_data/openst_mln/section_28.h5ad",
+      "role": "slice",
+      "visibility": "public",
+      "metadata": {
+        "n_obs": 63661,
+        "n_var": 28943
+      }
+    },
+    {
+      "asset_id": "openst_mln_section33",
+      "format": "h5ad",
+      "path": "benchmarks/spatial_alignment/compiled_data/openst_mln/section_33.h5ad",
+      "role": "slice",
+      "visibility": "public",
+      "metadata": {
+        "n_obs": 68138,
+        "n_var": 28943
+      }
+    },
+    {
+      "asset_id": "openst_mln_section34",
+      "format": "h5ad",
+      "path": "benchmarks/spatial_alignment/compiled_data/openst_mln/section_34.h5ad",
+      "role": "slice",
+      "visibility": "public",
+      "metadata": {
+        "n_obs": 57057,
+        "n_var": 28943
+      }
+    },
+    {
+      "asset_id": "openst_mln_section36",
+      "format": "h5ad",
+      "path": "benchmarks/spatial_alignment/compiled_data/openst_mln/section_36.h5ad",
+      "role": "slice",
+      "visibility": "public",
+      "metadata": {
+        "n_obs": 40692,
+        "n_var": 28943
+      }
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+id = "sa-043-mhpr-crop-sweep"
+name = "MHPR MERFISH overlap robustness sweep (10 to 100 percent overlap)"
+domain = "spatial_genomics"
+modality = "spatial_transcriptomics"
+task_type = "robustness_sweep"
+difficulty = "medium"
+status = "executable_local"
+input_contract = "h5ad_spatial_v1"
+output_contract = "aligned_coordinate_csv_v1"
+metric_profile = "sabench_light_robustness_v1"
+label_key = "Region"
+# SABench scores MHPR overlap_ratio_region on these eight anatomical structures;
+# MHPR_LandmarkBased_Heatmap.csv has one column per structure. obs/Region now carries
+# them, from the BASS annotation the paper cites (scripts/attach_mhpr_bass_regions.py).
+scored_regions = ["BST", "MPA", "MPN", "PV", "PVH", "PVT", "V3", "fx"]
+marker_gene_file = "benchmarks/spatial_alignment/tasks/sa-043-mhpr-crop-sweep/data/marker_genes.csv"
+max_marker_genes = 155
+pair_mode = "star"
+slices = ["data5=/users/ychen5/p2b-data/paper2bench-data/MHPR_paper/MHPR_animal1_n004.h5ad", "data6_crop010=benchmarks/spatial_alignment/compiled_data/sweeps/sa-043-mhpr-crop-sweep/data6_crop010.h5ad", "data6_crop020=benchmarks/spatial_alignment/compiled_data/sweeps/sa-043-mhpr-crop-sweep/data6_crop020.h5ad", "data6_crop030=benchmarks/spatial_alignment/compiled_data/sweeps/sa-043-mhpr-crop-sweep/data6_crop030.h5ad", "data6_crop040=benchmarks/spatial_alignment/compiled_data/sweeps/sa-043-mhpr-crop-sweep/data6_crop040.h5ad", "data6_crop050=benchmarks/spatial_alignment/compiled_data/sweeps/sa-043-mhpr-crop-sweep/data6_crop050.h5ad", "data6_crop060=benchmarks/spatial_alignment/compiled_data/sweeps/sa-043-mhpr-crop-sweep/data6_crop060.h5ad", "data6_crop070=benchmarks/spatial_alignment/compiled_data/sweeps/sa-043-mhpr-crop-sweep/data6_crop070.h5ad", "data6_crop080=benchmarks/spatial_alignment/compiled_data/sweeps/sa-043-mhpr-crop-sweep/data6_crop080.h5ad", "data6_crop090=benchmarks/spatial_alignment/compiled_data/sweeps/sa-043-mhpr-crop-sweep/data6_crop090.h5ad", "data6_crop100=benchmarks/spatial_alignment/compiled_data/sweeps/sa-043-mhpr-crop-sweep/data6_crop100.h5ad"]
+paper_data_ids = ["Data5", "Data6"]
+paper_source = "SABench Fig. 3f: MERFISH_0.09 cropped along x and aligned to MERFISH_0.04."

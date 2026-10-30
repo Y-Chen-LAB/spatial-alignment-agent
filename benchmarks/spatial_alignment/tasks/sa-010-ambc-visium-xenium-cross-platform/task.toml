@@ -1,0 +1,19 @@
+id = "sa-010-ambc-visium-xenium-cross-platform"
+name = "Adult mouse brain coronal Visium <-> Xenium V1 cross-platform alignment"
+domain = "spatial_genomics"
+modality = "spatial_transcriptomics"
+task_type = "cross_platform_pair_alignment"
+difficulty = "medium"
+status = "executable_local"
+input_contract = "h5ad_spatial_v1"
+output_contract = "aligned_coordinate_csv_v1"
+metric_profile = "sabench_gene_only_alignment_v1"
+label_key = "Cluster"
+marker_gene_file = "benchmarks/spatial_alignment/tasks/sa-010-ambc-visium-xenium-cross-platform/data/marker_genes.csv"
+max_marker_genes = 100
+slices = [
+  "Data231_visium=/users/ychen5/p2b-data/paper2bench-data/AMBC_Visium/Data231_adult_mouse_brain.h5ad",
+  "Data234_xenium_v1_section1=benchmarks/spatial_alignment/compiled_data/xenium/xenium_v1_ff_mouse_brain_multisection_1.h5ad",
+]
+paper_data_ids = ["Data231-240/Visium", "Data231-240/Xenium"]
+paper_source = "10x Visium adult mouse brain coronal (Data231) + 10x Xenium V1 fresh-frozen mouse brain replicate 1 (Data234). Both in SABench Data231-240 ten-platform AMBC family."
