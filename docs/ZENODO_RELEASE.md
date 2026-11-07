@@ -31,6 +31,22 @@ verify checksums, publish the data record, then add its version-specific DOI and
 links here and in README.md. This checkout also has no top-level LICENSE or CITATION.cff;
 the project owners should choose a code license and citation metadata.
 
+## Release checklist
+
+Getting a token is enough to start uploading a draft, but does not finish the release.
+
+1. **Prepare the data:** complete source URLs and redistribution licenses, correct the
+   sa-414 provenance, and select the inputs/results to include. Remove unused smoke inputs
+   from the release bundle if desired, then regenerate its file manifest and verify it.
+2. **Upload a draft:** create a `deposit:write` token and run the commands below after
+   setting a real scratch output directory. The draft remains unpublished.
+3. **Publish and connect:** review the files and checksums, fill the Zenodo metadata,
+   publish in the browser, and add the version-specific DOI/download link to the README.
+   Add the chosen code license and citation metadata, then tag the GitHub release.
+
+`deposit:actions` is needed only if publishing through the API; the commands below use
+browser publication instead. Keep the token in the shell prompt, outside Git and chat.
+
 ## Commands from this cluster
 
 The following prepares and uploads a draft; it does not publish it. Requires `curl`,

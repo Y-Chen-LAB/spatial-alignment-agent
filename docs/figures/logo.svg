@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="96" height="96" viewBox="0 0 96 96" fill="none" role="img" aria-labelledby="title desc">
+  <title id="title">Spatial Alignment Agent</title>
+  <desc id="desc">Three tissue sections with matching points aligned along a shared axis.</desc>
+  <rect x="2" y="2" width="92" height="92" rx="24" fill="#F1F5F9"/>
+  <path d="M48 13 78 29 48 45 18 29Z" fill="#DBEAFE" stroke="#2563EB" stroke-width="2" stroke-linejoin="round"/>
+  <path d="M48 33 78 49 48 65 18 49Z" fill="#CCFBF1" stroke="#0D9488" stroke-width="2" stroke-linejoin="round"/>
+  <path d="M48 53 78 69 48 85 18 69Z" fill="#E0E7FF" stroke="#6366F1" stroke-width="2" stroke-linejoin="round"/>
+  <path d="M48 29V69M34 29V69M62 29V69" stroke="#334155" stroke-width="1.5" stroke-dasharray="2 4" opacity=".45"/>
+  <g fill="#2563EB"><circle cx="34" cy="29" r="3"/><circle cx="48" cy="29" r="3"/><circle cx="62" cy="29" r="3"/></g>
+  <g fill="#0D9488"><circle cx="34" cy="49" r="3"/><circle cx="48" cy="49" r="3"/><circle cx="62" cy="49" r="3"/></g>
+  <g fill="#6366F1"><circle cx="34" cy="69" r="3"/><circle cx="48" cy="69" r="3"/><circle cx="62" cy="69" r="3"/></g>
+</svg>

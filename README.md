@@ -1,4 +1,17 @@
-# spatial-alignment-agent
+<p align="center">
+  <img src="docs/figures/logo.svg" width="80" height="80" alt="Spatial Alignment Agent logo">
+</p>
+
+<h1 align="center">Spatial Alignment Agent</h1>
+
+<p align="center">A benchmark for coding agents in spatial transcriptomics</p>
+
+<p align="center">
+  <a href="https://ericzhy0815.github.io/agent-trace-explorer/">Trace Explorer</a> ·
+  <a href="docs/TASK_CARDS.md">121 Task Cards</a> ·
+  <a href="docs/RUNBOOK.md">Runbook</a> ·
+  <a href="docs/ZENODO_RELEASE.md">Data Release</a>
+</p>
 
 A benchmark of coding agents (Claude Code, Codex, Gemini CLI) on spatial-transcriptomics
 slice alignment. Each agent works blind inside a container: it sees the slices and the task
@@ -21,9 +34,14 @@ This code was moved here from `yiqunchen/Gen2Bench`, branch `spatial-alignment` 
 Browse runs, submitted code, alignments and figures in the
 [Agent Trace Explorer](https://ericzhy0815.github.io/agent-trace-explorer/).
 
+<details>
+<summary>View the benchmark overview</summary>
+
 ![Benchmark overview from the Agent Trace Explorer](docs/figures/trace-explorer-overview.png)
 
 Figure snapshot from the explorer; see [provenance and the figure list](docs/TRACE_EXPLORER.md).
+
+</details>
 
 The 121 benchmark tasks have committed specifications, instructions and manifests.
 Browse the [task cards](docs/TASK_CARDS.md); large input files are distributed separately.
@@ -63,7 +81,8 @@ docs/
 
 Task inputs are not in git. The compiled `.h5ad` slices (about 34 GB) are staged for a Zenodo
 release; a published release DOI/download URL has not yet been recorded here.
-See [release status and upload commands](docs/ZENODO_RELEASE.md). Task files name slices by absolute path, so after downloading, rebase the paths and
+See [release status and upload commands](docs/ZENODO_RELEASE.md).
+Task files name slices by absolute path, so after downloading, rebase the paths and
 re-point the data link:
 
 ```bash
