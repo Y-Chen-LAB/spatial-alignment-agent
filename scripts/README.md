@@ -36,6 +36,7 @@ Run from the repo root with `PYTHONPATH=src`.
 
 - `build_geaso_tasks.py`: Build the sa-401 to sa-410 alignment tasks from the GEASO data release.
 - `build_run_matrix.py`: Define the design subset and emit one row per planned agent run.
+- `build_task_cards.py`: Generate docs/TASK_CARDS.md from the committed runnable tasks.
 - `build_tasks.py`: Build spatial-alignment task packages from the declarative registry.
 - `build_wmb_realistic_tasks.py`: Realistic-difficulty 3D reconstruction tasks from the Zhuang ABCA-1 MERFISH sections (sa-414 to sa-416).
 - `check_portability.py`: Report paths that would not resolve on another machine.

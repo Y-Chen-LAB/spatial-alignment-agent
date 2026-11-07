@@ -12,7 +12,7 @@ import re
 from collections import Counter
 from pathlib import Path
 
-ABSOLUTE = re.compile(r'(/Users/[^"=\s]+|/home/[^"=\s]+)')
+ABSOLUTE = re.compile(r'(/users/[^"=\s]+|/Users/[^"=\s]+|/home/[^"=\s]+)')
 TASKS = Path("benchmarks/spatial_alignment/tasks")
 
 

@@ -16,6 +16,18 @@ published benchmarks' own metrics and compared with scripted runs of the publish
 This code was moved here from `yiqunchen/Gen2Bench`, branch `spatial-alignment` at commit
 `cb9a3145`, which keeps the full history.
 
+## Explore the results
+
+Browse runs, submitted code, alignments and figures in the
+[Agent Trace Explorer](https://ericzhy0815.github.io/agent-trace-explorer/).
+
+![Benchmark overview from the Agent Trace Explorer](docs/figures/trace-explorer-overview.png)
+
+Figure snapshot from the explorer; see [provenance and the figure list](docs/TRACE_EXPLORER.md).
+
+The 121 benchmark tasks have committed specifications, instructions and manifests.
+Browse the [task cards](docs/TASK_CARDS.md); large input files are distributed separately.
+
 ## Layout
 
 ```
@@ -49,8 +61,9 @@ docs/
 
 ## Data
 
-Task inputs are not in git. The compiled `.h5ad` slices (about 34 GB) are in the Zenodo
-record. Task files name slices by absolute path, so after downloading, rebase the paths and
+Task inputs are not in git. The compiled `.h5ad` slices (about 34 GB) are staged for a Zenodo
+release; a published release DOI/download URL has not yet been recorded here.
+See [release status and upload commands](docs/ZENODO_RELEASE.md). Task files name slices by absolute path, so after downloading, rebase the paths and
 re-point the data link:
 
 ```bash

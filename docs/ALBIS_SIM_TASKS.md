@@ -106,15 +106,13 @@ primary score. See [ALBIS_SCORING.md](ALBIS_SCORING.md) for all scoring rules.
 ## Running
 
 ```bash
-# 1. Data (Albis repo). Smoke: 5,000 cells, 4 slices, ~20 s for all five. Full: SLURM.
+# 1. Full-scale data (Albis repo).
 cd ~/Albis
-.venv/bin/python scripts/alignment_benchmark.py --scale smoke --out ~/p2b-data/paper2bench-data/albis_sim_smoke
 sbatch --array=0-4 scripts/alignment_benchmark.sbatch        # -> ~/p2b-data/paper2bench-data/albis_sim
 
 # 2. Tasks (this repo)
-cd ~/genomics-agent
+cd ~/spatial-alignment-agent
 ./.venv/bin/python scripts/materialize_albis_tasks.py --data-root ~/p2b-data/paper2bench-data/albis_sim --force
-./.venv/bin/python scripts/materialize_albis_tasks.py --data-root ~/p2b-data/paper2bench-data/albis_sim_smoke --id-suffix=-smoke --force
 ./.venv/bin/p2b validate benchmarks/spatial_alignment/tasks/sa-30*/task.toml
 
 # 3. Scripted baselines and scoring (see AGENT_RUNBOOK.md)

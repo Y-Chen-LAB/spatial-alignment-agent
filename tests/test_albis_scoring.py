@@ -78,7 +78,8 @@ class AlbisScoringTests(unittest.TestCase):
         import tomllib
         root = Path(__file__).resolve().parents[1] / "benchmarks/spatial_alignment/tasks"
         tasks = list(root.glob("sa-3*-albis-*/task.toml"))
-        self.assertGreaterEqual(len(tasks), 24)
+        self.assertEqual(len(tasks), 12)
+        self.assertFalse(any(path.parent.name.endswith("-smoke") for path in tasks))
         for path in tasks:
             self.assertEqual(tomllib.loads(path.read_text())["metric_profile"], "albis_alignment_v1", str(path))
 

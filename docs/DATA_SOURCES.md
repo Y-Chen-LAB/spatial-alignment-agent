@@ -8,13 +8,13 @@ release.
 - *Raw downloads* are the files as published (GEO tars, Dryad CSVs, 10x bundles). They were
   converted on the original workstation in September 2026, and most were never copied to the
   cluster. This release points to them by accession instead of redistributing them.
-- *Task inputs* are the compiled per-slice `.h5ad` files the tasks read: about 34 GB, in the
+- *Task inputs* are the compiled per-slice `.h5ad` files the tasks read: about 34 GB, staged for a
   Zenodo record under `task_inputs/`, with `compiled_data/` and `paper2bench-data/` as on disk.
   Task files reference them as `/users/ychen5/p2b-data/...` or through the
   `benchmarks/spatial_alignment/compiled_data` symlink. To use another location, run
   `scripts/check_portability.py --data-root <dir> --apply` and re-point the symlink.
 
-`SOURCES.tsv` in the Zenodo record has the same rows in machine-readable form, with md5 sums.
+`SOURCES.tsv` in the staged data release has the same rows in machine-readable form, with md5 sums.
 
 In the tables, `P/` is `task_inputs/paper2bench-data/` and `C/` is `task_inputs/compiled_data/`.
 **TODO** marks a fact we have not recorded yet.
@@ -50,7 +50,7 @@ In the tables, `P/` is `task_inputs/paper2bench-data/` and `C/` is `task_inputs/
 
 | Dataset | Tasks | Generator | Script | Task inputs |
 |---|---|---|---|---|
-| Albis simulations | 301-312, plus smoke copies | Albis (github.com/JanMatthias1/Albis, MIT), `scripts/alignment_benchmark.py` | `materialize_albis_tasks.py` | P/albis_sim, P/albis_sim_smoke |
+| Albis simulations | 301-312 | Albis (github.com/JanMatthias1/Albis, MIT), `scripts/alignment_benchmark.py` | `materialize_albis_tasks.py` | P/albis_sim |
 
 ## Known gaps
 
