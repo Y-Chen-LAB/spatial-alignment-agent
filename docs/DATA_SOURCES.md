@@ -1,8 +1,6 @@
 # Data sources
 
-Where every dataset behind tasks sa-001 to sa-417 came from, which script turns it into task
-inputs, and where those inputs live. The Hicks-lab tasks (sa-5xx, sa-6xx) are not in this
-release.
+Sources and preprocessing for the 121 benchmark tasks (sa-001 to sa-417).
 
 **Two kinds of data.**
 - *Raw downloads* are the files as published (GEO tars, Dryad CSVs, 10x bundles). They were
@@ -14,7 +12,8 @@ release.
   `benchmarks/spatial_alignment/compiled_data` symlink. To use another location, run
   `scripts/check_portability.py --data-root <dir> --apply` and re-point the symlink.
 
-`SOURCES.tsv` in the staged data release has the same rows in machine-readable form, with md5 sums.
+The prepared data bundle includes `SOURCES.tsv` for source metadata and `MANIFEST.md5`
+for file checksums.
 
 In the tables, `P/` is `task_inputs/paper2bench-data/` and `C/` is `task_inputs/compiled_data/`.
 **TODO** marks a fact we have not recorded yet.
@@ -61,6 +60,5 @@ In the tables, `P/` is `task_inputs/paper2bench-data/` and `C/` is `task_inputs/
 3. **Not scripted:** the DLPFC and breast-cancer Xenium inputs were taken from `SABench.zip`
    by hand; the CosMx stand-in has no compile script.
 4. **Raw file not kept:** Open-ST GSE251926 was read from `/tmp`. It is re-downloadable from GEO.
-5. **Wrong provenance:** the sa-414 manifest names GEASO and `build_geaso_tasks.py` as its
-   source. It is built from Zhuang ABCA-1 by `build_wmb_realistic_tasks.py`.
-6. **Licenses:** no dataset license has been recorded. Fill in `SOURCES.tsv` before release.
+5. **Licenses:** dataset licenses have not yet been recorded in the prepared `SOURCES.tsv`.
+   Redistribution terms require verification.

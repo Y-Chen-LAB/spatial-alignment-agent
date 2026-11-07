@@ -10,7 +10,7 @@
   <a href="https://ericzhy0815.github.io/agent-trace-explorer/">Trace Explorer</a> ·
   <a href="docs/TASK_CARDS.md">121 Task Cards</a> ·
   <a href="docs/RUNBOOK.md">Runbook</a> ·
-  <a href="docs/ZENODO_RELEASE.md">Data Release</a>
+  <a href="docs/DATA_ACCESS.md">Data Access</a>
 </p>
 
 A benchmark of coding agents (Claude Code, Codex, Gemini CLI) on spatial-transcriptomics
@@ -25,9 +25,6 @@ published benchmarks' own metrics and compared with scripted runs of the publish
 | sa-201 to sa-245 | adult mouse brain, one coronal region in many technologies | cross-technology pairs |
 | sa-301 to sa-312 | Albis simulations | 3D stacks with known ground truth (coordinate MAE) |
 | sa-401 to sa-417 | GEASO release, Open-ST, Zhuang ABCA-1 | 3D reconstruction at realistic difficulty |
-
-This code was moved here from `yiqunchen/Gen2Bench`, branch `spatial-alignment` at commit
-`cb9a3145`, which keeps the full history.
 
 ## Explore the results
 
@@ -70,25 +67,19 @@ docs/
 - `docs/BENCHMARK.md`: benchmark design, the run matrix, the bare and equipped conditions.
 - `docs/RUNBOOK.md`: running agents and baselines on a Slurm cluster.
 - `docs/DATA_SOURCES.md`: where every dataset came from and how it became task inputs.
-- `docs/KNOWN_ISSUES.md`: problems found during the campaigns and how each was handled.
 - `docs/ALBIS_SIM_TASKS.md`, `docs/ALBIS_SCORING.md`: the simulated tasks and their scoring.
 - `docs/PAPER_METHOD_PRIORS.md`: what the equipped condition tells agents about published methods.
 - `docs/CREDENTIALS.md`: how each agent CLI is authenticated. No secrets are in the repo.
 - `docs/audits/`: metric parity with the papers' code, data isolation, sanitisation.
-- `docs/archive/`: superseded plans, migration notes and the old Gen2Bench README.
 
 ## Data
 
-Task inputs are not in git. The compiled `.h5ad` slices (about 34 GB) are staged for a Zenodo
-release; a published release DOI/download URL has not yet been recorded here.
-See [release status and upload commands](docs/ZENODO_RELEASE.md).
-Task files name slices by absolute path, so after downloading, rebase the paths and
-re-point the data link:
+This dataset supports 121 benchmark tasks for evaluating coding agents on spatial transcriptomics alignment. It combines published tissue datasets and Albis simulations spanning serial-section alignment, cross-technology matching, robustness tests, and three-dimensional reconstruction. Compiled AnnData (`.h5ad`) files provide gene-expression measurements, spatial coordinates, and reference annotations where available. Each task is accompanied by instructions, input and output specifications, data provenance, and a defined scoring profile. The benchmark separates agent-visible inputs from reference information used for evaluation and compares submitted alignments with scripted implementations of published methods.
 
-```bash
-python scripts/check_portability.py --data-root /path/to/task_inputs/paper2bench-data --apply
-ln -sfn /path/to/task_inputs/compiled_data benchmarks/spatial_alignment/compiled_data
-```
+Source: [Zenodo, doi:10.5281/zenodo.24043338](https://doi.org/10.5281/zenodo.24043338).
+
+See [data access and local configuration](docs/DATA_ACCESS.md) and
+[dataset provenance](docs/DATA_SOURCES.md).
 
 ## Setup
 

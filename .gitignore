@@ -5,13 +5,13 @@ __pycache__/
 *.egg-info/
 .DS_Store
 
-# Large data, moved out of iCloud and symlinked back in. These are inputs, not source.
+# Large input data and run directories.
 /agent_runs
 /benchmarks/spatial_alignment/compiled_data
 *.h5ad
 *.h5ad.gz
 
-# Writing and funding material, not part of the benchmark
+# Local writing material
 /manuscripts/
 /assets/fonts/
 /proposals/
@@ -36,3 +36,9 @@ scripts/test_azure_openai.py
 /.method-cache/
 # Baseline outputs: aligned coordinates and scores per task and method (GBs; regenerate with the run_*_baseline scripts)
 /results/baselines
+
+# Local credentials and generated agent workspaces
+.env
+.env.*
+!.env.example
+/agent_workspaces/

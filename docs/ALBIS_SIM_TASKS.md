@@ -1,4 +1,4 @@
-# Albis simulated alignment tasks (sa-301 to sa-305)
+# Albis simulated alignment tasks (sa-301 to sa-312)
 
 Five serial-alignment tasks built from the Albis simulator
 (github.com/JanMatthias1/Albis), where the true frame of every slice is known exactly.
@@ -115,7 +115,7 @@ cd ~/spatial-alignment-agent
 ./.venv/bin/python scripts/materialize_albis_tasks.py --data-root ~/p2b-data/paper2bench-data/albis_sim --force
 ./.venv/bin/p2b validate benchmarks/spatial_alignment/tasks/sa-30*/task.toml
 
-# 3. Scripted baselines and scoring (see AGENT_RUNBOOK.md)
+# 3. Scripted baselines and scoring (see RUNBOOK.md)
 ./.venv/bin/python scripts/run_task_baseline.py benchmarks/spatial_alignment/tasks/<task>/task.toml --method centroid_similarity --max-genes 100
 ./.venv/bin/python scripts/score_agent_submission.py benchmarks/spatial_alignment/tasks/<task>/task.toml <submission_dir>
 ```

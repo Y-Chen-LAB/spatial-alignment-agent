@@ -1,8 +1,8 @@
 {
   "schema_version": "paper2bench.data_manifest.v0.1",
   "task_id": "sa-414-wmb-merfish-129-section-raw-coords-3d",
-  "source": "GEASO data release, Zenodo 18811760 (Wang, Liu & Ma, Nat Commun 2026)",
-  "build_script": "scripts/build_geaso_tasks.py",
+  "source": "Zhuang ABCA-1 MERFISH (Zhang et al. 2023), CELLxGENE release used by SABench Data99-227",
+  "build_script": "scripts/build_wmb_realistic_tasks.py",
   "dataset": "Zhuang ABCA-1 MERFISH (Zhang et al. 2023), SABench WMB sections (Data99-227)",
   "task_type": "serial_3d_reconstruction",
   "section_step": 1,
